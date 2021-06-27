@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, cyrxdzj blog">
+    <meta name="keywords" content="洛谷CF0934B题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | cyrxdzj blog</title>
+    <title>洛谷CF0934B题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">洛谷CF0934B题解</h1>
                 </div>
             </div>
         </div>
@@ -439,12 +439,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">
+                                <span class="chip bg-color">洛谷题解</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                洛谷题解
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -474,19 +487,16 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>首先，本题中数字环最多的是 $8$，有 $2$ 个环。因此，在输出答案时，尽可能地使用 $8$。</p>
+<p>如果 $k$ 可以被 $2$ 整除，那么输出 $k\div2$ 个 $8$。</p>
+<p>如果不能，那么输出 $\left\lfloor k\div2\right\rfloor$ 个 $8$ 后，再输出一个 $4$。（不一定是 $4$，只要有且只有一个环就行。思考：$0$ 也有且只有一个环，那它行吗？）</p>
+<p>注意，题目中要求答案不大 $10^{18}$，所以如果 $k&gt;36$，就说明至少输出 $19$ 个数字，超过了限制，所以直接输出 $-1$ 无解。</p>
+<h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int k;</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;k);</span><br><span class="line">	if(k&gt;36)//特判。</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;-1\n&quot;);</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line">	if(k%2==0)//第一种情况。</span><br><span class="line">	&#123;</span><br><span class="line">		for(int i=1;i&lt;=k/2;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			printf(&quot;8&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		printf(&quot;\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	else//第二种情况。</span><br><span class="line">	&#123;</span><br><span class="line">		for(int i=1;i&lt;=k/2;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			printf(&quot;8&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		printf(&quot;4\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;//完结撒花！</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="三、思考题答案"><a href="#三、思考题答案" class="headerlink" title="三、思考题答案"></a>三、思考题答案</h3><p>当然不行。</p>
+<p>当 $k=1$ 时，将只输出 $0$。但是，题目要求<strong>正整数</strong>，而 $0$ 不是正数，所以不行。</p>
+<h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51667794">https://www.luogu.com.cn/record/51667794</a>。</p>
+<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
             </div>
@@ -513,7 +523,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021-06-27-hello-world/">http://example.com/2021-06-27-hello-world/</a>
+                    <a href="http://example.com/2021-06-27-LuoguCF0934BTJ/">http://example.com/2021-06-27-LuoguCF0934BTJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -550,7 +560,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">
+                                    <span class="chip bg-color">洛谷题解</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -596,13 +610,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-06-27-LuoguP7566TJ/">
+                <a href="/2021-06-27-LuoguCF0427ATJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="洛谷P7566题解">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷CF0427A题解">
                         
-                        <span class="card-title">洛谷P7566题解</span>
+                        <span class="card-title">洛谷CF0427A题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -642,16 +656,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-06-27-hello-world/">
+                <a href="/2021-06-27-LuoguP7593TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷P7593题解">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">洛谷P7593题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -666,13 +680,24 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            cyrxdzj
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">
+                        <span class="chip bg-color">洛谷题解</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
