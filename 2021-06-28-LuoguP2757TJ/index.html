@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷CF0934B题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷P2757题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷CF0934B题解 | cyrxdzj blog</title>
+    <title>洛谷P2757题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -254,12 +254,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷CF0934B题解</h1>
+                    <h1 class="description center-align post-title">洛谷P2757题解</h1>
                 </div>
             </div>
         </div>
@@ -379,6 +379,10 @@
                                 <span class="chip bg-color">数学知识</span>
                             </a>
                         
+                            <a href="/tags/%E6%A1%B6/">
+                                <span class="chip bg-color">桶</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -400,7 +404,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-27
+                    2021-06-28
                 </div>
                 
 
@@ -424,43 +428,55 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>首先，本题中数字环最多的是 $8$，有 $2$ 个环。因此，在输出答案时，尽可能地使用 $8$。</p>
-<p>如果 $k$ 可以被 $2$ 整除，那么输出 $k\div2$ 个 $8$。</p>
-<p>如果不能，那么输出 $\left\lfloor k\div2\right\rfloor$ 个 $8$ 后，再输出一个 $4$。（不一定是 $4$，只要有且只有一个环就行。思考：$0$ 也有且只有一个环，那它行吗？）</p>
-<p>注意，题目中要求答案不大 $10^{18}$，所以如果 $k&gt;36$，就说明至少输出 $19$ 个数字，超过了限制，所以直接输出 $-1$ 无解。</p>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题可以使用桶去做。</p>
+<p>设 $array[i]$ 为输入的第 $i$ 个数。</p>
+<p>设 $tong[i]$ 为数字 $i$ 在输入中的出现位置。因为输入的每个数字都不一样，所以此方法可行。</p>
+<p>然后枚举两个数：$i$ 和 $j$ 并保证 $i&lt;j$。根据等差数列的性质，第二个数减第一个数为公差，第三个数减第二个数也是公差，所以第三个数就是第二个数减第一个数加第二个数。</p>
+<p>而“第一个数”就是 $array[i]$，“第二个数”就是 $array[j]$，如果 $array[j]-array[i]+array[j]$ 存在并且所在位置大于 $j$，即可输出“Y”。</p>
+<p>如果枚举过后没有找到答案，则输出“N”。</p>
+<p>在最坏情况下，时间复杂度为 $O(T\times N\times (N-1) \div2)$，如果 $T=7$ 且 $N=10000$，则时间复杂度为 $O(349965000)$，有点悬，但还是可以过的。</p>
 <h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-none"><code class="language-none">#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
 using namespace std;
+int t;
+int array[1000000],tong[1000000];
 int main()
 &#123;
-	int k;
-	scanf(&quot;%d&quot;,&amp;k);
-	if(k&gt;36)&#x2F;&#x2F;特判。
+	scanf(&quot;%d&quot;,&amp;t);
+	while(t--)
 	&#123;
-		printf(&quot;-1\n&quot;);
-		return 0;
-	&#125;
-	if(k%2&#x3D;&#x3D;0)&#x2F;&#x2F;第一种情况。
-	&#123;
-		for(int i&#x3D;1;i&lt;&#x3D;k&#x2F;2;i++)
+		memset(array,0,sizeof(array));&#x2F;&#x2F;清空数组。
+		memset(tong,0,sizeof(tong));
+		int n;
+		scanf(&quot;%d&quot;,&amp;n);
+		for(int i&#x3D;1;i&lt;&#x3D;n;i++)
 		&#123;
-			printf(&quot;8&quot;);
+			scanf(&quot;%d&quot;,&amp;array[i]);
+			tong[array[i]]&#x3D;i;&#x2F;&#x2F;存储桶。
 		&#125;
-		printf(&quot;\n&quot;);
-	&#125;
-	else&#x2F;&#x2F;第二种情况。
-	&#123;
-		for(int i&#x3D;1;i&lt;&#x3D;k&#x2F;2;i++)
+		bool flag&#x3D;false;
+		for(int i&#x3D;1;i&lt;&#x3D;n-1&amp;&amp;flag&#x3D;&#x3D;false;i++)
 		&#123;
-			printf(&quot;8&quot;);
+			for(int j&#x3D;i+1;j&lt;&#x3D;n&amp;&amp;flag&#x3D;&#x3D;false;j++)
+			&#123;
+				if(tong[array[j]-array[i]+array[j]]&gt;j)&#x2F;&#x2F;如果符合要求：
+				&#123;
+					flag&#x3D;true;
+					printf(&quot;Y\n&quot;);&#x2F;&#x2F;输出Y。
+					break;
+				&#125;
+			&#125;
 		&#125;
-		printf(&quot;4\n&quot;);
+		if(!flag)
+		&#123;
+			printf(&quot;N\n&quot;);&#x2F;&#x2F;输出N。
+		&#125;
 	&#125;
 	return 0;&#x2F;&#x2F;完结撒花！
 &#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="三、思考题答案"><a href="#三、思考题答案" class="headerlink" title="三、思考题答案"></a>三、思考题答案</h3><p>当然不行。</p>
-<p>当 $k=1$ 时，将只输出 $0$。但是，题目要求<strong>正整数</strong>，而 $0$ 不是正数，所以不行。</p>
-<h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51667794">https://www.luogu.com.cn/record/51667794</a>。</p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="三、后记"><a href="#三、后记" class="headerlink" title="三、后记"></a>三、后记</h3><p>这道题我花了几十分钟才做出来，但其实不难，大概是绿题或蓝题的水平。</p>
+<p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/50300561">https://www.luogu.com.cn/record/50300561</a>。</p>
 <p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
@@ -488,7 +504,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021-06-27-LuoguCF0934BTJ/">http://example.com/2021-06-27-LuoguCF0934BTJ/</a>
+                    <a href="http://example.com/2021-06-28-LuoguP2757TJ/">http://example.com/2021-06-28-LuoguP2757TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -528,6 +544,10 @@ int main()
                             
                                 <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
                                     <span class="chip bg-color">数学知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%A1%B6/">
+                                    <span class="chip bg-color">桶</span>
                                 </a>
                             
                         </div>
@@ -575,13 +595,13 @@ int main()
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-06-27-LuoguCF0427ATJ/">
+                <a href="/2021-06-28-LuoguCF0096BTJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷CF0427A题解">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="洛谷CF0096B题解">
                         
-                        <span class="card-title">洛谷CF0427A题解</span>
+                        <span class="card-title">洛谷CF0096B题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -592,8 +612,57 @@ int main()
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-28
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/">
+                        <span class="chip bg-color">BFS宽度优先搜索</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021-06-28-LuoguCF0920ATJ/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="洛谷CF0920题解">
+                        
+                        <span class="card-title">洛谷CF0920题解</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -611,55 +680,6 @@ int main()
                     
                     <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
                         <span class="chip bg-color">暴力与模拟</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021-06-27-LuoguP7593TJ/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷P7593题解">
-                        
-                        <span class="card-title">洛谷P7593题解</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
                     </a>
                     
                 </div>

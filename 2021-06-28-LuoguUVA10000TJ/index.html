@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷CF0934B题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷UVA10000题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷CF0934B题解 | cyrxdzj blog</title>
+    <title>洛谷UVA10000题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -254,12 +254,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷CF0934B题解</h1>
+                    <h1 class="description center-align post-title">洛谷UVA10000题解</h1>
                 </div>
             </div>
         </div>
@@ -375,8 +375,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                                <span class="chip bg-color">数学知识</span>
+                            <a href="/tags/Floyd%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">Floyd算法</span>
                             </a>
                         
                     </div>
@@ -400,7 +400,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-27
+                    2021-06-28
                 </div>
                 
 
@@ -424,44 +424,110 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>首先，本题中数字环最多的是 $8$，有 $2$ 个环。因此，在输出答案时，尽可能地使用 $8$。</p>
-<p>如果 $k$ 可以被 $2$ 整除，那么输出 $k\div2$ 个 $8$。</p>
-<p>如果不能，那么输出 $\left\lfloor k\div2\right\rfloor$ 个 $8$ 后，再输出一个 $4$。（不一定是 $4$，只要有且只有一个环就行。思考：$0$ 也有且只有一个环，那它行吗？）</p>
-<p>注意，题目中要求答案不大 $10^{18}$，所以如果 $k&gt;36$，就说明至少输出 $19$ 个数字，超过了限制，所以直接输出 $-1$ 无解。</p>
-<h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-none"><code class="language-none">#include&lt;cstdio&gt;
-using namespace std;
-int main()
-&#123;
-	int k;
-	scanf(&quot;%d&quot;,&amp;k);
-	if(k&gt;36)&#x2F;&#x2F;特判。
-	&#123;
-		printf(&quot;-1\n&quot;);
-		return 0;
-	&#125;
-	if(k%2&#x3D;&#x3D;0)&#x2F;&#x2F;第一种情况。
-	&#123;
-		for(int i&#x3D;1;i&lt;&#x3D;k&#x2F;2;i++)
-		&#123;
-			printf(&quot;8&quot;);
-		&#125;
-		printf(&quot;\n&quot;);
-	&#125;
-	else&#x2F;&#x2F;第二种情况。
-	&#123;
-		for(int i&#x3D;1;i&lt;&#x3D;k&#x2F;2;i++)
-		&#123;
-			printf(&quot;8&quot;);
-		&#125;
-		printf(&quot;4\n&quot;);
-	&#125;
-	return 0;&#x2F;&#x2F;完结撒花！
-&#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="三、思考题答案"><a href="#三、思考题答案" class="headerlink" title="三、思考题答案"></a>三、思考题答案</h3><p>当然不行。</p>
-<p>当 $k=1$ 时，将只输出 $0$。但是，题目要求<strong>正整数</strong>，而 $0$ 不是正数，所以不行。</p>
-<h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51667794">https://www.luogu.com.cn/record/51667794</a>。</p>
-<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题中 $n \le 100$，数据量不大，可以用<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Floyd%E7%AE%97%E6%B3%95/291990?fr=aladdin">弗洛伊德最短路算法</a>去做。</p>
+<p>Q1：等等，Floyd 不是最短路算法吗？怎么能解决本题最长路？</p>
+<p>A1：那就魔改一下。</p>
+<p>Q2：如何魔改？</p>
+<p>A2：从算法精髓入手。</p>
+<h3 id="二、代码片段"><a href="#二、代码片段" class="headerlink" title="二、代码片段"></a>二、代码片段</h3><p>设 $distance[i][j]$ 为从点 $i$ 到点 $j$ 的距离。</p>
+<p>Floyd 算法的精髓，就是<del>暴力</del>枚举一个点 $k$，如果发现 $distance[i][j] &lt; distance[i][k] + distance[k][j]$，那么就把 $distance[i][j]$ 更新为$distance[i][k] + distance[k][j]$。</p>
+<p>发现端倪了吗？</p>
+<p>求最长路，就是把上面的思路稍微改一改：如果发现 $distance[i][j] &gt; distance[i][k] + distance[k][j]$，那么就把 $distance[i][j]$ 更新为$distance[i][k] + distance[k][j]$。</p>
+<p>因此我们得出了核心代码。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> k<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>k<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>k<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">+</span>distance<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>初始化部分也改一下：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token operator">==</span>j<span class="token punctuation">)</span><span class="token operator">?</span><span class="token number">0</span><span class="token operator">:</span><span class="token operator">-</span><span class="token number">999999</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Q3：第3行，当两点不存在路径时，距离为无限小。但是，为什么当 $i = j$ 时，距离为0而不是无限小呢？</p>
+<p>A3：自行思考，文末会讲。</p>
+<p>终于，我们得出了完整代码。</p>
+<h3 id="三、完整代码"><a href="#三、完整代码" class="headerlink" title="三、完整代码"></a>三、完整代码</h3><p>还是那句话：道路千万条，诚信第一条。直接抄题解，棕名两行泪。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">inline</span> <span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token comment">//求两个数较大的那个。</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> a<span class="token operator">></span>b<span class="token operator">?</span>a<span class="token operator">:</span>b<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">int</span> t<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//负责表示当前计算到第几组数据了。</span>
+	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		t<span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment">//负责表示当前计算到第几组数据了。</span>
+		<span class="token keyword">int</span> n<span class="token punctuation">,</span>start<span class="token punctuation">;</span><span class="token comment">//n代表点数，start代表起点。</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入n。</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//如果n为0：</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment">//退出。</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入起点。</span>
+		<span class="token keyword">int</span> distance<span class="token punctuation">[</span><span class="token number">105</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">105</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//创建distance数组。</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+			<span class="token punctuation">&#123;</span>
+				distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token operator">==</span>j<span class="token punctuation">)</span><span class="token operator">?</span><span class="token number">0</span><span class="token operator">:</span><span class="token operator">-</span><span class="token number">999999</span><span class="token punctuation">;</span>
+				<span class="token comment">//初始化，设distance[i][j]为无限小（i!=j）或0（i=j）。</span>
+			<span class="token punctuation">&#125;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">int</span> a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+			<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入一边的端点。</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">==</span><span class="token number">0</span><span class="token operator">&amp;&amp;</span>b<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//当a和b均为0时：</span>
+			<span class="token punctuation">&#123;</span>
+				<span class="token keyword">break</span><span class="token punctuation">;</span><span class="token comment">//退出输入。</span>
+			<span class="token punctuation">&#125;</span>
+			distance<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token comment">//这里的边权都是1。</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> k<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>k<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>k<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+			<span class="token punctuation">&#123;</span>
+				<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+				<span class="token punctuation">&#123;</span>
+					distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>distance<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">+</span>distance<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token comment">//不断更新距离数组。</span>
+				<span class="token punctuation">&#125;</span>
+			<span class="token punctuation">&#125;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token comment">//得出答案部分。</span>
+		<span class="token keyword">int</span> to<span class="token punctuation">,</span>dis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>distance<span class="token punctuation">[</span>start<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">></span>dis<span class="token punctuation">)</span><span class="token comment">//打擂台。如果从起点到某一点的距离大于当前距离：</span>
+			<span class="token punctuation">&#123;</span>
+				dis<span class="token operator">=</span>distance<span class="token punctuation">[</span>start<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//更新距离数据。</span>
+				to<span class="token operator">=</span>i<span class="token punctuation">;</span><span class="token comment">//更新终点数据。</span>
+			<span class="token punctuation">&#125;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Case %d: The longest path from %d has length %d, finishing at %d.\n\n"</span><span class="token punctuation">,</span>t<span class="token punctuation">,</span>start<span class="token punctuation">,</span>dis<span class="token punctuation">,</span>to<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。记得要2个换行！</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="四、思考题答案"><a href="#四、思考题答案" class="headerlink" title="四、思考题答案"></a>四、思考题答案</h3><p>当 $i \ne j$ 时，起点和终点不同，所以在最初时距离自然是无限小。</p>
+<p>但是，当 $i = j$ 时，起点和终点相同，相当于原地徘徊，距离就是0。</p>
+<h3 id="五、后记"><a href="#五、后记" class="headerlink" title="五、后记"></a>五、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51351320">https://www.luogu.com.cn/record/51351320</a>。</p>
+<p>不同于<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/387840/solution-uva10000">这篇题解</a>，他的题解采用了负数边权，根据不等式的性质，</p>
+<p>$\because a &gt; b$</p>
+<p>$\therefore -a &lt; -b$</p>
+<p>于是，求最长路就巧妙地转换成了最短路，输出时对结果取相反数。</p>
+<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836"><strong>dengzijun</strong></a></p>
 
                 
             </div>
@@ -488,7 +554,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021-06-27-LuoguCF0934BTJ/">http://example.com/2021-06-27-LuoguCF0934BTJ/</a>
+                    <a href="http://example.com/2021-06-28-LuoguUVA10000TJ/">http://example.com/2021-06-28-LuoguUVA10000TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -526,8 +592,8 @@ int main()
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                                    <span class="chip bg-color">数学知识</span>
+                                <a href="/tags/Floyd%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">Floyd算法</span>
                                 </a>
                             
                         </div>
@@ -575,13 +641,13 @@ int main()
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-06-27-LuoguCF0427ATJ/">
+                <a href="/2021-06-28-LuoguUVA00108TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷CF0427A题解">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="洛谷UVA00108题解">
                         
-                        <span class="card-title">洛谷CF0427A题解</span>
+                        <span class="card-title">洛谷UVA00108题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -592,7 +658,7 @@ int main()
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-28
                         </span>
                         <span class="publish-author">
                             
@@ -609,8 +675,8 @@ int main()
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                        <span class="chip bg-color">暴力与模拟</span>
+                    <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                        <span class="chip bg-color">前缀和</span>
                     </a>
                     
                 </div>
@@ -624,13 +690,13 @@ int main()
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-06-27-LuoguP7593TJ/">
+                <a href="/2021-06-27-LuoguCF0934ATJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷P7593题解">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="洛谷CF0934A题解">
                         
-                        <span class="card-title">洛谷P7593题解</span>
+                        <span class="card-title">洛谷CF0934A题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -658,8 +724,8 @@ int main()
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
+                    <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                        <span class="chip bg-color">暴力与模拟</span>
                     </a>
                     
                 </div>
