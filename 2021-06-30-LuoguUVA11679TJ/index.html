@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷UVA00151题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷UVA11679题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷UVA00151题解 | cyrxdzj blog</title>
+    <title>洛谷UVA11679题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -280,12 +280,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷UVA00151题解</h1>
+                    <h1 class="description center-align post-title">洛谷UVA11679题解</h1>
                 </div>
             </div>
         </div>
@@ -401,8 +401,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%98%9F%E5%88%97/">
-                                <span class="chip bg-color">队列</span>
+                            <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                                <span class="chip bg-color">暴力与模拟</span>
                             </a>
                         
                     </div>
@@ -426,7 +426,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-28
+                    2021-06-30
                 </div>
                 
 
@@ -450,62 +450,54 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、基本思路"><a href="#一、基本思路" class="headerlink" title="一、基本思路"></a>一、基本思路</h3><p>本题考察<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98/3857719?fromtitle=%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF&amp;fromid=348830&amp;fr=aladdin">约瑟夫环</a>的知识。</p>
-<p>数据范围是 $13\le N &lt;100$，还算比较小，可以暴力模拟。</p>
-<h3 id="二、具体思路"><a href="#二、具体思路" class="headerlink" title="二、具体思路"></a>二、具体思路</h3><p>现在的问题是，如何暴力模拟约瑟夫环。</p>
-<p>我们可以创建一个队列，初始状态下，该队列从队头到队尾依次为 $1$ 到 $N$。</p>
-<p>然后循环以下操作，直到队列中只有一个数字。</p>
-<ol>
-<li><p>弹出队头，并不再进入队列中。</p>
-</li>
-<li><p>将一个数弹出队头，但立即进入队尾。本步骤重复 $m-1$ 次。</p>
-</li>
-</ol>
-<p>该队列中只有一个数字时，这个数字就是“最后一个出列的数字”。只需判断这是不是 $13$ 即可。</p>
+                <h3 id="一、题意简述"><a href="#一、题意简述" class="headerlink" title="一、题意简述"></a>一、题意简述</h3><p>有 $B$ 家银行，每一家银行都有一个初始的财产数额。有 $N$ 次操作，每一次操作包含三个数：$D$，$C$，$V$，表示从编号为 $D$ 的银行向编号为 $C$ 的银行移动 $V$ 个单位财产。最后，如果有一个银行的财产数额为负数，输出 <code>N</code>，否则输出 <code>S</code>。</p>
+<h3 id="二、思路"><a href="#二、思路" class="headerlink" title="二、思路"></a>二、思路</h3><p>暴力模拟。</p>
 <h3 id="三、完整代码"><a href="#三、完整代码" class="headerlink" title="三、完整代码"></a>三、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">bool</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token keyword">int</span> m<span class="token punctuation">,</span><span class="token keyword">int</span> n<span class="token punctuation">)</span>
-<span class="token punctuation">&#123;</span>
-	<span class="token keyword">int</span> queue<span class="token punctuation">[</span><span class="token number">10000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>front<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>back<span class="token operator">=</span>n<span class="token punctuation">;</span><span class="token comment">//queue代表队列数组，front代表队头指针，back代表队尾指针。</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-	<span class="token punctuation">&#123;</span>
-		queue<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token punctuation">;</span><span class="token comment">//初始化。</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>back<span class="token operator">!=</span>front<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//当back=front时，队列中只剩一个数字。</span>
-	<span class="token punctuation">&#123;</span>
-		front<span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment">//执行上面的步骤1。</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>m<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//重复执行上面的步骤2。</span>
-		<span class="token punctuation">&#123;</span>
-			back<span class="token operator">++</span><span class="token punctuation">;</span>
-			queue<span class="token punctuation">[</span>back<span class="token punctuation">]</span><span class="token operator">=</span>queue<span class="token punctuation">[</span>front<span class="token punctuation">]</span><span class="token punctuation">;</span>
-			front<span class="token operator">++</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">return</span> queue<span class="token punctuation">[</span>front<span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">13</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
+	<span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">;</span>
 	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
 	<span class="token punctuation">&#123;</span>
-		<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">,</span><span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token operator">&amp;&amp;</span>m<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//判定退出条件。</span>
 		<span class="token punctuation">&#123;</span>
 			<span class="token keyword">break</span><span class="token punctuation">;</span>
 		<span class="token punctuation">&#125;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> m<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>m<span class="token operator">&lt;=</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>m<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token keyword">int</span> input<span class="token punctuation">[</span>n<span class="token operator">+</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
 		<span class="token punctuation">&#123;</span>
-			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">check</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span>
+			<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">int</span> from<span class="token punctuation">,</span>to<span class="token punctuation">,</span>v<span class="token punctuation">;</span>
+			<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>from<span class="token punctuation">,</span><span class="token operator">&amp;</span>to<span class="token punctuation">,</span><span class="token operator">&amp;</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			input<span class="token punctuation">[</span>from<span class="token punctuation">]</span><span class="token operator">-=</span>v<span class="token punctuation">;</span><span class="token comment">//移动。</span>
+			input<span class="token punctuation">[</span>to<span class="token punctuation">]</span><span class="token operator">+=</span>v<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">bool</span> flag<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span>
 			<span class="token punctuation">&#123;</span>
-				<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				flag<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
 				<span class="token keyword">break</span><span class="token punctuation">;</span>
 			<span class="token punctuation">&#125;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"S\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">else</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"N\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token punctuation">&#125;</span>
 	<span class="token punctuation">&#125;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51405789">https://www.luogu.com.cn/record/51405789</a>。</p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51595081">https://www.luogu.com.cn/record/51595081</a>。</p>
 <p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
@@ -533,7 +525,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021-06-28-LuoguUVA00151TJ/">http://example.com/2021-06-28-LuoguUVA00151TJ/</a>
+                    <a href="http://example.com/2021-06-30-LuoguUVA11679TJ/">http://example.com/2021-06-30-LuoguUVA11679TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -571,8 +563,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%98%9F%E5%88%97/">
-                                    <span class="chip bg-color">队列</span>
+                                <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                                    <span class="chip bg-color">暴力与模拟</span>
                                 </a>
                             
                         </div>
@@ -620,13 +612,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-06-28-LuoguCF1006CTJ/">
+                <a href="/2021-06-30-LuoguUVA13012TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="洛谷CF1006C题解">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷UVA13012题解">
                         
-                        <span class="card-title">洛谷CF1006C题解</span>
+                        <span class="card-title">洛谷UVA13012题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -637,7 +629,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-30
                         </span>
                         <span class="publish-author">
                             
@@ -654,8 +646,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
-                        <span class="chip bg-color">前缀和</span>
+                    <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                        <span class="chip bg-color">暴力与模拟</span>
                     </a>
                     
                 </div>
@@ -669,13 +661,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-06-28-LuoguUVA10583TJ/">
+                <a href="/2021-06-28-LuoguUVA10071TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="洛谷UVA10583题解">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="洛谷UVA10071题解">
                         
-                        <span class="card-title">洛谷UVA10583题解</span>
+                        <span class="card-title">洛谷UVA10071题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -703,8 +695,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/">
-                        <span class="chip bg-color">并查集</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">数学知识</span>
                     </a>
                     
                 </div>
