@@ -18,6 +18,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 洛谷比赛 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -686,9 +692,9 @@
       
         <tags>
             
-            <tag> 桶 </tag>
-            
             <tag> 排序 </tag>
+            
+            <tag> 桶 </tag>
             
         </tags>
       
