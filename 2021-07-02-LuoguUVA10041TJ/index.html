@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="Hello World, cyrxdzj blog">
+    <meta name="keywords" content="洛谷UVA10041题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | cyrxdzj blog</title>
+    <title>洛谷UVA10041题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -280,12 +280,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">洛谷UVA10041题解</h1>
                 </div>
             </div>
         </div>
@@ -399,12 +399,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">数学知识</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                                <span class="chip bg-color">排序</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                洛谷题解
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -413,7 +430,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-27
+                    2021-07-02
                 </div>
                 
 
@@ -437,16 +454,40 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<iframe width="792" height="396" src="//player.bilibili.com/player.html?aid=672979537&bvid=BV1gU4y1t7eY&cid=333453703&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>首先将输入排序，然后求出房子的位置的<a target="_blank" rel="noopener" href="https://baidu.physton.com/?q=%E4%B8%AD%E4%BD%8D%E6%95%B0">中位数</a>，最后求出其他的每个房子与此房子的距离之和，就可以了。</p>
+<h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;algorithm></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> input<span class="token punctuation">[</span><span class="token number">30005</span><span class="token punctuation">]</span><span class="token punctuation">,</span>case_num<span class="token punctuation">,</span>n<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>case_num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>case_num<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">int</span> sum<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>input<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token function">sort</span><span class="token punctuation">(</span>input<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>input<span class="token operator">+</span><span class="token number">1</span><span class="token operator">+</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//排序。</span>
+		<span class="token keyword">int</span> mid<span class="token operator">=</span>input<span class="token punctuation">[</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//求中位数。</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//累加。</span>
+		<span class="token punctuation">&#123;</span>
+			sum<span class="token operator">+=</span><span class="token punctuation">(</span>mid<span class="token operator">-</span>input<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			sum<span class="token operator">+=</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">-</span>mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>sum<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="三、后记"><a href="#三、后记" class="headerlink" title="三、后记"></a>三、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/52298360">https://www.luogu.com.cn/record/52298360</a>。</p>
+<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
+
                 
             </div>
             <hr/>
@@ -472,7 +513,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-06-27-hello-world/">https://cyrxdzj.github.io/2021-06-27-hello-world/</a>
+                    <a href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA10041TJ/">https://cyrxdzj.github.io/2021-07-02-LuoguUVA10041TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -509,7 +550,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">数学知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                                    <span class="chip bg-color">排序</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -551,17 +600,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021-06-27-LuoguP7566TJ/">
+                <a href="/2021-07-02-LuoguUVA10041TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="洛谷P7566题解">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="洛谷UVA10041题解">
                         
-                        <span class="card-title">洛谷P7566题解</span>
+                        <span class="card-title">洛谷UVA10041题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -571,9 +621,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -586,11 +636,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
                         <span class="chip bg-color">数学知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                        <span class="chip bg-color">排序</span>
                     </a>
                     
                 </div>
@@ -601,16 +656,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-06-27-hello-world/">
+                <a href="/2021-07-02-LuoguMonthlyCompetition202105Summary/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="洛谷2021年05月月赛参加总结">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">洛谷2021年05月月赛参加总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -621,17 +676,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            cyrxdzj
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/" class="post-category">
+                                    洛谷比赛
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/">
+                        <span class="chip bg-color">洛谷比赛</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -796,6 +862,13 @@
 
 </main>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
