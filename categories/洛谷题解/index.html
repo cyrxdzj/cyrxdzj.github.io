@@ -310,7 +310,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + ((new Date().getDate())%6)+ '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -332,11 +332,11 @@
                 
                 
                 
-                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" title="洛谷题解: 51">
+                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" title="洛谷题解: 52">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">洛谷题解
-                        <span class="tag-length">51</span>
+                        <span class="tag-length">52</span>
                     </span>
                 </a>
                 
@@ -360,6 +360,56 @@
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021-07-03-LuoguB2030TJ/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="洛谷B2030题解">
+                            
+                            <span class="card-title">洛谷B2030题解</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路计算两点之间的距离公式：$\sqrt{(X_a-X_b)^2+(Y_a-Y_b)^2}$。
+根据此公式计算即可。
+二、完整代码#include&lt;iostream>
+#include&lt;iomanip>
+#include&l
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -960,62 +1010,6 @@ using name
                 </div>
             </div>
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-02-LuoguUVA00459TJ/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="洛谷UVA00459题解">
-                            
-                            <span class="card-title">洛谷UVA00459题解</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路典型的并查集。
-首先，将 ans 设为节点数量。
-然后，对于每个连接：
-
-如果两个节点已经连接，忽略此输入。
-
-如果两个节点没有连接，则使用并查集连接两个节点，并将 ans 减 $1$。
-
-
-最后，输出 ans
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/">
-                            <span class="chip bg-color">并查集</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 </main>
@@ -1116,7 +1110,7 @@ using name
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.2k</span>&nbsp;字
+                class="white-color">20.3k</span>&nbsp;字
             
             
             
