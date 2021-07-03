@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>洛谷UVA00855题解</title>
+      <link href="/2021-07-03-LuoguUVA00855TJ/"/>
+      <url>/2021-07-03-LuoguUVA00855TJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题其实与<a href="https://www.luogu.com.cn/problem/UVA10041">这道题</a>非常相似，只是换成二维的而已。</p><p>因此，我们可以先求出所有 $x$ 的中位数，再求出所有 $y$ 的中位数，即可。</p><p><a href="https://baidu.physton.com/?q=%E4%B8%AD%E4%BD%8D%E6%95%B0">什么是中位数？</a></p><h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;algorithm></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">int</span> x<span class="token punctuation">[</span><span class="token number">50001</span><span class="token punctuation">]</span><span class="token punctuation">,</span>y<span class="token punctuation">[</span><span class="token number">50001</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">int</span> case_num<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>case_num<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>case_num<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">int</span> s<span class="token punctuation">,</span>a<span class="token punctuation">,</span>f<span class="token punctuation">;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>s<span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//其实s和a并没有什么用处，只是暴力搜索的参考。</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>f<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>x<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>y<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token function">sort</span><span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token operator">+</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//对x排序。</span><span class="token function">sort</span><span class="token punctuation">(</span>y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>y<span class="token operator">+</span><span class="token number">1</span><span class="token operator">+</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//对y排序。</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"(Street: %d, Avenue: %d)\n"</span><span class="token punctuation">,</span>x<span class="token punctuation">[</span><span class="token punctuation">(</span>f<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>y<span class="token punctuation">[</span><span class="token punctuation">(</span>f<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//求中位数&amp;输出。</span><span class="token punctuation">&#125;</span><span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>By <a href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>洛谷B2004题解</title>
       <link href="/2021-07-03-LuoguB2004TJ/"/>
       <url>/2021-07-03-LuoguB2004TJ/</url>
@@ -555,9 +580,9 @@
       
         <tags>
             
-            <tag> 数学知识 </tag>
-            
             <tag> 暴力与模拟 </tag>
+            
+            <tag> 数学知识 </tag>
             
             <tag> 枚举 </tag>
             
@@ -788,9 +813,9 @@
       
         <tags>
             
-            <tag> 字符串 </tag>
-            
             <tag> 暴力与模拟 </tag>
+            
+            <tag> 字符串 </tag>
             
             <tag> 枚举 </tag>
             
