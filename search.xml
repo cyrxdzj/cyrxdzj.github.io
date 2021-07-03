@@ -4,6 +4,106 @@
   
     
     <entry>
+      <title>洛谷B2004题解</title>
+      <link href="/2021-07-03-LuoguB2004TJ/"/>
+      <url>/2021-07-03-LuoguB2004TJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>可以使用 <code>printf</code> 函数的 <code>%&lt;width&gt;&lt;type&gt;</code> 格式设，其中 <code>&lt;width&gt;</code> 代表输出宽度（可以不写），<code>&lt;type&gt;</code> 代表输出类型。</p><p>这里给出几个：</p><div class="table-container"><table><thead><tr><th style="text-align:right">类型</th><th style="text-align:right">类型代号</th></tr></thead><tbody><tr><td style="text-align:right"><code>int</code></td><td style="text-align:right"><code>d</code></td></tr><tr><td style="text-align:right"><code>long long</code></td><td style="text-align:right"><code>lld</code></td></tr><tr><td style="text-align:right"><code>char</code> 字符</td><td style="text-align:right"><code>c</code></td></tr></tbody></table></div><p>本题按照题意使用 <code>%8lld</code> 输出即可，注意需要使用 <code>long long</code>。</p><h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%lld%lld%lld"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">,</span><span class="token operator">&amp;</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入。</span>    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%8lld %8lld %8lld"</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 输出格式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷B2027题解</title>
+      <link href="/2021-07-03-LuoguB2027TJ/"/>
+      <url>/2021-07-03-LuoguB2027TJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>这道题使用题中给出的公式去算即可。</p><h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iomanip></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">const</span> <span class="token keyword">double</span> pie<span class="token operator">=</span><span class="token number">3.14</span><span class="token punctuation">;</span><span class="token keyword">int</span> r<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>    cin<span class="token operator">>></span>r<span class="token punctuation">;</span><span class="token comment">//输入。</span>    cout<span class="token operator">&lt;&lt;</span>fixed<span class="token operator">&lt;&lt;</span><span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token comment">/*设置小数点位数*/</span><span class="token operator">&lt;&lt;</span>pie<span class="token operator">*</span>r<span class="token operator">*</span>r<span class="token operator">*</span>r<span class="token operator">*</span><span class="token number">4</span><span class="token operator">/</span><span class="token number">3</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment">//输出。</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷B2025题解</title>
+      <link href="/2021-07-03-LuoguB2025TJ/"/>
+      <url>/2021-07-03-LuoguB2025TJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>按照题目要求输出即可。</p><h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"  *\n ***\n*****\n ***\n  *"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="三、后记"><a href="#三、后记" class="headerlink" title="三、后记"></a>三、后记</h3><p>记录：<a href="https://www.luogu.com.cn/record/52317698">https://www.luogu.com.cn/record/52317698</a>。</p><p>By <a href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 字符串 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷B2033题解</title>
+      <link href="/2021-07-03-LuoguB2033TJ/"/>
+      <url>/2021-07-03-LuoguB2033TJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>首先，读入两个数。</p><p>然后，输出两个数之积。</p><p>注意，结果可能会爆 <code>int</code>，所以需要使用 <code>long long</code>。</p><h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">,</span>b<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%lld%lld"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入。</span>    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lld\n"</span><span class="token punctuation">,</span>a<span class="token operator">*</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="三、后记"><a href="#三、后记" class="headerlink" title="三、后记"></a>三、后记</h3><p>记录：<a href="https://www.luogu.com.cn/record/52317521">https://www.luogu.com.cn/record/52317521</a>。</p><p>By <a href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>洛谷CF0088A题解</title>
       <link href="/2021-07-02-LuoguCF0088ATJ/"/>
       <url>/2021-07-02-LuoguCF0088ATJ/</url>
@@ -45,9 +145,9 @@
       
         <tags>
             
-            <tag> 排序 </tag>
-            
             <tag> 数学知识 </tag>
+            
+            <tag> 排序 </tag>
             
         </tags>
       
@@ -276,9 +376,9 @@
       
         <tags>
             
-            <tag> 排序 </tag>
-            
             <tag> 数学知识 </tag>
+            
+            <tag> 排序 </tag>
             
         </tags>
       
@@ -303,9 +403,9 @@
       
         <tags>
             
-            <tag> 枚举 </tag>
-            
             <tag> 字符串 </tag>
+            
+            <tag> 枚举 </tag>
             
         </tags>
       
@@ -455,9 +555,9 @@
       
         <tags>
             
-            <tag> 暴力与模拟 </tag>
-            
             <tag> 数学知识 </tag>
+            
+            <tag> 暴力与模拟 </tag>
             
             <tag> 枚举 </tag>
             
@@ -688,11 +788,11 @@
       
         <tags>
             
+            <tag> 字符串 </tag>
+            
             <tag> 暴力与模拟 </tag>
             
             <tag> 枚举 </tag>
-            
-            <tag> 字符串 </tag>
             
         </tags>
       
