@@ -355,11 +355,11 @@
                 
                 
                 
-                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" title="洛谷题解: 57">
+                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" title="洛谷题解: 59">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">洛谷题解
-                        <span class="tag-length">57</span>
+                        <span class="tag-length">59</span>
                     </span>
                 </a>
                 
@@ -392,6 +392,115 @@
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021-07-06-LuoguCF0702CTJ/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷CF0702C题解">
+                            
+                            <span class="card-title">洛谷CF0702C题解</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、前置芝士lower_bound 函数，用于求出数组中第一个大于给定数据的位置。
+参数：
+
+数组第一个元素的指针。
+
+数组最后一个元素再往右边的指针。
+
+给定数据。
+
+
+返回：数组所求位置的指针。可以将返回值直接减去数组，得出一个数字，代
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">二分算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">贪心算法</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021-07-06-LuoguUVA12290TJ/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷UVA12290题解">
+                            
+                            <span class="card-title">洛谷UVA12290题解</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路本题可以暴力模拟，模拟出整个游戏过程，然后输出答案。
+首先设 now_person 表示当前拍手或数数的人，从 $1$ 跑到 $n$，再跑回来，往返。
+而 now_num（当前拍手或数数的人对应的数字）则单调递增。
+设 clap_c
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
+                            <span class="chip bg-color">暴力与枚举</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -930,140 +1039,6 @@ int main()
                 </div>
             </div>
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-03-LuoguB2033TJ/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷B2033题解">
-                            
-                            <span class="card-title">洛谷B2033题解</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路首先，读入两个数。
-然后，输出两个数之积。
-注意，结果可能会爆 int，所以需要使用 long long。
-二、完整代码#include&lt;cstdio>
-using namespace std;
-long long a,b;
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-02-LuoguCF0088ATJ/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="洛谷CF0088A题解">
-                            
-                            <span class="card-title">洛谷CF0088A题解</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路本题其实涉及乐理知识。不过稍微了解一下就好了。
-每个音符的编号对应表：
-
-
-
-
-音符
-编号
-
-
-
-
-$C$
-$1$
-
-
-$C#$
-$2$
-
-
-$D$
-$3$
-
-
-$D#$
-$4$
-
-
-$E$
-$5$
-
-
-$F$
-$6$
-
-
-$F#$
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
-                            <span class="chip bg-color">排序</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 </main>
@@ -1164,7 +1139,7 @@ $F#$
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.2k</span>&nbsp;字
+                class="white-color">22.9k</span>&nbsp;字
             
             
             

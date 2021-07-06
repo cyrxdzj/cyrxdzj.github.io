@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-05T14:43:43.702Z</updated>
+  <updated>2021-07-06T09:51:31.872Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷CF0702C题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-06-LuoguCF0702CTJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-06-LuoguCF0702CTJ/</id>
+    <published>2021-07-06T09:50:28.000Z</published>
+    <updated>2021-07-06T09:51:31.872Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、前置芝士&quot;&gt;&lt;a href=&quot;#一、前置芝士&quot; class=&quot;headerlink&quot; title=&quot;一、前置芝士&quot;&gt;&lt;/a&gt;一、前置芝士&lt;/h3&gt;&lt;p&gt;&lt;code&gt;lower_bound&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="贪心算法" scheme="https://cyrxdzj.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷UVA12290题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-06-LuoguUVA12290TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-06-LuoguUVA12290TJ/</id>
+    <published>2021-07-06T06:42:56.000Z</published>
+    <updated>2021-07-06T06:43:28.865Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以暴力模拟，模拟出整个游戏过程，然后输出答案。&lt;/p&gt;
+&lt;p&gt;首先设 &lt;code&gt;now_person&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA12708题解</title>
@@ -479,56 +532,6 @@
     <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
     <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00414题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA00414TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguUVA00414TJ/</id>
-    <published>2021-07-02T09:38:22.000Z</published>
-    <updated>2021-07-02T09:51:05.368Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00459题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA00459TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguUVA00459TJ/</id>
-    <published>2021-07-02T09:38:17.000Z</published>
-    <updated>2021-07-02T09:48:44.200Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="并查集" scheme="https://cyrxdzj.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
   </entry>
   
