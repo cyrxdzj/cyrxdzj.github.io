@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-06T09:51:31.872Z</updated>
+  <updated>2021-07-07T10:11:49.452Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用luogu-card</title>
+    <link href="https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/"/>
+    <id>https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/</id>
+    <published>2021-07-07T10:00:59.000Z</published>
+    <updated>2021-07-07T10:11:49.452Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;该项目是由&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+    
+    
+    <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷CF0702C题解</title>
@@ -505,33 +531,6 @@
     
     
     <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA01237题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA01237TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguUVA01237TJ/</id>
-    <published>2021-07-02T09:38:29.000Z</published>
-    <updated>2021-07-02T09:51:31.541Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-    <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
     
   </entry>
   

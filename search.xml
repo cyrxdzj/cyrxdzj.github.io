@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>如何使用luogu-card</title>
+      <link href="/2021-07-07-HowToUseLuoguCard/"/>
+      <url>/2021-07-07-HowToUseLuoguCard/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>该项目是由<a href="https://github.com/wao3/luogu-stats-card">wao3/luogu-stats-card</a>复制过来并加以二次开发的的，感谢TA的贡献。</p><p>注意：为了不滥用洛谷服务器流量，本项目利用 vercel 的边缘缓存功能缓存了 12 小时数据，即同一个用户卡片 <strong>24 小时内最多只会向洛谷服务器请求 2 次数据</strong>，并且只有在用户访问卡片时才会请求数据。不过，可以禁用缓存。</p></blockquote><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><code>luogu-card</code>是一个动态生成洛谷用户数据卡片的工具，可以展示自己的做题情况。可以用于个人主页、博客、github等可以插入图片的地方。</p><p>您可以访问：<a href="https://github.com/cyrxdzj/luogu-card/blob/master/README.md">Github源仓库</a>或<a href="https://gitee.com/cyrxdzj/luogu-card">Gitee镜像仓库</a></p><h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul><li>[已完成] <del>修复获取数据错误和用户设置数据不可见的bug</del></li><li>[已完成] <del>增加黑暗模式</del></li><li>[已完成] <del>增加咕值卡片</del></li></ul><p>以上内容由原作者完成，以下内容由我完成。</p><ul><li>[已完成] <del>增加About卡片</del></li><li>[已完成] <del>增加用户 tag</del></li><li>[已完成] <del>增加“卡片生成时间”标签</del></li><li>[已完成] <del>自动从咕值排名中获取咕值</del></li><li>[已完成] <del>禁用缓存</del></li></ul><h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p><img src="https://luogu-card.vercel.app/about?id=387836" alt="dengzijun的基本信息"></p><p>此卡片用于显示一个用户的基本信息，包括用户类型、关注、咕值排名、个性签名。</p><p>具体使用方法如下：</p><ol><li><p>仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将<code>?id=</code>后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的基本信息</span>](<span class="token url">https://luogu-card.vercel.app/about?id=387836</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的基本信息</span>](<span class="token url">https://luogu-card.vercel.app/about?id=387836</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><h3 id="练习情况"><a href="#练习情况" class="headerlink" title="练习情况"></a>练习情况</h3><p><img src="https://luogu-card.vercel.app/practice?id=387836" alt="dengzijun的练习情况"></p><p>练习情况可以自动获取用户的数据，但是前提是没有开启“完全隐私保护”。</p><p>具体使用方法如下：</p><ol><li><p>仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将<code>?id=</code>后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><h3 id="咕值信息"><a href="#咕值信息" class="headerlink" title="咕值信息"></a>咕值信息</h3><p><img src="https://luogu-card.vercel.app/guzhi?id=387836" alt="dengzijun的咕值信息"></p><p>咕值信息一般无法自动获取数据，如果需要必须要提供cookie，但是这种方法十分不安全，并且不方便。所以获取咕值卡片可能需要手动输入咕值信息，具体使用方法如下：</p><p>复制以下内容到任意 markdown 编辑器中，并将 <code>?id=</code>后面的数字更改为自己的 id，将<code>scores=</code>后面更换为自己的咕值信息，一共 5 个数字，用逗号分隔。</p><ol><li><p>仅使用图片：复制以下内容到任意 markdown 编辑器中，并将 <code>?id=</code>后面的数字更改为自己的 id，将<code>scores=</code>后面更换为自己的咕值信息，一共 5 个数字（分别代表基础信用、练习情况、社区贡献、比赛情况、获得成就），用英文半角逗号分隔。</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的咕值信息</span>](<span class="token url">http://luogu-card.vercel.app/guzhi?id=387836&amp;scores=100,70,25,45,0</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的咕值信息</span>](<span class="token url">http://luogu-card.vercel.app/guzhi?id=387836&amp;scores=100,70,25,45,0</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><p>注意，若程序检测到咕值排名在1000名以内，则程序会自动从“咕值排名”中获取咕值。若获取成功，程序将无视用户输入。不过此功能偶尔会出BUG，所以最好还是手动设置一下咕值吧。</p><h3 id="自定义选项"><a href="#自定义选项" class="headerlink" title="自定义选项"></a>自定义选项</h3><p>使用卡片时，支持设定自定义效果选项，可以组合使用。</p><ol><li><p><strong>隐藏标题</strong>，只需在链接最后带上<code>&amp;hide_title=true</code>即可，例如：</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836&amp;hide_title=true</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>效果：</p><p><img src="https://luogu-card.vercel.app/practice?id=387836&amp;hide_title=1" alt="dengzijun的练习情况"></p></li><li><p><strong>黑暗模式</strong>，只需在链接最后带上<code>&amp;dark_mode=true</code>即可，例如：</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836&amp;dark_mode=true</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>效果：</p><p><img src="https://luogu-card.vercel.app/practice?id=387836&amp;dark_mode=true" alt="dengzijun的练习情况"></p></li><li><p><strong>自定义宽度</strong>，默认500，限制宽度在500到1920之间，只需在链接最后带上<code>&amp;card_width=需要的宽度</code>即可，例如：</p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836&amp;card_width=750</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>效果：</p><p><img src="https://luogu-card.vercel.app/practice?id=387836&amp;card_width=750" alt="dengzijun的练习情况"></p></li><li><p><strong>禁用缓存</strong>，默认情况下，程序会有12小时的缓存。但是只需在链接最后带上<code>&amp;disable_cache=true</code>即可禁用缓存，每次访问都将刷新。</p></li></ol><h2 id="自行部署"><a href="#自行部署" class="headerlink" title="自行部署"></a>自行部署</h2><p>如果想要自行试验或者二次开发可以自行部署到自己的 vercel 服务器，登录 <a href="https://vercel.com/">vercel</a> 后，点击下方按钮即可部署。</p><p><a href="https://vercel.com/import/project?template=https://github.com/cyrxdzj/luogu-card"><img src="https://vercel.com/button" alt="Deploy to Vercel"></a></p><h2 id="如何参与贡献"><a href="#如何参与贡献" class="headerlink" title="如何参与贡献"></a>如何参与贡献</h2><h4 id="提供bug反馈或建议"><a href="#提供bug反馈或建议" class="headerlink" title="提供bug反馈或建议"></a>提供bug反馈或建议</h4><p>使用 <a href="https://github.com/cyrxdzj/luogu-card/issues">issue</a> 反馈bug时，尽可能详细描述 bug 及其复现步骤</p><h4 id="贡献代码的步骤"><a href="#贡献代码的步骤" class="headerlink" title="贡献代码的步骤"></a>贡献代码的步骤</h4><ol><li>fork项目到自己的repo</li><li>把fork过去的项目也就是你的项目clone到你的本地</li><li>修改代码</li><li>commit后push到自己的库</li><li>在Github首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。</li><li>等待作者合并</li></ol><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>如果对你有所帮助的话，希望能在右上角点一个 star (★ ω ★)</p><h2 id="镜像仓库"><a href="#镜像仓库" class="headerlink" title="镜像仓库"></a>镜像仓库</h2><p><del>要不是vercel不支持Gitee只支持Github，我也不会出现在这里了</del></p><p>本仓库在码云Gitee上创建了一个<a href="https://gitee.com/cyrxdzj/luogu-card">镜像仓库</a>，但会有同步延迟。也可以访问位于Github的<a href="https://github.com/cyrxdzj/luogu-card">源仓库</a>。</p><p><a href="https://gitee.com/cyrxdzj/luogu-card/stargazers"><img src="https://gitee.com/cyrxdzj/luogu-card/badge/star.svg?theme=dark" alt="star"></a></p><p><a href="https://gitee.com/cyrxdzj/luogu-card"><img src="https://gitee.com/cyrxdzj/luogu-card/widgets/widget_card.svg?colors=eae9d7,2e2f29,272822,484a45,eae9d7,747571" alt="cyrxdzj/luogu-card"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 一些杂七杂八的东西 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 一些杂七杂八的东西 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>洛谷CF0702C题解</title>
       <link href="/2021-07-06-LuoguCF0702CTJ/"/>
       <url>/2021-07-06-LuoguCF0702CTJ/</url>
@@ -936,9 +961,9 @@
       
         <tags>
             
-            <tag> 图论 </tag>
-            
             <tag> Floyd算法 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
@@ -1425,9 +1450,9 @@
       
         <tags>
             
-            <tag> 图论 </tag>
-            
             <tag> Floyd算法 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
