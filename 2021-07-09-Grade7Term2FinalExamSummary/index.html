@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷SP01163题解, cyrxdzj blog">
+    <meta name="keywords" content="七年级下学期期末考试总结, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷SP01163题解 | cyrxdzj blog</title>
+    <title>七年级下学期期末考试总结 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷SP01163题解</h1>
+                    <h1 class="description center-align post-title">七年级下学期期末考试总结</h1>
                 </div>
             </div>
         </div>
@@ -424,8 +424,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                                <span class="chip bg-color">字符串</span>
+                            <a href="/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/">
+                                <span class="chip bg-color">考试总结</span>
                             </a>
                         
                     </div>
@@ -436,8 +436,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                洛谷题解
+                            <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
+                                学校生活
                             </a>
                         
                     </div>
@@ -449,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-02
+                    2021-07-09
                 </div>
                 
 
@@ -458,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    636
+                    786
                 </div>
                 
 
@@ -478,107 +478,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、题目翻译题意不明确的修正"><a href="#一、题目翻译题意不明确的修正" class="headerlink" title="一、题目翻译题意不明确的修正"></a>一、题目翻译题意不明确的修正</h3><p>本题题目翻译题意不明确，漏了一些要点。</p>
-<ul>
-<li><p><code>C++</code> 语言的变量命名习惯：每个单词全部小写，且单词之间用下划线 <code>_</code> 分隔。</p>
-</li>
-<li><p><code>Java</code> 语言的变量命名习惯：每个单词直接连接，中间没有任何字符分隔。每个单词的第一个字母使用大写，但第一个单词是个例外，全部小写。</p>
-</li>
-<li><p>你的任务就是，输入一个变量名（不会告诉你这是什么语言的），输出这个变量名的另一种语言的命名习惯。如果出现了错误，输出 <code>Error!</code></p>
-</li>
-</ul>
-<h3 id="二、基本思路"><a href="#二、基本思路" class="headerlink" title="二、基本思路"></a>二、基本思路</h3><p>参考题意，我们可以得出几条要点：</p>
-<ul>
-<li><p>变量名不能以下划线开头或结尾。</p>
-</li>
-<li><p>变量名不能以大写字母结尾，但可以以大写字母结束。</p>
-</li>
-<li><p>变量名不能出现连续 $2$ 个或以上的下划线。</p>
-</li>
-<li><p>变量名不能同时出现大写字母与下划线。</p>
-</li>
-</ul>
-<p>本题可以采用模拟法，一个个地扫描。</p>
-<h3 id="三、具体思路"><a href="#三、具体思路" class="headerlink" title="三、具体思路"></a>三、具体思路</h3><ul>
-<li><p>前期特判，如果变量名不符合第 $1-2$ 条要点，直接报 <code>Error!</code>。如果符合，则继续。</p>
-</li>
-<li><p>如果遇到了下划线：</p>
-<ul>
-<li><p>如果后一个字母是小写字母：</p>
-<p>转换为大写字母，并继续遍历。</p>
-</li>
-<li><p>否则：</p>
-<p>报 <code>Error!</code>。</p>
-</li>
-</ul>
-</li>
-<li><p>如果遇到了大写字母：</p>
-<p>将其转换为下划线加小写字母的形式。</p>
-</li>
-<li><p>如果遇到了小写字母：</p>
-<p>没啥好说的，直接加入答案字符串序列。</p>
-</li>
-<li><p>如果不符合第 $4$ 条要点（使用两个布尔型变量表示）：</p>
-<p>报 <code>Error!</code>。</p>
-</li>
-</ul>
-<p>由此我们得出了完整代码。</p>
-<h3 id="四、完整代码"><a href="#四、完整代码" class="headerlink" title="四、完整代码"></a>四、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;string></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-string input<span class="token punctuation">;</span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#123;</span>
-	<span class="token keyword">while</span><span class="token punctuation">(</span>cin<span class="token operator">>></span>input<span class="token punctuation">)</span>
-	<span class="token punctuation">&#123;</span>
-		<span class="token keyword">if</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'_'</span><span class="token operator">||</span>
-			<span class="token punctuation">(</span>input<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">>=</span><span class="token string">'A'</span><span class="token operator">&amp;&amp;</span>input<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">&lt;=</span><span class="token string">'Z'</span><span class="token punctuation">)</span><span class="token operator">||</span>
-			input<span class="token punctuation">[</span>input<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token comment">//前期特判。</span>
-		<span class="token punctuation">&#123;</span>
-			cout<span class="token operator">&lt;&lt;</span><span class="token string">"Error!"</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-			<span class="token keyword">continue</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-		<span class="token keyword">bool</span> java_flag<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">,</span>cpp_flag<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span><span class="token comment">//两个flag。</span>
-		string ans<span class="token punctuation">;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>input<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-		<span class="token punctuation">&#123;</span>
-			<span class="token keyword">if</span><span class="token punctuation">(</span>java_flag<span class="token operator">&amp;&amp;</span>cpp_flag<span class="token punctuation">)</span><span class="token comment">//同时出现了两种模式。</span>
-			<span class="token punctuation">&#123;</span>
-				ans<span class="token operator">=</span><span class="token string">"Error!"</span><span class="token punctuation">;</span>
-				<span class="token keyword">break</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">if</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'_'</span><span class="token punctuation">)</span><span class="token comment">//下划线。</span>
-			<span class="token punctuation">&#123;</span>
-				<span class="token keyword">if</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">>=</span><span class="token string">'a'</span><span class="token operator">&amp;&amp;</span>input<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;=</span><span class="token string">'z'</span><span class="token punctuation">)</span><span class="token comment">//小写字母。</span>
-				<span class="token punctuation">&#123;</span>
-					ans<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span><span class="token string">'a'</span><span class="token operator">+</span><span class="token string">'A'</span><span class="token punctuation">;</span>
-					cpp_flag<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
-					i<span class="token operator">++</span><span class="token punctuation">;</span>
-				<span class="token punctuation">&#125;</span>
-				<span class="token keyword">else</span><span class="token comment">//其它字符。</span>
-				<span class="token punctuation">&#123;</span>
-					ans<span class="token operator">=</span><span class="token string">"Error!"</span><span class="token punctuation">;</span>
-					<span class="token keyword">break</span><span class="token punctuation">;</span>
-				<span class="token punctuation">&#125;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">>=</span><span class="token string">'A'</span><span class="token operator">&amp;&amp;</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;=</span><span class="token string">'Z'</span><span class="token punctuation">)</span><span class="token comment">//大写字母。</span>
-			<span class="token punctuation">&#123;</span>
-				ans<span class="token operator">+=</span><span class="token string">'_'</span><span class="token punctuation">;</span>
-				ans<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span><span class="token string">'A'</span><span class="token operator">+</span><span class="token string">'a'</span><span class="token punctuation">;</span>
-				java_flag<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">else</span><span class="token comment">//小写字母。</span>
-			<span class="token punctuation">&#123;</span>
-				ans<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-		<span class="token punctuation">&#125;</span>
-		cout<span class="token operator">&lt;&lt;</span>ans<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token comment">//输出。</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
-<span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="五、后记"><a href="#五、后记" class="headerlink" title="五、后记"></a>五、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51893585">https://www.luogu.com.cn/record/51893585</a>。</p>
-<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
+                <h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><p>$2021$ 年 $7$ 月 $1$ 日至 $2$ 日，我校举行了期末考试。</p>
+<p>试卷由增城区统一批改，直到目前也没有发下来。</p>
+<h3 id="二、语文"><a href="#二、语文" class="headerlink" title="二、语文"></a>二、语文</h3><p>本次语文考得不是很理想，$102$ 分，满分 $120+8$（名著阅读附加）分。</p>
+<h3 id="三、数学"><a href="#三、数学" class="headerlink" title="三、数学"></a>三、数学</h3><p>考试之前……</p>
+<p>$zpy$：我昨天晚上都没复习，去喂狗了。</p>
+<p>我：我也是，在看《伟大征程》直播。</p>
+<p>开始考试，我只能感叹：数学出题老师真的是丧心病狂。</p>
+<p>第 $16$ 题，考试之前，我已经预感到肯定会出折长方形纸条然后询问角度的问题。但没想到，这次是折 $2$ 次。</p>
+<p>我距离正确答案只有一步之遥了！结果，写错了作答，扣 $3$ 分。</p>
+<p>还没时间检查。</p>
+<p>第 $24$ 题第（$3$）小题，大部分人都没看到要分类讨论，还好我看到了。</p>
+<p>然而，第 $25$ 题第（$3$）小题，好难啊，我都没想出来怎么做，考试快结束时匆匆写了些推导出来但没用的解题过程，和用量角器看出来的结果（倒是对了）。</p>
+<p>于是我获得了 $114/120$ 分。</p>
+<h3 id="四、英语"><a href="#四、英语" class="headerlink" title="四、英语"></a>四、英语</h3><p>因为疫情原因，今年的英语期末考试取消了听说部分，这 $30$ 分在笔试部分中补。</p>
+<p>我获得了 $114/120$ 分。</p>
+<h3 id="五、道德与法治"><a href="#五、道德与法治" class="headerlink" title="五、道德与法治"></a>五、道德与法治</h3><p>道德与法治 $72/90$ 分。</p>
+<p>考前，老师说，只要符合下面 $2$ 个条件中的任意一个，就可以免作业。</p>
+<p>达到 $75$ 分。</p>
+<p>相对于期中考试进步 $10$ 分或以上。</p>
+<p>第2条我是肯定不可能符合的。原因在<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv12079421">我的这篇往期文章</a>去找。</p>
+<p>结果第 $1$ 条也没有符合，于是又多了许多暑假作业，只能说是欲哭无泪。</p>
+<h3 id="六、历史"><a href="#六、历史" class="headerlink" title="六、历史"></a>六、历史</h3><p>历史的免作业分数线是分，即 $86$ 分。然而我只拿了 $79$ 分。</p>
+<p>历史暑假作业只有一个：抄下个学期的知识点，足足 $13$ 页。</p>
+<h3 id="七、生物"><a href="#七、生物" class="headerlink" title="七、生物"></a>七、生物</h3><p>生物 $97/100$ 分，还算可以。</p>
+<h3 id="八、地理"><a href="#八、地理" class="headerlink" title="八、地理"></a>八、地理</h3><p>地理试卷直接骂死日本。</p>
+<p>第 $8$ 至 $10$ 题前置材料：$2011$ 年 $3$ 月 $11$ 日，日本福岛发生地震，福岛核电站核污水泄漏。$2021$ 年 $4$ 月 $13$ 日，日本内阁决定将福岛核电站的核污水排入大海。</p>
+<p>第 $8$ 题：日本多发地震，是因为日本处在哪个地震带上？</p>
+<p>第 $9$ 题：日本排放核污水，导致的后果不包括什么？</p>
+<p>第 $10$ 题：日本应该如何正确处理此事？</p>
+<p>总结一下：第 $8$ 题告诉我们为何会有核污水排海这件事，第 $9$ 题说明日本为什么不能把核污水排入大海，第 $10$ 题说明日本应如何做。</p>
+<p>地理 $86/100$ 分，有些退步。</p>
+<h3 id="九、体育"><a href="#九、体育" class="headerlink" title="九、体育"></a>九、体育</h3><p>体育 $54.6/70$ 分，对我来说还算可以。</p>
+<h3 id="十、总分与排名"><a href="#十、总分与排名" class="headerlink" title="十、总分与排名"></a>十、总分与排名</h3><p>总分 $536.1/610$ 分（如果你的计算与我有差别，请参见<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv12079421">我的这篇往期文章</a>）。</p>
+<p>班级排名：$1$（连续 $8$ 次大考都是班级第一）。</p>
+<p>年级排名：$2$（我已经习惯了）。</p>
+<p>考得还行，但不是很理想。</p>
 
                 
             </div>
@@ -605,7 +540,7 @@ string input<span class="token punctuation">;</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-07-02-LuoguSP01163TJ/">https://cyrxdzj.github.io/2021-07-02-LuoguSP01163TJ/</a>
+                    <a href="https://cyrxdzj.github.io/2021-07-09-Grade7Term2FinalExamSummary/">https://cyrxdzj.github.io/2021-07-09-Grade7Term2FinalExamSummary/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -643,8 +578,8 @@ string input<span class="token punctuation">;</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                                    <span class="chip bg-color">字符串</span>
+                                <a href="/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/">
+                                    <span class="chip bg-color">考试总结</span>
                                 </a>
                             
                         </div>
@@ -688,17 +623,18 @@ string input<span class="token punctuation">;</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021-07-02-LuoguSP07586TJ/">
+                <a href="/2021-07-09-Grade7Term2FinalExamSummary/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="洛谷SP07586题解">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="七年级下学期期末考试总结">
                         
-                        <span class="card-title">洛谷SP07586题解</span>
+                        <span class="card-title">七年级下学期期末考试总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -708,30 +644,27 @@ string input<span class="token punctuation">;</span>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
+                            <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    学校生活
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                        <span class="chip bg-color">字符串</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                        <span class="chip bg-color">枚举</span>
+                    <a href="/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">考试总结</span>
                     </a>
                     
                 </div>
@@ -745,13 +678,13 @@ string input<span class="token punctuation">;</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-07-02-LuoguUVA01266TJ/">
+                <a href="/2021-07-09-Grade7Term2MidtermExamSummary/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="洛谷UVA01266题解">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="七年级下学期期中考试总结">
                         
-                        <span class="card-title">洛谷UVA01266题解</span>
+                        <span class="card-title">七年级下学期期中考试总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -762,14 +695,14 @@ string input<span class="token punctuation">;</span>
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
+                            <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    学校生活
                                 </a>
                             
                             
@@ -779,8 +712,8 @@ string input<span class="token punctuation">;</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
+                    <a href="/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">考试总结</span>
                     </a>
                     
                 </div>

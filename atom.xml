@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-07T10:11:49.452Z</updated>
+  <updated>2021-07-09T14:36:19.233Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>七年级下学期期末考试总结</title>
+    <link href="https://cyrxdzj.github.io/2021-07-09-Grade7Term2FinalExamSummary/"/>
+    <id>https://cyrxdzj.github.io/2021-07-09-Grade7Term2FinalExamSummary/</id>
+    <published>2021-07-09T10:49:32.000Z</published>
+    <updated>2021-07-09T14:36:19.233Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;$2021$ 年 $7$ 月 $1$ 日至 $2$</summary>
+        
+      
+    
+    
+    
+    <category term="学校生活" scheme="https://cyrxdzj.github.io/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="考试总结" scheme="https://cyrxdzj.github.io/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>七年级下学期期中考试总结</title>
+    <link href="https://cyrxdzj.github.io/2021-07-09-Grade7Term2MidtermExamSummary/"/>
+    <id>https://cyrxdzj.github.io/2021-07-09-Grade7Term2MidtermExamSummary/</id>
+    <published>2021-07-09T10:49:23.000Z</published>
+    <updated>2021-07-09T14:04:45.763Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;$2021$ 年 $4$ 月 $26$ 日至 $28$ 日，我校举行了期中考试。&lt;/p&gt;
+&lt;h3 id=&quot;二、语文&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="学校生活" scheme="https://cyrxdzj.github.io/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="考试总结" scheme="https://cyrxdzj.github.io/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用luogu-card</title>
@@ -478,59 +529,6 @@
     
     
     <category term="洛谷比赛" scheme="https://cyrxdzj.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00146题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA00146TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguUVA00146TJ/</id>
-    <published>2021-07-02T09:38:45.000Z</published>
-    <updated>2021-07-02T09:52:25.262Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题其实是求一个只包含小写字母的字符串，求这个字符串的字典序的下一个字符串。&lt;/p&gt;
-&lt;p&gt;使用</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="字符串" scheme="https://cyrxdzj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-    <category term="C++ STL" scheme="https://cyrxdzj.github.io/tags/C-STL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA11850题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA11850TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguUVA11850TJ/</id>
-    <published>2021-07-02T09:38:37.000Z</published>
-    <updated>2021-07-02T09:51:56.106Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
