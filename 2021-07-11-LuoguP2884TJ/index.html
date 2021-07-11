@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷B2004题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷P2884题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷B2004题解 | cyrxdzj blog</title>
+    <title>洛谷P2884题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷B2004题解</h1>
+                    <h1 class="description center-align post-title">洛谷P2884题解</h1>
                 </div>
             </div>
         </div>
@@ -424,8 +424,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/">
-                                <span class="chip bg-color">输出格式</span>
+                            <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">二分算法</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">贪心算法</span>
                             </a>
                         
                     </div>
@@ -449,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-03
+                    2021-07-11
                 </div>
                 
 
@@ -458,7 +462,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    133
+                    385
                 </div>
                 
 
@@ -478,43 +482,64 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>可以使用 <code>printf</code> 函数的 <code>%&lt;width&gt;&lt;type&gt;</code> 格式设，其中 <code>&lt;width&gt;</code> 代表输出宽度（可以不写），<code>&lt;type&gt;</code> 代表输出类型。</p>
-<p>这里给出几个：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:right">类型</th>
-<th style="text-align:right">类型代号</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right"><code>int</code></td>
-<td style="text-align:right"><code>d</code></td>
-</tr>
-<tr>
-<td style="text-align:right"><code>long long</code></td>
-<td style="text-align:right"><code>lld</code></td>
-</tr>
-<tr>
-<td style="text-align:right"><code>char</code> 字符</td>
-<td style="text-align:right"><code>c</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>本题按照题意使用 <code>%8lld</code> 输出即可，注意需要使用 <code>long long</code>。</p>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题与使用贪心算法和二分算法即可。</p>
+<p>使用二分算法猜测答案（即每一段之和的最大值）。如果猜测值导致需要分更多段（或者分段数与 $m$ 一致），则增加答案，以分出更少段。如果猜测值导致不需要分太多段，则减少答案。</p>
+<p>那么如何检查分段数量呢？</p>
+<p>首先，设一个 $total$ 代表当前一段的总和，$num$ 表示分段数量。</p>
+<p>然后，顺序遍历整个输入数组。如果 $total$ 加上数组当前元素大于猜测值，则将 $total$ 置为数组当前元素，并将 $num$ 自增 $1$。否则，将 $total$ 加上数组当前元素。</p>
+<p>具体代码参见 <code>check_answer</code> 函数。</p>
 <h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">long</span> <span class="token keyword">long</span> a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">,</span>input<span class="token punctuation">[</span><span class="token number">100005</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> left<span class="token punctuation">,</span>right<span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token function">check_answer</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token comment">//检查实际分段数是否不小于m。</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">int</span> total<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>num<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>total<span class="token operator">+</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;=</span>x<span class="token punctuation">)</span><span class="token comment">//如果能装得下，那就尽量装下。</span>
+		<span class="token punctuation">&#123;</span>
+			total<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">else</span><span class="token comment">//如果装不下，就再分一段。</span>
+		<span class="token punctuation">&#123;</span>
+			total<span class="token operator">=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+			num<span class="token operator">++</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">return</span> num<span class="token operator">>=</span>m<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">inline</span> <span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> a<span class="token operator">></span>b<span class="token operator">?</span>a<span class="token operator">:</span>b<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
-    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%lld%lld%lld"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">,</span><span class="token operator">&amp;</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入。</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%8lld %8lld %8lld"</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">,</span><span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		left<span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//定left和right的取值范围。</span>
+		right<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">while</span><span class="token punctuation">(</span>left<span class="token operator">&lt;=</span>right<span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">int</span> middle<span class="token operator">=</span><span class="token punctuation">(</span>left<span class="token operator">+</span>right<span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;</span><span class="token comment">//二分板子。</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">check_answer</span><span class="token punctuation">(</span>middle<span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			left<span class="token operator">=</span>middle<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">else</span>
+		<span class="token punctuation">&#123;</span>
+			right<span class="token operator">=</span>middle<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
 <span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
+
                 
             </div>
             <hr/>
@@ -540,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-07-03-LuoguB2004TJ/">https://cyrxdzj.github.io/2021-07-03-LuoguB2004TJ/</a>
+                    <a href="https://cyrxdzj.github.io/2021-07-11-LuoguP2884TJ/">https://cyrxdzj.github.io/2021-07-11-LuoguP2884TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -578,8 +603,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/">
-                                    <span class="chip bg-color">输出格式</span>
+                                <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">二分算法</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">贪心算法</span>
                                 </a>
                             
                         </div>
@@ -623,66 +652,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021-07-03-LuoguUVA00855TJ/">
+                <a href="/2021-07-11-LuoguP2884TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="洛谷UVA00855题解">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="洛谷P2884题解">
                         
-                        <span class="card-title">洛谷UVA00855题解</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021-07-03-LuoguB2027TJ/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="洛谷B2027题解">
-                        
-                        <span class="card-title">洛谷B2027题解</span>
+                        <span class="card-title">洛谷P2884题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -693,7 +674,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-11
                             </span>
                         <span class="publish-author">
                             
@@ -707,11 +688,65 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">二分算法</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">贪心算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021-07-09-Grade7Term2FinalExamSummary/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="七年级下学期期末考试总结">
+                        
+                        <span class="card-title">七年级下学期期末考试总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    学校生活
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">考试总结</span>
                     </a>
                     
                 </div>

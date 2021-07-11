@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>洛谷P2884题解</title>
+      <link href="/2021-07-11-LuoguP2884TJ/"/>
+      <url>/2021-07-11-LuoguP2884TJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题与使用贪心算法和二分算法即可。</p><p>使用二分算法猜测答案（即每一段之和的最大值）。如果猜测值导致需要分更多段（或者分段数与 $m$ 一致），则增加答案，以分出更少段。如果猜测值导致不需要分太多段，则减少答案。</p><p>那么如何检查分段数量呢？</p><p>首先，设一个 $total$ 代表当前一段的总和，$num$ 表示分段数量。</p><p>然后，顺序遍历整个输入数组。如果 $total$ 加上数组当前元素大于猜测值，则将 $total$ 置为数组当前元素，并将 $num$ 自增 $1$。否则，将 $total$ 加上数组当前元素。</p><p>具体代码参见 <code>check_answer</code> 函数。</p><h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">,</span>input<span class="token punctuation">[</span><span class="token number">100005</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">int</span> left<span class="token punctuation">,</span>right<span class="token punctuation">;</span><span class="token keyword">bool</span> <span class="token function">check_answer</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token comment">//检查实际分段数是否不小于m。</span><span class="token punctuation">&#123;</span><span class="token keyword">int</span> total<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>num<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">if</span><span class="token punctuation">(</span>total<span class="token operator">+</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;=</span>x<span class="token punctuation">)</span><span class="token comment">//如果能装得下，那就尽量装下。</span><span class="token punctuation">&#123;</span>total<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token comment">//如果装不下，就再分一段。</span><span class="token punctuation">&#123;</span>total<span class="token operator">=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>num<span class="token operator">++</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token keyword">return</span> num<span class="token operator">>=</span>m<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">inline</span> <span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">return</span> a<span class="token operator">></span>b<span class="token operator">?</span>a<span class="token operator">:</span>b<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">,</span><span class="token operator">&amp;</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>left<span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//定left和right的取值范围。</span>right<span class="token operator">+=</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">while</span><span class="token punctuation">(</span>left<span class="token operator">&lt;=</span>right<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">int</span> middle<span class="token operator">=</span><span class="token punctuation">(</span>left<span class="token operator">+</span>right<span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;</span><span class="token comment">//二分板子。</span><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">check_answer</span><span class="token punctuation">(</span>middle<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>left<span class="token operator">=</span>middle<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>right<span class="token operator">=</span>middle<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span><span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>By <a href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 二分算法 </tag>
+            
+            <tag> 贪心算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>七年级下学期期末考试总结</title>
       <link href="/2021-07-09-Grade7Term2FinalExamSummary/"/>
       <url>/2021-07-09-Grade7Term2FinalExamSummary/</url>
@@ -1011,9 +1038,9 @@
       
         <tags>
             
-            <tag> 图论 </tag>
-            
             <tag> Floyd算法 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
@@ -1500,9 +1527,9 @@
       
         <tags>
             
-            <tag> 图论 </tag>
-            
             <tag> Floyd算法 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
