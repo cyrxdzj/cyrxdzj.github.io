@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-11T10:29:49.574Z</updated>
+  <updated>2021-07-14T03:42:30.718Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷P2636题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-14-LuoguP2636TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-14-LuoguP2636TJ/</id>
+    <published>2021-07-14T03:41:42.000Z</published>
+    <updated>2021-07-14T03:42:30.718Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以按照题目所说进行反推。&lt;/p&gt;
+&lt;h4 id=&quot;1、栅栏密码&quot;&gt;&lt;a href=&quot;#1、栅栏密码&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="字符串" scheme="https://cyrxdzj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷P2884题解</title>
@@ -99,7 +125,7 @@
     <link href="https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/"/>
     <id>https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/</id>
     <published>2021-07-07T10:00:59.000Z</published>
-    <updated>2021-07-07T10:11:49.452Z</updated>
+    <updated>2021-07-14T03:41:46.730Z</updated>
     
     
       
@@ -502,33 +528,6 @@
     
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
-    
-    <category term="排序" scheme="https://cyrxdzj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA10041题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguUVA10041TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguUVA10041TJ/</id>
-    <published>2021-07-02T12:17:19.000Z</published>
-    <updated>2021-07-02T12:18:25.999Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先将输入排序，然后求出房子的位置的&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
     <category term="排序" scheme="https://cyrxdzj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
