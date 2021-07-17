@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-14T03:42:30.718Z</updated>
+  <updated>2021-07-17T03:48:58.244Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷UVA12554题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-17-LuoguUVA12554TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-17-LuoguUVA12554TJ/</id>
+    <published>2021-07-17T03:46:35.000Z</published>
+    <updated>2021-07-17T03:48:58.244Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题的题目已经将思路明确了。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;津津&lt;/del&gt; Rujia 过生日，生日歌有 $16$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷P2636题解</title>
@@ -503,33 +529,6 @@
     
     
     <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF0088A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-02-LuoguCF0088ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-02-LuoguCF0088ATJ/</id>
-    <published>2021-07-02T13:52:42.000Z</published>
-    <updated>2021-07-02T13:53:32.161Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题其实涉及乐理知识。不过稍微了解一下就好了。&lt;/p&gt;
-&lt;p&gt;每个音符的编号对应表：&lt;/p&gt;
-&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="排序" scheme="https://cyrxdzj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
