@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-22T09:16:01.556Z</updated>
+  <updated>2021-07-22T09:54:54.090Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷2021年07月月赛参加总结</title>
+    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguMonthlyCompetition202107Summary/"/>
+    <id>https://cyrxdzj.github.io/2021-07-22-LuoguMonthlyCompetition202107Summary/</id>
+    <published>2021-07-22T09:43:49.000Z</published>
+    <updated>2021-07-22T09:54:54.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷比赛" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/"/>
+    
+    
+    <category term="洛谷比赛" scheme="https://cyrxdzj.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷题解</title>
@@ -502,31 +527,6 @@
     
     
     <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷B2004题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-03-LuoguB2004TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-03-LuoguB2004TJ/</id>
-    <published>2021-07-03T06:55:23.000Z</published>
-    <updated>2021-07-03T06:56:13.669Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;可以使用 &lt;code&gt;printf&lt;/code&gt; 函数的</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="输出格式" scheme="https://cyrxdzj.github.io/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/"/>
     
   </entry>
   
