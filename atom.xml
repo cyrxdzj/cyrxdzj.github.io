@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-17T03:48:58.244Z</updated>
+  <updated>2021-07-22T09:16:01.556Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguUVA00902TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-22-LuoguUVA00902TJ/</id>
+    <published>2021-07-22T09:13:50.000Z</published>
+    <updated>2021-07-22T09:16:01.556Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="C++ STL" scheme="https://cyrxdzj.github.io/tags/C-STL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷UVA11297题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguUVA11297TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-22-LuoguUVA11297TJ/</id>
+    <published>2021-07-22T09:06:21.000Z</published>
+    <updated>2021-07-22T09:15:10.943Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题意简述&quot;&gt;&lt;a href=&quot;#一、题意简述&quot; class=&quot;headerlink&quot; title=&quot;一、题意简述&quot;&gt;&lt;/a&gt;一、题意简述&lt;/h3&gt;&lt;p&gt;给出一个 $N\times N$（$0\le</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷CF0645A题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguCF0645ATJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-22-LuoguCF0645ATJ/</id>
+    <published>2021-07-22T09:06:12.000Z</published>
+    <updated>2021-07-22T09:14:44.801Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以采用暴力模拟。&lt;/p&gt;
+&lt;p&gt;首先，先找出初始的空格。&lt;/p&gt;
+&lt;p&gt;然后，重复以下判断 $12$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA12554题解</title>
@@ -450,85 +527,6 @@
     
     
     <category term="输出格式" scheme="https://cyrxdzj.github.io/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷B2027题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-03-LuoguB2027TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-03-LuoguB2027TJ/</id>
-    <published>2021-07-03T06:55:18.000Z</published>
-    <updated>2021-07-03T06:55:45.446Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;这道题使用题中给出的公式去算即可。&lt;/p&gt;
-&lt;h3 id=&quot;二、完整代码&quot;&gt;&lt;a href=&quot;#二、完整代码&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷B2025题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-03-LuoguB2025TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-03-LuoguB2025TJ/</id>
-    <published>2021-07-03T06:47:49.000Z</published>
-    <updated>2021-07-03T06:49:29.136Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;按照题目要求输出即可。&lt;/p&gt;
-&lt;h3 id=&quot;二、完整代码&quot;&gt;&lt;a href=&quot;#二、完整代码&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="字符串" scheme="https://cyrxdzj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷B2033题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-03-LuoguB2033TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-03-LuoguB2033TJ/</id>
-    <published>2021-07-03T06:47:29.000Z</published>
-    <updated>2021-07-03T06:49:58.481Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，读入两个数。&lt;/p&gt;
-&lt;p&gt;然后，输出两个数之积。&lt;/p&gt;
-&lt;p&gt;注意，结果可能会爆</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
