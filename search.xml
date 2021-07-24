@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>洛谷CF1553A题解</title>
+      <link href="/2021-07-24-LuoguCF1553ATJ/"/>
+      <url>/2021-07-24-LuoguCF1553ATJ/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、题目翻译"><a href="#一、题目翻译" class="headerlink" title="一、题目翻译"></a>一、题目翻译</h3><p><a href="https://www.luogu.com.cn/paste/qs96wlyi">在这里！</a></p><h3 id="二、思路"><a href="#二、思路" class="headerlink" title="二、思路"></a>二、思路</h3><p>可以证明，对于任意一个正整数 $x$，如果 $S(x+1)&lt;S(x)$，则 $x$ 的个位必定为 $9$。</p><p>证明：当 $x$ 的个位在 $0$ 至 $8$ 之间，$x+1$ 的个位就在 $1$ 至 $9$ 之间，因此 $S(x+1)=S(x)+1$，这显然不符合题意。</p><p>但是，当 $x$ 的个位为 $9$ 的时候，$x+1$ 的个位即为 $0$，并且进位只是进 $1$，所以此时 $S(x+1)\le S(x)-8$，符合题意。</p><p>因此问题就转换为了：求 $1$ 到 $n$ 中，个位为 $9$ 的，有多少个数？</p><p>这个问题就很简单了，先让输入的 $n$ 不断自减，直到 $n$ 的个位为 $9$ 或者 $n$ 本身小于 $0$，然后求 $\left \lfloor (n-9)\div10 \right \rfloor +1$，即可。</p><h3 id="三、完整代码"><a href="#三、完整代码" class="headerlink" title="三、完整代码"></a>三、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">int</span> n<span class="token punctuation">,</span>a<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">while</span><span class="token punctuation">(</span>n<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span>a<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>a<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">%</span><span class="token number">10</span><span class="token operator">==</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token keyword">break</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span><span class="token punctuation">(</span>a<span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>By <a href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 洛谷题解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>洛谷2021年07月月赛参加总结</title>
       <link href="/2021-07-22-LuoguMonthlyCompetition202107Summary/"/>
       <url>/2021-07-22-LuoguMonthlyCompetition202107Summary/</url>
@@ -29,7 +54,7 @@
     
     
     <entry>
-      <title>洛谷题解</title>
+      <title>洛谷UVA00902题解</title>
       <link href="/2021-07-22-LuoguUVA00902TJ/"/>
       <url>/2021-07-22-LuoguUVA00902TJ/</url>
       
@@ -1188,9 +1213,9 @@
       
         <tags>
             
-            <tag> 图论 </tag>
-            
             <tag> Floyd算法 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
@@ -1677,9 +1702,9 @@
       
         <tags>
             
-            <tag> 图论 </tag>
-            
             <tag> Floyd算法 </tag>
+            
+            <tag> 图论 </tag>
             
         </tags>
       
