@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="如何使用luogu-card, cyrxdzj blog">
+    <meta name="keywords" content="洛谷P1369题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何使用luogu-card | cyrxdzj blog</title>
+    <title>洛谷P1369题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何使用luogu-card</h1>
+                    <h1 class="description center-align post-title">洛谷P1369题解</h1>
                 </div>
             </div>
         </div>
@@ -424,8 +424,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/">
-                                <span class="chip bg-color">一些杂七杂八的东西</span>
+                            <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                                <span class="chip bg-color">前缀和</span>
                             </a>
                         
                     </div>
@@ -436,8 +436,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/" class="post-category">
-                                一些杂七杂八的东西
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                洛谷题解
                             </a>
                         
                     </div>
@@ -449,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-07
+                    2021-07-26
                 </div>
                 
 
@@ -458,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    510
                 </div>
                 
 
@@ -478,82 +478,77 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>该项目是由<a target="_blank" rel="noopener" href="https://github.com/wao3/luogu-stats-card">wao3/luogu-stats-card</a>复制过来并加以二次开发的的，感谢TA的贡献。</p>
-<p>注意：为了不滥用洛谷服务器流量，本项目利用 vercel 的边缘缓存功能缓存了 12 小时数据，即同一个用户卡片 <strong>24 小时内最多只会向洛谷服务器请求 2 次数据</strong>，并且只有在用户访问卡片时才会请求数据。不过，可以禁用缓存。</p>
-</blockquote>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><code>luogu-card</code>是一个动态生成洛谷用户数据卡片的工具，可以展示自己的做题情况。可以用于个人主页、博客、github等可以插入图片的地方。</p>
-<p>您可以访问：<a target="_blank" rel="noopener" href="https://github.com/cyrxdzj/luogu-card/blob/master/README.md">Github源仓库</a>或<a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card">Gitee镜像仓库</a></p>
-<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p><img src="https://luogu-card.vercel.app/about?id=387836" alt="dengzijun的基本信息"></p>
-<p>此卡片用于显示一个用户的基本信息，包括用户类型、关注、咕值排名、个性签名。</p>
-<p>具体使用方法如下：</p>
-<ol>
-<li><p>仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将<code>?id=</code>后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的基本信息</span>](<span class="token url">https://luogu-card.vercel.app/about?id=387836</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的基本信息</span>](<span class="token url">https://luogu-card.vercel.app/about?id=387836</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<h3 id="练习情况"><a href="#练习情况" class="headerlink" title="练习情况"></a>练习情况</h3><p><img src="https://luogu-card.vercel.app/practice?id=387836" alt="dengzijun的练习情况"></p>
-<p>练习情况可以自动获取用户的数据，但是前提是没有开启“完全隐私保护”。</p>
-<p>具体使用方法如下：</p>
-<ol>
-<li><p>仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将<code>?id=</code>后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<h3 id="咕值信息"><a href="#咕值信息" class="headerlink" title="咕值信息"></a>咕值信息</h3><p><img src="https://luogu-card.vercel.app/guzhi?id=387836" alt="dengzijun的咕值信息"></p>
-<p>咕值信息一般无法自动获取数据，如果需要必须要提供cookie，但是这种方法十分不安全，并且不方便。所以获取咕值卡片可能需要手动输入咕值信息，具体使用方法如下：</p>
-<p>复制以下内容到任意 markdown 编辑器中，并将 <code>?id=</code>后面的数字更改为自己的 id，将<code>scores=</code>后面更换为自己的咕值信息，一共 5 个数字，用逗号分隔。</p>
-<ol>
-<li><p>仅使用图片：复制以下内容到任意 markdown 编辑器中，并将 <code>?id=</code>后面的数字更改为自己的 id，将<code>scores=</code>后面更换为自己的咕值信息，一共 5 个数字（分别代表基础信用、练习情况、社区贡献、比赛情况、获得成就），用英文半角逗号分隔。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的咕值信息</span>](<span class="token url">http://luogu-card.vercel.app/guzhi?id=387836&amp;scores=100,70,25,45,0</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的咕值信息</span>](<span class="token url">http://luogu-card.vercel.app/guzhi?id=387836&amp;scores=100,70,25,45,0</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<p>注意，若程序检测到咕值排名在1000名以内，则程序会自动从“咕值排名”中获取咕值。若获取成功，程序将无视用户输入。不过此功能偶尔会出BUG，所以最好还是手动设置一下咕值吧。</p>
-<h3 id="自定义选项"><a href="#自定义选项" class="headerlink" title="自定义选项"></a>自定义选项</h3><p>使用卡片时，支持设定自定义效果选项，可以组合使用。</p>
-<ol>
-<li><p><strong>隐藏标题</strong>，只需在链接最后带上<code>&amp;hide_title=true</code>即可，例如：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836&amp;hide_title=true</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>效果：</p>
-<p><img src="https://luogu-card.vercel.app/practice?id=387836&amp;hide_title=1" alt="dengzijun的练习情况"></p>
-</li>
-<li><p><strong>黑暗模式</strong>，只需在链接最后带上<code>&amp;dark_mode=true</code>即可，例如：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836&amp;dark_mode=true</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>效果：</p>
-<p><img src="https://luogu-card.vercel.app/practice?id=387836&amp;dark_mode=true" alt="dengzijun的练习情况"></p>
-</li>
-<li><p><strong>自定义宽度</strong>，默认500，限制宽度在500到1920之间，只需在链接最后带上<code>&amp;card_width=需要的宽度</code>即可，例如：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.vercel.app/practice?id=387836&amp;card_width=750</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>效果：</p>
-<p><img src="https://luogu-card.vercel.app/practice?id=387836&amp;card_width=750" alt="dengzijun的练习情况"></p>
-</li>
-<li><p><strong>禁用缓存</strong>，默认情况下，程序会有12小时的缓存。但是只需在链接最后带上<code>&amp;disable_cache=true</code>即可禁用缓存，每次访问都将刷新。</p>
-</li>
-</ol>
-<h2 id="自行部署"><a href="#自行部署" class="headerlink" title="自行部署"></a>自行部署</h2><p>如果想要自行试验或者二次开发可以自行部署到自己的 vercel 服务器，登录 <a target="_blank" rel="noopener" href="https://vercel.com/">vercel</a> 后，点击下方按钮即可部署。</p>
-<p><a target="_blank" rel="noopener" href="https://vercel.com/import/project?template=https://github.com/cyrxdzj/luogu-card"><img src="https://vercel.com/button" alt="Deploy to Vercel"></a></p>
-<h2 id="如何参与贡献"><a href="#如何参与贡献" class="headerlink" title="如何参与贡献"></a>如何参与贡献</h2><h4 id="提供bug反馈或建议"><a href="#提供bug反馈或建议" class="headerlink" title="提供bug反馈或建议"></a>提供bug反馈或建议</h4><p>使用 <a target="_blank" rel="noopener" href="https://github.com/cyrxdzj/luogu-card/issues">issue</a> 反馈bug时，尽可能详细描述 bug 及其复现步骤</p>
-<h4 id="贡献代码的步骤"><a href="#贡献代码的步骤" class="headerlink" title="贡献代码的步骤"></a>贡献代码的步骤</h4><ol>
-<li>fork项目到自己的repo</li>
-<li>把fork过去的项目也就是你的项目clone到你的本地</li>
-<li>修改代码</li>
-<li>commit后push到自己的库</li>
-<li>在Github首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。</li>
-<li>等待作者合并</li>
-</ol>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>如果对你有所帮助的话，希望能在右上角点一个 star (★ ω ★)</p>
-<h2 id="镜像仓库"><a href="#镜像仓库" class="headerlink" title="镜像仓库"></a>镜像仓库</h2><p><del>要不是vercel不支持Gitee只支持Github，我也不会出现在这里了</del></p>
-<p>本仓库在码云Gitee上创建了一个<a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card">镜像仓库</a>，但会有同步延迟。也可以访问位于Github的<a target="_blank" rel="noopener" href="https://github.com/cyrxdzj/luogu-card">源仓库</a>。</p>
-<p><a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card/stargazers"><img src="https://gitee.com/cyrxdzj/luogu-card/badge/star.svg?theme=dark" alt="star"></a></p>
-<p><a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card"><img src="https://gitee.com/cyrxdzj/luogu-card/widgets/widget_card.svg?colors=eae9d7,2e2f29,272822,484a45,eae9d7,747571" alt="cyrxdzj/luogu-card"></a></p>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题可以使用<a target="_blank" rel="noopener" href="https://oi-wiki.org/basic/prefix-sum/#_3">二维前缀和</a>去做。</p>
+<p>首先，对于样例输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">10
+2 3
+9 2
+7 4
+3 4
+5 7
+1 5
+10 4
+10 6
+11 4
+4 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>我们可以得到这样的一张表：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/Wc589e"><img src="https://z3.ax1x.com/2021/07/24/Wc589e.png" alt="Wc589e.png"></a></p>
+<p>其中 $1$ 代表有点的坐标，$0$ 代表无点的坐标。</p>
+<p>显然，对于此输入，最佳输出对应的是这一块：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/WcIqzQ"><img src="https://z3.ax1x.com/2021/07/24/WcIqzQ.png" alt="WcIqzQ.png"></a></p>
+<p>答案为 $7$。</p>
+<p>问题来了：如何用二维前缀和表示？</p>
+<p>如果我们将表格涂色：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/WgwrBd"><img src="https://z3.ax1x.com/2021/07/25/WgwrBd.png" alt="WgwrBd.png"></a></p>
+<p>显然，我们要求的是蓝色部分。</p>
+<p>但问题是，蓝色部分不是一个标准的长方形，如何求出蓝色部分之和？</p>
+<p>如图，蓝色部分=蓝色部分+紫色部分-紫色部分。</p>
+<p>而蓝色部分+紫色部分和紫色部分都是标准的长方形，这就可以使用二维前缀和了。</p>
+<p>具体来说，枚举左上角和右下角的两个点，使用二维前缀和求出其中点的数量。</p>
+<p>因为坐标从 $1$ 到 $100$，时间复杂度并不是很高。</p>
+<h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> input<span class="token punctuation">[</span><span class="token number">105</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">105</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> sum<span class="token punctuation">[</span><span class="token number">105</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">105</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">;</span>
+<span class="token keyword">int</span> ans<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//输入。</span>
+    <span class="token punctuation">&#123;</span>
+        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>x<span class="token punctuation">,</span><span class="token operator">&amp;</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        input<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//预处理二维前缀和。</span>
+    <span class="token punctuation">&#123;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#123;</span>
+            sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>sum<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">+</span>sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>sum<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x1<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>x1<span class="token operator">&lt;=</span><span class="token number">99</span><span class="token punctuation">;</span>x1<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//计算答案。</span>
+    <span class="token punctuation">&#123;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y1<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>y1<span class="token operator">&lt;=</span><span class="token number">99</span><span class="token punctuation">;</span>y1<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x2<span class="token operator">=</span>x1<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>x2<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">;</span>x2<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y2<span class="token operator">=</span>y1<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>y2<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">;</span>y2<span class="token operator">++</span><span class="token punctuation">)</span>
+                <span class="token punctuation">&#123;</span>
+                    <span class="token keyword">int</span> temp_ans<span class="token operator">=</span><span class="token punctuation">(</span>sum<span class="token punctuation">[</span>x2<span class="token punctuation">]</span><span class="token punctuation">[</span>y2<span class="token punctuation">]</span><span class="token operator">-</span>sum<span class="token punctuation">[</span>x1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y2<span class="token punctuation">]</span><span class="token operator">-</span>sum<span class="token punctuation">[</span>x2<span class="token punctuation">]</span><span class="token punctuation">[</span>y1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>sum<span class="token punctuation">[</span>x1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token punctuation">(</span>sum<span class="token punctuation">[</span>x2<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y2<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>sum<span class="token punctuation">[</span>x1<span class="token punctuation">]</span><span class="token punctuation">[</span>y2<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>sum<span class="token punctuation">[</span>x2<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y1<span class="token punctuation">]</span><span class="token operator">+</span>sum<span class="token punctuation">[</span>x1<span class="token punctuation">]</span><span class="token punctuation">[</span>y1<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//第一个括号里计算的是蓝色部分+紫色部分，第二括号里计算的是紫色部分，两者相减，即为要求的蓝色部分。</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>temp_ans<span class="token operator">></span>ans<span class="token punctuation">)</span>
+                    <span class="token punctuation">&#123;</span>
+                        ans<span class="token operator">=</span>temp_ans<span class="token punctuation">;</span>
+                    <span class="token punctuation">&#125;</span>
+                <span class="token punctuation">&#125;</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>ans<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
             </div>
@@ -580,7 +575,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/">https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/</a>
+                    <a href="https://cyrxdzj.github.io/2021-07-26-LuoguP1369TJ/">https://cyrxdzj.github.io/2021-07-26-LuoguP1369TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -618,8 +613,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/">
-                                    <span class="chip bg-color">一些杂七杂八的东西</span>
+                                <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                                    <span class="chip bg-color">前缀和</span>
                                 </a>
                             
                         </div>
@@ -663,17 +658,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021-07-09-Grade7Term2MidtermExamSummary/">
+                <a href="/2021-07-26-LuoguP1369TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="七年级下学期期中考试总结">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷P1369题解">
                         
-                        <span class="card-title">七年级下学期期中考试总结</span>
+                        <span class="card-title">洛谷P1369题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -683,26 +679,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    学校生活
+                            <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/">
-                        <span class="chip bg-color">考试总结</span>
+                    <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                        <span class="chip bg-color">前缀和</span>
                     </a>
                     
                 </div>
@@ -716,13 +713,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-07-06-LuoguCF0702CTJ/">
+                <a href="/2021-07-24-LuoguCF1553ATJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷CF0702C题解">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="洛谷CF1553A题解">
                         
-                        <span class="card-title">洛谷CF0702C题解</span>
+                        <span class="card-title">洛谷CF1553A题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -733,7 +730,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
                             </span>
                         <span class="publish-author">
                             
@@ -750,12 +747,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">二分算法</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">贪心算法</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">数学知识</span>
                     </a>
                     
                 </div>
