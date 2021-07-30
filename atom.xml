@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-26T05:19:23.354Z</updated>
+  <updated>2021-07-30T14:12:32.164Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷P6174题解</title>
+    <link href="https://cyrxdzj.github.io/2021-07-30-LuoguP6174TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-07-30-LuoguP6174TJ/</id>
+    <published>2021-07-30T14:10:47.000Z</published>
+    <updated>2021-07-30T14:12:32.164Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，$R$ 越大，干草就越有可能被引爆完。&lt;/p&gt;
+&lt;p&gt;显然，这需要使用二分算法。&lt;/p&gt;
+&lt;p&gt;$R$ 的最小值为</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="排序" scheme="https://cyrxdzj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷P1369题解</title>
@@ -502,31 +531,6 @@
     
     
     <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF1542A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-04-LuoguCF1542ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-04-LuoguCF1542ATJ/</id>
-    <published>2021-07-04T06:53:06.000Z</published>
-    <updated>2021-07-04T06:53:39.129Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   

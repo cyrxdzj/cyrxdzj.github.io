@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷B2030题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷P6174题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷B2030题解 | cyrxdzj blog</title>
+    <title>洛谷P6174题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷B2030题解</h1>
+                    <h1 class="description center-align post-title">洛谷P6174题解</h1>
                 </div>
             </div>
         </div>
@@ -424,8 +424,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                                <span class="chip bg-color">数学知识</span>
+                            <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                                <span class="chip bg-color">排序</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">二分算法</span>
                             </a>
                         
                     </div>
@@ -449,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-03
+                    2021-07-30
                 </div>
                 
 
@@ -458,7 +462,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    87
+                    479
                 </div>
                 
 
@@ -478,20 +482,66 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>计算两点之间的距离公式：$\sqrt{(X_a-X_b)^2+(Y_a-Y_b)^2}$。</p>
-<p>根据此公式计算即可。</p>
-<h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iostream></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;iomanip></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cmath></span></span>
+                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>首先，$R$ 越大，干草就越有可能被引爆完。</p>
+<p>显然，这需要使用二分算法。</p>
+<p>$R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\div2$（全场干草一个奶牛下来就被炸完了）。</p>
+<p>二分算法的精髓在于 <code>check</code> 函数，用于检查这个答案是否符合题意。那么，这道题的 <code>check</code> 应该怎么做呢？</p>
+<h3 id="二、检查函数"><a href="#二、检查函数" class="headerlink" title="二、检查函数"></a>二、检查函数</h3><p>首先，干草堆的位置必须有序。这不难，一个 <code>sort</code> 函数下来就搞定，数据范围也不大。</p>
+<p>我们可以定义一个变量 <code>position</code>，代表当前已被发射的奶牛，最远可以炸到那个点上。初始值为 <code>-0x7fffffff</code>，这是 <code>int</code> 型的最小值。</p>
+<p>然后，顺序遍历所有干草堆。如果 <code>position</code> 加上当前假设的距离小于这个干草堆的位置，就说明这个干草堆还没被炸到，因此要再多一个奶牛，并将 <code>position</code> 更新为当前干草堆的位置加上当前假设的距离。</p>
+<p>如果使用的奶牛数量大于 $K$，就说明这个距离太小，返回 <code>false</code>。</p>
+<p>到了最后，如果使用的奶牛数量不大于 $K$，就说明这个距离足够了，返回 <code>true</code>。</p>
+<h3 id="三、坑点"><a href="#三、坑点" class="headerlink" title="三、坑点"></a>三、坑点</h3><p>记得排序！</p>
+<h3 id="四、完整代码"><a href="#四、完整代码" class="headerlink" title="四、完整代码"></a>四、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;algorithm></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">double</span> xa<span class="token punctuation">,</span>ya<span class="token punctuation">,</span>xb<span class="token punctuation">,</span>yb<span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">,</span>k<span class="token punctuation">;</span>
+<span class="token keyword">int</span> grass<span class="token punctuation">[</span><span class="token number">50005</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> left<span class="token punctuation">,</span>right<span class="token operator">=</span><span class="token number">1000000000</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> middle<span class="token punctuation">;</span>
+<span class="token keyword">int</span> ans<span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token comment">//检查函数。</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">int</span> use_cow<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>position<span class="token operator">=</span><span class="token operator">-</span><span class="token number">0x7fffffff</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>position<span class="token operator">+</span>x<span class="token operator">&lt;</span>grass<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			use_cow<span class="token operator">++</span><span class="token punctuation">;</span>
+			position<span class="token operator">=</span>grass<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span>x<span class="token punctuation">;</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>use_cow<span class="token operator">></span>k<span class="token punctuation">)</span>
+			<span class="token punctuation">&#123;</span>
+				<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+			<span class="token punctuation">&#125;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
-    cin<span class="token operator">>></span>xa<span class="token operator">>></span>ya<span class="token operator">>></span>xb<span class="token operator">>></span>yb<span class="token punctuation">;</span>
-    cout<span class="token operator">&lt;&lt;</span>fixed<span class="token operator">&lt;&lt;</span><span class="token function">setprecision</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token punctuation">(</span>xa<span class="token operator">-</span>xb<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>xa<span class="token operator">-</span>xb<span class="token punctuation">)</span><span class="token operator">+</span><span class="token punctuation">(</span>ya<span class="token operator">-</span>yb<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>ya<span class="token operator">-</span>yb<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">,</span><span class="token operator">&amp;</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>grass<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token function">sort</span><span class="token punctuation">(</span>grass<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>grass<span class="token operator">+</span><span class="token number">1</span><span class="token operator">+</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//记得排序！ </span>
+	<span class="token keyword">while</span><span class="token punctuation">(</span>left<span class="token operator">&lt;=</span>right<span class="token punctuation">)</span><span class="token comment">//二分。</span>
+	<span class="token punctuation">&#123;</span>
+		middle<span class="token operator">=</span><span class="token punctuation">(</span>left<span class="token operator">+</span>right<span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">check</span><span class="token punctuation">(</span>middle<span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			right<span class="token operator">=</span>middle<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+			ans<span class="token operator">=</span>middle<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">else</span>
+		<span class="token punctuation">&#123;</span>
+			left<span class="token operator">=</span>middle<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>ans<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
 <span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
@@ -519,7 +569,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-07-03-LuoguB2030TJ/">https://cyrxdzj.github.io/2021-07-03-LuoguB2030TJ/</a>
+                    <a href="https://cyrxdzj.github.io/2021-07-30-LuoguP6174TJ/">https://cyrxdzj.github.io/2021-07-30-LuoguP6174TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -557,8 +607,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                                    <span class="chip bg-color">数学知识</span>
+                                <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                                    <span class="chip bg-color">排序</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">二分算法</span>
                                 </a>
                             
                         </div>
@@ -602,17 +656,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021-07-04-LuoguCF1542ATJ/">
+                <a href="/2021-07-30-LuoguP6174TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="洛谷CF1542A题解">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷P6174题解">
                         
-                        <span class="card-title">洛谷CF1542A题解</span>
+                        <span class="card-title">洛谷P6174题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -622,9 +677,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -637,11 +692,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
+                    <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                        <span class="chip bg-color">排序</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">二分算法</span>
                     </a>
                     
                 </div>
@@ -655,13 +715,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-07-03-LuoguUVA00855TJ/">
+                <a href="/2021-07-26-LuoguP1369TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="洛谷UVA00855题解">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷P1369题解">
                         
-                        <span class="card-title">洛谷UVA00855题解</span>
+                        <span class="card-title">洛谷P1369题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -672,7 +732,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-26
                             </span>
                         <span class="publish-author">
                             
@@ -689,8 +749,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
+                    <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                        <span class="chip bg-color">前缀和</span>
                     </a>
                     
                 </div>
