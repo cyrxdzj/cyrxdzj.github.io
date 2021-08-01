@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-07-30T14:12:32.164Z</updated>
+  <updated>2021-08-01T12:26:29.542Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷CF1530C题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530CTJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530CTJ/</id>
+    <published>2021-08-01T12:25:34.000Z</published>
+    <updated>2021-08-01T12:26:29.542Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="桶" scheme="https://cyrxdzj.github.io/tags/%E6%A1%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷CF1530B题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/</id>
+    <published>2021-08-01T12:25:29.000Z</published>
+    <updated>2021-08-01T12:26:53.388Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷CF1530A题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530ATJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530ATJ/</id>
+    <published>2021-08-01T12:25:24.000Z</published>
+    <updated>2021-08-01T12:26:08.800Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷P6174题解</title>
@@ -100,7 +175,7 @@
     <link href="https://cyrxdzj.github.io/2021-07-22-LuoguMonthlyCompetition202107Summary/"/>
     <id>https://cyrxdzj.github.io/2021-07-22-LuoguMonthlyCompetition202107Summary/</id>
     <published>2021-07-22T09:43:49.000Z</published>
-    <updated>2021-07-22T09:54:54.090Z</updated>
+    <updated>2021-08-01T12:27:52.632Z</updated>
     
     
       
@@ -113,10 +188,10 @@
     
     
     
-    <category term="洛谷比赛" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/"/>
+    <category term="比赛总结" scheme="https://cyrxdzj.github.io/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     
     
-    <category term="洛谷比赛" scheme="https://cyrxdzj.github.io/tags/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/"/>
+    <category term="比赛总结" scheme="https://cyrxdzj.github.io/tags/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
@@ -455,82 +530,6 @@
     
     
     <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P5550题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-05-LuoguP5550TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-05-LuoguP5550TJ/</id>
-    <published>2021-07-05T09:40:35.000Z</published>
-    <updated>2021-07-05T09:41:05.324Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;这道题其实不需要矩阵乘法什么的，本题的操作其实会循环，一遍一遍地模拟，计算出循环节即可。&lt;/p&gt;
-&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P6462题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-05-LuoguP6462TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-05-LuoguP6462TJ/</id>
-    <published>2021-07-05T09:18:54.000Z</published>
-    <updated>2021-07-05T09:21:43.629Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OIer之诗</title>
-    <link href="https://cyrxdzj.github.io/2021-07-05-OIerPoem/"/>
-    <id>https://cyrxdzj.github.io/2021-07-05-OIerPoem/</id>
-    <published>2021-07-05T05:56:02.000Z</published>
-    <updated>2021-07-05T09:23:45.453Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
-    
-    
-    <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
   </entry>
   

@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷UVA00108题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷CF1530B题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷UVA00108题解 | cyrxdzj blog</title>
+    <title>洛谷CF1530B题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷UVA00108题解</h1>
+                    <h1 class="description center-align post-title">洛谷CF1530B题解</h1>
                 </div>
             </div>
         </div>
@@ -424,8 +424,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
-                                <span class="chip bg-color">前缀和</span>
+                            <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
+                                <span class="chip bg-color">暴力与枚举</span>
                             </a>
                         
                     </div>
@@ -449,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-28
+                    2021-08-01
                 </div>
                 
 
@@ -458,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    644
+                    450
                 </div>
                 
 
@@ -478,56 +478,65 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、粗略思路-amp-前置芝士"><a href="#一、粗略思路-amp-前置芝士" class="headerlink" title="一、粗略思路&amp;前置芝士"></a>一、粗略思路&amp;前置芝士</h3><p>本题的数据范围是 $N\le100$，可以使用<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34990731/article/details/82807870">二维前缀和</a>去做。</p>
-<p>二维前缀和有一个关键数组，命名为 $pre$。其中 $pre[i][j]$ 表示第 $i$ 行第 $j$ 列的二维前缀和。</p>
-<p>设 $input[i][j]$ 是题目中的输入矩阵第 $i$ 行第 $j$ 列。</p>
-<p>二维前缀和有两个关键公式。</p>
-<ol>
-<li>求二维前缀和：计算公式为$pre[i][j]=pre[i-1][j]+pre[i][j-1]-pre[i-1][j-1]+input[i][j]$。此步骤可以在输入时去做。</li>
-<li>求二维区间和：设左上角端点位于第 $x1$ 行第 $y1$ 列，右上角端点位于第 $x2$ 行第 $y2$ 列，则求出此区间之和的计算公式为 $sum=pre[x2][y2]+pre[x1-1][y1-1]-pre[x2][y1-1]-pre[x1-1][y2]$。</li>
-</ol>
-<p>使用二维前缀和之后，每一次查询二维区间和的操作的时间复杂度就降到了 $O(1)$，大大加快了不少。</p>
-<h3 id="二、具体思路"><a href="#二、具体思路" class="headerlink" title="二、具体思路"></a>二、具体思路</h3><p>本题要求一个子矩阵，这个子矩阵中的数之和最大。</p>
-<p>那么，我们可以使用 $O(N^2)$ 的时间复杂度进行输入&amp;预处理二维前缀和，然后再使用小于 $O(N^4)$ 的时间复杂度进行枚举，总时间复杂度在最坏情况下（$N=100$）小于 $O(100010000)$，$3s$ 的时间绝对足够。</p>
-<h3 id="三、完整代码"><a href="#三、完整代码" class="headerlink" title="三、完整代码"></a>三、完整代码</h3><p>还是那句话：道路千万条，诚信第一条。直接抄题解，棕名两行泪。</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+                <h3 id="一、题目翻译"><a href="#一、题目翻译" class="headerlink" title="一、题目翻译"></a>一、题目翻译</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/paste/44w9w56k">在这里！</a></p>
+<h3 id="二、思路"><a href="#二、思路" class="headerlink" title="二、思路"></a>二、思路</h3><p>以 $6$ 行 $6$ 列，即 $h=6,w=6$ 为例。</p>
+<p>首先，先把上边缘从左到右填满盘子，再把左边缘从上到下填满盘子，就像这样：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/W3w6nx"><img src="https://z3.ax1x.com/2021/07/18/W3w6nx.png" alt="W3w6nx.png"></a></p>
+<p>接着，我们再填充右边缘。</p>
+<p>但是，从第几行开始填充呢？</p>
+<p>我们可以发现，无论 $w=5$ 或是 $w=6$，一定是从第三行开始填充。</p>
+<p>填成了这样：</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/W3wojI"><img src="https://z3.ax1x.com/2021/07/18/W3wojI.png" alt="W3wojI.png"></a></p>
+<p>接着填充下边缘。</p>
+<p>我们可以发现，此时，一定是从第三列开始填充，且填充的列数不能大于 $w-2$。</p>
+<p>因此，我们就可以得出代码。</p>
+<h3 id="三、完整代码"><a href="#三、完整代码" class="headerlink" title="三、完整代码"></a>三、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstring></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">int</span> input<span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">,</span>pre<span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">101</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//input为输入数组，pre为二维前缀和数组。</span>
-<span class="token keyword">int</span> n<span class="token punctuation">;</span>
-<span class="token keyword">int</span> ans<span class="token operator">=</span><span class="token operator">-</span><span class="token number">999999</span><span class="token punctuation">;</span><span class="token comment">//ans一定要设置成很小的值，因为答案有可能为负数，ans的初始值不能为0。</span>
-<span class="token keyword">inline</span> <span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token comment">//定义max函数求两个数的最大值。</span>
-<span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> a<span class="token operator">></span>b<span class="token operator">?</span>a<span class="token operator">:</span>b<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
+<span class="token keyword">int</span> t<span class="token punctuation">,</span>h<span class="token punctuation">,</span>w<span class="token punctuation">;</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
-	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入n。</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>t<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
 	<span class="token punctuation">&#123;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>h<span class="token punctuation">,</span><span class="token operator">&amp;</span>w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">bool</span> graph<span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token function">memset</span><span class="token punctuation">(</span>graph<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>graph<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		graph<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>y<span class="token operator">&lt;=</span>w<span class="token punctuation">;</span>y<span class="token operator">+=</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token comment">//填充上边缘。</span>
 		<span class="token punctuation">&#123;</span>
-			<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输入矩阵。</span>
-			pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>pre<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">+</span>pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>pre<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>input<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//计算二维前缀和。</span>
+			graph<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
 		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x1<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>x1<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>x1<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//枚举左上角端点。</span>
-	<span class="token punctuation">&#123;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y1<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>y1<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>y1<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>x<span class="token operator">&lt;=</span>h<span class="token punctuation">;</span>x<span class="token operator">+=</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token comment">//填充左边缘。</span>
 		<span class="token punctuation">&#123;</span>
-			<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x2<span class="token operator">=</span>x1<span class="token punctuation">;</span>x2<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>x2<span class="token operator">++</span><span class="token punctuation">)</span>枚举右下角端点。
+			graph<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>x<span class="token operator">&lt;=</span>h<span class="token punctuation">;</span>x<span class="token operator">+=</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token comment">//填充右边缘。</span>
+		<span class="token punctuation">&#123;</span>
+			graph<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>w<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">;</span>y<span class="token operator">&lt;=</span>w<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span>y<span class="token operator">+=</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token comment">//填充下边缘。</span>
+		<span class="token punctuation">&#123;</span>
+			graph<span class="token punctuation">[</span>h<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>x<span class="token operator">&lt;=</span>h<span class="token punctuation">;</span>x<span class="token operator">++</span><span class="token punctuation">)</span><span class="token comment">//输出。</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>y<span class="token operator">&lt;=</span>w<span class="token punctuation">;</span>y<span class="token operator">++</span><span class="token punctuation">)</span>
 			<span class="token punctuation">&#123;</span>
-				<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> y2<span class="token operator">=</span>y1<span class="token punctuation">;</span>y2<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>y2<span class="token operator">++</span><span class="token punctuation">)</span>
-				<span class="token punctuation">&#123;</span>
-					ans<span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span>pre<span class="token punctuation">[</span>x2<span class="token punctuation">]</span><span class="token punctuation">[</span>y2<span class="token punctuation">]</span><span class="token operator">+</span>pre<span class="token punctuation">[</span>x1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>pre<span class="token punctuation">[</span>x2<span class="token punctuation">]</span><span class="token punctuation">[</span>y1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>pre<span class="token punctuation">[</span>x1<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>y2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//计算二维区间和，并与ans取最大值。</span>
-				<span class="token punctuation">&#125;</span>
+				<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span>graph<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">?</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 			<span class="token punctuation">&#125;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">!=</span>t<span class="token punctuation">)</span><span class="token comment">//空行。</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token punctuation">&#125;</span>
 	<span class="token punctuation">&#125;</span>
-	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>ans<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出。</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
 <span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p>记录：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/51405789">https://www.luogu.com.cn/record/51405789</a>。</p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h3><p>可以看见，源代码中没有用来判断这个地方能不能放盘子的代码。</p>
+<p>对于这种有多个答案的题目，有些时候是有多个答案的。但是，毒瘤出题人一般不会给你看出规律，典型代表就是<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P7567?contestId=30514">【LGR-085】洛谷 5 月月赛 &amp; MCOI Round 5 Div.2 B 题：魔仙</a>。因此，遇到这些题，好好想想有没有规律。</p>
 <p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
@@ -555,7 +564,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-06-28-LuoguUVA00108TJ/">https://cyrxdzj.github.io/2021-06-28-LuoguUVA00108TJ/</a>
+                    <a href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/">https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,8 +602,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
-                                    <span class="chip bg-color">前缀和</span>
+                                <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
+                                    <span class="chip bg-color">暴力与枚举</span>
                                 </a>
                             
                         </div>
@@ -642,13 +651,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-06-28-LuoguUVA10583TJ/">
+                <a href="/2021-08-01-LuoguCF1530CTJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="洛谷UVA10583题解">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷CF1530C题解">
                         
-                        <span class="card-title">洛谷UVA10583题解</span>
+                        <span class="card-title">洛谷CF1530C题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -659,7 +668,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
                         </span>
                         <span class="publish-author">
                             
@@ -676,8 +685,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/">
-                        <span class="chip bg-color">并查集</span>
+                    <a href="/tags/%E6%A1%B6/">
+                        <span class="chip bg-color">桶</span>
                     </a>
                     
                 </div>
@@ -691,13 +700,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-06-28-LuoguUVA10000TJ/">
+                <a href="/2021-08-01-LuoguCF1530ATJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="洛谷UVA10000题解">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="洛谷CF1530A题解">
                         
-                        <span class="card-title">洛谷UVA10000题解</span>
+                        <span class="card-title">洛谷CF1530A题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -708,7 +717,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
                             </span>
                         <span class="publish-author">
                             
@@ -725,12 +734,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                        <span class="chip bg-color">图论</span>
-                    </a>
-                    
-                    <a href="/tags/Floyd%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">Floyd算法</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">数学知识</span>
                     </a>
                     
                 </div>

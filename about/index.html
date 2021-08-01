@@ -357,7 +357,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">75</a></span>
+    <span class="count"><a href="/">78</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -387,7 +387,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">75</a></span>
+    <span class="count"><a href="/">78</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -535,7 +535,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07"]
+            data: ["2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08"]
         },
         yAxis: {
             type: 'value',
@@ -545,7 +545,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,19,56],
+                data: [0,0,0,0,0,0,0,0,0,0,19,56,3],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -587,7 +587,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"学校生活","value":2},{"name":"一些杂七杂八的东西","value":2},{"name":"洛谷题解","value":68},{"name":"洛谷比赛","value":2}],
+                data: [{"name":"学校生活","value":2},{"name":"洛谷题解","value":71},{"name":"一些杂七杂八的东西","value":2},{"name":"比赛总结","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -611,7 +611,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["数学知识","暴力与模拟","字符串","排序","枚举","二分算法","前缀和","考试总结","一些杂七杂八的东西","贪心算法"]
+                data: ["数学知识","暴力与模拟","字符串","排序","枚举","二分算法","前缀和","暴力与枚举","桶","考试总结"]
             }
         ],
         yAxis: [
@@ -624,7 +624,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [24,17,9,6,5,4,3,2,2,2],
+                data: [25,17,9,6,5,4,3,3,3,2],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -665,14 +665,27 @@
         
         <div class="col s12 m6 l4" data-aos="fade-up">
             <div class="info center-align">
-                <a href="http://github.com/cyrxdzj/luogu-card" class="icon"
+                <a href="https://github.com/cyrxdzj/luogu-card" class="icon"
                    style="background: linear-gradient(to bottom right, #0000FF 0%, #00FFFF 100%)" target="_blank">
                     <i class="fas fa-file-alt"></i>
                 </a>
                 <div class="info-title">
-                    <a href="http://github.com/cyrxdzj/luogu-card" target="_blank">luogu-card</a>
+                    <a href="https://github.com/cyrxdzj/luogu-card" target="_blank">luogu-card</a>
                 </div>
                 <div class="info-desc">动态生成洛谷个人练习数据卡片。</div>
+            </div>
+        </div>
+        
+        <div class="col s12 m6 l4" data-aos="fade-up">
+            <div class="info center-align">
+                <a href="https://gitee.com/cyrxdzj/PyCheer" class="icon"
+                   style="background: linear-gradient(to bottom right, #FF0000 0%, #FF00FF 100%)" target="_blank">
+                    <i class="fas fa-tools"></i>
+                </a>
+                <div class="info-title">
+                    <a href="https://gitee.com/cyrxdzj/PyCheer" target="_blank">PyCheer</a>
+                </div>
+                <div class="info-desc">一个可在浏览器里访问的代码编辑器。</div>
             </div>
         </div>
         
@@ -752,6 +765,12 @@
             
             
             
+            <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/">
+                <span class="chip center-align waves-effect waves-light chip-default">输出格式</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/">
                 <span class="chip center-align waves-effect waves-light chip-default">一些杂七杂八的东西</span>
             </a>
@@ -770,20 +789,14 @@
             
             
             
-            <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/">
-                <span class="chip center-align waves-effect waves-light chip-default">输出格式</span>
+            <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                <span class="chip center-align waves-effect waves-light chip-default">暴力与模拟</span>
             </a>
             
             
             
             <a href="/tags/%E6%8E%92%E5%BA%8F/">
                 <span class="chip center-align waves-effect waves-light chip-default">排序</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                <span class="chip center-align waves-effect waves-light chip-default">暴力与模拟</span>
             </a>
             
             
@@ -818,14 +831,20 @@
             
             
             
-            <a href="/tags/%E6%B4%9B%E8%B0%B7%E6%AF%94%E8%B5%9B/">
-                <span class="chip center-align waves-effect waves-light chip-default">洛谷比赛</span>
+            <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
+                <span class="chip center-align waves-effect waves-light chip-default">暴力与枚举</span>
             </a>
             
             
             
             <a href="/tags/%E6%A1%B6/">
                 <span class="chip center-align waves-effect waves-light chip-default">桶</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/">
+                <span class="chip center-align waves-effect waves-light chip-default">比赛总结</span>
             </a>
             
             
@@ -862,12 +881,6 @@
             
             <a href="/tags/Floyd%E7%AE%97%E6%B3%95/">
                 <span class="chip center-align waves-effect waves-light chip-default">Floyd算法</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
-                <span class="chip center-align waves-effect waves-light chip-default">暴力与枚举</span>
             </a>
             
             
@@ -956,7 +969,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30.8k</span>&nbsp;字
+                class="white-color">32k</span>&nbsp;字
             
             
             
