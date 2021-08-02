@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-08-01T12:26:29.542Z</updated>
+  <updated>2021-08-02T11:33:52.922Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷UVA01600题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-02-LuoguUVA01600TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-02-LuoguUVA01600TJ/</id>
+    <published>2021-08-02T11:32:16.000Z</published>
+    <updated>2021-08-02T11:33:52.922Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题是一个还算可以的&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="BFS宽度优先搜索" scheme="https://cyrxdzj.github.io/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷UVA00725题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-02-LuoguUVA00725TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-02-LuoguUVA00725TJ/</id>
+    <published>2021-08-02T11:32:09.000Z</published>
+    <updated>2021-08-02T11:33:26.594Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;如果用 DFS 枚举数字的每一位,一定会</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷CF1530C题解</title>
@@ -46,7 +96,7 @@
     <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/"/>
     <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/</id>
     <published>2021-08-01T12:25:29.000Z</published>
-    <updated>2021-08-01T12:26:53.388Z</updated>
+    <updated>2021-08-02T11:34:37.393Z</updated>
     
     
       
@@ -62,7 +112,7 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="暴力与枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/"/>
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
@@ -277,7 +327,7 @@
     <link href="https://cyrxdzj.github.io/2021-07-17-LuoguUVA12554TJ/"/>
     <id>https://cyrxdzj.github.io/2021-07-17-LuoguUVA12554TJ/</id>
     <published>2021-07-17T03:46:35.000Z</published>
-    <updated>2021-07-17T03:48:58.244Z</updated>
+    <updated>2021-08-02T11:34:44.520Z</updated>
     
     
       
@@ -294,7 +344,7 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="暴力与枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/"/>
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
@@ -460,7 +510,7 @@
     <link href="https://cyrxdzj.github.io/2021-07-06-LuoguUVA12290TJ/"/>
     <id>https://cyrxdzj.github.io/2021-07-06-LuoguUVA12290TJ/</id>
     <published>2021-07-06T06:42:56.000Z</published>
-    <updated>2021-07-06T06:43:28.865Z</updated>
+    <updated>2021-08-02T11:34:31.071Z</updated>
     
     
       
@@ -477,59 +527,7 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="暴力与枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA12708题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-05-LuoguUVA12708TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-05-LuoguUVA12708TJ/</id>
-    <published>2021-07-05T14:42:22.000Z</published>
-    <updated>2021-07-05T14:43:43.702Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题不需要死算。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;当 $n$ 为偶数时，第 $1$ 个数取 $n$，第 $2$ 个数取</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P5991题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-05-LuoguP5991TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-05-LuoguP5991TJ/</id>
-    <published>2021-07-05T14:42:03.000Z</published>
-    <updated>2021-07-05T14:43:08.013Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，一看这 $1\le k,a,b\le10^8$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   

@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml">
 </head>
 
 
@@ -364,20 +364,20 @@
                 </a>
                 
                 
-                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" title="洛谷题解: 71">
+                <a href="/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/" title="一些杂七杂八的东西: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F5EEF8;">洛谷题解
-                        <span class="tag-length">71</span>
+                             chip-default "
+                            style="background-color: #F5EEF8;">一些杂七杂八的东西
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/" title="一些杂七杂八的东西: 2">
+                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" title="洛谷题解: 73">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">一些杂七杂八的东西
-                        <span class="tag-length">2</span>
+                             chip-active "
+                            style="background-color: #D5F5E3;">洛谷题解
+                        <span class="tag-length">73</span>
                     </span>
                 </a>
                 
@@ -401,6 +401,104 @@
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021-08-02-LuoguUVA01600TJ/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="洛谷UVA01600题解">
+                            
+                            <span class="card-title">洛谷UVA01600题解</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路本题是一个还算可以的广度优先搜索题。
+但是，这道题加了一个要点：翻越的障碍物数量。
+因此，我们要在表示路径节点的结构体里加一个变量，用于存储当前翻越了多少个障碍物。
+同时，visit 数组也从二维变成了三维，增加的那一维就是翻越了多
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/">
+                            <span class="chip bg-color">BFS宽度优先搜索</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021-08-02-LuoguUVA00725TJ/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="洛谷UVA00725题解">
+                            
+                            <span class="card-title">洛谷UVA00725题解</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路如果用 DFS 枚举数字的每一位,一定会 TLE。
+既然如此，我们可以枚举除数，再借助输入的商计算出被除数。然后，判断两个数字是否符合题意。
+由于第二个数字是从低往高枚举的，并且输入的商也是正数，所以第一个数字也一定是从低往高的。
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                            <span class="chip bg-color">枚举</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -495,8 +593,8 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">暴力与枚举</span>
+                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                            <span class="chip bg-color">暴力与模拟</span>
                         </a>
                         
                     </div>
@@ -911,8 +1009,8 @@ name: song
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">暴力与枚举</span>
+                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                            <span class="chip bg-color">暴力与模拟</span>
                         </a>
                         
                     </div>
@@ -1122,8 +1220,8 @@ string unsecret1(string password,int key)
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">暴力与枚举</span>
+                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                            <span class="chip bg-color">暴力与模拟</span>
                         </a>
                         
                     </div>
@@ -1908,110 +2006,6 @@ using namespace st
                 </div>
             </div>
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-02-LuoguUVA11850TJ/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="洛谷UVA11850题解">
-                            
-                            <span class="card-title">洛谷UVA11850题解</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-题目翻译由 dengziyue 大佬提供，感谢他的贡献。
-二、思路本题可以暴力+模拟。先设一个布尔值数组，记录这个位置有没有充电站。
-然后暴力模拟每一英里的情况，设一个变量表示当前车辆电量。
-如果这一英里存在充电站，则
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-02-LuoguUVA01237TJ/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="洛谷UVA01237题解">
-                            
-                            <span class="card-title">洛谷UVA01237题解</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路暴力匹配即可。如果只有一个符合要求，输出汽车制造商名称。否则输出 UNDETERMINED。
-三、完整代码#include&lt;iostream>
-#include&lt;string>
-using name
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">枚举</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 </main>
@@ -2112,7 +2106,7 @@ using name
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">32k</span>&nbsp;字
+                class="white-color">33k</span>&nbsp;字
             
             
             
