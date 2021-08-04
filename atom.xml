@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-08-02T11:33:52.922Z</updated>
+  <updated>2021-08-04T09:56:28.864Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷UVA12955题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-04-LuoguUVA12955TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-04-LuoguUVA12955TJ/</id>
+    <published>2021-08-04T09:55:50.000Z</published>
+    <updated>2021-08-04T09:56:28.864Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;你有 $15$ 种钞票，第 $i$ 种钞票的面值为 $i!$（$i$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA01600题解</title>
@@ -502,32 +527,6 @@
     <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
     
     <category term="贪心算法" scheme="https://cyrxdzj.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA12290题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-06-LuoguUVA12290TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-06-LuoguUVA12290TJ/</id>
-    <published>2021-07-06T06:42:56.000Z</published>
-    <updated>2021-08-02T11:34:31.071Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以暴力模拟，模拟出整个游戏过程，然后输出答案。&lt;/p&gt;
-&lt;p&gt;首先设 &lt;code&gt;now_person&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
