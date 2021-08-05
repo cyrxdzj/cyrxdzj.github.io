@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-08-04T09:56:28.864Z</updated>
+  <updated>2021-08-05T12:43:02.834Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷UVA10300题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-05-LuoguUVA10300TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-05-LuoguUVA10300TJ/</id>
+    <published>2021-08-05T12:42:38.000Z</published>
+    <updated>2021-08-05T12:43:02.834Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题意简述&quot;&gt;&lt;a href=&quot;#一、题意简述&quot; class=&quot;headerlink&quot; title=&quot;一、题意简述&quot;&gt;&lt;/a&gt;一、题意简述&lt;/h3&gt;&lt;p&gt;给你 $n$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA12955题解</title>
@@ -500,33 +525,6 @@
     
     
     <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF0702C题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-06-LuoguCF0702CTJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-06-LuoguCF0702CTJ/</id>
-    <published>2021-07-06T09:50:28.000Z</published>
-    <updated>2021-07-06T09:51:31.872Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、前置芝士&quot;&gt;&lt;a href=&quot;#一、前置芝士&quot; class=&quot;headerlink&quot; title=&quot;一、前置芝士&quot;&gt;&lt;/a&gt;一、前置芝士&lt;/h3&gt;&lt;p&gt;&lt;code&gt;lower_bound&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="贪心算法" scheme="https://cyrxdzj.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
