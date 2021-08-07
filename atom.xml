@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-08-05T12:43:02.834Z</updated>
+  <updated>2021-08-06T13:33:05.864Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,110 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷CF1059B题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguCF1059BTJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-06-LuoguCF1059BTJ/</id>
+    <published>2021-08-06T13:32:02.000Z</published>
+    <updated>2021-08-06T13:33:05.864Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷UVA00457题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguUVA00457TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-06-LuoguUVA00457TJ/</id>
+    <published>2021-08-06T12:24:21.000Z</published>
+    <updated>2021-08-06T12:25:27.189Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题直接模拟即可。&lt;/p&gt;
+&lt;h3 id=&quot;二、坑点合集&quot;&gt;&lt;a href=&quot;#二、坑点合集&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷UVA00422题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguUVA00422TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-06-LuoguUVA00422TJ/</id>
+    <published>2021-08-06T12:24:15.000Z</published>
+    <updated>2021-08-06T12:25:01.115Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题就是一个字符串模拟。&lt;/p&gt;
+&lt;p&gt;首先将搜索分为 $3$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="字符串" scheme="https://cyrxdzj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷CF1549A题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguCF1549ATJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-06-LuoguCF1549ATJ/</id>
+    <published>2021-08-06T07:25:06.000Z</published>
+    <updated>2021-08-06T07:25:30.746Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA10300题解</title>
@@ -421,110 +525,6 @@
     
     
     <category term="字符串" scheme="https://cyrxdzj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P2884题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-11-LuoguP2884TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-11-LuoguP2884TJ/</id>
-    <published>2021-07-11T10:29:14.000Z</published>
-    <updated>2021-07-11T10:29:49.574Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="贪心算法" scheme="https://cyrxdzj.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>七年级下学期期末考试总结</title>
-    <link href="https://cyrxdzj.github.io/2021-07-09-Grade7Term2FinalExamSummary/"/>
-    <id>https://cyrxdzj.github.io/2021-07-09-Grade7Term2FinalExamSummary/</id>
-    <published>2021-07-09T10:49:32.000Z</published>
-    <updated>2021-07-09T14:36:19.233Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;$2021$ 年 $7$ 月 $1$ 日至 $2$</summary>
-        
-      
-    
-    
-    
-    <category term="学校生活" scheme="https://cyrxdzj.github.io/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="考试总结" scheme="https://cyrxdzj.github.io/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>七年级下学期期中考试总结</title>
-    <link href="https://cyrxdzj.github.io/2021-07-09-Grade7Term2MidtermExamSummary/"/>
-    <id>https://cyrxdzj.github.io/2021-07-09-Grade7Term2MidtermExamSummary/</id>
-    <published>2021-07-09T10:49:23.000Z</published>
-    <updated>2021-07-09T14:04:45.763Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;$2021$ 年 $4$ 月 $26$ 日至 $28$ 日，我校举行了期中考试。&lt;/p&gt;
-&lt;h3 id=&quot;二、语文&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="学校生活" scheme="https://cyrxdzj.github.io/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="考试总结" scheme="https://cyrxdzj.github.io/tags/%E8%80%83%E8%AF%95%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用luogu-card</title>
-    <link href="https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/"/>
-    <id>https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/</id>
-    <published>2021-07-07T10:00:59.000Z</published>
-    <updated>2021-07-14T03:41:46.730Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;该项目是由&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
-    
-    
-    <category term="一些杂七杂八的东西" scheme="https://cyrxdzj.github.io/tags/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
   </entry>
   
