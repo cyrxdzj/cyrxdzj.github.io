@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="洛谷UVA00855题解, cyrxdzj blog">
+    <meta name="keywords" content="洛谷UVA11494题解, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>洛谷UVA00855题解 | cyrxdzj blog</title>
+    <title>洛谷UVA11494题解 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">洛谷UVA00855题解</h1>
+                    <h1 class="description center-align post-title">洛谷UVA11494题解</h1>
                 </div>
             </div>
         </div>
@@ -449,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-03
+                    2021-08-09
                 </div>
                 
 
@@ -458,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    199
+                    450
                 </div>
                 
 
@@ -478,32 +478,51 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一、思路"><a href="#一、思路" class="headerlink" title="一、思路"></a>一、思路</h3><p>本题其实与<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/UVA10041">这道题</a>非常相似，只是换成二维的而已。</p>
-<p>因此，我们可以先求出所有 $x$ 的中位数，再求出所有 $y$ 的中位数，即可。</p>
-<p><a target="_blank" rel="noopener" href="https://baidu.physton.com/?q=%E4%B8%AD%E4%BD%8D%E6%95%B0">什么是中位数？</a></p>
-<h3 id="二、完整代码"><a href="#二、完整代码" class="headerlink" title="二、完整代码"></a>二、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;algorithm></span></span>
+                <h3 id="一、题意简述"><a href="#一、题意简述" class="headerlink" title="一、题意简述"></a>一、题意简述</h3><p>有一个 $8\times8$ 的棋盘，棋盘上有一个女王，想要去到另外一个点。</p>
+<p>请问，这个女王最多需要使用多少个<strong>方向</strong>到达目的地？女王可以走八个方向。</p>
+<p>比如，从第 $1$ 行第 $1$ 列，到第 $3$ 行第 $3$ 列，既可以先向右走 $2$ 步，再向下走 $2$ 步，使用了 $2$ 个方向；但其实可以向右下走 $2$ 步，只使用 $1$ 个方向。</p>
+<h3 id="二、思路"><a href="#二、思路" class="headerlink" title="二、思路"></a>二、思路</h3><p>在我来之前，此题只有一篇题解，使用的是宽度优先搜索。但我觉得，这道题没必要使用宽度优先搜索。</p>
+<p>首先，可以证明，答案一定不超过 $2$。</p>
+<p>最坏情况下，先斜着走，使得自己的横坐标或纵坐标与目标一致。然后，再横着走或竖着走，即可到达目标点。</p>
+<p>如果两个点位置一致，女王动都不用动，答案为 $0$（废话）。</p>
+<p>如果两个点横坐标一致或纵坐标一致，女王只用横着走或竖着走，答案为 $1$。</p>
+<p>如果两个点之间可以斜着走直达，答案为 $1$。此时一定有 $abs(x_1-x_2)=abs(y_1-y_2)$。</p>
+<p>如果以上条件都不满足，答案为 $2$。</p>
+<h3 id="三、完整代码"><a href="#三、完整代码" class="headerlink" title="三、完整代码"></a>三、完整代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">int</span> x<span class="token punctuation">[</span><span class="token number">50001</span><span class="token punctuation">]</span><span class="token punctuation">,</span>y<span class="token punctuation">[</span><span class="token number">50001</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> case_num<span class="token punctuation">;</span>
+<span class="token keyword">int</span> x1<span class="token punctuation">,</span>y1<span class="token punctuation">,</span>x2<span class="token punctuation">,</span>y2<span class="token punctuation">;</span>
+<span class="token keyword">inline</span> <span class="token keyword">int</span> <span class="token function">abs</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> a<span class="token operator">>=</span><span class="token number">0</span><span class="token operator">?</span>a<span class="token operator">:</span><span class="token operator">-</span>a<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
-	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>case_num<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>case_num<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>x1<span class="token punctuation">,</span><span class="token operator">&amp;</span>y1<span class="token punctuation">,</span><span class="token operator">&amp;</span>x2<span class="token punctuation">,</span><span class="token operator">&amp;</span>y2<span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span>x1<span class="token operator">&amp;&amp;</span>y1<span class="token operator">&amp;&amp;</span>x2<span class="token operator">&amp;&amp;</span>y2<span class="token punctuation">)</span>
 	<span class="token punctuation">&#123;</span>
-		<span class="token keyword">int</span> s<span class="token punctuation">,</span>a<span class="token punctuation">,</span>f<span class="token punctuation">;</span>
-		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>s<span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//其实s和a并没有什么用处，只是暴力搜索的参考。</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>f<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>x1<span class="token operator">==</span>x2<span class="token operator">&amp;&amp;</span>y1<span class="token operator">==</span>y2<span class="token punctuation">)</span><span class="token comment">//两点重合。</span>
 		<span class="token punctuation">&#123;</span>
-			<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>x<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>y<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"0\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span>
 		<span class="token punctuation">&#125;</span>
-		<span class="token function">sort</span><span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token operator">+</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//对x排序。</span>
-		<span class="token function">sort</span><span class="token punctuation">(</span>y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>y<span class="token operator">+</span><span class="token number">1</span><span class="token operator">+</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//对y排序。</span>
-		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"(Street: %d, Avenue: %d)\n"</span><span class="token punctuation">,</span>x<span class="token punctuation">[</span><span class="token punctuation">(</span>f<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>y<span class="token punctuation">[</span><span class="token punctuation">(</span>f<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//求中位数&amp;输出。</span>
+		<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>x1<span class="token operator">==</span>x2<span class="token operator">||</span>y1<span class="token operator">==</span>y2<span class="token punctuation">)</span><span class="token comment">//横坐标或纵坐标一致。</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"1\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">abs</span><span class="token punctuation">(</span>x1<span class="token operator">-</span>x2<span class="token punctuation">)</span><span class="token operator">==</span><span class="token function">abs</span><span class="token punctuation">(</span>y1<span class="token operator">-</span>y2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">//斜着走直达。</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"1\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+		<span class="token keyword">else</span><span class="token comment">//均不符合。</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"2\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
 	<span class="token punctuation">&#125;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">//完结撒花！</span>
 <span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>By <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/387836">dengzijun</a></p>
 
                 
@@ -531,7 +550,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cyrxdzj.github.io/2021-07-03-LuoguUVA00855TJ/">https://cyrxdzj.github.io/2021-07-03-LuoguUVA00855TJ/</a>
+                    <a href="https://cyrxdzj.github.io/2021-08-09-LuoguUVA11494TJ/">https://cyrxdzj.github.io/2021-08-09-LuoguUVA11494TJ/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -618,13 +637,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-07-03-LuoguB2030TJ/">
+                <a href="/2021-08-09-LuoguUVA00821TJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="洛谷B2030题解">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="洛谷UVA00821题解">
                         
-                        <span class="card-title">洛谷B2030题解</span>
+                        <span class="card-title">洛谷UVA00821题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -635,7 +654,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-09
                         </span>
                         <span class="publish-author">
                             
@@ -652,8 +671,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                        <span class="chip bg-color">数学知识</span>
+                    <a href="/tags/Floyd%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">Floyd算法</span>
                     </a>
                     
                 </div>
@@ -667,13 +686,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-07-03-LuoguB2004TJ/">
+                <a href="/2021-08-06-LuoguCF1059BTJ/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="洛谷B2004题解">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="洛谷CF1059B题解">
                         
-                        <span class="card-title">洛谷B2004题解</span>
+                        <span class="card-title">洛谷CF1059B题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -684,7 +703,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-06
                             </span>
                         <span class="publish-author">
                             
@@ -701,8 +720,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/">
-                        <span class="chip bg-color">输出格式</span>
+                    <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                        <span class="chip bg-color">暴力与模拟</span>
                     </a>
                     
                 </div>
