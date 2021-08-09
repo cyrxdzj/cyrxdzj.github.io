@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-08-09T03:50:10.410Z</updated>
+  <updated>2021-08-09T13:49:47.745Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>洛谷UVA00471题解</title>
+    <link href="https://cyrxdzj.github.io/2021-08-09-LuoguUVA00471TJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-09-LuoguUVA00471TJ/</id>
+    <published>2021-08-09T13:48:02.000Z</published>
+    <updated>2021-08-09T13:49:47.745Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以根据 $n$ 枚举</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA00821题解</title>
@@ -488,33 +515,6 @@
         
         
     <summary type="html">&lt;h3 id=&quot;一、题意简述&quot;&gt;&lt;a href=&quot;#一、题意简述&quot; class=&quot;headerlink&quot; title=&quot;一、题意简述&quot;&gt;&lt;/a&gt;一、题意简述&lt;/h3&gt;&lt;p&gt;给出一个 $N\times N$（$0\le</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF0645A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguCF0645ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-22-LuoguCF0645ATJ/</id>
-    <published>2021-07-22T09:06:12.000Z</published>
-    <updated>2021-07-22T09:14:44.801Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以采用暴力模拟。&lt;/p&gt;
-&lt;p&gt;首先，先找出初始的空格。&lt;/p&gt;
-&lt;p&gt;然后，重复以下判断 $12$</summary>
         
       
     
