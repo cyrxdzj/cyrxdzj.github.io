@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2021-08-09T13:49:47.745Z</updated>
+  <updated>2021-08-30T07:03:08.587Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LuoguCF1556ATJ</title>
+    <link href="https://cyrxdzj.github.io/2021-08-30-LuoguCF1556ATJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-30-LuoguCF1556ATJ/</id>
+    <published>2021-08-30T07:01:53.000Z</published>
+    <updated>2021-08-30T07:03:08.587Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;根据题意，我们可以判断：$a+b$ 无论何时都是偶数。&lt;/p&gt;
+&lt;p&gt;证明：当执行第 $2$ 或第 $3$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LuoguCF1561ATJ</title>
+    <link href="https://cyrxdzj.github.io/2021-08-30-LuoguCF1561ATJ/"/>
+    <id>https://cyrxdzj.github.io/2021-08-30-LuoguCF1561ATJ/</id>
+    <published>2021-08-30T07:01:44.000Z</published>
+    <updated>2021-08-30T07:02:39.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;一看这数据范围，妥妥的暴力模拟。&lt;/p&gt;
+&lt;p&gt;我们可以循环操作，先判断数组是否有序。如果有序，输出当前循环次数减 $1$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>洛谷UVA00471题解</title>
@@ -474,56 +526,6 @@
     
     
     <category term="比赛总结" scheme="https://cyrxdzj.github.io/tags/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00902题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguUVA00902TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-22-LuoguUVA00902TJ/</id>
-    <published>2021-07-22T09:13:50.000Z</published>
-    <updated>2021-07-24T05:41:51.991Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="C++ STL" scheme="https://cyrxdzj.github.io/tags/C-STL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA11297题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-22-LuoguUVA11297TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-22-LuoguUVA11297TJ/</id>
-    <published>2021-07-22T09:06:21.000Z</published>
-    <updated>2021-07-22T09:15:10.943Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题意简述&quot;&gt;&lt;a href=&quot;#一、题意简述&quot; class=&quot;headerlink&quot; title=&quot;一、题意简述&quot;&gt;&lt;/a&gt;一、题意简述&lt;/h3&gt;&lt;p&gt;给出一个 $N\times N$（$0\le</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
