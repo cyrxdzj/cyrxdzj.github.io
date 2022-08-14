@@ -625,29 +625,26 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022-01-22-LuoguAT4811TJ/">
+                    <a href="/2022-07-22-LuoguCF1709DTJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="洛谷AT4811题解">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CF1709D题解">
                             
-                            <span class="card-title">洛谷AT4811题解</span>
+                            <span class="card-title">CF1709D题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、思路一看数据范围，$n\le2000$。
-思路已经大体出来了：剪枝完，暴力搜！
-可以先建图，再对每个点都进行一次迪杰斯特拉最短路算法（带桶优化），每次都将结果以桶的形式存储。
-注意，不能重复计数。
-二、完整代码#include&lt;c
+                                一、思路首先我们可以想到，机器人应该先往上走到能走到的最上面，然后往两边走，然后往下走。这样，就可以确保机器人不能走到被封禁（原文是 blocked）的方块（因为这些方块都在底部）。
+显然，如果水平距离除以 $k$ 的余数不等于 $0$，或
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-22
                             </span>
                             <span class="publish-author">
                                 
@@ -665,12 +662,8 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                            <span class="chip bg-color">图论</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
-                            <span class="chip bg-color">最短路</span>
+                        <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+                            <span class="chip bg-color">线段树</span>
                         </a>
                         
                     </div>
@@ -680,983 +673,30 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022-01-22-LuoguCF1622ATJ/">
+                    <a href="/2022-07-22-LuoguCF1709BTJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="洛谷CF1622A题解">
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CF1709B题解">
                             
-                            <span class="card-title">洛谷CF1622A题解</span>
+                            <span class="card-title">CF1709B题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、思路矩形有一个性质：对边相等。
-这意味着分割后的 $4$ 根木棍，可以分为 $2$ 组，每组 $2$ 根，每组木棍长度均相等。
-这就分 $2$ 种情况。
-第一种情况：一根木棍的长度加另一根木棍的长度，恰好等于第三根木棍的长度。此时分割第
+                                一、思路本题应该使用前缀和算法。
+首先我们可以发现，无论怎么走，只走一个方向从起点到终点才是最优解。
+因为每次只能走一格，如果走其它路线，就会受到更多的摔落伤害。
+但是，这么算，也会导致时间超限。
+因此，我们引入前缀和。
+设置两个前缀和数组
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-30-LuoguCF1556ATJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="洛谷CF1556A题解">
-                            
-                            <span class="card-title">洛谷CF1556A题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路根据题意，我们可以判断：$a+b$ 无论何时都是偶数。
-证明：当执行第 $2$ 或第 $3$ 个操作时，$a+b=(a+k)+(b-k)$ 或 $a+b=(a-k)+(b+k)$，因此 $a+b$ 不变。
-当执行第 $1$ 个操作时
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-30-LuoguCF1561ATJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="洛谷CF1561A题解">
-                            
-                            <span class="card-title">洛谷CF1561A题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路一看这数据范围，妥妥的暴力模拟。
-我们可以循环操作，先判断数组是否有序。如果有序，输出当前循环次数减 $1$ 并结束循环。
-如果无序，则按照题目要求，对数组进行操作。
-二、完整代码#include&lt;cstdio>
-using 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-09-LuoguUVA00471TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="洛谷UVA00471题解">
-                            
-                            <span class="card-title">洛谷UVA00471题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路本题可以根据 $n$ 枚举 $a$，并检查数字是否重复。如果不重复，则输出，即可。
-而检查数字是否重复可以使用一个布尔数组。
-注意要使用 long long。
-二、完整代码#include&lt;cstdio>
-#include&l
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">枚举</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-09-LuoguUVA00821TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="洛谷UVA00821题解">
-                            
-                            <span class="card-title">洛谷UVA00821题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路很典型的最短路问题。可以使用弗洛伊德算法去做。
-放心，$n=100$ 时弗洛伊德算法是不会炸的。
-二、完整代码#include&lt;cstdio>
-#include&lt;cstring>
-using namespace std;
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
-                            <span class="chip bg-color">最短路</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-09-LuoguUVA11494TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷UVA11494题解">
-                            
-                            <span class="card-title">洛谷UVA11494题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题意简述有一个 $8\times8$ 的棋盘，棋盘上有一个女王，想要去到另外一个点。
-请问，这个女王最多需要使用多少个方向到达目的地？女王可以走八个方向。
-比如，从第 $1$ 行第 $1$ 列，到第 $3$ 行第 $3$ 列，既可以先向
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-06-LuoguCF1059BTJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="洛谷CF1059B题解">
-                            
-                            <span class="card-title">洛谷CF1059B题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路首先，题中也说了你可以染色无数次，这就是告诉我们：能染则染。
-什么是能染呢？
-首先，越界的，不能染色（废话）。
-然后，如果目标矩阵的染色的范围内出现不能染色的 .  的，不能染色。
-如果以上都不符合，那就可以进行染色。
-最后，检查一
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-06-LuoguUVA00457TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="洛谷UVA00457题解">
-                            
-                            <span class="card-title">洛谷UVA00457题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路本题直接模拟即可。
-二、坑点合集
-UVA 的毒瘤输出，每个测试样例之间要输出一个空行。
-
-在进行菌群变换的时候，需要准备一个临时数组，变换完毕后再把临时数组中的信息转移到正式数组上。
-
-要输出空格，而不是字符 b。
-
-
-三、完整代码
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-06-LuoguUVA00422TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="洛谷UVA00422题解">
-                            
-                            <span class="card-title">洛谷UVA00422题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路本题就是一个字符串模拟。
-首先将搜索分为 $3$ 种：
-
-水平查找，分为向左和向右；
-
-垂直查找，分为向上和向下；
-
-斜着查找，分为：
-
-从左上往右下；
-
-从右下往左上；
-
-从左下往右上；
-
-从右上往左下。
-
-
-
-
-将以上的搜索方向
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                            <span class="chip bg-color">字符串</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-06-LuoguCF1549ATJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷CF1549A题解">
-                            
-                            <span class="card-title">洛谷CF1549A题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路本题有一点很关键：$P$ 是质数。
-再加上 $5\le P$ 这一点，即可证明 $P$ 是奇数。
-当 $a=2,b=(P-1)\div2$ 时，$P\bmod a=P\bmod b=1$。这就符合题目要求了。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-05-LuoguUVA10300TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="洛谷UVA10300题解">
-                            
-                            <span class="card-title">洛谷UVA10300题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题意简述给你 $n$ 组数，每组数有三个数。
-你的任务是，求出每组数的第一个数与第三个数的乘积之和。
-二、思路此题非常简单，连数组都不用，直接循环求解即可。
-注意要开 long long。
-三、完整代码#include&lt;cstdi
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-04-LuoguUVA12955TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="洛谷UVA12955题解">
-                            
-                            <span class="card-title">洛谷UVA12955题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译你有 $15$ 种钞票，第 $i$ 种钞票的面值为 $i!$（$i$ 的阶乘）元。每种钞票的数量无限。
-给你一个物品的价格 $N$（$1\le N\le10^5$），请问你最少要用多少张钞票买到它？
-二、思路这个物品是肯定能买到
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-02-LuoguUVA01600TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="洛谷UVA01600题解">
-                            
-                            <span class="card-title">洛谷UVA01600题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路本题是一个还算可以的广度优先搜索题。
-但是，这道题加了一个要点：翻越的障碍物数量。
-因此，我们要在表示路径节点的结构体里加一个变量，用于存储当前翻越了多少个障碍物。
-同时，visit 数组也从二维变成了三维，增加的那一维就是翻越了多
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/">
-                            <span class="chip bg-color">BFS宽度优先搜索</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-02-LuoguUVA00725TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="洛谷UVA00725题解">
-                            
-                            <span class="card-title">洛谷UVA00725题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路如果用 DFS 枚举数字的每一位,一定会 TLE。
-既然如此，我们可以枚举除数，再借助输入的商计算出被除数。然后，判断两个数字是否符合题意。
-由于第二个数字是从低往高枚举的，并且输入的商也是正数，所以第一个数字也一定是从低往高的。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">枚举</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-01-LuoguCF1530CTJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷CF1530C题解">
-                            
-                            <span class="card-title">洛谷CF1530C题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路本题，我的思路真的是一步一步模拟。
-但是，模拟也是要有优化的。
-首先，如果“我”的初始总分比伊利亚低，那么，接下来的几个阶段，“我”的分数一定要是 $100$ 分，伊利亚的分数一定要是 $0$ 分（废话）。
-既
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%A1%B6/">
-                            <span class="chip bg-color">桶</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-01-LuoguCF1530BTJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="洛谷CF1530B题解">
-                            
-                            <span class="card-title">洛谷CF1530B题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路以 $6$ 行 $6$ 列，即 $h=6,w=6$ 为例。
-首先，先把上边缘从左到右填满盘子，再把左边缘从上到下填满盘子，就像这样：
-
-接着，我们再填充右边缘。
-但是，从第几行开始填充呢？
-我们可以发现，无论 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
-                            <span class="chip bg-color">暴力与模拟</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-08-01-LuoguCF1530ATJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="洛谷CF1530A题解">
-                            
-                            <span class="card-title">洛谷CF1530A题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路本题其实很简单：输入数据中最大的一位，即为答案。
-因为每次使用一个 binary decimal，都可以使输入数据的某一位减 $1$。因此，需要使用多少个 binary decimal 取决于输入数据中最大的一
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
-                            <span class="chip bg-color">数学知识</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-30-LuoguP6174TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷P6174题解">
-                            
-                            <span class="card-title">洛谷P6174题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路首先，$R$ 越大，干草就越有可能被引爆完。
-显然，这需要使用二分算法。
-$R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\div2$（全场干草一个奶牛下来就被炸完了）。
-二分算法的精髓在于 check 函数，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
-                                    洛谷题解
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
-                            <span class="chip bg-color">排序</span>
-                        </a>
-                        
-                        <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">二分算法</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-26-LuoguP1369TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="洛谷P1369题解">
-                            
-                            <span class="card-title">洛谷P1369题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、思路本题可以使用二维前缀和去做。
-首先，对于样例输入：
-10
-2 3
-9 2
-7 4
-3 4
-5 7
-1 5
-10 4
-10 6
-11 4
-4 6
-我们可以得到这样的一张表：
-
-其中 $1$ 代表有点的坐标，$0$ 代表无点的坐标。
-显
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-22
                             </span>
                             <span class="publish-author">
                                 
@@ -1685,27 +725,131 @@ $R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\di
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-24-LuoguCF1553ATJ/">
+                    <a href="/2022-07-22-LuoguCF1709ATJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="洛谷CF1553A题解">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="CF1709A题解">
                             
-                            <span class="card-title">洛谷CF1553A题解</span>
+                            <span class="card-title">CF1709A题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、题目翻译在这里！
-二、思路可以证明，对于任意一个正整数 $x$，如果 $S(x+1)&lt;S(x)$，则 $x$ 的个位必定为 $9$。
-证明：当 $x$ 的个位在 $0$ 至 $8$ 之间，$x+1$ 的个位就在 $1$ 至 $9$
+                                一、思路这道题其实非常简单，模拟每次开门及获得的钥匙即可。
+二、代码#include&lt;cstdio>
+using namespace std;
+int t;
+int x;
+int a[4];
+int main()
+&#123;
+	sc
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                            <span class="chip bg-color">暴力与模拟</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-07-19-LuoguCF1706ATJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CF1706A题解">
+                            
+                            <span class="card-title">CF1706A题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路可以发现，将一个字符从 B  变成 A，一定可以使字符串的字典序更小。所以，如果能变，一定要变。
+可以发现，每次操作有机会变 $2$ 个字符中的 $1$ 个，而这一个，应该尽量选择更靠前的那个，这样可以让字典序更小。
+了解上面两条，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">贪心算法</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-07-18-LuoguCF1708BTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="CF1708B题解">
+                            
+                            <span class="card-title">CF1708B题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，两个正整数的最大公因数，最小为 $1$，最大为这两个数中最小的。
+再考虑到 $gcd(i,a_i)$ 必须互不相同，我们不难推出，符合题目要求的 $a_i$ 会使 $gcd(i,a_i)=i$。
+因此，我们可以发现，$a_i$
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-18
                             </span>
                             <span class="publish-author">
                                 
@@ -1734,69 +878,29 @@ $R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\di
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-22-LuoguMonthlyCompetition202107Summary/">
+                    <a href="/2022-07-09-LuoguCF1701CTJ/">
                         <div class="card-image">
                             
-                            <img src="https://z3.ax1x.com/2021/07/22/WBqjG4.png" class="responsive-img" alt="洛谷2021年07月月赛参加总结">
                             
-                            <span class="card-title">洛谷2021年07月月赛参加总结</span>
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="CF1701C题解">
+                            
+                            <span class="card-title">CF1701C题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、前言6月份的“比赛荒”之后，洛谷举办了2021年07月月赛。这次我还是参加Div.2。
-以下只讲我会做的题目（事实上也只会做一道，B题和C题都是暴力骗分）。
-二、A：远古档案馆（Ancient Archive）传送门：https://w
+                                一、思路典型的二分。
+首先，我们通过二分，假定一个工人完成任务的时间。那么如何验证在这个时间之内工人是否可以完成工作呢？
+我们可以发现，每一个工作，都一定有且只有一个工人熟练。
+那么，我们可以记录这个工人熟练多少个工作。
+接着，在验证时遍历
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/" class="post-category">
-                                    比赛总结
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-22-LuoguUVA00902TJ/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="洛谷UVA00902题解">
-                            
-                            <span class="card-title">洛谷UVA00902题解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、题目翻译在这里！
-二、思路本题可以使用 STL 库的 map 以存储子串与出现次数的键值对，然后检索即可。
-三、完整代码#include&lt;iostream>
-#include&lt;string>
-#include&lt;map>
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-09
                             </span>
                             <span class="publish-author">
                                 
@@ -1814,8 +918,8 @@ $R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\di
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/C-STL/">
-                            <span class="chip bg-color">C++ STL</span>
+                        <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">二分算法</span>
                         </a>
                         
                     </div>
@@ -1825,28 +929,509 @@ $R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\di
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-22-LuoguUVA11297TJ/">
+                    <a href="/2022-07-09-LuoguCF1701ATJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="洛谷UVA11297题解">
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="CF1701A题解">
                             
-                            <span class="card-title">洛谷UVA11297题解</span>
+                            <span class="card-title">CF1701A题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、题意简述给出一个 $N\times N$（$0\le N\le500$）的方阵，每个方阵中有一个数。
-接下来是 $Q$（$Q\le40000$）次操作。有两种可能：
-
-以 q 开头。此时再输入 $4$ 个数 $x_1$、$y_1$、$x
+                                一、思路可以发现，每次操作，都是将除了某一个格子的所有格子填充为 0。
+这意味着，如果所有格子都是 0，那么答案显然就是 $0$。如果所有格子都是 1,那么答案就是 $2$，因为要操作两次才能填充好所有格子。否则，答案就是 $1$。
+二、代
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-21-LuoguCF1695BTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="CF1695B题解">
+                            
+                            <span class="card-title">CF1695B题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路分为两种情况。
+当 $n$ 为奇数的时候，Mike 必赢。因为，第一轮，Mike 拿的是石头堆中奇数编号的石头，Joe 拿的是偶数编号的。
+但是，到了第二轮，Joe 反了过来，拿的是奇数编号的了。因此，如果第一轮 Mike 就把第一
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-21
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-21-LuoguCF1695ATJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="CF1695A题解">
+                            
+                            <span class="card-title">CF1695A题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路首先，找到整个矩阵中最大的数。显然，这个数有且只有一个。为什么要找呢？待会再说。
+然后，计算子矩形（原文是 subrectangle）的宽度和高度，使得这个子矩形无论怎么在矩阵中移动都能包含那个最大的数。怎么计算呢？其实很简单，子矩
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-21
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-21-LuoguCF1700BTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="CF1700B题解">
+                            
+                            <span class="card-title">CF1700B题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路如果输入的 $n$ 位数字的最高位不是 $9$，那么我们可以认为这个数字加上答案的和是 $99…99$（共有 $n$ 个 $9$），然后分别计算答案的每一位即可。显然，此时答案的最高位不为零，并且计算起来也非常方便，因为输入数字的每
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-21
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-17-LuoguCF1692GTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="CF1692G题解">
+                            
+                            <span class="card-title">CF1692G题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路先自创几个名词。
+
+优美的子序列。如果子序列中，对于每组相邻的两个数字，前一个数字小于后一个数字的两倍，那么这就是优美的子序列。
+
+完美的子序列。如果某个优美的子序列的长度达到了 $k+1$，那么这就是完美的子序列。
+
+
+可以看出，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-17-LuoguCF1692FTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CF1692F题解">
+                            
+                            <span class="card-title">CF1692F题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路首先，维护一个长度为 $10$ 的 cnt 数组，用于记录输入数据中每个个位的出现次数。
+然后，枚举三个 $0$ 到 $9$ 的数字，代表我要选择的 $3$ 个数，个位分别是多少。
+然后，在确定三个数字的个位后，检查 cnt 数组有
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                            <span class="chip bg-color">暴力与模拟</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                            <span class="chip bg-color">枚举</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-17-LuoguCF1692ETJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CF1692E题解">
+                            
+                            <span class="card-title">CF1692E题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，如果数组本身的和就小于 $s$，那是肯定无解的。
+维护 $l,r,sum$ 这几个变量。其中，$l,r$ 分别代表左/右指针，初始值均为一。$sum$ 代表从 $l$ 到 $r$ 之和，初始值为 $a_1$。
+接下来，不断进行
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-17-LuoguCF1692DTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="CF1692D题解">
+                            
+                            <span class="card-title">CF1692D题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，过了 $3600$ 次 $x$ 秒后，当前的时间就一定与原来输入的时间一致，形成循环。
+因此，我们可以枚举每一个可能的时间，判断即可。
+二、代码#include&lt;cstdio>
+using namespace std;
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                            <span class="chip bg-color">枚举</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-17-LuoguCF1692CTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CF1692C题解">
+                            
+                            <span class="card-title">CF1692C题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路从 $(2,2)$ 到 $(7,7)$ 枚举每一个坐标。
+显然，如果这个坐标的四角都是 #，则此坐标就是唯一的答案。
+二、代码#include&lt;cstdio>
+using namespace std;
+int t;
+char 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                            <span class="chip bg-color">枚举</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-17-LuoguCF1697BTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="CF1697B题解">
+                            
+                            <span class="card-title">CF1697B题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，对于每一次询问，买最贵的商品就一定能获得最大的降价。
+所以，我们先将商品价格升序排序。
+然后，对于每一次询问，取后 $x$ 个商品的前 $y$ 个商品，这些商品的价格就是答案。
+需要使用前缀和和 long long。
+二、代码
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                            <span class="chip bg-color">排序</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                            <span class="chip bg-color">前缀和</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-16-LuoguCF1697ATJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="CF1697A题解">
+                            
+                            <span class="card-title">CF1697A题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路此题相当简单。
+对于每段距离，有两种可能：
+
+剩余能量没有达到这段距离，此时补充缺少的能量即可。
+
+剩余能量达到这段距离，此时剩余能量减去这段距离即可。
+
+
+其实还有更优解法，只是比赛时没有想到。
+二、代码#include&lt;c
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-16
                             </span>
                             <span class="publish-author">
                                 
@@ -1875,35 +1460,173 @@ $R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\di
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-22-LuoguCF0645ATJ/">
+                    <a href="/2022-06-11-LuoguCF1690BTJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="洛谷CF0645A题解">
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="CF1690B题解">
                             
-                            <span class="card-title">洛谷CF0645A题解</span>
+                            <span class="card-title">CF1690B题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、思路本题可以采用暴力模拟。
-首先，先找出初始的空格。
-然后，重复以下判断 $12$ 遍：
-
-如果空格在左上角，则将左下角的方格往上移；
-
-如果空格在左下角，则将右下角的方格往左移；
-
-如果空格在右下角，则将右上角的方格往下移；
-
-如果空
+                                一、思路这道题相当简单。
+首先，看看有没有某一个位置，使 $b$ 数组大于 $a$ 数组的。如果有，那显然就输出 NO，因为 $a$ 数组的每一个数都只能减少不能增加。
+然后，看看所有位置上 $b$ 数组与 $a$ 数组的差的最大值，在以下
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-06-11-LuoguCF1690ATJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CF1690A题解">
+                            
+                            <span class="card-title">CF1690A题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，要使 $h_1$ 最小，应该让它尽可能靠近 $n\div3$。
+分 $3$ 种情况考虑。
+1、$n$ 取余 $3$ 为零。此时，$h_1,h_2,h_3$ 分别是 $n\div3+1,n\div3,n\div3-1$。
+可以发
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-26-LuoguCF1681CTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="CF1681C题解">
+                            
+                            <span class="card-title">CF1681C题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，操作次数有 $10^4$ 那么多，在 $n\le100$ 时完全足够，因为通过将一个长度为 $n$ 的数组进行交换而得到任意排序，最多只需要操作 $n^2$ 次甚至更少。
+这道题可以使用结构体。这个结构体有 $3$ 个数据：a
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
+                            <span class="chip bg-color">排序</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-26-LuoguCF1681BTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="CF1681B题解">
+                            
+                            <span class="card-title">CF1681B题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路首先，假想一个指针，一开始指向 a 数组的第一个数字。
+我们可以发现，执行第 $i$ 次 shuffle（原文如此），就是执行 $b_i$ 次操作；执行一次操作，其实就是将指针向右移动一个数字。如果指针越过了 a 数组的范围，则将进
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-26
                             </span>
                             <span class="publish-author">
                                 
@@ -1932,29 +1655,177 @@ $R$ 的最小值为 $0$（每个奶牛炸一堆干草），最大值为 $10^9\di
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-17-LuoguUVA12554TJ/">
+                    <a href="/2022-05-25-LuoguCF1681ATJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="洛谷UVA12554题解">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="CF1681A题解">
                             
-                            <span class="card-title">洛谷UVA12554题解</span>
+                            <span class="card-title">CF1681A题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、思路本题的题目已经将思路明确了。
-津津 Rujia 过生日，生日歌有 $16$ 句，每人轮流唱一句。如果人数大于 $16$，则再唱生日歌，保证每个人都能至少唱一句。
-二、坑点合集1、输出格式输出格式为：
-name: song
-注意空格！
+                                一、思路如果某一方的最大的数大于另一方，那么这一方必赢。显然，这一方无论是不是先手，只要把最大的数打出去，游戏就结束了。
+如果某一方的最大的数等于另一方，那么先手必赢。显然，先手把最大的数打出去，游戏就结束了。
+二、代码#include&l
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/">
+                            <span class="chip bg-color">博弈论</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-22-LuoguCF1684ATJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="CF1684A题解">
+                            
+                            <span class="card-title">CF1684A题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路我们发现，当数字的位数大于等于 $3$ 时，Alice 可以做到让任意数位留下来。因为她可以将任意数字交换到末位，而 Bob 能且只能删除末位。
+因此，当位数大于等于 $3$ 时，正确答案就是这个数字中最小的数位。
+而位数等于 $2
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-11-LuoguCF1676ETJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="CF1676E题解">
+                            
+                            <span class="card-title">CF1676E题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路首先，对于所有糖果，将其糖量从大到小排序。这样可以确保吃的糖的数量达到最小。
+然后，计算前缀和。
+然后，使用二分算法，求出最少吃多少糖。显然，答案是符合单调性的。
+二、代码#include&lt;cstdio>
+#include&l
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">二分算法</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/">
+                            <span class="chip bg-color">前缀和</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-11-LuoguCF1676DTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CF1676D题解">
+                            
+                            <span class="card-title">CF1676D题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路这道题可以枚举所有点，然后暴力计算。
+真的没什么好讲的。
+二、代码#include&lt;cstdio>
+#include&lt;algorithm>
+using namespace std;
+int t;
+int n,m;
+int
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                             </span>
                             <span class="publish-author">
                                 
@@ -1976,6 +1847,10 @@ name: song
                             <span class="chip bg-color">暴力与模拟</span>
                         </a>
                         
+                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
+                            <span class="chip bg-color">枚举</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -1983,29 +1858,27 @@ name: song
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-14-LuoguP2636TJ/">
+                    <a href="/2022-05-11-LuoguCF1676CTJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="洛谷P2636题解">
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CF1676C题解">
                             
-                            <span class="card-title">洛谷P2636题解</span>
+                            <span class="card-title">CF1676C题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、思路本题可以按照题目所说进行反推。
-1、栅栏密码我们可以计算出密文字符所对应的明文字符位置，然后进行复原。
-string unsecret1(string password,int key)
-&#123;
-	int len=passwo
+                                一、思路这里先讲讲，对于每对字符串，如何求出最小操作次数。
+其实也不难，对于每对字符，求出两个字符的 ASCII 值之差，即为这两个字符的最小操作次数；而这些最小操作次数之和，就是字符串的最小操作次数。
+那就简单多了。鉴于数据范围很小，可以
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                             </span>
                             <span class="publish-author">
                                 
@@ -2034,27 +1907,160 @@ string unsecret1(string password,int key)
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021-07-11-LuoguP2884TJ/">
+                    <a href="/2022-05-11-LuoguCF1676BTJ/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="洛谷P2884题解">
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="CF1676B题解">
                             
-                            <span class="card-title">洛谷P2884题解</span>
+                            <span class="card-title">CF1676B题解</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、思路本题与使用贪心算法和二分算法即可。
-使用二分算法猜测答案（即每一段之和的最大值）。如果猜测值导致需要分更多段（或者分段数与 $m$ 一致），则增加答案，以分出更少段。如果猜测值导致不需要分太多段，则减少答案。
-那么如何检查分段数量呢
+                                一、思路显然，所有朋友能拿到最多糖果的方案，就是让所有朋友拿到原糖果中最少的那一盒的数量。
+可以参考一下著名的木桶原理。
+那么，我们需要统计两个数：所有糖果总和、最小的那一盒的糖果数量。
+然后计算即可。
+二、代码#include&lt;cs
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-11-LuoguCF1676ATJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CF1676A题解">
+                            
+                            <span class="card-title">CF1676A题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路根据题意直接比较即可。
+二、代码#include&lt;cstdio>
+using namespace std;
+int t;
+char a[10];
+int main()
+&#123;
+	scanf("%d",&amp;t);
+	
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-11-LuoguCF1675CTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="CF1675C题解">
+                            
+                            <span class="card-title">CF1675C题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路首先，小偷有且只有一个。
+并且，非小偷一定会说真话（或者说不知道）。
+于是，我们可以发现，如果某个人之前（不包括这个人）有人说没看到，则这个人一定不是小偷。
+同理，如果某个人之后，有人说看到了，则这个人也一定不是小偷。
+否则，这个人
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/" class="post-category">
+                                    洛谷题解
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022-05-11-LuoguCF1675BTJ/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="CF1675B题解">
+                            
+                            <span class="card-title">CF1675B题解</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、思路显然，最优的操作方式，是从第 $n-1$ 个数一直到第 $1$ 个数，对于每个数，都不断除以二再向下取整，直到该数小于右边的数。
+我们可以发现，任何一个正数除以二再向下取整，新数一定小于原数。但是，零除以二再向下取整依然是零。
+因此
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                             </span>
                             <span class="publish-author">
                                 
@@ -2072,97 +2078,11 @@ string unsecret1(string password,int key)
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">二分算法</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">贪心算法</span>
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/">
+                            <span class="chip bg-color">数学知识</span>
                         </a>
                         
                     </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-09-Grade7Term2FinalExamSummary/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="七年级下学期期末考试总结">
-                            
-                            <span class="card-title">七年级下学期期末考试总结</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、前言$2021$ 年 $7$ 月 $1$ 日至 $2$ 日，我校举行了期末考试。
-试卷由增城区统一批改，直到目前也没有发下来。
-二、语文本次语文考得不是很理想，$102$ 分，满分 $120+8$（名著阅读附加）分。
-三、数学考试之前…
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    学校生活
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021-07-09-Grade7Term2MidtermExamSummary/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="七年级下学期期中考试总结">
-                            
-                            <span class="card-title">七年级下学期期中考试总结</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、前言$2021$ 年 $4$ 月 $26$ 日至 $28$ 日，我校举行了期中考试。
-二、语文语文还算可以，获得了 $116$ 分，满分 $120$ 分。事实上此试卷的满分是 $120$ 分+ $8$ 分（名著阅读附加分，这部分我全拿）
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    学校生活
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
                     
                 </div>
             </div>
@@ -2183,7 +2103,7 @@ string unsecret1(string password,int key)
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 4</div>
+            <div class="center-align b-text-gray">1 / 5</div>
         </div>
         <div class="col s6 m4 l4">
             
@@ -2268,7 +2188,7 @@ string unsecret1(string password,int key)
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">37.5k</span>&nbsp;字
+                class="white-color">48.5k</span>&nbsp;字
             
             
             

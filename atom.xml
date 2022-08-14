@@ -6,7 +6,7 @@
   <link href="https://cyrxdzj.github.io/atom.xml" rel="self"/>
   
   <link href="https://cyrxdzj.github.io/"/>
-  <updated>2022-01-22T13:05:14.137Z</updated>
+  <updated>2022-08-14T01:48:11.154Z</updated>
   <id>https://cyrxdzj.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>洛谷AT4811题解</title>
-    <link href="https://cyrxdzj.github.io/2022-01-22-LuoguAT4811TJ/"/>
-    <id>https://cyrxdzj.github.io/2022-01-22-LuoguAT4811TJ/</id>
-    <published>2022-01-22T13:03:27.000Z</published>
-    <updated>2022-01-22T13:05:14.137Z</updated>
+    <title>CF1709D题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-22-LuoguCF1709DTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-22-LuoguCF1709DTJ/</id>
+    <published>2022-07-22T08:19:49.000Z</published>
+    <updated>2022-08-14T01:48:11.154Z</updated>
     
     
       
@@ -37,174 +37,16 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="图论" scheme="https://cyrxdzj.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="最短路" scheme="https://cyrxdzj.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    <category term="线段树" scheme="https://cyrxdzj.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   
   <entry>
-    <title>洛谷CF1622A题解</title>
-    <link href="https://cyrxdzj.github.io/2022-01-22-LuoguCF1622ATJ/"/>
-    <id>https://cyrxdzj.github.io/2022-01-22-LuoguCF1622ATJ/</id>
-    <published>2022-01-22T13:03:17.000Z</published>
-    <updated>2022-01-22T13:04:02.523Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;矩形有一个性质：对边相等。&lt;/p&gt;
-&lt;p&gt;这意味着分割后的 $4$ 根木棍，可以分为 $2$ 组，每组 $2$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF1556A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-30-LuoguCF1556ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-30-LuoguCF1556ATJ/</id>
-    <published>2021-08-30T07:01:53.000Z</published>
-    <updated>2022-01-22T13:00:59.552Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;根据题意，我们可以判断：$a+b$ 无论何时都是偶数。&lt;/p&gt;
-&lt;p&gt;证明：当执行第 $2$ 或第 $3$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF1561A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-30-LuoguCF1561ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-30-LuoguCF1561ATJ/</id>
-    <published>2021-08-30T07:01:44.000Z</published>
-    <updated>2022-01-22T13:00:50.682Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;一看这数据范围，妥妥的暴力模拟。&lt;/p&gt;
-&lt;p&gt;我们可以循环操作，先判断数组是否有序。如果有序，输出当前循环次数减 $1$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00471题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-09-LuoguUVA00471TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-09-LuoguUVA00471TJ/</id>
-    <published>2021-08-09T13:48:02.000Z</published>
-    <updated>2021-08-09T13:49:47.745Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以根据 $n$ 枚举</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-    <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00821题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-09-LuoguUVA00821TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-09-LuoguUVA00821TJ/</id>
-    <published>2021-08-09T03:48:33.000Z</published>
-    <updated>2022-01-22T13:06:14.516Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;很典型的最短路问题。可以使用弗洛伊德算法去做。&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;放心，$n=100$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="最短路" scheme="https://cyrxdzj.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA11494题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-09-LuoguUVA11494TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-09-LuoguUVA11494TJ/</id>
-    <published>2021-08-09T03:48:25.000Z</published>
-    <updated>2021-08-09T03:48:57.668Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题意简述&quot;&gt;&lt;a href=&quot;#一、题意简述&quot; class=&quot;headerlink&quot; title=&quot;一、题意简述&quot;&gt;&lt;/a&gt;一、题意简述&lt;/h3&gt;&lt;p&gt;有一个 $8\times8$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF1059B题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguCF1059BTJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-06-LuoguCF1059BTJ/</id>
-    <published>2021-08-06T13:32:02.000Z</published>
-    <updated>2021-08-06T13:33:05.864Z</updated>
+    <title>CF1709B题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-22-LuoguCF1709BTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-22-LuoguCF1709BTJ/</id>
+    <published>2022-07-22T08:05:37.000Z</published>
+    <updated>2022-08-14T01:47:40.879Z</updated>
     
     
       
@@ -220,24 +62,24 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    <category term="前缀和" scheme="https://cyrxdzj.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
   </entry>
   
   <entry>
-    <title>洛谷UVA00457题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguUVA00457TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-06-LuoguUVA00457TJ/</id>
-    <published>2021-08-06T12:24:21.000Z</published>
-    <updated>2021-08-06T12:25:27.189Z</updated>
+    <title>CF1709A题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-22-LuoguCF1709ATJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-22-LuoguCF1709ATJ/</id>
+    <published>2022-07-22T07:45:45.000Z</published>
+    <updated>2022-08-14T01:47:33.426Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题直接模拟即可。&lt;/p&gt;
-&lt;h3 id=&quot;二、坑点合集&quot;&gt;&lt;a href=&quot;#二、坑点合集&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;这道题其实非常简单，模拟每次开门及获得的钥匙即可。&lt;/p&gt;
+&lt;h3 id=&quot;二、代码&quot;&gt;&lt;a href=&quot;#二、代码&quot;</summary>
         
       
     
@@ -251,19 +93,18 @@
   </entry>
   
   <entry>
-    <title>洛谷UVA00422题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguUVA00422TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-06-LuoguUVA00422TJ/</id>
-    <published>2021-08-06T12:24:15.000Z</published>
-    <updated>2021-08-06T12:25:01.115Z</updated>
+    <title>CF1706A题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-19-LuoguCF1706ATJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-19-LuoguCF1706ATJ/</id>
+    <published>2022-07-19T06:30:39.000Z</published>
+    <updated>2022-08-14T01:47:25.225Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题就是一个字符串模拟。&lt;/p&gt;
-&lt;p&gt;首先将搜索分为 $3$</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;可以发现，将一个字符从 &lt;code&gt;B&lt;/code&gt;  变成</summary>
         
       
     
@@ -272,25 +113,24 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="字符串" scheme="https://cyrxdzj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    <category term="贪心算法" scheme="https://cyrxdzj.github.io/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>洛谷CF1549A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-06-LuoguCF1549ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-06-LuoguCF1549ATJ/</id>
-    <published>2021-08-06T07:25:06.000Z</published>
-    <updated>2021-08-06T07:25:30.746Z</updated>
+    <title>CF1708B题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-18-LuoguCF1708BTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-18-LuoguCF1708BTJ/</id>
+    <published>2022-07-18T06:59:30.000Z</published>
+    <updated>2022-08-14T01:49:18.542Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，两个正整数的最大公因数，最小为 $1$，最大为这两个数中最小的。&lt;/p&gt;
+&lt;p&gt;再考虑到 $gcd(i,a_i)$</summary>
         
       
     
@@ -304,18 +144,164 @@
   </entry>
   
   <entry>
-    <title>洛谷UVA10300题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-05-LuoguUVA10300TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-05-LuoguUVA10300TJ/</id>
-    <published>2021-08-05T12:42:38.000Z</published>
-    <updated>2021-08-05T12:43:02.834Z</updated>
+    <title>CF1701C题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-09-LuoguCF1701CTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-09-LuoguCF1701CTJ/</id>
+    <published>2022-07-09T13:37:25.000Z</published>
+    <updated>2022-08-14T01:49:18.534Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、题意简述&quot;&gt;&lt;a href=&quot;#一、题意简述&quot; class=&quot;headerlink&quot; title=&quot;一、题意简述&quot;&gt;&lt;/a&gt;一、题意简述&lt;/h3&gt;&lt;p&gt;给你 $n$</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1701A题解</title>
+    <link href="https://cyrxdzj.github.io/2022-07-09-LuoguCF1701ATJ/"/>
+    <id>https://cyrxdzj.github.io/2022-07-09-LuoguCF1701ATJ/</id>
+    <published>2022-07-09T13:30:26.000Z</published>
+    <updated>2022-08-14T02:06:21.033Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;可以发现，每次操作，都是将除了某一个格子的所有格子填充为</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CF1695B题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-21-LuoguCF1695BTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-21-LuoguCF1695BTJ/</id>
+    <published>2022-06-21T04:34:16.000Z</published>
+    <updated>2022-08-14T04:39:48.357Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;分为两种情况。&lt;/p&gt;
+&lt;p&gt;当 $n$ 为奇数的时候，Mike 必赢。因为，第一轮，Mike</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1695A题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-21-LuoguCF1695ATJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-21-LuoguCF1695ATJ/</id>
+    <published>2022-06-21T04:26:57.000Z</published>
+    <updated>2022-08-14T02:06:36.902Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，找到整个矩阵中最大的数。显然，这个数有且只有一个。为什么要找呢？待会再说。&lt;/p&gt;
+&lt;p&gt;然后，计算子矩形（原文是</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CF1700B题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-21-LuoguCF1700BTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-21-LuoguCF1700BTJ/</id>
+    <published>2022-06-21T04:15:29.000Z</published>
+    <updated>2022-08-14T01:51:17.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;如果输入的 $n$ 位数字的最高位不是 $9$，那么我们可以认为这个数字加上答案的和是 $99…99$（共有 $n$ 个</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1692G题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-17-LuoguCF1692GTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-17-LuoguCF1692GTJ/</id>
+    <published>2022-06-17T15:45:27.000Z</published>
+    <updated>2022-08-14T02:06:56.112Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CF1692F题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-17-LuoguCF1692FTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-17-LuoguCF1692FTJ/</id>
+    <published>2022-06-17T15:03:04.000Z</published>
+    <updated>2022-08-14T02:07:12.627Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，维护一个长度为 $10$ 的 &lt;code&gt;cnt&lt;/code&gt;</summary>
         
       
     
@@ -326,21 +312,24 @@
     
     <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
     
+    <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
+    
   </entry>
   
   <entry>
-    <title>洛谷UVA12955题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-04-LuoguUVA12955TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-04-LuoguUVA12955TJ/</id>
-    <published>2021-08-04T09:55:50.000Z</published>
-    <updated>2021-08-04T09:56:28.864Z</updated>
+    <title>CF1692E题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-17-LuoguCF1692ETJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-17-LuoguCF1692ETJ/</id>
+    <published>2022-06-17T12:39:27.000Z</published>
+    <updated>2022-08-14T02:07:23.801Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;你有 $15$ 种钞票，第 $i$ 种钞票的面值为 $i!$（$i$</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，如果数组本身的和就小于 $s$，那是肯定无解的。&lt;/p&gt;
+&lt;p&gt;维护 $l,r,sum$</summary>
         
       
     
@@ -349,48 +338,21 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
   </entry>
   
   <entry>
-    <title>洛谷UVA01600题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-02-LuoguUVA01600TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-02-LuoguUVA01600TJ/</id>
-    <published>2021-08-02T11:32:16.000Z</published>
-    <updated>2021-08-02T11:33:52.922Z</updated>
+    <title>CF1692D题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-17-LuoguCF1692DTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-17-LuoguCF1692DTJ/</id>
+    <published>2022-06-17T12:33:12.000Z</published>
+    <updated>2022-08-14T01:51:53.044Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题是一个还算可以的&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="BFS宽度优先搜索" scheme="https://cyrxdzj.github.io/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷UVA00725题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-02-LuoguUVA00725TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-02-LuoguUVA00725TJ/</id>
-    <published>2021-08-02T11:32:09.000Z</published>
-    <updated>2021-08-02T11:33:26.594Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;如果用 DFS 枚举数字的每一位,一定会</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，过了 $3600$ 次 $x$</summary>
         
       
     
@@ -404,43 +366,19 @@
   </entry>
   
   <entry>
-    <title>洛谷CF1530C题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530CTJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530CTJ/</id>
-    <published>2021-08-01T12:25:34.000Z</published>
-    <updated>2021-08-01T12:26:29.542Z</updated>
+    <title>CF1692C题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-17-LuoguCF1692CTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-17-LuoguCF1692CTJ/</id>
+    <published>2022-06-17T12:30:21.000Z</published>
+    <updated>2022-08-14T01:52:35.516Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="桶" scheme="https://cyrxdzj.github.io/tags/%E6%A1%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷CF1530B题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530BTJ/</id>
-    <published>2021-08-01T12:25:29.000Z</published>
-    <updated>2021-08-02T11:34:37.393Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;从 $(2,2)$ 到 $(7,7)$ 枚举每一个坐标。&lt;/p&gt;
+&lt;p&gt;显然，如果这个坐标的四角都是</summary>
         
       
     
@@ -449,50 +387,23 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    <category term="枚举" scheme="https://cyrxdzj.github.io/tags/%E6%9E%9A%E4%B8%BE/"/>
     
   </entry>
   
   <entry>
-    <title>洛谷CF1530A题解</title>
-    <link href="https://cyrxdzj.github.io/2021-08-01-LuoguCF1530ATJ/"/>
-    <id>https://cyrxdzj.github.io/2021-08-01-LuoguCF1530ATJ/</id>
-    <published>2021-08-01T12:25:24.000Z</published>
-    <updated>2021-08-01T12:26:08.800Z</updated>
+    <title>CF1697B题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-17-LuoguCF1697BTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-17-LuoguCF1697BTJ/</id>
+    <published>2022-06-16T16:16:54.000Z</published>
+    <updated>2022-08-14T01:54:08.202Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、题目翻译&quot;&gt;&lt;a href=&quot;#一、题目翻译&quot; class=&quot;headerlink&quot; title=&quot;一、题目翻译&quot;&gt;&lt;/a&gt;一、题目翻译&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洛谷P6174题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-30-LuoguP6174TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-30-LuoguP6174TJ/</id>
-    <published>2021-07-30T14:10:47.000Z</published>
-    <updated>2021-07-30T14:12:32.164Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，$R$ 越大，干草就越有可能被引爆完。&lt;/p&gt;
-&lt;p&gt;显然，这需要使用二分算法。&lt;/p&gt;
-&lt;p&gt;$R$ 的最小值为</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -503,23 +414,23 @@
     
     <category term="排序" scheme="https://cyrxdzj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
-    <category term="二分算法" scheme="https://cyrxdzj.github.io/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
+    <category term="前缀和" scheme="https://cyrxdzj.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
   </entry>
   
   <entry>
-    <title>洛谷P1369题解</title>
-    <link href="https://cyrxdzj.github.io/2021-07-26-LuoguP1369TJ/"/>
-    <id>https://cyrxdzj.github.io/2021-07-26-LuoguP1369TJ/</id>
-    <published>2021-07-26T05:18:33.000Z</published>
-    <updated>2021-07-26T05:19:23.354Z</updated>
+    <title>CF1697A题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-16-LuoguCF1697ATJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-16-LuoguCF1697ATJ/</id>
+    <published>2022-06-16T14:32:28.000Z</published>
+    <updated>2022-08-14T01:54:08.220Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;本题可以使用&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -528,7 +439,84 @@
     <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
     
     
-    <category term="前缀和" scheme="https://cyrxdzj.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    <category term="暴力与模拟" scheme="https://cyrxdzj.github.io/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1690B题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-11-LuoguCF1690BTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-11-LuoguCF1690BTJ/</id>
+    <published>2022-06-11T14:09:11.000Z</published>
+    <updated>2022-08-14T02:07:51.235Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;这道题相当简单。&lt;/p&gt;
+&lt;p&gt;首先，看看有没有某一个位置，使 $b$ 数组大于 $a$ 数组的。如果有，那显然就输出</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1690A题解</title>
+    <link href="https://cyrxdzj.github.io/2022-06-11-LuoguCF1690ATJ/"/>
+    <id>https://cyrxdzj.github.io/2022-06-11-LuoguCF1690ATJ/</id>
+    <published>2022-06-11T14:03:53.000Z</published>
+    <updated>2022-08-14T01:54:08.209Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，要使 $h_1$ 最小，应该让它尽可能靠近 $n\div3$。&lt;/p&gt;
+&lt;p&gt;分 $3$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="数学知识" scheme="https://cyrxdzj.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1681C题解</title>
+    <link href="https://cyrxdzj.github.io/2022-05-26-LuoguCF1681CTJ/"/>
+    <id>https://cyrxdzj.github.io/2022-05-26-LuoguCF1681CTJ/</id>
+    <published>2022-05-26T13:14:28.000Z</published>
+    <updated>2022-08-14T01:54:08.226Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，操作次数有 $10^4$ 那么多，在 $n\le100$ 时完全足够，因为通过将一个长度为 $n$</summary>
+        
+      
+    
+    
+    
+    <category term="洛谷题解" scheme="https://cyrxdzj.github.io/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    
+    
+    <category term="排序" scheme="https://cyrxdzj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
