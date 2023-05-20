@@ -174,5 +174,22 @@ console.log(window.location.host);
 if(window.location.host=="cyrxdzj.eu.org")
 {
     console.log("Jump.");
-    window.location.href=window.location.href.replace("/cyrxdzj.eu.org/","/blog.cyrxdzj.eu.org/");
+    jump_to_eu();
+}
+if(window.location.host=="cyrxdzj.github.org")
+{
+    console.log("Origin.");
+    var div_tip=document.createElement("div");
+    div_tip.style.height="auto";
+    div_tip.style.width="160px";
+    div_tip.style.position="fixed";
+    div_tip.style.right=div_tip.style.bottom="0px";
+    div_tip.style.background="#FFFFFFBB";
+    div_tip.style.padding=div_tip.style.borderRadius="25px";
+    div_tip.innerHTML='<p>您正在访问cyrxdzj.github.io，这是部署在Github Pages上的。也许您可以访问<a onclick="jump_to_eu()">blog.cyrxdzj.eu.org</a>，这是部署在Vercel上的。</p>';
+    document.body.appendChild(div_tip);
+}
+function jump_to_eu()
+{
+    window.location.href=window.location.href.replace(`/${window.location.host}/`,"/blog.cyrxdzj.eu.org/");
 }
