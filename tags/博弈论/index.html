@@ -320,7 +320,7 @@
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
-                        backSpeed: 50,
+                        backSpeed: 200,
                         showCursor: true
                     });
                 </script>
@@ -333,7 +333,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + ((new Date().getDate())%6)+ '.jpg';
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -354,20 +354,20 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/" title="输出格式: 1">
+                <a href="/tags/%E5%9B%BE%E8%AE%BA/" title="图论: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="输出格式" style="background-color: #F9EBEA;">输出格式
-                        <span class="tag-length">1</span>
+                            data-tagname="图论" style="background-color: #F9EBEA;">图论
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" title="数学知识: 38">
+                <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="数学知识" style="background-color: #F5EEF8;">数学知识
-                        <span class="tag-length">38</span>
+                            data-tagname="最短路" style="background-color: #F5EEF8;">最短路
+                        <span class="tag-length">4</span>
                     </span>
                 </a>
                 
@@ -381,20 +381,20 @@
                 </a>
                 
                 
-                <a href="/tags/%E5%9B%BE%E8%AE%BA/" title="图论: 3">
+                <a href="/tags/%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/" title="输出格式: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="图论" style="background-color: #E8F8F5;">图论
-                        <span class="tag-length">3</span>
+                            data-tagname="输出格式" style="background-color: #E8F8F5;">输出格式
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路: 4">
+                <a href="/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" title="数学知识: 38">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="最短路" style="background-color: #FEF9E7;">最短路
-                        <span class="tag-length">4</span>
+                            data-tagname="数学知识" style="background-color: #FEF9E7;">数学知识
+                        <span class="tag-length">38</span>
                     </span>
                 </a>
                 
@@ -408,20 +408,20 @@
                 </a>
                 
                 
-                <a href="/tags/%E6%8E%92%E5%BA%8F/" title="排序: 8">
+                <a href="/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" title="BFS宽度优先搜索: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="排序" style="background-color: #82E0AA;">排序
-                        <span class="tag-length">8</span>
+                            data-tagname="BFS宽度优先搜索" style="background-color: #82E0AA;">BFS宽度优先搜索
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/BFS%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" title="BFS宽度优先搜索: 2">
+                <a href="/tags/%E6%8E%92%E5%BA%8F/" title="排序: 8">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="BFS宽度优先搜索" style="background-color: #D7BDE2;">BFS宽度优先搜索
-                        <span class="tag-length">2</span>
+                            data-tagname="排序" style="background-color: #D7BDE2;">排序
+                        <span class="tag-length">8</span>
                     </span>
                 </a>
                 
@@ -471,6 +471,24 @@
                 </a>
                 
                 
+                <a href="/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/" title="博弈论: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="博弈论" style="background-color: #F5EEF8;">博弈论
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" title="线段树: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="线段树" style="background-color: #F8F9F9;">线段树
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/C-STL/" title="C++ STL: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -503,24 +521,6 @@
                              chip-default "
                             data-tagname="并查集" style="background-color: #D7BDE2;">并查集
                         <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/" title="博弈论: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="博弈论" style="background-color: #F5EEF8;">博弈论
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" title="线段树: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="线段树" style="background-color: #F8F9F9;">线段树
-                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -623,7 +623,7 @@
         display: none;
         
         font-size: 15px;
-        color: #42b983;
+        color: #000088;
     }
 
     
@@ -646,7 +646,7 @@
                    id="001EKUsS1VqrkK"
                    fixed='true'
                    autoplay='false'
-                   theme='#42b983'
+                   theme='#000088'
                    loop='all'
                    order='random'
                    preload='auto'
@@ -665,7 +665,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021-2022</span>
+                <span id="year">2021-2023</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">cyrxdzj</a>

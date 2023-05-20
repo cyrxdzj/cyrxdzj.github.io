@@ -320,7 +320,7 @@
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
-                        backSpeed: 50,
+                        backSpeed: 200,
                         showCursor: true
                     });
                 </script>
@@ -333,7 +333,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + ((new Date().getDate())%6)+ '.jpg';
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -355,19 +355,19 @@
                 
                 
                 
-                <a href="/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/" title="一些杂七杂八的东西: 2">
+                <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" title="学校生活: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F9EBEA;">一些杂七杂八的东西
+                             chip-default "
+                            style="background-color: #F9EBEA;">学校生活
                         <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" title="学校生活: 2">
+                <a href="/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/" title="一些杂七杂八的东西: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F5EEF8;">学校生活
+                             chip-active "
+                            style="background-color: #F5EEF8;">一些杂七杂八的东西
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -519,7 +519,7 @@
         display: none;
         
         font-size: 15px;
-        color: #42b983;
+        color: #000088;
     }
 
     
@@ -542,7 +542,7 @@
                    id="001EKUsS1VqrkK"
                    fixed='true'
                    autoplay='false'
-                   theme='#42b983'
+                   theme='#000088'
                    loop='all'
                    order='random'
                    preload='auto'
@@ -561,7 +561,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021-2022</span>
+                <span id="year">2021-2023</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">cyrxdzj</a>

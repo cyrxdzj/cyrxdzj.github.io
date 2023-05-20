@@ -170,3 +170,9 @@ $(function () {
     // 初始化加载 tooltipped.
     $('.tooltipped').tooltip();
 });
+console.log(window.location.host);
+if(window.location.host=="cyrxdzj.eu.org")
+{
+    console.log("Jump.");
+    window.location.href=window.location.href.replace("/cyrxdzj.eu.org/","/blog.cyrxdzj.eu.org/");
+}
