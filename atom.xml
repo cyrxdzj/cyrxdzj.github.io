@@ -6,7 +6,7 @@
   <link href="https://blog.cyrxdzj.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.cyrxdzj.eu.org/"/>
-  <updated>2022-08-14T01:48:11.154Z</updated>
+  <updated>2023-05-26T16:18:50.774Z</updated>
   <id>https://blog.cyrxdzj.eu.org/</id>
   
   <author>
@@ -17,506 +17,186 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CF1709D题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-22-LuoguCF1709DTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-22-LuoguCF1709DTJ/</id>
-    <published>2022-07-22T08:19:49.000Z</published>
-    <updated>2022-08-14T01:48:11.154Z</updated>
+    <title>从智慧课堂系统的角度浅谈网络安全</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-05-21-TalkingAboutNetworkSecurityFromTheIntelligentClassromSystem/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-05-21-TalkingAboutNetworkSecurityFromTheIntelligentClassromSystem/</id>
+    <published>2023-05-21T02:11:00.000Z</published>
+    <updated>2023-05-26T16:18:50.774Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="线段树" scheme="https://blog.cyrxdzj.eu.org/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1709B题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-22-LuoguCF1709BTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-22-LuoguCF1709BTJ/</id>
-    <published>2022-07-22T08:05:37.000Z</published>
-    <updated>2022-08-14T01:47:40.879Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="前缀和" scheme="https://blog.cyrxdzj.eu.org/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1709A题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-22-LuoguCF1709ATJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-22-LuoguCF1709ATJ/</id>
-    <published>2022-07-22T07:45:45.000Z</published>
-    <updated>2022-08-14T01:47:33.426Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;这道题其实非常简单，模拟每次开门及获得的钥匙即可。&lt;/p&gt;
-&lt;h3 id=&quot;二、代码&quot;&gt;&lt;a href=&quot;#二、代码&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1706A题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-19-LuoguCF1706ATJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-19-LuoguCF1706ATJ/</id>
-    <published>2022-07-19T06:30:39.000Z</published>
-    <updated>2022-08-14T01:47:25.225Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;可以发现，将一个字符从 &lt;code&gt;B&lt;/code&gt;  变成</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="贪心算法" scheme="https://blog.cyrxdzj.eu.org/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1708B题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-18-LuoguCF1708BTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-18-LuoguCF1708BTJ/</id>
-    <published>2022-07-18T06:59:30.000Z</published>
-    <updated>2022-08-14T01:49:18.542Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，两个正整数的最大公因数，最小为 $1$，最大为这两个数中最小的。&lt;/p&gt;
-&lt;p&gt;再考虑到 $gcd(i,a_i)$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1701C题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-09-LuoguCF1701CTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-09-LuoguCF1701CTJ/</id>
-    <published>2022-07-09T13:37:25.000Z</published>
-    <updated>2022-08-14T01:49:18.534Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="二分算法" scheme="https://blog.cyrxdzj.eu.org/tags/%E4%BA%8C%E5%88%86%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1701A题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-07-09-LuoguCF1701ATJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-07-09-LuoguCF1701ATJ/</id>
-    <published>2022-07-09T13:30:26.000Z</published>
-    <updated>2022-08-14T02:06:21.033Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;可以发现，每次操作，都是将除了某一个格子的所有格子填充为</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="杂谈" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%9D%82%E8%B0%88/"/>
     
     
   </entry>
   
   <entry>
-    <title>CF1695B题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-21-LuoguCF1695BTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-21-LuoguCF1695BTJ/</id>
-    <published>2022-06-21T04:34:16.000Z</published>
-    <updated>2022-08-14T04:39:48.357Z</updated>
+    <title>洛谷2021年07月月赛参加总结</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-07-22-LuoguMonthlyCompetition202107Summary/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-07-22-LuoguMonthlyCompetition202107Summary/</id>
+    <published>2021-07-22T09:43:49.000Z</published>
+    <updated>2022-01-22T13:00:08.747Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;分为两种情况。&lt;/p&gt;
-&lt;p&gt;当 $n$ 为奇数的时候，Mike 必赢。因为，第一轮，Mike</summary>
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1695A题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-21-LuoguCF1695ATJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-21-LuoguCF1695ATJ/</id>
-    <published>2022-06-21T04:26:57.000Z</published>
-    <updated>2022-08-14T02:06:36.902Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，找到整个矩阵中最大的数。显然，这个数有且只有一个。为什么要找呢？待会再说。&lt;/p&gt;
-&lt;p&gt;然后，计算子矩形（原文是</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="比赛总结" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     
     
   </entry>
   
   <entry>
-    <title>CF1700B题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-21-LuoguCF1700BTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-21-LuoguCF1700BTJ/</id>
-    <published>2022-06-21T04:15:29.000Z</published>
-    <updated>2022-08-14T01:51:17.568Z</updated>
+    <title>七年级下学期期末考试总结</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2FinalExamSummary/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2FinalExamSummary/</id>
+    <published>2021-07-09T10:49:32.000Z</published>
+    <updated>2022-01-22T12:59:41.398Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;如果输入的 $n$ 位数字的最高位不是 $9$，那么我们可以认为这个数字加上答案的和是 $99…99$（共有 $n$ 个</summary>
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;$2021$ 年 $7$ 月 $1$ 日至 $2$</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1692G题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692GTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692GTJ/</id>
-    <published>2022-06-17T15:45:27.000Z</published>
-    <updated>2022-08-14T02:06:56.112Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="学校生活" scheme="https://blog.cyrxdzj.eu.org/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
-    <title>CF1692F题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692FTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692FTJ/</id>
-    <published>2022-06-17T15:03:04.000Z</published>
-    <updated>2022-08-14T02:07:12.627Z</updated>
+    <title>七年级下学期期中考试总结</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2MidtermExamSummary/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2MidtermExamSummary/</id>
+    <published>2021-07-09T10:49:23.000Z</published>
+    <updated>2022-01-22T12:59:38.007Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;首先，维护一个长度为 $10$ 的 &lt;code&gt;cnt&lt;/code&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;$2021$ 年 $4$ 月 $26$ 日至 $28$ 日，我校举行了期中考试。&lt;/p&gt;
+&lt;h3 id=&quot;二、语文&quot;&gt;&lt;a</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-    <category term="枚举" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%9E%9A%E4%B8%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1692E题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692ETJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692ETJ/</id>
-    <published>2022-06-17T12:39:27.000Z</published>
-    <updated>2022-08-14T02:07:23.801Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，如果数组本身的和就小于 $s$，那是肯定无解的。&lt;/p&gt;
-&lt;p&gt;维护 $l,r,sum$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="学校生活" scheme="https://blog.cyrxdzj.eu.org/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
-    <title>CF1692D题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692DTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692DTJ/</id>
-    <published>2022-06-17T12:33:12.000Z</published>
-    <updated>2022-08-14T01:51:53.044Z</updated>
+    <title>如何使用luogu-card</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-07-07-HowToUseLuoguCard/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-07-07-HowToUseLuoguCard/</id>
+    <published>2021-07-07T10:00:59.000Z</published>
+    <updated>2023-05-20T04:51:08.110Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，过了 $3600$ 次 $x$</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;该项目是由&lt;a</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="一些杂七杂八的东西" scheme="https://blog.cyrxdzj.eu.org/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
-    
-    <category term="枚举" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%9E%9A%E4%B8%BE/"/>
     
   </entry>
   
   <entry>
-    <title>CF1692C题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692CTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1692CTJ/</id>
-    <published>2022-06-17T12:30:21.000Z</published>
-    <updated>2022-08-14T01:52:35.516Z</updated>
+    <title>OIer之诗</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-07-05-OIerPoem/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-07-05-OIerPoem/</id>
+    <published>2021-07-05T05:56:02.000Z</published>
+    <updated>2022-01-22T12:58:54.123Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;从 $(2,2)$ 到 $(7,7)$ 枚举每一个坐标。&lt;/p&gt;
-&lt;p&gt;显然，如果这个坐标的四角都是</summary>
+    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="一些杂七杂八的东西" scheme="https://blog.cyrxdzj.eu.org/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
-    
-    <category term="枚举" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%9E%9A%E4%B8%BE/"/>
     
   </entry>
   
   <entry>
-    <title>CF1697B题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1697BTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-17-LuoguCF1697BTJ/</id>
-    <published>2022-06-16T16:16:54.000Z</published>
-    <updated>2022-08-14T01:54:08.202Z</updated>
+    <title>洛谷2021年05月月赛参加总结</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-07-02-LuoguMonthlyCompetition202105Summary/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-07-02-LuoguMonthlyCompetition202105Summary/</id>
+    <published>2021-07-02T09:58:07.000Z</published>
+    <updated>2022-01-22T13:00:04.911Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;洛谷每个月都会举办月赛，这次我参加的是</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
+    <category term="比赛总结" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     
-    
-    <category term="排序" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-    <category term="前缀和" scheme="https://blog.cyrxdzj.eu.org/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
   </entry>
   
   <entry>
-    <title>CF1697A题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-16-LuoguCF1697ATJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-16-LuoguCF1697ATJ/</id>
-    <published>2022-06-16T14:32:28.000Z</published>
-    <updated>2022-08-14T01:54:08.220Z</updated>
+    <title>Hello World</title>
+    <link href="https://blog.cyrxdzj.eu.org/2021-06-27-hello-world/"/>
+    <id>https://blog.cyrxdzj.eu.org/2021-06-27-hello-world/</id>
+    <published>2021-06-27T03:31:29.140Z</published>
+    <updated>2023-05-26T10:31:07.912Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
     
     
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="暴力与模拟" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%9A%B4%E5%8A%9B%E4%B8%8E%E6%A8%A1%E6%8B%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1690B题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-11-LuoguCF1690BTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-11-LuoguCF1690BTJ/</id>
-    <published>2022-06-11T14:09:11.000Z</published>
-    <updated>2022-08-14T02:07:51.235Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;这道题相当简单。&lt;/p&gt;
-&lt;p&gt;首先，看看有没有某一个位置，使 $b$ 数组大于 $a$ 数组的。如果有，那显然就输出</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1690A题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-06-11-LuoguCF1690ATJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-06-11-LuoguCF1690ATJ/</id>
-    <published>2022-06-11T14:03:53.000Z</published>
-    <updated>2022-08-14T01:54:08.209Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，要使 $h_1$ 最小，应该让它尽可能靠近 $n\div3$。&lt;/p&gt;
-&lt;p&gt;分 $3$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="数学知识" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1681C题解</title>
-    <link href="https://blog.cyrxdzj.eu.org/2022-05-26-LuoguCF1681CTJ/"/>
-    <id>https://blog.cyrxdzj.eu.org/2022-05-26-LuoguCF1681CTJ/</id>
-    <published>2022-05-26T13:14:28.000Z</published>
-    <updated>2022-08-14T01:54:08.226Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、思路&quot;&gt;&lt;a href=&quot;#一、思路&quot; class=&quot;headerlink&quot; title=&quot;一、思路&quot;&gt;&lt;/a&gt;一、思路&lt;/h3&gt;&lt;p&gt;显然，操作次数有 $10^4$ 那么多，在 $n\le100$ 时完全足够，因为通过将一个长度为 $n$</summary>
-        
-      
-    
-    
-    
-    <category term="洛谷题解" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/"/>
-    
-    
-    <category term="排序" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   

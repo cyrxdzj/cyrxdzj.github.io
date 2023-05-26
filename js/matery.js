@@ -176,9 +176,9 @@ if(window.location.host=="cyrxdzj.eu.org")
     console.log("Jump.");
     jump_to_eu();
 }
-if(window.location.host=="cyrxdzj.github.org")
+if(window.location.host=="cyrxdzj.github.io")
 {
-    console.log("Origin.");
+    console.log("You are view cyrxdzj.github.io.");
     var div_tip=document.createElement("div");
     div_tip.style.height="auto";
     div_tip.style.width="160px";
