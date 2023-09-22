@@ -1,1 +1,15 @@
 /* Here is your custom css styles. */
+.card
+{
+    background:rgba(255,255,255,0.8)!important;
+}
+.bg-color
+{
+    background:rgba(0,0,136,0.8)!important;
+}
+.cover-btns a:hover
+{
+    border: 1px solid #000088;
+    background-color: #000088!important;
+    box-shadow:0 14px 26px -12px rgba(0, 0, 136, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 136, 0.2);
+}

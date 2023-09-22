@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>cyrxdzj的文化课学习笔记 数学001 基本不等式</title>
+      <link href="/2023-09-22-CyrxNote-Math-001/"/>
+      <url>/2023-09-22-CyrxNote-Math-001/</url>
+      
+        <content type="html"><![CDATA[<p>基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。</p><h3 id="1、1-的代换法"><a href="#1、1-的代换法" class="headerlink" title="1、1 的代换法"></a>1、1 的代换法</h3><p><strong>众所周知，任何数乘 $1$ 都等于原数。</strong></p><p>例如，若 $x&gt;0,y&gt;0,\frac{1}{x}+\frac{9}{y}=1$，求 $x+y$ 的最小值。</p><p>对于这道题，可以发现 $x+y=(x+y)(\frac{1}{x}+\frac{9}{y})=1+9+\frac{9x}{y}+\frac{y}{x}$（暴力死算出来），然后就可以将后面那一坨 $\frac{9x}{y}+\frac{y}{x}$ 用基本不等式求最值了。</p><p>如果 $\frac{1}{x}+\frac{9}{y}=2\ne1$，那也好办，<strong>可以在整个算式前面乘上一个数使这个算式的值为 $1$。</strong> 对于上面的式子，$\frac{1}{2}\times（\frac{1}{x}+\frac{9}{y})=1$，那么 $x+y=(x+y)[\frac{1}{2}\times(\frac{1}{x}+\frac{9}{y})]=(x+y)(\frac{1}{x}+\frac{9}{y})\times\frac{1}{2}$，求出前面的 $(x+y)(\frac{1}{x}+\frac{9}{y})$ 的最值就搞定了。</p><p>再看看这个。若 $x&gt;0,y&gt;0,x+8y=xy$，求 $x+2y$ 的最小值。</p><p>可以发现，$(x+8y)\div(xy)=(xy)\div(xy)$，也就是说 $\frac{1}{y}+\frac{8}{x}=1$。又回来了。</p><h3 id="2、配凑法"><a href="#2、配凑法" class="headerlink" title="2、配凑法"></a>2、配凑法</h3><p>积等和最小（当 $a&gt;0,b&gt;0$ 且 $ab$ 为定值时，$a+b$ 的最小值为 $2\sqrt{ab}$），和等积最大（当 $a&gt;0,b&gt;0$ 且 $a+b$ 为定值时，$ab$ 的最大值为 $(\frac{a+b}{2})^2$）。想必一开始学基本不等式时，读者就知道这句话了。</p><p>那么，当 $x&gt;\frac{1}{2}$ 时，求 $x+\frac{1}{2x-1}$ 的最小值。</p><p>可以发现 $\frac{x}{2x-1}$ 不是定值，不能直接开基本不等式。</p><p>那么，<strong>我们可以尝试将前面的 $x$ 转换成一个整式，使这个整式除以 $2x-1$ 可以得到一个实数</strong>（无论是不是整数都行，<strong>别带未知数就好</strong>）。</p><p>于是，原式被转化为了 $(x-0.5)+\frac{1}{2x-1}+0.5$，先在前面加 $0.5$，再在后面减 $0.5$。</p><p>这样就可以用基本不等式了：$(x-0.5)+\frac{1}{2x-1}+0.5\ge2\sqrt{\frac{x-0.5}{2x-1}}+0.5$。去算吧。</p><h3 id="3、结合-1-和-2-的知识解题"><a href="#3、结合-1-和-2-的知识解题" class="headerlink" title="3、结合 1 和 2 的知识解题"></a>3、结合 1 和 2 的知识解题</h3><p>当 $x&gt;-2,y&gt;-2,\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 时，求 $x+y$ 的最小值。</p><p>看到这里就别往下看，请读者自己思考一下吧。</p><p>首先，由方法 1 可知，$6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p><p>但即便是这样，$x+y$ 也并不是很好处理。</p><p>这个时候，我们可以借助方法 2，$x+y=(x+2)+(y+2)-4$。</p><p>接下来，求出 $(x+2)+(y+2)$ 的最小值即可。</p><p>$x+y=(x+2)+(y+2)-4$……使用配凑法</p><p>$=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$……使用 1 的代换法</p><p>$=6\times[(x+2)+(y+2)](\frac{1}{x+2}+\frac{1}{y+2})-4$……整理式子，将 $6$ 丢一边</p><p>$=6\times(1+1+\frac{x+2}{y+2}+\frac{y+2}{x+2})-4$……强行计算括号中的内容</p><p>$=6\times(\frac{x+2}{y+2}+\frac{y+2}{x+2})+12-4$……把无关的 $12$（即 $6\times(1+1)$）丢出去</p><p>$\ge6\times2\sqrt{\frac{x+2}{y+2}\times\frac{y+2}{x+2}}+8$……启用基本不等式</p><p>$=20$……计算得出结果</p><p>搞定。</p><h3 id="4、使系数相等"><a href="#4、使系数相等" class="headerlink" title="4、使系数相等"></a>4、使系数相等</h3><p>再看看：当 $a&gt;0,b&gt;0,2a+3b=12$ 时，求 $\frac{1}{ab}$ 的最小值。</p><p>显然，当 $ab$ 最大的时候，就是 $\frac{1}{ab}$ 最小的时候。</p><p>但是，条件是 $2a+3b=12$,这意味着 $a+b$ 是会变的，不能直接使用基本不等式。</p><p>那么，我们考虑改变一下 $ab$ 这边。给 $a$ 搞个系数 $2$，给 $b$ 搞个系数 $3$，最后统一 $\div6$，我们就有 $ab=(2a\cdot3b)\times\frac{1}{6}\le(\frac{2a+3b}{2})^2\times\frac{1}{6}=6$，那么 $\frac{1}{ab}$ 的最小值就是 $\frac{1}{6}$。</p><p>未完待续。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> cyrxdzj的文化课学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从智慧课堂系统的角度浅谈计算机安全</title>
       <link href="/2023-05-21-TalkingAboutComputerSecurityFromTheIntelligentClassromSystem/"/>
       <url>/2023-05-21-TalkingAboutComputerSecurityFromTheIntelligentClassromSystem/</url>
