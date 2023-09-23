@@ -3,6 +3,10 @@
 {
     background:rgba(255,255,255,0.8)!important;
 }
+.card-action
+{
+    background-color:transparent!important;
+}
 .bg-color
 {
     background:rgba(0,0,136,0.8)!important;
