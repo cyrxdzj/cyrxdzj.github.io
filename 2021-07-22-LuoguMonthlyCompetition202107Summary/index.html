@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 
@@ -640,7 +640,7 @@
 		<span class="token keyword">long</span> <span class="token keyword">long</span> temp_ans<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
 		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
 		<span class="token punctuation">&#123;</span>
-			<span class="token keyword">if</span><span class="token punctuation">(</span>pearl<span class="token punctuation">[</span>dfs_array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span>op<span class="token operator">==</span><span class="token string">'+'</span><span class="token punctuation">)</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>pearl<span class="token punctuation">[</span>dfs_array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span>op<span class="token operator">==</span><span class="token char">'+'</span><span class="token punctuation">)</span>
 			<span class="token punctuation">&#123;</span>
 				temp_ans<span class="token operator">+=</span>pearl<span class="token punctuation">[</span>dfs_array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span>num<span class="token punctuation">;</span>
 			<span class="token punctuation">&#125;</span>
@@ -678,7 +678,7 @@
 		<span class="token punctuation">&#123;</span>
 			flag<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
 		<span class="token punctuation">&#125;</span>
-		<span class="token keyword">if</span><span class="token punctuation">(</span>op<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'+'</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>op<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token char">'+'</span><span class="token punctuation">)</span>
 		<span class="token punctuation">&#123;</span>
 			add_cnt<span class="token operator">++</span><span class="token punctuation">;</span>
 			add_pearl<span class="token punctuation">[</span>add_cnt<span class="token punctuation">]</span><span class="token punctuation">.</span>op<span class="token operator">=</span>op<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -1166,6 +1166,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script>
     MathJax.Hub.Config({
+        loader: {load: ['[tex]/color']},
+        tex: {packages: {'[+]': ['color']}},
         tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
     });
 </script>
@@ -1278,6 +1280,15 @@
 </footer>
 
 <div class="progress-bar"></div>
+
+
+  <script src='https://unpkg.com/mermaid/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest',startOnLoad:true});
+      console.log("Mermaid inited\n");
+    }
+  </script>
 
 
     <!-- 搜索遮罩框 -->

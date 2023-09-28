@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 
@@ -500,15 +500,18 @@
 <p>C. r 是 q 的必要不充分条件</p>
 <p>D. r 是 s 的充分不必要条件</p>
 <p>对于这道题，我们可以像这样在草稿纸上画张图。如果 a 是 b 的充分条件，那么就从 a 到 b 画一条<strong>有向</strong>边。显然，<strong>如果 b 是 a 的必要条件，那么 a 就是 b 的充分条件</strong>，换个说法而已。</p>
-<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid">graph LR
-p([p])
-r([r])
-s([s])
-q([q])
-p--&gt;r
-q--&gt;r
-r--&gt;s
-s--&gt;q<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="mermaid">
+ flowchart LR
+ p([p])
+ r([r])
+ s([s])
+ q([q])
+ p-->r
+ q-->r
+ r-->s
+ s-->q
+</pre>
+
 <p>接下来，判断每个选项。在上面那张图中，如果可以从 a 出发到达 b，<strong>那么 a 就是 b 的充分条件</strong>，否则不是。神奇吧？</p>
 <p>因此，根据这幅图，我们判断出 AB 是正确答案。根据图片，r、s、q 互为充要条件，因此 A 正确，CD 错误。从 p 可以走到 q，但是从 q 不能走到 p，因此 B 正确。</p>
 <p><del>论信息学知识“有向图的连通性”在文化课的妙用。</del></p>
@@ -885,6 +888,8 @@ s--&gt;q<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script>
     MathJax.Hub.Config({
+        loader: {load: ['[tex]/color']},
+        tex: {packages: {'[+]': ['color']}},
         tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
     });
 </script>
@@ -997,6 +1002,15 @@ s--&gt;q<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
 </footer>
 
 <div class="progress-bar"></div>
+
+
+  <script src='https://unpkg.com/mermaid/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest',startOnLoad:true});
+      console.log("Mermaid inited\n");
+    }
+  </script>
 
 
     <!-- 搜索遮罩框 -->

@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNoteIndex/</loc>
-    
-    <lastmod>2023-09-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNote-Chemistry-001/</loc>
     
     <lastmod>2023-09-28</lastmod>
@@ -21,6 +12,15 @@
   
   <url>
     <loc>https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/</loc>
+    
+    <lastmod>2023-09-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNoteIndex/</loc>
     
     <lastmod>2023-09-28</lastmod>
     

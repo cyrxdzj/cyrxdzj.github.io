@@ -25,3 +25,24 @@
 {
     filter: opacity(0.6);
 }
+blockquote
+{
+    border-left:5px solid #000088;
+    background-color:rgba(0,0,136,.1);
+}
+#articleContent a,
+#toc-content .is-active-link,
+#artDetail .reprint a,
+.text-color,
+.github-corner svg
+{
+    color:#000088!important;
+}
+.progress-bar
+{
+    background:linear-gradient(to right, #000088 0%, rgba(0,0,136,0.6) 100%);
+}
+#artDetail .tag_share .article-tag .chip
+{
+    color:white;
+}
