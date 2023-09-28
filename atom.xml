@@ -6,7 +6,7 @@
   <link href="https://blog.cyrxdzj.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.cyrxdzj.eu.org/"/>
-  <updated>2023-09-23T03:13:07.015Z</updated>
+  <updated>2023-09-28T12:26:57.166Z</updated>
   <id>https://blog.cyrxdzj.eu.org/</id>
   
   <author>
@@ -17,11 +17,80 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>cyrxdzj的文化课学习笔记 目录</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNoteIndex/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNoteIndex/</id>
+    <published>2023-09-28T12:26:57.000Z</published>
+    <updated>2023-09-28T12:26:57.166Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;此为《cyrxdzj的文化课学习笔记》的目录。您可以在这里寻找您需要的文章。&lt;/p&gt;
+&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 化学001 氧化还原反应</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNote-Chemistry-001/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNote-Chemistry-001/</id>
+    <published>2023-09-28T12:25:46.000Z</published>
+    <updated>2023-09-28T12:26:15.215Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这玩意把人绕晕了都。&lt;/p&gt;
+&lt;h3 id=&quot;1、是否为氧化还原反应的判定&quot;&gt;&lt;a href=&quot;#1、是否为氧化还原反应的判定&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 数学002 集合与条件</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/</id>
+    <published>2023-09-23T14:05:13.000Z</published>
+    <updated>2023-09-28T12:25:33.353Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1、前置知识：子集与真子集&quot;&gt;&lt;a href=&quot;#1、前置知识：子集与真子集&quot; class=&quot;headerlink&quot; title=&quot;1、前置知识：子集与真子集&quot;&gt;&lt;/a&gt;1、前置知识：子集与真子集&lt;/h3&gt;&lt;p&gt;在开始之前，我们先定义两个集合 $A$ 和 $B$</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>cyrxdzj的文化课学习笔记 数学001 基本不等式</title>
     <link href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</id>
     <published>2023-09-22T13:58:37.000Z</published>
-    <updated>2023-09-23T03:13:07.015Z</updated>
+    <updated>2023-09-23T07:26:16.640Z</updated>
     
     
       
@@ -37,8 +106,6 @@
     
     <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    
-    <category term="数学" scheme="https://blog.cyrxdzj.eu.org/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
