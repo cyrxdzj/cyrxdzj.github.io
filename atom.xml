@@ -6,7 +6,7 @@
   <link href="https://blog.cyrxdzj.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.cyrxdzj.eu.org/"/>
-  <updated>2023-09-28T12:26:57.166Z</updated>
+  <updated>2023-10-12T04:17:46.385Z</updated>
   <id>https://blog.cyrxdzj.eu.org/</id>
   
   <author>
@@ -17,19 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>cyrxdzj的文化课学习笔记 目录</title>
-    <link href="https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNoteIndex/"/>
-    <id>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNoteIndex/</id>
-    <published>2023-09-28T12:26:57.000Z</published>
-    <updated>2023-09-28T12:26:57.166Z</updated>
+    <title>cyrxdzj的文化课学习笔记 数学004 函数</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-10-09-CyrxNote-Math-004/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-10-09-CyrxNote-Math-004/</id>
+    <published>2023-10-08T23:01:12.000Z</published>
+    <updated>2023-10-12T04:17:46.385Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;此为《cyrxdzj的文化课学习笔记》的目录。您可以在这里寻找您需要的文章。&lt;/p&gt;
-&lt;div</summary>
+    <summary type="html">&lt;p&gt;本文含有较多图片，单击可以放大。&lt;/p&gt;
+&lt;h3 id=&quot;1、思维杂题&quot;&gt;&lt;a href=&quot;#1、思维杂题&quot; class=&quot;headerlink&quot; title=&quot;1、思维杂题&quot;&gt;&lt;/a&gt;1、思维杂题&lt;/h3&gt;&lt;p&gt;已知 $A=B=${$0,1,2,3$}，则</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 数学003 一元二次不等式</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/</id>
+    <published>2023-10-04T12:57:51.000Z</published>
+    <updated>2023-10-10T12:05:30.912Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文含有较多图片，单击可以放大。&lt;/p&gt;
+&lt;h3 id=&quot;1、基础：一元二次不等式的基本解法&quot;&gt;&lt;a href=&quot;#1、基础：一元二次不等式的基本解法&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -45,7 +69,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNote-Chemistry-001/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-09-28-CyrxNote-Chemistry-001/</id>
     <published>2023-09-28T12:25:46.000Z</published>
-    <updated>2023-09-28T13:08:06.074Z</updated>
+    <updated>2023-10-07T06:45:28.512Z</updated>
     
     
       
@@ -60,6 +84,8 @@
     
     
     
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
     
   </entry>
   
@@ -68,7 +94,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/</id>
     <published>2023-09-23T14:05:13.000Z</published>
-    <updated>2023-09-29T00:00:38.094Z</updated>
+    <updated>2023-10-07T06:45:28.512Z</updated>
     
     
       
@@ -91,7 +117,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</id>
     <published>2023-09-22T13:58:37.000Z</published>
-    <updated>2023-09-23T07:26:16.640Z</updated>
+    <updated>2023-10-07T06:45:28.512Z</updated>
     
     
       
@@ -100,6 +126,30 @@
         
     <summary type="html">&lt;p&gt;基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。&lt;/p&gt;
 &lt;h3 id=&quot;1、1-的代换法&quot;&gt;&lt;a href=&quot;#1、1-的代换法&quot; class=&quot;headerlink&quot; title=&quot;1、1 的代换法&quot;&gt;&lt;/a&gt;1、1</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 目录</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNoteIndex/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNoteIndex/</id>
+    <published>2023-09-21T16:00:00.000Z</published>
+    <updated>2023-10-10T14:10:59.839Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;此为《cyrxdzj的文化课学习笔记》的目录。您可以在这里寻找您需要的文章。&lt;/p&gt;
+&lt;div</summary>
         
       
     
@@ -138,7 +188,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2021-07-22-LuoguMonthlyCompetition202107Summary/"/>
     <id>https://blog.cyrxdzj.eu.org/2021-07-22-LuoguMonthlyCompetition202107Summary/</id>
     <published>2021-07-22T09:43:49.000Z</published>
-    <updated>2023-09-23T03:22:38.876Z</updated>
+    <updated>2023-10-09T13:19:52.727Z</updated>
     
     
       
@@ -161,7 +211,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2FinalExamSummary/"/>
     <id>https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2FinalExamSummary/</id>
     <published>2021-07-09T10:49:32.000Z</published>
-    <updated>2022-01-22T12:59:41.398Z</updated>
+    <updated>2023-10-09T13:19:20.427Z</updated>
     
     
       
@@ -184,7 +234,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2MidtermExamSummary/"/>
     <id>https://blog.cyrxdzj.eu.org/2021-07-09-Grade7Term2MidtermExamSummary/</id>
     <published>2021-07-09T10:49:23.000Z</published>
-    <updated>2022-01-22T12:59:38.007Z</updated>
+    <updated>2023-10-09T13:19:28.855Z</updated>
     
     
       
@@ -208,7 +258,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2021-07-07-HowToUseLuoguCard/"/>
     <id>https://blog.cyrxdzj.eu.org/2021-07-07-HowToUseLuoguCard/</id>
     <published>2021-07-07T10:00:59.000Z</published>
-    <updated>2023-05-20T04:51:08.110Z</updated>
+    <updated>2023-10-09T13:19:43.132Z</updated>
     
     
       
@@ -232,7 +282,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2021-07-02-LuoguMonthlyCompetition202105Summary/"/>
     <id>https://blog.cyrxdzj.eu.org/2021-07-02-LuoguMonthlyCompetition202105Summary/</id>
     <published>2021-07-02T09:58:07.000Z</published>
-    <updated>2022-01-22T13:00:04.911Z</updated>
+    <updated>2023-10-10T03:47:04.699Z</updated>
     
     
       
@@ -246,27 +296,6 @@
     
     
     <category term="比赛总结" scheme="https://blog.cyrxdzj.eu.org/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://blog.cyrxdzj.eu.org/2021-06-27-hello-world/"/>
-    <id>https://blog.cyrxdzj.eu.org/2021-06-27-hello-world/</id>
-    <published>2021-06-27T03:31:29.140Z</published>
-    <updated>2023-05-26T10:31:07.912Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
     
     
   </entry>

@@ -30,10 +30,10 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<link rel="stylesheet" href="/css/katex.min.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/hexo-math-style.css">
+<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    2.2k
                 </div>
                 
 
@@ -508,7 +508,45 @@
 <h3 id="5、将分数中的分子用类似于带分数的思想提取出来"><a href="#5、将分数中的分子用类似于带分数的思想提取出来" class="headerlink" title="5、将分数中的分子用类似于带分数的思想提取出来"></a>5、将分数中的分子用类似于带分数的思想提取出来</h3><p>当 $x&gt;1$ 时，求 $\frac{x^2-x+1}{x-1}$ 的最小值。</p>
 <p>对于这道题，可以发现 $(x-1)x=x^2-x$，于是原式可以被化为 $\frac{x(x-1)+1}{x-1}=x+\frac{1}{x-1}$。接着再用配凑法，即可算出式子的最小值为 $3$。</p>
 <p>是的，多项式也可以除以多项式的，不过可能会有余数。$(x^2-x+1)\div(x-1)=x……1$。</p>
-<p>未完待续。</p>
+<h3 id="6、转化为一元二次不等式求解"><a href="#6、转化为一元二次不等式求解" class="headerlink" title="6、转化为一元二次不等式求解"></a>6、转化为一元二次不等式求解</h3><p>已知 $ab+a+b=8,a&gt;0,b&gt;0$，则：</p>
+<p>A. $ab$ 最大值为 $2$</p>
+<p>B. $a+b$ 最小值为 $4$</p>
+<p>C. $a+2b$ 最小值为 $6\sqrt2-3$</p>
+<p>D. $\frac{1}{a(b+1)}+\frac{1}{b}\ge\frac{1}{2}$</p>
+<p>请注意本题多选。</p>
+<p>可以由基本不等式发现，$a+b\ge2\sqrt{ab},ab\le(\frac{a+b}{2})^2$，也就是说：</p>
+<ol>
+<li><p>$8=ab+a+b\ge ab+2\sqrt{ab}$</p>
+</li>
+<li><p>$8=ab+a+b\le(\frac{a+b}{2})^2+(a+b)=\frac{1}{4}(a+b)^2+(a+b)$。</p>
+</li>
+</ol>
+<p>经过一定的转化，我们就可以分别得到 2 个一元二次不等式：</p>
+<p>$(\sqrt{ab})^2+2\sqrt{ab}-8\le0$（将 $\sqrt{ab}$ 视为一个未知数整体）</p>
+<p>$(a+b)^2+4(a+b)-32\ge0$（将 $(a+b)$ 视为一个未知数整体）</p>
+<p>根据一元二次不等式的求解方法，第一条不等式可以得出 $-4\le\sqrt{ab}\le2$，第二条不等式可以得出 $a+b\le-8$ 或 $a+b\ge4$。</p>
+<p>别忘了 $a&gt;0,b&gt;0$。因此，$0 &lt; \sqrt{ab}\le2,a+b\ge4$。因此，A 选项错误，B 选项正确。</p>
+<p>C 选项的情况，将在下一节讲解。</p>
+<h3 id="7、消元：将一个数用另一个数表示出来"><a href="#7、消元：将一个数用另一个数表示出来" class="headerlink" title="7、消元：将一个数用另一个数表示出来"></a>7、消元：将一个数用另一个数表示出来</h3><p>回到前面的题目。</p>
+<p>可以发现，$ab+a+b=ab+b+a=(a+1)b+a$。</p>
+<p>所以，因为 $ab+a+b=8$，所以 $b=\frac{8-a}{a+1}$。</p>
+<p>因此 $a+2b=a+2\times\frac{8-a}{a+1}=a+\frac{16-2a}{a+1}=a-2+\frac{18}{a+1}=a+1+\frac{18}{a+1}-3\ge2\sqrt{ ( a+1 ) \times\frac{18}{a+1}}-3=6\sqrt{2}-3$。C 选项正确。</p>
+<p>D 选项的情况，将在下一节讲解。</p>
+<h3 id="8、1-的代换法（进阶版）"><a href="#8、1-的代换法（进阶版）" class="headerlink" title="8、1 的代换法（进阶版）"></a>8、1 的代换法（进阶版）</h3><p>可以发现，$a(b+1)+b=ab+a+b=8$。</p>
+<p>因此，$\frac{1}{a(b+1)}+\frac{1}{b}=\frac{1}{8}[a(b+1)+b][\frac{1}{a(b+1)}+\frac{1}{b}]=\frac{1}{8}[1+1+\frac{a(b+1)}{b}+\frac{b}{a(b+1)}]\ge\frac{1}{8}(2+2\sqrt{1})=\frac{1}{2}$。D 选项正确。</p>
+<p>其实也没进阶多少，只是关系隐藏起来了。</p>
+<h3 id="9、超级无敌分数嵌套"><a href="#9、超级无敌分数嵌套" class="headerlink" title="9、超级无敌分数嵌套"></a>9、超级无敌分数嵌套</h3><p>求 $\frac{x^2+3x+3}{2x^2+7x+7}(x&gt;-1)$ 的最小值。</p>
+<p>首先，$2x^2+7x+7=2(x^2+3x+3)+(x+1)$，因此 $\frac{x^2+3x+3}{2x^2+7x+7}=\frac{x^2+3x+3}{2(x^2+3x+3)+(x+1)}=\frac{1}{2+\frac{x+1}{x^2+3x+3}}$（分子分母同时除以 $x^2+3x+3$）。显然，当 $\frac{x+1}{x^2+3x+3}$ 最大时，分母 $2+\frac{x+1}{x^2+3x+3}$ 最大，分数整体最小。</p>
+<p>然后，$x^2+3x+3=(x+1)(x+1)+(x+1)+1$，因此 $\frac{x+1}{x^2+3x+3}=\frac{x+1}{ ( x+1 ) ( x+1 ) + ( x+1 )+1}=\frac{1}{x+1+1+\frac{1}{x+1}}$。可以发现，当 $x+1+1+\frac{1}{x+1}$ 最小时，$\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大。</p>
+<p>我们可以很容易地求出 $x+1+1+\frac{1}{x+1}$ 最小为 $3$，所以 $\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大为 $\frac{1}{3}$，进而求出原式最小值为 $\frac{1}{2+\frac{1}{3}}=\frac{3}{7}$。</p>
+<p>对于这种问题，我们可以不断地尝试将分子化为 $1$，然后，当 $a&gt;0,b&gt;0$ 时，$a$ 不变的情况下，$b$ 越大时 $\frac{a}{b}$ 越小。根据这个原理，可以反复求最大/最小值，最终解出题目。</p>
+<h3 id="10、使分子和分母变得可以互相约分"><a href="#10、使分子和分母变得可以互相约分" class="headerlink" title="10、使分子和分母变得可以互相约分"></a>10、使分子和分母变得可以互相约分</h3><p>已知 $x+y=1,y&gt;0,x&gt;0$，求 $\frac{1}{2x}+\frac{x}{y+1}$ 的最小值。</p>
+<p>可以发现，此时无法直接使用基本不等式，因为 $1$ 和 $y+1$ 不能互相约分掉。</p>
+<p>考虑 $x+y=1$ 这个条件，可以发现 $x+y+1=2$，那么原式就等于 $\frac{\frac{1}{2}(x+y+1)}{2x}+\frac{x}{y+1}=\frac{x+y+1}{4x}+\frac{x}{y+1}=\frac{1}{4}+\frac{y+1}{4x}+\frac{x}{y+1}\ge\frac{1}{4}+2\sqrt{\frac{y+1}{4x}\times\frac{x}{y+1}}=\frac{5}{4}$，当且仅当 $\frac{y+1}{4x}=\frac{x}{y+1}$ 时（即 $x=\frac{2}{3},y=\frac{1}{3}$ 时），可以取等号。</p>
+<h3 id="11、总结"><a href="#11、总结" class="headerlink" title="11、总结"></a>11、总结</h3><p>不等式问题没有固定解法，在高考中难度相当大。这种题目只能靠多刷题积累来的经验，因此应记住做过的题的解法，也要善于利用网络。</p>
+<h3 id="链接阅读"><a href="#链接阅读" class="headerlink" title="链接阅读"></a>链接阅读</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/185052402">基本不等式解题技巧（一）（知乎专栏）</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/205447579">基本不等式（二）——多元问题处理技巧（知乎专栏）</a>（友情提醒，这一篇文章贼tm难）</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/482152623">基本不等式求最值题型总结（知乎专栏）</a></p>
 
                 
             </div>
@@ -659,13 +697,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023-05-21-TalkingAboutComputerSecurityFromTheIntelligentClassromSystem/">
+                <a href="/2023-09-22-CyrxNoteIndex/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/003_018_card_after_training.webp" class="responsive-img" alt="从智慧课堂系统的角度浅谈计算机安全">
+                        <img src="/medias/feature_image_pjsk/002_014_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 目录">
                         
-                        <span class="card-title">从智慧课堂系统的角度浅谈计算机安全</span>
+                        <span class="card-title">cyrxdzj的文化课学习笔记 目录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -676,14 +714,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
-                                    杂谈
+                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    cyrxdzj的文化课学习笔记
                                 </a>
                             
                             
@@ -881,7 +919,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11k</span>&nbsp;字
+                class="white-color">15.6k</span>&nbsp;字
             
             
             

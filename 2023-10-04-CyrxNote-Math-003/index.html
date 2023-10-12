@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="如何使用luogu-card, cyrxdzj blog">
+    <meta name="keywords" content="cyrxdzj的文化课学习笔记 数学003 一元二次不等式, cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>如何使用luogu-card | cyrxdzj blog</title>
+    <title>cyrxdzj的文化课学习笔记 数学003 一元二次不等式 | cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/feature_image_pjsk/001_015_card_after_training.webp')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/feature_image_pjsk/002_014_card_after_training.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">如何使用luogu-card</h1>
+                    <h1 class="description center-align post-title">cyrxdzj的文化课学习笔记 数学003 一元二次不等式</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +432,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/" class="post-category">
-                                一些杂七杂八的东西
+                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                cyrxdzj的文化课学习笔记
                             </a>
                         
                     </div>
@@ -445,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-07
+                    2023-10-04
                 </div>
                 
 
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.2k
                 </div>
                 
 
@@ -474,83 +474,196 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>该项目是由<a target="_blank" rel="noopener" href="https://github.com/wao3/luogu-stats-card">wao3/luogu-stats-card</a>复制过来并加以二次开发的的，感谢TA的贡献。</p>
-<p>注意：为了不滥用洛谷服务器流量，本项目利用 vercel 的边缘缓存功能缓存了 12 小时数据，即同一个用户卡片 <strong>24 小时内最多只会向洛谷服务器请求 2 次数据</strong>，并且只有在用户访问卡片时才会请求数据。不过，可以禁用缓存。</p>
+                <p>本文含有较多图片，单击可以放大。</p>
+<h3 id="1、基础：一元二次不等式的基本解法"><a href="#1、基础：一元二次不等式的基本解法" class="headerlink" title="1、基础：一元二次不等式的基本解法"></a>1、基础：一元二次不等式的基本解法</h3><p>一元二次不等式的左边是一个一元二次函数，中间是一个不等号，右边一般为 $0$。如果不是，则考虑移项。</p>
+<p>例题：$(x+5)(3-2x)\ge6$。</p>
+<p>首先，将左边去括号，得到 $-2x^2-7x+15$。</p>
+<p>然后，移项，得到 $-2x^2-7x+9\ge0$。</p>
+<p>然后，将不等式的左边部分进行因式分解，得到 $(-2x-9)(x-1)\ge0$。</p>
+<p>根据初中时期的知识，我们可以知道当 $x=-\frac{9}{2}$ 或 $x=1$ 时，式子等于 $0$。而 $(-2x-9)(x-1)$ 应该是开口向<strong>下</strong>的一元二次函数。因此，我们可以得到 $-\frac{9}{2}\le x\le1$。</p>
+<p>因此，我们可以得到如下的基本步骤：</p>
+<ol>
+<li>将整个不等式尝试化成左边一个一元二次函数、右边一个 $0$ 的形式，其中的一元二次函数应使用因式分解，化成 $(ax+b)(cx+d)$ 的形式。因式分解的难度随出题老师的变态程度的提升而提升。并且因式分解中还可能包含更多字母，这就需要经验了。</li>
+<li>计算当 $x=?$ 时，一元二次函数的值为 $0$。这个 $x$ 我们一般称之为<strong>零点</strong>。零点不是点，而是一个数，当自变量 $x$ 的值为这个数时，函数值为 $0$。</li>
+<li>判断函数的开口方向。当开口方向向上且不等号为小于（等于）时，或者开口方向向下且不等号为大于（等于）时，不等式的解集在两个零点之间（<strong>需要考虑能否取等号</strong>）。否则，不等式的解集在两个零点的两边。</li>
+</ol>
+<p>如下图：</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-02.PNG" alt=""></p>
+<p>被加粗的点即为函数取值为 $0$ 的点。</p>
+<h3 id="2、分类讨论"><a href="#2、分类讨论" class="headerlink" title="2、分类讨论"></a>2、分类讨论</h3><p>当 $a\in R$ 时，求 $x^2-(a+1)x+a&lt;0$ 的解集。</p>
+<p>首先，凭经验进行因式分解，我们可以发现 $x^2-(a+1)x+a=(x-a)(x-1)$。这样，我们就可以很容易地求出函数零点为 $a$ 和 $1$，不等式解集应该在零点之间，且不能取等号。</p>
+<p>那么，我们就可以根据 $a$ 和 $1$ 的大小关系分类讨论了。</p>
+<p>当 $a&lt;1$ 时，$a&lt;x&lt;1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-03.PNG" alt=""></p>
+<p>当 $a=1$ 时，可以发现原不等式无解。</p>
+<p>当 $a&gt;1$ 时，可以发现 $1&lt;x&lt;a$。</p>
+<p>有些时候，丧心病狂的出题人会搞点花活。比如说，把字母放在二次项前面。在做这类题目时，一定要注意一元二次不等式会不会退化成一元一次不等式，并分类讨论。</p>
+<p>比如，求 $mx^2-(m+2)x+2\le0$ 的解集。</p>
+<p>根据因式分解可以得到，原不等式等价于 $(mx-2)(x-1)\le0$。</p>
+<p>但是，我们可以发现，当 $m=0$ 时，原不等式会退化成一元一次不等式，得 $-2x+2\le0$。这个一元一次不等式倒也不难，可以解得 $x\ge1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-04.PNG" alt=""></p>
+<p>当 $m\neq0$ 时，可以发现函数的零点是 $1$ 和 $\frac{2}{m}$。</p>
+<p>但是，$m$ 的变化还会影响到函数的形状是开口向上还是向下。因此，需要更复杂的分类讨论。</p>
+<p>当 $m&lt;0$ 时，当然有 $\frac{2}{m}&lt;1$。此时函数开口向下，那么解集就是零点的两边，也就是 $x\le\frac{2}{m}$ 或 $x\ge1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-05.PNG" alt=""></p>
+<p>当 $0 &lt; m &lt; 2$ 时，还有 $\frac{2}{m}&gt;1$。此时函数开口向上，那么解集就是零点之间，也就是 $1\le x\le\frac{2}{m}$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-06.PNG" alt=""></p>
+<p>当 $m=2$ 时，$\frac{2}{m}=1$。由于原不等式允许取等号，所以 $x=1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-07.PNG" alt=""></p>
+<p>当 $m&gt;2$ 时，$\frac{2}{m}&lt;1$。此时解集为 $\frac{2}{m}\le x\le1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-08.PNG" alt=""></p>
+<p>一个看似简单的不等式，分了 5 类作答……在数学中养成细心审题、全面考虑的习惯还是很重要的。</p>
+<h3 id="3、一元一次不等式与一元二次不等式的分类讨论结合"><a href="#3、一元一次不等式与一元二次不等式的分类讨论结合" class="headerlink" title="3、一元一次不等式与一元二次不等式的分类讨论结合"></a>3、一元一次不等式与一元二次不等式的分类讨论结合</h3><p>若关于 $x$ 的不等式 $ax-b\le0$ 的解集为 {$x|x\ge2$}，则关于 $x$ 的不等式 $ax^2+(3a-b)x-3b&lt;0$ 的解集是？</p>
+<p>根据这个一元一次不等式的解集，我们可以发现，$ax-b$ 的值随 $x$ 的升高而<strong>降低</strong>。换句话说，$a&lt;0$。</p>
+<p>因此，可以解得 $x\ge\frac{b}{a}$。</p>
+<p>这样我们就可以发现 $\frac{b}{a}=2,a&lt;0,b&lt;0$。</p>
+<p>再看看这个一元二次不等式，可以发现 $ax^2+(3a-b)x-3b=(ax-b)(x+3)$，也就是函数的零点在 $-3$ 和 $\frac{b}{a}=2$ 上。</p>
+<p>因为 $a<0$，我们可以发现一元二次函数开口向下，最终解得 $x<-3$ 或 $x>2$。</p>
+<h3 id="4、分数与不等式，如何转化为一元二次不等式"><a href="#4、分数与不等式，如何转化为一元二次不等式" class="headerlink" title="4、分数与不等式，如何转化为一元二次不等式"></a>4、分数与不等式，如何转化为一元二次不等式</h3><p>一个要点：当 $a$ 和 $b$ 都为实数且 $b\neq0$ 时，$\frac{a}{b}&gt;0$ 等价于 $ab&gt;0$，将不等号换成大于、大于等于、小于、小于等于都成立。证明如下：</p>
+<p>我们都知道，一个实数的平方一定是一个非负数。而 $b\neq0$，这也意味着 $b^2&gt;0$。</p>
+<p>如果不等式左右两边同时乘 $b^2$，由于 $b^2&gt;0$，所以不等号无需改变。而 $0$ 乘任何数都得 $0$，原不等式就被化成了 $ab&gt;0$。证毕。</p>
+<h3 id="5、-Delta-的出场"><a href="#5、-Delta-的出场" class="headerlink" title="5、$\Delta$ 的出场"></a>5、$\Delta$ 的出场</h3><p>有些时候，一元二次不等式问题需要用到初中时学习到的“根的判别式 $\Delta$”。</p>
+<p>若 $-x^2+mx-1\ge0$ 有解，则实数 $m$ 的取值范围？</p>
+<p>首先，不等号左边的一元二次函数开口向下。</p>
+<p>然后，不等式要求函数存在 $x$ 轴的上方（或恰好在 $x$ 轴上）的部分。</p>
+<p>因此，可以得知 $-x^2+mx-1=0$ 应该有解，两个实数解可以相同。换言之，$\Delta=m^2-4\times(-1)\times(-1)\ge0$，再根据一元二次方程的解法解出来即可。</p>
+<p>再看看这个。若 $x^2+ax+4&lt;0$ 解集为空，则 $a$ 的取值范围？</p>
+<p>首先，不等号左边的一元二次函数，开口向上。</p>
+<p>然后，没有部分在 $x$ 轴的下方。换句话说，$x^2+ax+4\ge0$ 对所有实数 $x$ 成立。</p>
+<p>那么，一元二次方程 $x^2+ax+4=0$ 应该无实数解或两个实数解相同。即，$\Delta=a^2-4\times1\times4\le0$。再根据一元二次方程的解法解出来即可。</p>
+<h3 id="6、一元二次函数与它的最值"><a href="#6、一元二次函数与它的最值" class="headerlink" title="6、一元二次函数与它的最值"></a>6、一元二次函数与它的最值</h3><p><a id="ref-point-01" style="display:block;height:0px;"></a></p>
+<p>已知关于 $x$ 的不等式 $-x^2+4x\ge a^2-3a$ 在 $R$ 上有解，则 $a$ 的取值范围是？</p>
+<p>首先，可以发现 $-x^2+4x$ 的最大值为 $4$，这应该不难求出。</p>
+<p>若 $a&gt;b$ 恒成立，则 $a$ 的值必须大于 $b$ 可能达到的最大值。若 $a&lt;b$ 恒成立，则 $a$ 的值必须小于 $b$​ 可能达到的最小值。 </p>
+<p>若 $a\ge b$ 恒成立，则 $a$ 的值必须大于等于 $b$ 可能达到的最大值。若 $a\le b$ 恒成立，则 $a$ 的值必须小于等于 $b$ 可能达到的最小值。 </p>
+<p>然后，我们可以把 $a^2-3a$ 想象成一条横在图像上的横线 $y=a^2-3a$，需要注意这里 $y$ 不随 $x$ 的变化而变化（而是随 $a$ 的变化而变化），所以是横线。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-01.png" alt=""></p>
+<p>那么，当 $a^2-3a&gt;4$ 时，不等式左边 $-x^2+4x$ 的最大值都达不到这个线。而当 $a^2-3a\le4$ 时，$-x^2+4x$ 就能有解了。</p>
+<p>因此 $-1\le a\le4$。</p>
+<h3 id="7、一元二次不等式恒成立的问题"><a href="#7、一元二次不等式恒成立的问题" class="headerlink" title="7、一元二次不等式恒成立的问题"></a>7、一元二次不等式恒成立的问题</h3><p>有些时候，题目会要求无论 $x$ 取任意实数，不等式均成立，要求求出另一个未知的字母的取值范围。</p>
+<p>这种题目一般与 $\Delta$ 有所关联。</p>
+<p>这里列出个表格，表示各种情况下恒成立的要求。</p>
+<table>
+    <tr>
+        <th>函数开口方向</th>
+        <th>无论 $x$ 取何值，函数的值都要求</th>
+        <th>函数与 $x$ 轴的交点个数</th>
+        <th>$\Delta$ 的要求</th>
+    </tr>
+    <tr>
+        <td rowspan="4">向上</td>
+        <td>小于 $0$</td>
+        <td rowspan="2" colspan="2">不可能实现</td>
+    </tr>
+    <tr>
+        <td>小于等于 $0$</td>
+    </tr>
+    <tr>
+        <td>大于 $0$</td>
+        <td>$0$ 个</td>
+        <td>小于 $0$</td>
+    </tr>
+    <tr>
+        <td>大于等于 $0$</td>
+        <td>$0\sim1$ 个</td>
+        <td>小于等于 $0$</td>
+    </tr>
+    <tr>
+        <td rowspan="4">向下</td>
+        <td>小于 $0$</td>
+        <td>$0$ 个</td>
+        <td>小于 $0$</td>
+    </tr>
+    <tr>
+        <td>小于等于 $0$</td>
+        <td>$0\sim1$ 个</td>
+        <td>小于等于 $0$</td>
+    </tr>
+    <tr>
+        <td>大于 $0$</td>
+        <td rowspan="2" colspan="2">不可能实现</td>
+    </tr>
+    <tr>
+        <td>大于等于 $0$</td>
+    </tr>
+</table>
+
+<p>当然，上面要求的分类讨论，这里也不能少。</p>
+<p>若不等式 $(a-3)x^2+2(a-2)x-4&lt;0$ 对于一切 $x\in R$ 恒成立，则 $a$ 的取值范围？</p>
+<p>首先，先考虑当 $a-3=0$，一元二次函数退化成一元一次函数的情况。此时函数还是一元一次函数而不是连未知数 $x$ 都被消去的形式，而 $2x-4&lt;0$ 并不恒成立。</p>
+<p>当 $a-3&gt;0$ 时，由上表可以发现这是不可能实现恒成立的。</p>
+<p>当 $a-3&lt;0,a&lt;3$ 时，$\Delta&lt;0$，也就是说 $[2(a-2)]^2-4\times(a-3)\times(-4)&lt;0$，用一元二次不等式的解法可知 $-2\sqrt2&lt;a&lt;2\sqrt2$。</p>
+<p>综上，$-2\sqrt2&lt;a&lt;2\sqrt2$。</p>
+<p>再看看这个：$\frac{2x^2+2mx+m}{4x^2+6x+3}&lt;1$ 对所有实数 $x$ 恒成立，则实数 $m$ 的取值范围是？</p>
+<p>首先，因为 $6^2-4\times4\times3=-12&lt;0$，可以知道 $4x^2+6x+3$ 始终大于 $0$。因此，可以放心地将分母移项到右边，再稍微整理一下，得 $0&lt;2x^2+(6-2m)x+(3-m)$。</p>
+<p>结合上表，可知 $\Delta=(6-2m)^2-4\times2\times(3-m)=4m^2-24m+36-24+8m=4m^2-16m+12=4(m-1)(m-3)&lt;0$，解得 $1&lt;m&lt;3$。</p>
+<h3 id="8、在限定-x-的取值范围的前提下，一元二次函数的最值"><a href="#8、在限定-x-的取值范围的前提下，一元二次函数的最值" class="headerlink" title="8、在限定 $x$ 的取值范围的前提下，一元二次函数的最值"></a>8、在限定 $x$ 的取值范围的前提下，一元二次函数的最值</h3><p>我们都知道，当 $x$ 的取值范围不限定时，一元二次函数要么只有最大值，要么只有最小值。但是限定了 $x$ 的取值范围后，一元二次函数就有可能同时拥有最小值和最大值了。</p>
+<table>
+    <tr>
+        <th>函数开口方向</th>
+        <th>取值范围相对于对称轴</th>
+        <th>最大值位置</th>
+        <th>最小值位置</th>
+        <th>例图</th>
+    </tr>
+    <tr>
+        <td rowspan="3">向上</td>
+        <td>取值范围整体在对称轴左边</td>
+        <td>取值范围左端点</td>
+        <td>取值范围右端点</td>
+        <td rowspan="3"><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-09.PNG"></td>
+    </tr>
+    <tr>
+        <td>取值范围包含对称轴</td>
+        <td>离对称轴最远的地方</td>
+        <td>对称轴处</td>
+    </tr>
+    <tr>
+        <td>取值范围整体在对称轴右边</td>
+        <td>取值范围右端点</td>
+        <td>取值范围左端点</td>
+    </tr>
+    <tr>
+        <td rowspan="3">向下</td>
+        <td>取值范围整体在对称轴左边</td>
+        <td>取值范围右端点</td>
+        <td>取值范围左端点</td>
+        <td rowspan="3"><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-10.PNG"></td>
+    </tr>
+    <tr>
+        <td>取值范围包含对称轴</td>
+        <td>对称轴处</td>
+        <td>离对称轴最远的地方</td>
+    </tr>
+    <tr>
+        <td>取值范围整体在对称轴右边</td>
+        <td>取值范围左端点</td>
+        <td>取值范围右端点</td>
+    </tr>
+</table>
+
+<p>如果函数上某个点离最值点的水平距离（$|x_0-x_1|$）越大，那么垂直距离（$|y_0-y_1|$）也越大。</p>
+<p>例题：$-1\le x\le2$ 时，$x^2-2x+a&lt;0$ 恒成立的必要不充分条件是？</p>
+<p>A. $a&lt;-3$</p>
+<p>B. $a&lt;-4$</p>
+<p>C. $a&lt;0$</p>
+<p>D. $a&gt;0$</p>
+<p>首先，原不等式等价于 $x^2-2x&lt;-a$。</p>
+<p>$x^2-2x$ 的对称轴是 $x=1$，最小值是 $-1$，最大值是当 $x=-1$ 时的 $3$。</p>
+<blockquote>
+<p>若 $a&gt;b$ 恒成立，则 $a$ 的值必须大于 $b$ 可能达到的最大值。若 $a&lt;b$ 恒成立，则 $a$ 的值必须小于 $b$​ 可能达到的最小值。 </p>
+<p>若 $a\ge b$ 恒成立，则 $a$ 的值必须大于等于 $b$ 可能达到的最大值。若 $a\le b$ 恒成立，则 $a$ 的值必须小于等于 $b$ 可能达到的最小值。 </p>
 </blockquote>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><code>luogu-card</code>是一个动态生成洛谷用户数据卡片的工具，可以展示自己的做题情况。可以用于个人主页、博客、github等可以插入图片的地方。</p>
-<p>您可以访问：<a target="_blank" rel="noopener" href="https://github.com/cyrxdzj/luogu-card/blob/master/README.md">Github源仓库</a>或<a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card">Gitee镜像仓库</a></p>
-<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h3><p><img src="https://luogu-card.cyrxdzj.eu.org/about?id=387836" alt="dengzijun的基本信息"></p>
-<p>此卡片用于显示一个用户的基本信息，包括用户类型、关注、咕值排名、个性签名。</p>
-<p>具体使用方法如下：</p>
-<ol>
-<li><p>仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将<code>?id=</code>后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的基本信息</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/about?id=387836</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的基本信息</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/about?id=387836</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<h3 id="练习情况"><a href="#练习情况" class="headerlink" title="练习情况"></a>练习情况</h3><p><img src="https://luogu-card.cyrxdzj.eu.org/practice?id=387836" alt="dengzijun的练习情况"></p>
-<p>练习情况可以自动获取用户的数据，但是前提是没有开启“完全隐私保护”。</p>
-<p>具体使用方法如下：</p>
-<ol>
-<li><p>仅使用图片：直接复制以下内容到任意 markdown 编辑器中，并将<code>?id=</code>后面的数字更改为自己的 id 即可（id是洛谷的用户编号）。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/practice?id=387836</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的练习情况</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/practice?id=387836</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<h3 id="咕值信息"><a href="#咕值信息" class="headerlink" title="咕值信息"></a>咕值信息</h3><p><img src="https://luogu-card.cyrxdzj.eu.org/guzhi?id=387836" alt="dengzijun的咕值信息"></p>
-<p>咕值信息一般无法自动获取数据，如果需要必须要提供cookie，但是这种方法十分不安全，并且不方便。所以获取咕值卡片可能需要手动输入咕值信息，具体使用方法如下：</p>
-<p>复制以下内容到任意 markdown 编辑器中，并将 <code>?id=</code>后面的数字更改为自己的 id，将<code>scores=</code>后面更换为自己的咕值信息，一共 5 个数字，用逗号分隔。</p>
-<ol>
-<li><p>仅使用图片：复制以下内容到任意 markdown 编辑器中，并将 <code>?id=</code>后面的数字更改为自己的 id，将<code>scores=</code>后面更换为自己的咕值信息，一共 5 个数字（分别代表基础信用、练习情况、社区贡献、比赛情况、获得成就），用英文半角逗号分隔。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的咕值信息</span>](<span class="token url">http://luogu-card.vercel.app/guzhi?id=387836&amp;scores=100,70,25,45,0</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>使用图片链接：复制以下内容，第二个小括号内的地址是点击该图片跳转的地址，建议设置为洛谷个人主页。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">![dengzijun的咕值信息</span>](<span class="token url">http://luogu-card.vercel.app/guzhi?id=387836&amp;scores=100,70,25,45,0</span>)</span>](https://github.com/cyrxdzj/luogu-card)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<p>注意，若程序检测到咕值排名在1000名以内，则程序会自动从“咕值排名”中获取咕值。若获取成功，程序将无视用户输入。不过此功能偶尔会出BUG，所以最好还是手动设置一下咕值吧。</p>
-<p>另外，使用<code>update_time</code>参数可以自己指定咕值卡片上的更新时间，格式是一个正整数，代表你想指定的时间的伦敦格林尼治时间距离1970年1月1日00:00的毫秒数。提示：在JavaScript语言中，<code>new Date().getTime()</code>可以获取这个值。但是，只有在程序无法从“咕值排名”中获取咕值时才会采信这个输入。</p>
-<h3 id="自定义选项"><a href="#自定义选项" class="headerlink" title="自定义选项"></a>自定义选项</h3><p>使用卡片时，支持设定自定义效果选项，可以组合使用。</p>
-<ol>
-<li><p><strong>隐藏标题</strong>，只需在链接最后带上<code>&amp;hide_title=true</code>即可，例如：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/practice?id=387836&amp;hide_title=true</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>效果：</p>
-<p><img src="https://luogu-card.cyrxdzj.eu.org/practice?id=387836&amp;hide_title=1" alt="dengzijun的练习情况"></p>
-</li>
-<li><p><strong>黑暗模式</strong>，只需在链接最后带上<code>&amp;dark_mode=true</code>即可，例如：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/practice?id=387836&amp;dark_mode=true</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>效果：</p>
-<p><img src="https://luogu-card.cyrxdzj.eu.org/practice?id=387836&amp;dark_mode=true" alt="dengzijun的练习情况"></p>
-</li>
-<li><p><strong>自定义宽度</strong>，默认500，限制宽度在500到1920之间，只需在链接最后带上<code>&amp;card_width=需要的宽度</code>即可，例如：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">dengzijun的练习情况</span>](<span class="token url">https://luogu-card.cyrxdzj.eu.org/practice?id=387836&amp;card_width=750</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>效果：</p>
-<p><img src="https://luogu-card.cyrxdzj.eu.org/practice?id=387836&amp;card_width=750" alt="dengzijun的练习情况"></p>
-</li>
-<li><p><strong>禁用缓存</strong>，默认情况下，程序会有12小时的缓存。但是只需在链接最后带上<code>&amp;disable_cache=true</code>即可禁用缓存，每次访问都将刷新。</p>
-</li>
-</ol>
-<h2 id="自行部署"><a href="#自行部署" class="headerlink" title="自行部署"></a>自行部署</h2><p>如果想要自行试验或者二次开发可以自行部署到自己的 vercel 服务器，登录 <a target="_blank" rel="noopener" href="https://vercel.com/">vercel</a> 后，点击下方按钮即可部署。</p>
-<p><a target="_blank" rel="noopener" href="https://vercel.com/import/project?template=https://github.com/cyrxdzj/luogu-card"><img src="https://vercel.com/button" alt="Deploy to Vercel"></a></p>
-<h2 id="如何参与贡献"><a href="#如何参与贡献" class="headerlink" title="如何参与贡献"></a>如何参与贡献</h2><h4 id="提供bug反馈或建议"><a href="#提供bug反馈或建议" class="headerlink" title="提供bug反馈或建议"></a>提供bug反馈或建议</h4><p>使用 <a target="_blank" rel="noopener" href="https://github.com/cyrxdzj/luogu-card/issues">issue</a> 反馈bug时，尽可能详细描述 bug 及其复现步骤</p>
-<h4 id="贡献代码的步骤"><a href="#贡献代码的步骤" class="headerlink" title="贡献代码的步骤"></a>贡献代码的步骤</h4><ol>
-<li>fork项目到自己的repo</li>
-<li>把fork过去的项目也就是你的项目clone到你的本地</li>
-<li>修改代码</li>
-<li>commit后push到自己的库</li>
-<li>在Github首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。</li>
-<li>等待作者合并</li>
-</ol>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>如果对你有所帮助的话，希望能在右上角点一个 star (★ ω ★)</p>
-<h2 id="镜像仓库"><a href="#镜像仓库" class="headerlink" title="镜像仓库"></a>镜像仓库</h2><p><del>要不是vercel不支持Gitee只支持Github，我也不会出现在这里了</del></p>
-<p>本仓库在码云Gitee上创建了一个<a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card">镜像仓库</a>，但会有同步延迟。也可以访问位于Github的<a target="_blank" rel="noopener" href="https://github.com/cyrxdzj/luogu-card">源仓库</a>。</p>
-<p><a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card/stargazers"><img src="https://gitee.com/cyrxdzj/luogu-card/badge/star.svg?theme=dark" alt="star"></a></p>
-<p><a target="_blank" rel="noopener" href="https://gitee.com/cyrxdzj/luogu-card"><img src="https://gitee.com/cyrxdzj/luogu-card/widgets/widget_card.svg?colors=eae9d7,2e2f29,272822,484a45,eae9d7,747571" alt="cyrxdzj/luogu-card"></a></p>
+<p>因此，$-a&gt;3,a&lt;-3$。</p>
+<p>但题目中要求的是必要不充分条件。关于这个，可以参考<a href="/2023-09-23-CyrxNote-Math-002/#toc-heading-1">这里</a>。</p>
+<p>综上，此题选 $B$。</p>
+<h3 id="9、尝试将其它字母分离出来"><a href="#9、尝试将其它字母分离出来" class="headerlink" title="9、尝试将其它字母分离出来"></a>9、尝试将其它字母分离出来</h3><p>恰好做了道比较有趣的题，记录一下。</p>
+<p>若 $mx^2-mx-6+m&lt;0$ 在 $1\le m\le3$ 时均成立，则实数 $x$ 的取值范围？</p>
+<p>需要注意的是，这次是已知 $m$ 求 $x$ 的范围，而不是已知 $x$ 求 $m$ 的范围。</p>
+<p>首先，$mx^2-mx-6+m=m(x^2-x+1)-6$，原不等式等价于 $m(x^2-x+1)&lt;6$。</p>
+<p>然后，$1\le m$ 说明 $m$ 是正数，那我们就可以放心地将 $m$ 移到右边而不用变不等号，得 $x^2-x+1&lt;\frac{6}{m}$。</p>
+<p>可以发现，$\frac{6}{m}$ 应取最小值（<a onclick="javascript:window.location.href='#ref-point-01';">为什么？</a>），即 $m=3$ </p>
+<p>由此，我们就得到了 $x^2-x+1&lt;0$，花点时间解一下，得 $\frac{1-\sqrt{5}}{2}&lt;x&lt;\frac{1+\sqrt{5}}{2}$。</p>
 
                 
             </div>
@@ -577,7 +690,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.cyrxdzj.eu.org/2021-07-07-HowToUseLuoguCard/">https://blog.cyrxdzj.eu.org/2021-07-07-HowToUseLuoguCard/</a>
+                    <a href="https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/">https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -660,13 +773,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021-07-09-Grade7Term2MidtermExamSummary/">
+                <a href="/2023-10-09-CyrxNote-Math-004/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/001_020_card_normal.webp" class="responsive-img" alt="七年级下学期期中考试总结">
+                        <img src="/medias/feature_image_pjsk/002_014_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 数学004 函数">
                         
-                        <span class="card-title">七年级下学期期中考试总结</span>
+                        <span class="card-title">cyrxdzj的文化课学习笔记 数学004 函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -677,14 +790,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-09
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    学校生活
+                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    cyrxdzj的文化课学习笔记
                                 </a>
                             
                             
@@ -701,13 +814,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021-07-02-LuoguMonthlyCompetition202105Summary/">
+                <a href="/2023-09-28-CyrxNote-Chemistry-001/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/002_021_card_normal.webp" class="responsive-img" alt="洛谷2021年05月月赛参加总结">
+                        <img src="/medias/feature_image_pjsk/001_017_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 化学001 氧化还原反应">
                         
-                        <span class="card-title">洛谷2021年05月月赛参加总结</span>
+                        <span class="card-title">cyrxdzj的文化课学习笔记 化学001 氧化还原反应</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -718,14 +831,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/" class="post-category">
-                                    比赛总结
+                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    cyrxdzj的文化课学习笔记
                                 </a>
                             
                             
