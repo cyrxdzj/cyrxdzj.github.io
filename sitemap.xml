@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/</loc>
+    
+    <lastmod>2023-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</loc>
+    
+    <lastmod>2023-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNoteIndex/</loc>
     
     <lastmod>2023-10-13</lastmod>
@@ -155,24 +173,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</loc>
-    
-    <lastmod>2023-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cyrxdzj.eu.org/2023-09-23-CyrxNote-Math-002/</loc>
-    
-    <lastmod>2023-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cyrxdzj.eu.org/404/index.html</loc>
     
     <lastmod>2023-05-27</lastmod>
@@ -229,7 +229,7 @@
 
   <url>
     <loc>https://blog.cyrxdzj.eu.org/</loc>
-    <lastmod>2023-10-13</lastmod>
+    <lastmod>2023-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -239,35 +239,35 @@
   
   <url>
     <loc>https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-10-13</lastmod>
+    <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.cyrxdzj.eu.org/categories/%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-10-13</lastmod>
+    <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.cyrxdzj.eu.org/categories/%E6%AF%94%E8%B5%9B%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2023-10-13</lastmod>
+    <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.cyrxdzj.eu.org/categories/%E4%B8%80%E4%BA%9B%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/</loc>
-    <lastmod>2023-10-13</lastmod>
+    <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.cyrxdzj.eu.org/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2023-10-13</lastmod>
+    <lastmod>2023-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
