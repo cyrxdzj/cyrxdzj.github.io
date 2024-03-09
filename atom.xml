@@ -6,7 +6,7 @@
   <link href="https://blog.cyrxdzj.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.cyrxdzj.eu.org/"/>
-  <updated>2023-10-12T22:13:07.481Z</updated>
+  <updated>2024-03-09T00:47:24.927Z</updated>
   <id>https://blog.cyrxdzj.eu.org/</id>
   
   <author>
@@ -17,11 +17,160 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://blog.cyrxdzj.eu.org/2024-03-09-CyrxNote-Math-008/"/>
+    <id>https://blog.cyrxdzj.eu.org/2024-03-09-CyrxNote-Math-008/</id>
+    <published>2024-03-09T00:45:20.035Z</published>
+    <updated>2024-03-09T00:47:24.927Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+ </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 数学008 废话满篇：浅谈怎么运用灵活的思维做一道数学题</title>
+    <link href="https://blog.cyrxdzj.eu.org/2024-03-08-CyrxNote-Math-008/"/>
+    <id>https://blog.cyrxdzj.eu.org/2024-03-08-CyrxNote-Math-008/</id>
+    <published>2024-03-08T14:41:12.000Z</published>
+    <updated>2024-03-09T00:43:23.880Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这篇文章将讲解，我在做一道数学题时运用的思维。&lt;/p&gt;
+&lt;p&gt;可能有点难懂，不过后文将附上例子详细说明。&lt;/p&gt;
+&lt;p&gt;可能废话很多，毕竟这种文章我也不太会怎么写……&lt;/p&gt;
+&lt;p&gt;可能没什么作用，额，毕竟思维这种东西不太会教，我自己数学也不敢说很好……&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 数学007 一元二次函数的解情况</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-11-22-CyrxNote-Math-007/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-11-22-CyrxNote-Math-007/</id>
+    <published>2023-11-22T09:13:02.000Z</published>
+    <updated>2023-12-08T15:29:33.720Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;有些时候我们需要解“某一元二次函数有？个不同的实数解”的问题。&lt;/p&gt;
+&lt;p&gt;需要注意，此问题对一元二次函数的开口方向有要求。以下内容一般默认开口向上。&lt;/p&gt;
+&lt;h3 id=&quot;1、要求在某个区间中有不同的两个实数解&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 数学006 函数之指数函数与对数函数</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-11-22-CyrxNote-Math-006/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-11-22-CyrxNote-Math-006/</id>
+    <published>2023-11-22T09:12:52.000Z</published>
+    <updated>2023-12-08T15:27:48.175Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1、前置知识：各种公式&quot;&gt;&lt;a href=&quot;#1、前置知识：各种公式&quot; class=&quot;headerlink&quot; title=&quot;1、前置知识：各种公式&quot;&gt;&lt;/a&gt;1、前置知识：各种公式&lt;/h3&gt;&lt;p&gt;这些公式能让你更容易地计算式子。&lt;/p&gt;
+&lt;p&gt;以下所有公式，均有</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 数学005 函数之函数的单调性和奇偶性</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-11-15-CyrxNote-Math-005/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-11-15-CyrxNote-Math-005/</id>
+    <published>2023-11-15T12:27:57.000Z</published>
+    <updated>2023-11-25T15:13:33.172Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1、根据函数的奇偶性求值&quot;&gt;&lt;a href=&quot;#1、根据函数的奇偶性求值&quot; class=&quot;headerlink&quot; title=&quot;1、根据函数的奇偶性求值&quot;&gt;&lt;/a&gt;1、根据函数的奇偶性求值&lt;/h3&gt;&lt;p&gt;已知函数</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cyrxdzj的文化课学习笔记 物理001 变速运动</title>
+    <link href="https://blog.cyrxdzj.eu.org/2023-10-12-CyrxNote-Physics-001/"/>
+    <id>https://blog.cyrxdzj.eu.org/2023-10-12-CyrxNote-Physics-001/</id>
+    <published>2023-10-11T23:30:43.000Z</published>
+    <updated>2023-10-19T13:28:03.256Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文含有较多图片，单击可以放大。&lt;/p&gt;
+&lt;h3 id=&quot;1、变速运动下，根据-v-t-图象计算位移&quot;&gt;&lt;a href=&quot;#1、变速运动下，根据-v-t-图象计算位移&quot; class=&quot;headerlink&quot; title=&quot;1、变速运动下，根据 v-t</summary>
+        
+      
+    
+    
+    
+    <category term="cyrxdzj的文化课学习笔记" scheme="https://blog.cyrxdzj.eu.org/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>cyrxdzj的文化课学习笔记 数学004 函数</title>
     <link href="https://blog.cyrxdzj.eu.org/2023-10-09-CyrxNote-Math-004/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-10-09-CyrxNote-Math-004/</id>
     <published>2023-10-08T23:01:12.000Z</published>
-    <updated>2023-10-12T22:13:07.481Z</updated>
+    <updated>2023-11-25T15:13:33.162Z</updated>
     
     
       
@@ -45,7 +194,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/</id>
     <published>2023-10-04T12:57:51.000Z</published>
-    <updated>2023-10-10T12:05:30.912Z</updated>
+    <updated>2023-10-19T13:28:03.256Z</updated>
     
     
       
@@ -117,15 +266,16 @@
     <link href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</id>
     <published>2023-09-22T13:58:37.000Z</published>
-    <updated>2023-10-14T03:48:47.483Z</updated>
+    <updated>2023-11-18T14:01:00.177Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。&lt;/p&gt;
-&lt;h3 id=&quot;1、1-的代换法&quot;&gt;&lt;a href=&quot;#1、1-的代换法&quot; class=&quot;headerlink&quot; title=&quot;1、1 的代换法&quot;&gt;&lt;/a&gt;1、1</summary>
+    <summary type="html">&lt;p&gt;$&#92;require{color}$&lt;/p&gt;
+&lt;p&gt;基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。&lt;/p&gt;
+&lt;h3 id=&quot;1、1-的代换法&quot;&gt;&lt;a href=&quot;#1、1-的代换法&quot; class=&quot;headerlink&quot; title=&quot;1、1</summary>
         
       
     
@@ -141,7 +291,7 @@
     <link href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNoteIndex/"/>
     <id>https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNoteIndex/</id>
     <published>2023-09-21T16:00:00.000Z</published>
-    <updated>2023-10-13T22:13:48.671Z</updated>
+    <updated>2024-03-09T00:41:06.210Z</updated>
     
     
       

@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="/css/katex.min.css">
 
 <link rel="stylesheet" href="/css/hexo-math-style.css">
-<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml">
 </head>
 
 
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    3.3k
                 </div>
                 
 
@@ -474,22 +474,26 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。</p>
-<h3 id="1、1-的代换法"><a href="#1、1-的代换法" class="headerlink" title="1、1 的代换法"></a>1、1 的代换法</h3><p><strong>众所周知，任何数乘 $1$ 都等于原数。</strong></p>
+                <p>$\require{color}$</p>
+<p>基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。</p>
+<h3 id="1、1-的代换法"><a href="#1、1-的代换法" class="headerlink" title="1、1 的代换法"></a>1、1 的代换法</h3><p>有 $2$ 个式子，$\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}}$ 和 $\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}}$，其中 $x&gt;0,y&gt;0$。若把这两个式子相乘会发生什么？</p>
+<p>可以发现，相同颜色的式子相乘，分子和分母可以互相抵消，得到常数。不同颜色的式子相乘，分子和分母不可以互相抵消，但是可以为接下来的基本不等式创造条件。</p>
+<p>因此，我们得到 $(\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}})(\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}})\\=\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}$。</p>
+<p>我们发现，标记为蓝色的结果，是相同颜色的式子相乘得到的常数。而标记为紫色的结果，是不同颜色的式子相乘得到的。可以发现，标记为紫色的结果，若相乘，是可以互相抵消的。</p>
+<p>由此，我们可以得到 $\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}\ge(2+\frac{1}{2})+2\sqrt{\frac{2x}{y}\times\frac{2y}{4x}}=\frac{9}{2}$。也就是说，$({x}+{\frac{y}{4}})({\frac{2}{x}}+{\frac{2}{y}})$ 的最小值为 $\frac{9}{2}$。</p>
+<p><strong>众所周知，任何数乘 $1$ 都等于原数。</strong></p>
 <p>例如，若 $x&gt;0,y&gt;0,\frac{1}{x}+\frac{9}{y}=1$，求 $x+y$ 的最小值。</p>
 <p>对于这道题，可以发现 $x+y=(x+y)(\frac{1}{x}+\frac{9}{y})=1+9+\frac{9x}{y}+\frac{y}{x}$（暴力死算出来），然后就可以将后面那一坨 $\frac{9x}{y}+\frac{y}{x}$ 用基本不等式求最值了。</p>
 <p>如果 $\frac{1}{x}+\frac{9}{y}=2\ne1$，那也好办，<strong>可以在整个算式前面乘上一个数使这个算式的值为 $1$。</strong> 对于上面的式子，$\frac{1}{2}\times（\frac{1}{x}+\frac{9}{y})=1$，那么 $x+y=(x+y)[\frac{1}{2}\times(\frac{1}{x}+\frac{9}{y})]=(x+y)(\frac{1}{x}+\frac{9}{y})\times\frac{1}{2}$，求出前面的 $(x+y)(\frac{1}{x}+\frac{9}{y})$ 的最值就搞定了。</p>
 <p>再看看这个。若 $x&gt;0,y&gt;0,x+8y=xy$，求 $x+2y$ 的最小值。</p>
 <p>可以发现，$(x+8y)\div(xy)=(xy)\div(xy)$，也就是说 $\frac{1}{y}+\frac{8}{x}=1$。又回来了。</p>
 <p>有些时候还需要一点转换。比如 $\frac{x+2y}{xy}=\frac{1}{y}+\frac{2}{x}$，这个应该不难理解，就是将分子拆开来分别除以分母即可。</p>
-<h3 id="2、配凑法"><a href="#2、配凑法" class="headerlink" title="2、配凑法"></a>2、配凑法</h3><p>积等和最小（当 $a&gt;0,b&gt;0$ 且 $ab$ 为定值时，$a+b$ 的最小值为 $2\sqrt{ab}$），和等积最大（当 $a&gt;0,b&gt;0$ 且 $a+b$ 为定值时，$ab$ 的最大值为 $(\frac{a+b}{2})^2$）。想必一开始学基本不等式时，读者就知道这句话了。</p>
-<p>那么，当 $x&gt;\frac{1}{2}$ 时，求 $x+\frac{1}{2x-1}$ 的最小值。</p>
+<h3 id="2、配凑法"><a href="#2、配凑法" class="headerlink" title="2、配凑法"></a>2、配凑法</h3><p>当 $x&gt;\frac{1}{2}$ 时，求 $x+\frac{1}{2x-1}$ 的最小值。</p>
 <p>可以发现 $\frac{x}{2x-1}$ 不是定值，不能直接开基本不等式。</p>
-<p>那么，<strong>我们可以尝试将前面的 $x$ 转换成一个整式，使这个整式除以 $2x-1$ 可以得到一个实数</strong>（无论是不是整数都行，<strong>别带未知数就好</strong>）。</p>
+<p>那么，<strong>我们可以尝试将前面的 $x$ 转换成一个整式，使这个整式除以 $2x-1$ 可以得到一个实数</strong>（无论是不是整数都行，<strong>别带未知数就好</strong>）。分子分母互相抵消，才能使用基本不等式。</p>
 <p>于是，原式被转化为了 $(x-0.5)+\frac{1}{2x-1}+0.5$，先在前面加 $0.5$，再在后面减 $0.5$。</p>
-<p>这样就可以用基本不等式了：$(x-0.5)+\frac{1}{2x-1}+0.5\ge2\sqrt{\frac{x-0.5}{2x-1}}+0.5$。去算吧。</p>
+<p>这样就可以用基本不等式了：$(x-0.5)+\frac{1}{2x-1}+0.5\ge2\sqrt{\frac{x-0.5}{2x-1}}+0.5$。</p>
 <h3 id="3、结合-1-和-2-的知识解题"><a href="#3、结合-1-和-2-的知识解题" class="headerlink" title="3、结合 1 和 2 的知识解题"></a>3、结合 1 和 2 的知识解题</h3><p>当 $x&gt;-2,y&gt;-2,\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 时，求 $x+y$ 的最小值。</p>
-<p>看到这里就别往下看，请读者自己思考一下吧。</p>
 <p>首先，由方法 1 可知，$6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
 <p>但即便是这样，$x+y$ 也并不是很好处理。</p>
 <p>这个时候，我们可以借助方法 2，$x+y=(x+2)+(y+2)-4$。</p>
@@ -502,14 +506,50 @@
 <p>$\ge6\times2\sqrt{\frac{x+2}{y+2}\times\frac{y+2}{x+2}}+8$……启用基本不等式</p>
 <p>$=20$……计算得出结果</p>
 <p>搞定。</p>
+<p>这类基本不等式，分以下步骤解决：</p>
+<ol>
+<li><p>条件归一。也就是把 $\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 化成 $6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
+</li>
+<li><p>配凑。将 $x+y$ 化成 $(x+2)+(y+2)-4$。需要注意，以上两个步骤<strong>有可能需要互换顺序</strong>，具体情况见下方。</p>
+</li>
+<li><p>两式相乘。也就是得到 $(x+2)+(y+2)-4=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$。</p>
+</li>
+<li><p>强行计算。</p>
+</li>
+<li><p>启用基本不等式。</p>
+</li>
+</ol>
+<p>有的时候，条件式和原式的样式可能恰好反过来。来看看进阶版本：</p>
+<p>当 $x&gt;-3,y&gt;2,4x+y+4=6$ 时，求 $\frac{1}{x+3}+\frac{1}{4y-8}$ 的最小值。</p>
+<p>这道题细节很多，需要细心计算。</p>
+<p>可以发现，$4x+y+4=6$ 作为条件式，需要条件归一；作为整式（未知数不出现在分母上。相对地，$\frac{1}{x+3}+\frac{1}{4y-8}$ 是分式），又需要配凑。<strong>先配凑，再条件归一。</strong></p>
+<p>因此，可以配凑得出 $4x+12+y-2=6+12-6=12$。条件归一得出 $\frac{1}{12}[4(x+3)+\frac{1}{4}\times(4y-8)]=1$。</p>
+<p>接下来，设 $a=x+3&gt;0,b=4y-8&gt;0$。在遇到这种式子时，设 $a$ 和 $b$ 可以防止式子过长。这样，我们就要求 $\frac1a+\frac1b$ 的最小值。</p>
+<p>回到上面的式子，我们可以发现：</p>
+<p> $\frac1a+\frac1b\\=\frac{1}{12}\begin{bmatrix}4a+\frac{1}{4}b\end{bmatrix}(\frac1a+\frac1b)\\=\frac{1}{12}(4+\frac14+\frac{\frac14b}{a}+\frac{4a}{b})\\\ge\frac{1}{12}(\frac{17}{4}+2\sqrt{\frac{\frac14b}{a}\times\frac{4a}{b}})\\=\frac{1}{12}(\frac{17}{4}+2)=\frac{25}{48}$</p>
+<p>当且仅当 $\frac{\frac14b}{a}=\frac{4a}{b}$ 时，等号成立。</p>
+<p>接下来验算一下。</p>
+<p>$\because\frac{\frac14b}{a}=\frac{4a}{b}\\\therefore\frac{1}{4}b^2=4a^2\\b=4a\\4(x+3)=4y-8\\x+3=y-2\\x-y=-5$</p>
+<p>又因为 $4x+y+4=6$，解得 $x=-\frac35,y=\frac{22}{5}$。</p>
+<p>验算如图。</p>
+<p><img src="../post_image/CyrxNote-Math-001/CyrxNote-Math-001-01.PNG" alt=""></p>
+<p>这道题，出题人在做的时候，都差点做错。</p>
 <h3 id="4、使系数相等"><a href="#4、使系数相等" class="headerlink" title="4、使系数相等"></a>4、使系数相等</h3><p>再看看：当 $a&gt;0,b&gt;0,2a+3b=12$ 时，求 $\frac{1}{ab}$ 的最小值。</p>
 <p>显然，当 $ab$ 最大的时候，就是 $\frac{1}{ab}$ 最小的时候。</p>
 <p>但是，条件是 $2a+3b=12$,这意味着 $a+b$ 是会变的，不能直接使用基本不等式。</p>
 <p>那么，我们考虑改变一下 $ab$ 这边。给 $a$ 搞个系数 $2$，给 $b$ 搞个系数 $3$，最后统一 $\div6$，我们就有 $ab=(2a\cdot3b)\times\frac{1}{6}\le(\frac{2a+3b}{2})^2\times\frac{1}{6}=6$，那么 $\frac{1}{ab}$ 的最小值就是 $\frac{1}{6}$。</p>
 <h3 id="5、将分数中的分子用类似于带分数的思想提取出来"><a href="#5、将分数中的分子用类似于带分数的思想提取出来" class="headerlink" title="5、将分数中的分子用类似于带分数的思想提取出来"></a>5、将分数中的分子用类似于带分数的思想提取出来</h3><p>当 $x&gt;1$ 时，求 $\frac{x^2-x+1}{x-1}$ 的最小值。</p>
 <p>对于这道题，可以发现 $(x-1)x=x^2-x$，于是原式可以被化为 $\frac{x(x-1)+1}{x-1}=x+\frac{1}{x-1}$。接着再用配凑法，即可算出式子的最小值为 $3$。</p>
-<p>是的，多项式也可以除以多项式的，不过可能会有余数。$(x^2-x+1)\div(x-1)=x……1$。</p>
-<h3 id="6、转化为一元二次不等式求解"><a href="#6、转化为一元二次不等式求解" class="headerlink" title="6、转化为一元二次不等式求解"></a>6、转化为一元二次不等式求解</h3><p>已知 $ab+a+b=8,a&gt;0,b&gt;0$，则：</p>
+<p>提取什么东西应该根据题目要求来。例如，同样是 $x&gt;1$ 时，求 $\frac{x^2-2x+5}{x-1}$ 的最小值。</p>
+<p>可以注意到，此时最好提取 $x-1$ 出来，得 $x-1+\frac{4}{x-1}$。可以很轻松地算出最小值为 $4$，当且仅当 $x-1=\frac{4}{x-1}$ 时，即 $x=3$ 时，等号成立。</p>
+<p>扩展一个知识：整式除法。</p>
+<p>例如，当 $x&gt;-2$，求 $\frac{2x^2+8x+20}{x+2}$。</p>
+<p>首先，当前被除数是 $2x^2+8x+20$，当前除数是 $x+2$。</p>
+<p>可以发现，当前被除数的最高次数项是 $2x^2$，系数是 $2$，次数是 $2$。而除数 $x+2$ 的最高次数项的系数是 $1$，次数是 $1$。</p>
+<p>因此可以发现，如果将 $x+2$ 乘上 $2x$ 可以得到 $2x^2+4x$。因此，$\frac{2x^2+8x+20}{x+2}=2x+\frac{(2x^2+8x+20)-(2x^2+4x)}{x+2}=2x+\frac{4x+20}{x+2}$。被除数中的 $2x^2$ 就被消去了，当前被除数就变成了 $4x+20$。</p>
+<p>接着，当前被除数的最高次数项是 $4x$，系数是 $4$，次数是 $1$。当前除数的最高次数项的系数和次数都没变，都还是 $1$。因此，$4(x+2)=4x+8$，$2x+\frac{4x+20}{x+2}=2x+4+\frac{(4x+20)-(4x+8)}{x+2}=2x+4+\frac{12}{x+2}$。化简成这样，再用基本不等式就不难了。</p>
+<h3 id="6、转化为一元二次不等式求解"><a href="#6、转化为一元二次不等式求解" class="headerlink" title="6、转化为一元二次不等式求解"></a>6、转化为一元二次不等式求解</h3><p><a href="/2023-10-04-CyrxNote-Math-003">一元二次不等式的解法在此。</a></p>
+<p>已知 $ab+a+b=8,a&gt;0,b&gt;0$，则：</p>
 <p>A. $ab$ 最大值为 $2$</p>
 <p>B. $a+b$ 最小值为 $4$</p>
 <p>C. $a+2b$ 最小值为 $6\sqrt2-3$</p>
@@ -531,7 +571,7 @@
 <h3 id="7、消元：将一个数用另一个数表示出来"><a href="#7、消元：将一个数用另一个数表示出来" class="headerlink" title="7、消元：将一个数用另一个数表示出来"></a>7、消元：将一个数用另一个数表示出来</h3><p>回到前面的题目。</p>
 <p>可以发现，$ab+a+b=ab+b+a=(a+1)b+a$。</p>
 <p>所以，因为 $ab+a+b=8$，所以 $b=\frac{8-a}{a+1}$。</p>
-<p>因此 $a+2b=a+2\times\frac{8-a}{a+1}=a+\frac{16-2a}{a+1}=a-2+\frac{18}{a+1}=a+1+\frac{18}{a+1}-3\ge2\sqrt{ ( a+1 ) \times\frac{18}{a+1}}-3=6\sqrt{2}-3$。C 选项正确。</p>
+<p>因此 $a+2b\\=a+2\times\frac{8-a}{a+1}\\=a+\frac{16-2a}{a+1}\\=a-2+\frac{18}{a+1}\\=a+1+\frac{18}{a+1}-3\\\ge2\sqrt{ ( a+1 ) \times\frac{18}{a+1}}-3\\=6\sqrt{2}-3$。C 选项正确。</p>
 <p>D 选项的情况，将在下一节讲解。</p>
 <h3 id="8、1-的代换法（进阶版）"><a href="#8、1-的代换法（进阶版）" class="headerlink" title="8、1 的代换法（进阶版）"></a>8、1 的代换法（进阶版）</h3><p>可以发现，$a(b+1)+b=ab+a+b=8$。</p>
 <p>因此，$\frac{1}{a(b+1)}+\frac{1}{b}=\frac{1}{8}[a(b+1)+b][\frac{1}{a(b+1)}+\frac{1}{b}]=\frac{1}{8}[1+1+\frac{a(b+1)}{b}+\frac{b}{a(b+1)}]\ge\frac{1}{8}(2+2\sqrt{1})=\frac{1}{2}$。D 选项正确。</p>
@@ -541,9 +581,11 @@
 <p>然后，$x^2+3x+3=(x+1)(x+1)+(x+1)+1$，因此 $\frac{x+1}{x^2+3x+3}=\frac{x+1}{ ( x+1 ) ( x+1 ) + ( x+1 )+1}=\frac{1}{x+1+1+\frac{1}{x+1}}$。可以发现，当 $x+1+1+\frac{1}{x+1}$ 最小时，$\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大。</p>
 <p>我们可以很容易地求出 $x+1+1+\frac{1}{x+1}$ 最小为 $3$，所以 $\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大为 $\frac{1}{3}$，进而求出原式最小值为 $\frac{1}{2+\frac{1}{3}}=\frac{3}{7}$。</p>
 <p>对于这种问题，我们可以不断地尝试将分子化为 $1$，然后，当 $a&gt;0,b&gt;0$ 时，$a$ 不变的情况下，$b$ 越大时 $\frac{a}{b}$ 越小。根据这个原理，可以反复求最大/最小值，最终解出题目。</p>
-<h3 id="10、使分子和分母变得可以互相约分"><a href="#10、使分子和分母变得可以互相约分" class="headerlink" title="10、使分子和分母变得可以互相约分"></a>10、使分子和分母变得可以互相约分</h3><p>已知 $x+y=1,y&gt;0,x&gt;0$，求 $\frac{1}{2x}+\frac{x}{y+1}$ 的最小值。</p>
+<h3 id="10、将条件代入某个整数中，使分子和分母变得可以互相约分"><a href="#10、将条件代入某个整数中，使分子和分母变得可以互相约分" class="headerlink" title="10、将条件代入某个整数中，使分子和分母变得可以互相约分"></a>10、将条件代入某个整数中，使分子和分母变得可以互相约分</h3><p>已知 $x+y=1,y&gt;0,x&gt;0$，求 $\frac{1}{2x}+\frac{x}{y+1}$ 的最小值。</p>
 <p>可以发现，此时无法直接使用基本不等式，因为 $1$ 和 $y+1$ 不能互相约分掉。</p>
 <p>考虑 $x+y=1$ 这个条件，可以发现 $x+y+1=2$，那么原式就等于 $\frac{\frac{1}{2}(x+y+1)}{2x}+\frac{x}{y+1}=\frac{x+y+1}{4x}+\frac{x}{y+1}=\frac{1}{4}+\frac{y+1}{4x}+\frac{x}{y+1}\ge\frac{1}{4}+2\sqrt{\frac{y+1}{4x}\times\frac{x}{y+1}}=\frac{5}{4}$，当且仅当 $\frac{y+1}{4x}=\frac{x}{y+1}$ 时（即 $x=\frac{2}{3},y=\frac{1}{3}$ 时），可以取等号。</p>
+<p>已知 $a&gt;0,b&gt;0,a+b=2$，求 $\frac{b}{a}+\frac{4}{b}$ 的最小值。</p>
+<p>可以发现，$4=2a+2b$，所以 $\frac{b}{a}+\frac{4}{b}=\frac{b}{a}+\frac{2a+2b}{b}=\frac{b}{a}+\frac{2a}{b}+2\ge2\sqrt{\frac{b}{a}\times\frac{2a}{b}}+2=2\sqrt2+2$，当且仅当 $\frac{b}{a}=\frac{2a}{b}$ 时等号成立。</p>
 <h3 id="11、总结"><a href="#11、总结" class="headerlink" title="11、总结"></a>11、总结</h3><p>不等式问题没有固定解法，在高考中难度相当大。这种题目只能靠多刷题积累来的经验，因此应记住做过的题的解法，也要善于利用网络。</p>
 <h3 id="链接阅读"><a href="#链接阅读" class="headerlink" title="链接阅读"></a>链接阅读</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/185052402">基本不等式解题技巧（一）（知乎专栏）</a></p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/205447579">基本不等式（二）——多元问题处理技巧（知乎专栏）</a>（友情提醒，这一篇文章贼tm难）</p>
@@ -911,7 +953,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021-2023</span>
+                <span id="year">2021-2024</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">cyrxdzj</a>
@@ -920,7 +962,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15.8k</span>&nbsp;字
+                class="white-color">34.2k</span>&nbsp;字
             
             
             

@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="/css/katex.min.css">
 
 <link rel="stylesheet" href="/css/hexo-math-style.css">
-<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<meta name="baidu-site-verification" content="codeva-Q5i8Ekz8Z2" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><!-- hexo-inject:begin --><!-- hexo-inject:end --><link rel="alternate" href="/atom.xml" title="cyrxdzj blog" type="application/atom+xml">
 </head>
 
 
@@ -454,7 +454,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.3k
+                    4.5k
                 </div>
                 
 
@@ -526,7 +526,7 @@
 <p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-02.PNG" alt=""></p>
 <p>同时，我们可以得到 $f(\frac{1}{x})=f(-\frac{1}{x})$，这一条待会有用。</p>
 <p>接下来，细心推出以下式子：</p>
-<p>$f(\frac{1}{x})\\=\frac{1+\frac{1}{x}^2}{1-\frac{1}{x}^2}\\=\frac{x^2+1}{x^2}\div\frac{x^2-1}{x^2}\\=\frac{1+x^2}{x^2-1}$</p>
+<p>$f(\frac{1}{x})\\=\frac{1+(\frac{1}{x})^2}{1-(\frac{1}{x})^2}\\=\frac{x^2+1}{x^2}\div\frac{x^2-1}{x^2}\\=\frac{1+x^2}{x^2-1}$</p>
 <p>至此，函数 $f(\frac{1}{x})$ 计算完毕。</p>
 <p>而函数 $f(x)=\frac{1+x^2}{1-x^2}$，可以很容易地发现 $f(\frac{1}{x})=-f(x)$，B 选项正确，C 选项错误。图象如下：</p>
 <p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-03.PNG" alt=""></p>
@@ -602,7 +602,39 @@
 <p>我们可以发现函数完完全全就是 $f(x)=x$ 诶。函数图象如下：</p>
 <p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-05.PNG" alt=""></p>
 <p>上图中，红色线和绿色线是拆分后的函数，紫色线是合并后要求的函数。函数与颜色的对应关系在左边有写。</p>
-<h3 id="5、找规律"><a href="#5、找规律" class="headerlink" title="5、找规律"></a>5、找规律</h3><p>已知分段函数 $f(x)=\left\lbrace\begin{matrix}x^2,  &amp;x&lt;1, \\f(x-1)-1,  &amp;x\ge1,\end{matrix}\right.$，求以下函数的值：</p>
+<h3 id="6、分段函数进阶"><a href="#6、分段函数进阶" class="headerlink" title="6、分段函数进阶"></a>6、分段函数进阶</h3><p>设 $f(x)=\left\lbrace\begin{matrix}(x+1)^2, &amp;x\le0, \\\frac{4}{x}, &amp;x&gt;0,\end{matrix}\right.$，则：</p>
+<ol>
+<li><p>$y=f(x)$ 与 $y=a$ 的图象有 $2$ 个交点，$a$ 的范围是？</p>
+<p>对于这一题，我们可以发现，$f(x)$ 函数的左边部分是对称轴为 $x=-1$ ，顶点为 $(-1,0)$ 的二次函数，右边部分是反比例函数。</p>
+<p>可以发现，当 $a&lt;0$ 时，没有交点；</p>
+<p>当 $a=0$ 时，只有一个交点，就是二次函数顶点 $(1,0)$。</p>
+<p>可以发现当 $x=0$ 时 $(x+1)^2=1$，而当 $x=0$ 时 $f(x)$ 执行的是左部分的二次函数，因此，可以想象得出，当 $0&lt;a\le1$ 时，$y=a$ 与 $f(x)$ 有 $3$ 个交点，其中二次函数部分有 $2$ 个（对称轴左边 $1$ 个，右边 $1$ 个），反比例函数部分有 $1$ 个。</p>
+<p>当 $a&gt;1$ 时，有 $2$ 个交点。其中二次函数部分有 $1$ 个（对称轴左边 $1$ 个，右边 $0$ 个），反比例函数部分有 $1$ 个。</p>
+<p>图象：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-12.PNG" alt=""></p>
+<p>对于此类问题，应画出大致图象，注意 $x$ 上的分段，并根据关键信息对 $y$ 进行分段。</p>
+</li>
+<li><p>解不等式：$0\le f(x)\le1$。</p>
+<p>这相当于以下两个不等式的解集的<strong>并集</strong>：</p>
+<ol>
+<li><p>$x\le0$ 且 $0\le(x+1)^2\le1$，解得 $-2\le x\le0$；</p>
+</li>
+<li><p>$x&gt;0$ 且 $0\le\frac{4}{x}\le1$，这也很容易地解得 $x\ge4$。</p>
+</li>
+</ol>
+<p>综上，不等式解集为 $[-2,0]\cup[4,+\infty)$。</p>
+</li>
+<li><p>解不等式：$0\le f(f(x))\le1$。</p>
+<p>嗯，函数嵌套了起来。</p>
+<p>我们注意到，无论何时，一定有 $f(x)\ge0$。并且当且仅当 $x=-1$ 时，$f(x)=0$。</p>
+<p>当 $x=-1$ 时，$f(f(x))=f(0)=1$，符合不等式。</p>
+<p>当 $x\neq-1$ 时，有 $f(x)&gt;0$，这意味着 $f(f(x))$ 一定是分段函数的右边的反比例函数部分。因此，根据 $0\le f(f(x))\le1$ 可以得到 $f(x)\ge4$。</p>
+<p>根据图象，我们可以发现，当 $x&lt;-1$ 时，当且仅当 $x\le-3$ 时 $f(x)\ge4$。当 $-1\le x\le0$ 时，二次函数对称轴右边的部分没有值大于 $4$ 的地方。当 $x&gt;0$ 时，当且仅当 $0&lt;x\le1$ 时 $f(x)\ge4$.</p>
+<p>综上，解得 $x\le-3$ 或 $x=-1$ 或 $0&lt; x\le1$。</p>
+<p>对于此类问题，应通过分类讨论的方式解决，注意分段函数的分段条件中的等于号。</p>
+</li>
+</ol>
+<h3 id="7、找规律"><a href="#7、找规律" class="headerlink" title="7、找规律"></a>7、找规律</h3><p>已知分段函数 $f(x)=\left\lbrace\begin{matrix}x^2,  &amp;x&lt;1, \\f(x-1)-1,  &amp;x\ge1,\end{matrix}\right.$，求以下函数的值：</p>
 <ol>
 <li><p>$f(2)$</p>
 </li>
@@ -621,6 +653,168 @@
 <p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-06.PNG" alt=""></p>
 <p>当然考试时没有计算机的。</p>
 <p>对于这类问题，可以稍微爆算几轮，发现规律，同时根据函数解析式验证规律。</p>
+<h3 id="8、将函数分成若干个部分，以分析图象"><a href="#8、将函数分成若干个部分，以分析图象" class="headerlink" title="8、将函数分成若干个部分，以分析图象"></a>8、将函数分成若干个部分，以分析图象</h3><p>例如，指出函数 $f(x)=\vert x+2\vert$ 和 $f(x)=\vert x^2-3x+2\vert$ 的单调区间。</p>
+<p>首先，我们先看看 $f_1(x)=x+2$ 的图象。很显然，这就是一个一次函数的图象。同时，我们可以发现 $f(x)=\vert f_1(x)\vert$（废话）。</p>
+<p>然后，我们发现，绝对值符号，就是将函数图象在 $x$ 轴以下的部分翻转过来。因此，$f(x)$ 的图象如图红色实线：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-07.PNG" alt=""></p>
+<p>因此，函数在 $(-\infty,-2)$ 单调递减，$[-2,+\infty)$ 单调递增。</p>
+<p>我们再看看 $f_2(x)=x^2-3x+2$，这是一个二次函数，对称轴为 $x=1.5$，当 $x=1$ 和 $x=2$ 时函数值为 $0$。而绝对值符号就是将图象在 $x$ 轴以下的部分翻转过来，因此函数图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-08.PNG" alt=""></p>
+<p>这个图象分析稍微复杂一点。</p>
+<ol>
+<li><p>对于 $(-\infty,1)$，一开始（代表 $f_2(x)$ 的蓝线，下同）就是单调递减，也没被翻转，因此现在还是单调递减；</p>
+</li>
+<li><p>对于 $[1,1.5]$，一开始是单调递减，但由于被翻转了，所以现在是单调递增；</p>
+</li>
+<li><p>对于 $(1.5,2)$，一开始是单调递增，但由于被翻转了，所以现在是单调递减；</p>
+</li>
+<li><p>对于 $[2,+\infty)$，一开始就是单调递增，也没被翻转，因此现在还是单调递增。</p>
+</li>
+</ol>
+<p>分析完毕。</p>
+<h3 id="9、分析二次函数的图象"><a href="#9、分析二次函数的图象" class="headerlink" title="9、分析二次函数的图象"></a>9、分析二次函数的图象</h3><p>初中时我们学过，二次函数的单调递增递减区间是这个关系：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>二次项系数（一般记为 $a$）与 $0$ 的关系</th>
+<th>对称轴左边区域</th>
+<th>对称轴右边区域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a&gt;0$</td>
+<td>单调递减</td>
+<td>单调递增</td>
+</tr>
+<tr>
+<td>$a&lt;0$</td>
+<td>单调递增</td>
+<td>单调递减</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>已知函数 $f(x)=\left\lbrace\begin{matrix}x^2+4x, &amp;x\ge0, \\4x-x^2, &amp;x<0,\end{matrix}\right.$，若 $f(4-a)>f(a)$，则实数 $a$ 的取值范围是？</p>
+<p>分析二次函数时，二次项系数和函数对称轴是很重要的参数。</p>
+<p>对于 $x^2+4x$，对称轴为 $x=-2$，因此当 $x\ge0$ 时函数递增。</p>
+<p>对于 $-x^2+4x$，对称轴为 $x=2$，因此当 $x&lt;0$ 时函数递增。</p>
+<p>当 $x=0$ 时，$x^2+4x=4x-x^2=0$，也就是说，$f(x)$ 整个函数都是递增的。</p>
+<p>而 $f(4-a)&gt;f(a)$，也就意味着 $4-a&gt;a$ 即可。实数 $a$ 的取值范围是 $(-\infty,2)$。</p>
+<p>若函数 $f(x)=ax^2+(a-3)x+1$ 在 $(-1,+\infty)$ 上单调递减，则 $a$ 的取值范围是？</p>
+<p>首先，由于函数在右侧部分单调递减，所以不可能出现 $a&gt;0$ 的情况。</p>
+<p>然后，考虑 $a=0$ 时，函数退化为一次函数，即 $f(x)=-3x+1$。此时整个函数都是单调递减的。</p>
+<p>最后，考虑 $a&lt;0$ 时，只要函数的对称轴在 $-1$ 的左边（$-1$ 上也可以）。换句话说，不等式组 $\left\lbrace\begin{matrix}a&lt;0\\-\frac{a-3}{2a}\le-1\end{matrix}\right.$ 成立。解得 $-3\le a&lt;0$。</p>
+<p>综上，可以发现 $a$ 的取值范围是 $[-3,0]$。</p>
+<h3 id="10、对勾函数"><a href="#10、对勾函数" class="headerlink" title="10、对勾函数"></a>10、对勾函数</h3><p>形如 $y=k(x+\frac{a}{x})$，其中 $a&gt;0,k\neq0$ 的函数，图象为对勾。</p>
+<p>对勾函数是奇函数，分为 $2$ 个部分。每个部分的形状与 $k$ 相关。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$k$ 与 $0$ 的大小关系</th>
+<th>左半部分情况</th>
+<th>右半部分情况</th>
+<th>例图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k&gt;0$</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&lt;0$ 时，左半部分取得最大值</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&gt;0$ 时，右半部分取得最小值</td>
+<td><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-09.PNG" alt=""></td>
+</tr>
+<tr>
+<td>$k&lt;0$</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&lt;0$ 时，左半部分取得最小值</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&gt;0$ 时，右半部分取得最大值</td>
+<td><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-10.PNG" alt=""></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可以发现，对勾函数和<a href="/2023-09-22-CyrxNote-Math-001/">基本不等式</a>息息相关。</p>
+<h3 id="11、函数的平移与翻转"><a href="#11、函数的平移与翻转" class="headerlink" title="11、函数的平移与翻转"></a>11、函数的平移与翻转</h3><p>作出函数 $y=\frac{x-1}{x-2}$ 的图象，并写出函数的定义域、单调区间和值域。</p>
+<p>通过化简，我们得到 $y=\frac{x-1}{x-2}=\frac1{x-2}+1$。</p>
+<p>然后，我们尝试将这个函数从 $y=\frac1{x}$ 这个反比例函数平移出来。</p>
+<p>首先，我们先向右移动 $2$ 格。<strong>向右移动多少格，函数中的所有 $x$ 就会统一减去多少</strong>。注意，是<strong>所有</strong>的 $x$。这样，我们就得到了 $y=\frac{1}{x-2}$。</p>
+<p>然后，再向上移动 $1$ 格。<strong>向上移动多少格，函数末尾就会加上多少</strong>。这样，我们最终得到 $y=\frac{1}{x-2}+1$。</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-11.PNG" alt=""></p>
+<p>函数平移的同时，定义域、单调区间和值域当然也会随之平移。</p>
+<p>事实上，在初中时，我们学的二次函数顶点式，本质上就是平移的产物。</p>
+<p>以下所有变化后函数，均基于函数 $f(x)=2x+1$。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>函数的变化</th>
+<th>变化后函数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>向右平移 $a$ 格（等价于向左平移 $-a$ 格）</td>
+<td>所有 $x$ 统一减去 $a$</td>
+<td>$f(x)=2(x-a)+1=2x-2a+1$</td>
+</tr>
+<tr>
+<td>向上平移 $a$ 格（等价于向下平移 $-a$ 格）</td>
+<td>整个函数统一加上 $a$</td>
+<td>$f(x)=2x+1+a$</td>
+</tr>
+<tr>
+<td>左右翻转</td>
+<td>所有 $x$ 统一变为 $-x$</td>
+<td>$f(x)=2(-x)=1=-2x+1$</td>
+</tr>
+<tr>
+<td>上下翻转</td>
+<td>整个函数统一变为相反数</td>
+<td>$f(x)=-(2x+1)=-2x-1$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="12、将带根号的函数转换为二次函数"><a href="#12、将带根号的函数转换为二次函数" class="headerlink" title="12、将带根号的函数转换为二次函数"></a>12、将带根号的函数转换为二次函数</h3><p>有些时候函数是带根号的。我们都知道，$x\ge0$  时 $(\sqrt{x})^2=x$。有时我们可以利用这个特点。</p>
+<p>例如，求 $y=2x+\sqrt{1-x}$ 的值域。</p>
+<p>首先，我们可以发现 $x\le1$。否则函数将无意义。</p>
+<p>然后，我们尝试转换一下。</p>
+<p>$y=2x+\sqrt{1-x}\\=2x-2+\sqrt{1-x}+2\\-(2-2x)+\sqrt{1-x}+2$</p>
+<p>然后，设 $t=\sqrt{1-x}$。我们可以发现 $t\ge0$，以及：</p>
+<p>$y=-(2-2x)+\sqrt{1-x}+2=-2t^2+t+2$，我们要求的就是这个玩意的值域。</p>
+<p>$y=-2t^2+t+2$ 的对称轴为 $t=\frac14$，此时 $y$ 有最大值，稍微算算可以得出 $\frac{17}{8}$。由于函数的右边不受限制，所以 $y$ 可以取任意小。</p>
+<p>综上，函数的值域是 $(-\infty,\frac{17}{8}]$。</p>
+<p>图象为：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-13.PNG" alt=""></p>
+<h3 id="13、究极无敌分类讨论"><a href="#13、究极无敌分类讨论" class="headerlink" title="13、究极无敌分类讨论"></a>13、究极无敌分类讨论</h3><p>已知函数 $f(x)=2x^2+2ax+1$，函数 $g(x)=\frac{2-2x}{x}$，设函数 $h(x)=\min\lbrace f(x),g(x)\rbrace(x\neq0)$，分类讨论 $a$ 的值与 $h(x)$ 与直线 $y=0$ 的交点个数。</p>
+<p>可以在 desmos 上查看：<a target="_blank" rel="noopener" href="https://www.desmos.com/calculator/nrgjw5qxaz">点击这里</a>。</p>
+<p>首先，我们先化简 $g(x)=\frac{2-2x}{x}=\frac{2}{x}-2$，根据函数的平移的知识，可以发现这就是一个反比例函数向下平移 $2$ 格。</p>
+<p>显然，当 $x<0$ 时，$g(x)<0$。我们也可以很方便地计算出当 $x>1$ 时，$g(x)&lt;0$；当 $x=1$ 时，$g(x)=0$。图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-14.PNG" alt=""></p>
+<p>这个性质看似无用，其实大用。显然，由于 $h(x)$ 要求的是最<strong>小</strong>值，这意味着，在 $x<0$ 和 $x>1$ 这两个段，$h(x)$ 一定不会和 $y=0$ 有交点。因为这两个段 $g(x)$ 小于 $0$，就算 $f(x)=0$，也会因为太大而不计入 $h(x)$。</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-15.PNG" alt=""></p>
+<p>图中的紫色部分就是 $h(x)$。</p>
+<p>再看看这个 $f(x)$，可以发现，无论 $a$ 怎么变，$f(x)$ 始终经过一个定点：$(0,1)$。而这个定点在 $y=0$ 的上方。</p>
+<p>由此，我们可以分类讨论：</p>
+<ol>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 左边或 $x=0$ 上时，显然 $f(x)$ 在 $y$ 轴右边的部分都不会和 $y=0$ 有任何交点。此时答案的交点由 $g(x)$ 创造，只有一个。</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-15.PNG" alt=""></p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，但是与 $y=0$ 仍没有交点时。此时答案的交点还是由 $g(x)$ 创造，只有一个。</p>
+<p>一个小技巧：有些时候，可以试试利用 $\Delta$ 来解各种情况。</p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有恰好一个交点时。此时需要验证 $f(x)$ 与 $y=0$ 的交点是否确实在 $0&lt;x&lt;1$ 之间。此时 $h(x)$ 与 $y=0$ 有 $2$ 个交点。</p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有 $2$ 个交点，且最右边的交点在 $(1,0)$ 左边时。我们不用列那么长的式子去表示两个交点的坐标。我们其实只需要列 $\Delta&gt;0$ （保证有 $2$ 个交点）、$-\frac{1}{2}a&gt;0$ （保证对称轴在 $x=0$ 右边）和 $f(1)&gt;0$ 即可。</p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有 $2$ 个交点，且最右边的交点恰好在 $(1,0)$ 上时。可以发现，此时 $f(1)=0$，最左边的交点一定在 $x=0$ 和 $x=1$ 之间。此时 $h(x)$ 与 $y=0$ 有 $2$ 个交点。</p>
+</li>
+<li><p>当  $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有 $2$ 个交点，且最右边的交点在 $(1,0)$ 右边时。请读者自行思考 $h(x)$ 与 $y=0$ 有几个交点。</p>
+</li>
+</ol>
 
                 
             </div>
@@ -726,18 +920,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023-10-09-CyrxNote-Math-004/">
+                <a href="/2023-10-12-CyrxNote-Physics-001/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/002_014_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 数学004 函数">
+                        <img src="/medias/feature_image_pjsk/001_015_card_after_training.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 物理001 变速运动">
                         
-                        <span class="card-title">cyrxdzj的文化课学习笔记 数学004 函数</span>
+                        <span class="card-title">cyrxdzj的文化课学习笔记 物理001 变速运动</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -747,9 +940,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-09
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-12
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -762,7 +955,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -986,7 +1178,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021-2023</span>
+                <span id="year">2021-2024</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">cyrxdzj</a>
@@ -995,7 +1187,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15.8k</span>&nbsp;字
+                class="white-color">34.2k</span>&nbsp;字
             
             
             
