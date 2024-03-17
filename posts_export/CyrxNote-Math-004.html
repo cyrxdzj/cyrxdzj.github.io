@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="cyrxdzj的文化课学习笔记 数学001 基本不等式, cyrxdzj blog">
+    <meta name="keywords" content="cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>cyrxdzj的文化课学习笔记 数学001 基本不等式 | cyrxdzj blog</title>
+    <title>cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,7 +308,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">cyrxdzj的文化课学习笔记 数学001 基本不等式</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -429,15 +429,6 @@
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                cyrxdzj的文化课学习笔记
-                            </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
@@ -445,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-09-22
+                    2024-03-17
                 </div>
                 
 
@@ -454,7 +445,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.3k
+                    4.6k
                 </div>
                 
 
@@ -474,122 +465,370 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>$\require{color}$</p>
-<p>基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。</p>
-<h3 id="1、1-的代换法"><a href="#1、1-的代换法" class="headerlink" title="1、1 的代换法"></a>1、1 的代换法</h3><p>有 $2$ 个式子，$\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}}$ 和 $\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}}$，其中 $x&gt;0,y&gt;0$。若把这两个式子相乘会发生什么？</p>
-<p>可以发现，相同颜色的式子相乘，分子和分母可以互相抵消，得到常数。不同颜色的式子相乘，分子和分母不可以互相抵消，但是可以为接下来的基本不等式创造条件。</p>
-<p>因此，我们得到 $(\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}})(\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}})\\=\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}$。</p>
-<p>我们发现，标记为蓝色的结果，是相同颜色的式子相乘得到的常数。而标记为紫色的结果，是不同颜色的式子相乘得到的。可以发现，标记为紫色的结果，若相乘，是可以互相抵消的。</p>
-<p>由此，我们可以得到 $\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}\ge(2+\frac{1}{2})+2\sqrt{\frac{2x}{y}\times\frac{2y}{4x}}=\frac{9}{2}$。也就是说，$({x}+{\frac{y}{4}})({\frac{2}{x}}+{\frac{2}{y}})$ 的最小值为 $\frac{9}{2}$。</p>
-<p><strong>众所周知，任何数乘 $1$ 都等于原数。</strong></p>
-<p>例如，若 $x&gt;0,y&gt;0,\frac{1}{x}+\frac{9}{y}=1$，求 $x+y$ 的最小值。</p>
-<p>对于这道题，可以发现 $x+y=(x+y)(\frac{1}{x}+\frac{9}{y})=1+9+\frac{9x}{y}+\frac{y}{x}$（暴力死算出来），然后就可以将后面那一坨 $\frac{9x}{y}+\frac{y}{x}$ 用基本不等式求最值了。</p>
-<p>如果 $\frac{1}{x}+\frac{9}{y}=2\ne1$，那也好办，<strong>可以在整个算式前面乘上一个数使这个算式的值为 $1$。</strong> 对于上面的式子，$\frac{1}{2}\times（\frac{1}{x}+\frac{9}{y})=1$，那么 $x+y=(x+y)[\frac{1}{2}\times(\frac{1}{x}+\frac{9}{y})]=(x+y)(\frac{1}{x}+\frac{9}{y})\times\frac{1}{2}$，求出前面的 $(x+y)(\frac{1}{x}+\frac{9}{y})$ 的最值就搞定了。</p>
-<p>再看看这个。若 $x&gt;0,y&gt;0,x+8y=xy$，求 $x+2y$ 的最小值。</p>
-<p>可以发现，$(x+8y)\div(xy)=(xy)\div(xy)$，也就是说 $\frac{1}{y}+\frac{8}{x}=1$。又回来了。</p>
-<p>有些时候还需要一点转换。比如 $\frac{x+2y}{xy}=\frac{1}{y}+\frac{2}{x}$，这个应该不难理解，就是将分子拆开来分别除以分母即可。</p>
-<h3 id="2、配凑法"><a href="#2、配凑法" class="headerlink" title="2、配凑法"></a>2、配凑法</h3><p>当 $x&gt;\frac{1}{2}$ 时，求 $x+\frac{1}{2x-1}$ 的最小值。</p>
-<p>可以发现 $\frac{x}{2x-1}$ 不是定值，不能直接开基本不等式。</p>
-<p>那么，<strong>我们可以尝试将前面的 $x$ 转换成一个整式，使这个整式除以 $2x-1$ 可以得到一个实数</strong>（无论是不是整数都行，<strong>别带未知数就好</strong>）。分子分母互相抵消，才能使用基本不等式。</p>
-<p>于是，原式被转化为了 $(x-0.5)+\frac{1}{2x-1}+0.5$，先在前面加 $0.5$，再在后面减 $0.5$。</p>
-<p>这样就可以用基本不等式了：$(x-0.5)+\frac{1}{2x-1}+0.5\ge2\sqrt{\frac{x-0.5}{2x-1}}+0.5$。</p>
-<h3 id="3、结合-1-和-2-的知识解题"><a href="#3、结合-1-和-2-的知识解题" class="headerlink" title="3、结合 1 和 2 的知识解题"></a>3、结合 1 和 2 的知识解题</h3><p>当 $x&gt;-2,y&gt;-2,\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 时，求 $x+y$ 的最小值。</p>
-<p>首先，由方法 1 可知，$6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
-<p>但即便是这样，$x+y$ 也并不是很好处理。</p>
-<p>这个时候，我们可以借助方法 2，$x+y=(x+2)+(y+2)-4$。</p>
-<p>接下来，求出 $(x+2)+(y+2)$ 的最小值即可。</p>
-<p>$x+y=(x+2)+(y+2)-4$……使用配凑法</p>
-<p>$=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$……使用 1 的代换法</p>
-<p>$=6\times\begin{bmatrix}(x+2)+(y+2)\end{bmatrix}(\frac{1}{x+2}+\frac{1}{y+2})-4$……整理式子，将 $6$ 丢一边</p>
-<p>$=6\times(1+1+\frac{x+2}{y+2}+\frac{y+2}{x+2})-4$……强行计算括号中的内容</p>
-<p>$=6\times(\frac{x+2}{y+2}+\frac{y+2}{x+2})+12-4$……把无关的 $12$（即 $6\times(1+1)$）丢出去</p>
-<p>$\ge6\times2\sqrt{\frac{x+2}{y+2}\times\frac{y+2}{x+2}}+8$……启用基本不等式</p>
-<p>$=20$……计算得出结果</p>
-<p>搞定。</p>
-<p>这类基本不等式，分以下步骤解决：</p>
+                <h1 id="cyrxdzj的文化课学习笔记-数学004-函数"><a href="#cyrxdzj的文化课学习笔记-数学004-函数" class="headerlink" title="cyrxdzj的文化课学习笔记 数学004 函数"></a>cyrxdzj的文化课学习笔记 数学004 函数</h1><blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">创建</th>
+<th style="text-align:center">内容更新</th>
+<th style="text-align:center">导出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2023-10-09 07:01:12</td>
+<td style="text-align:center">2023-11-22 17:42:50</td>
+<td style="text-align:center">2024-03-17 11:43:52</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>原文链接：<a href="https://blog.cyrxdzj.eu.org/2023-10-09-CyrxNote-Math-004/">https://blog.cyrxdzj.eu.org/2023-10-09-CyrxNote-Math-004/</a></p>
+<p>作者：cyrxdzj</p>
+<p>本文件仅为静态文件。如有条件，建议访问原文链接。</p>
+</blockquote>
+<p>本文含有较多图片，单击可以放大。</p>
+<h3 id="1、思维杂题"><a href="#1、思维杂题" class="headerlink" title="1、思维杂题"></a>1、思维杂题</h3><p>已知 $A=B=${$0,1,2,3$}，则 $f:A\rightarrow B$ 有多少种值域？</p>
+<p>可以发现，值域一定是集合 $B$ 的子集，同时值域不能为空集。而一个集合的非空子集的数量是 $2^n-1$ 个，所以值域有 $15$ 种。</p>
+<p>若两个函数的对应关系相同，值域也相同，但定义域不同，则称这两个函数为“同族函数”。那么，函数 $y=x^2,x\in${$-1,0,1,2$}  有多少个同族函数？</p>
+<p>可以很容易地得到，该函数的值域为 {$0,1,4$}，由此可知定义域符合如下性质：</p>
 <ol>
-<li><p>条件归一。也就是把 $\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 化成 $6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
+<li>$0$ 必须出现；</li>
+<li>$\pm1$ 至少出现一个，也可以都出现，共 $3$ 种可能；</li>
+<li>$\pm2$ 同上；</li>
+<li>其它数均不能出现。</li>
+</ol>
+<p>综上，相同的值域，定义域有 $9$ 种可能。</p>
+<p>但是题中要求定义域<strong>不同</strong>，而上面 $9$ 种定义域有一种其实就是题中提到的。因此，答案为 $8$。</p>
+<p>已知函数 $f(x)$ 的定义域为 {$1,2,3,4$}，值域为 {$7,8,9$}，且对任意的 $x&lt;y$ 都有 $f(x)\le f(y)$，则满足条件的不同函数共有多少个？</p>
+<p>值域中每一个数，都至少有一个定义域中的数与之对应；而定义域中的每一个数，都恰好对应一个值域中的数。分析题目，题中要求定义域中有 $4$ 个数，可值域只有 $3$ 个数，换句话说，恰好有 $2$ 个定义域的数，对应的值域中的数，是同一个。</p>
+<p>而题中还说 $x&lt;y,f(x)\le f(y)$，结合上文，我们可以列出不等式：</p>
+<p>$f(1)\le f(2)\le f(3)\le f(4)$</p>
+<p>这个式子中的 $3$ 个不等号有且只有 $1$ 个实际上是取等号的。如果有大于 $1$ 个不等号实际上取等号，就会导致函数可能的值的数量小于 $3$，值域中有数找不到定义域中的数与之对应；而如果没有不等号实际上取等号，就会导致 $4$ 个 $x$ 产生了 $4$ 个 $f(x)$，可值域的大小才 $3$ 个。</p>
+<p>而任何一个不等号实际上取了等号，我们都能构造出对应关系。</p>
+<p>因此，满足条件的不同函数，有 $3$ 个。</p>
+<h3 id="2、与一元二次函数结合起来"><a href="#2、与一元二次函数结合起来" class="headerlink" title="2、与一元二次函数结合起来"></a>2、与一元二次函数结合起来</h3><p><a href="/2023-10-04-CyrxNote-Math-003/#toc-heading-8">前置知识</a></p>
+<p>已知函数 $f(x)=x^2-4x$ 在 $[0,m]$ 上的值域为 $[-4,0]$，则实数 $m$ 的取值范围是？</p>
+<p>首先，通过图象，我们可以看出 $x^2-4x$ 的情况：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-01.PNG" alt=""></p>
+<p>可以计算得出，当 $x=0$ 时，函数值为 $0$。当 $x=2$ 时，函数值取到最小值，为 $-4$。当 $x=4$ 时，函数值再次为 $0$。</p>
+<p>因此，可以得出 $2\le m\le4$。如果 $m$ 太小，函数值就不够小；如果 $m$ 太大，函数值就会超过 $0$。</p>
+<h3 id="3、当给出的函数不标准的时候"><a href="#3、当给出的函数不标准的时候" class="headerlink" title="3、当给出的函数不标准的时候"></a>3、当给出的函数不标准的时候</h3><p>有些问题给出的函数，不会给 $f(x)$ 这种标准的形式，而是各种各样乱七八糟的形式。</p>
+<p>已知 $f(2x-1)=4x^2$，则下列结论中正确的是：</p>
+<p>A. $f(3)=-9$</p>
+<p>B. $f(-3)=-4$</p>
+<p>C. $f(x)=x^2$</p>
+<p>D. $f(x)=(x+1)^2$</p>
+<p>对于这类问题，首先为了避免混淆，先将题干中给出的函数变量改个名字，变成 $f(2a-1)=4a^2$。</p>
+<p>然后，对于每个选项，挨个儿解出函数括号内的数对应的 $a$ 是多少。</p>
+<p>例如，A 选项，我们可得 $2a-1=3$，解得 $a=2,4a^2=16\neq-9$。A 选项错误。</p>
+<p>B 选项，我们可得 $2a-1=-3$，解得 $a=-1,4a^2=4\neq-4$，B 选项错误。</p>
+<p>C 和 D 选项，我们可得 $2a-1=x$，稍稍细心计算，得 $a=\frac{x+1}{2}$，由此可得 $4a^2=(x+1)^2$，D 选项正确而 C 选项错误。</p>
+<p>对于此类问题，应将题干中给出的原函数传入的参数（即 $2a-1$）和选项中给出的待验证函数传入的参数（即 $3$、$-3$、$x$）进行比对，要求两者相等，得出原函数传入的参数中的字母具体是什么（即，当 $2a-1=3$ 时 $a=2$），然后将字母代入计算。为避免混淆，可以将原函数中的字母统一更名。</p>
+<p>需要注意的是，有些时候以上方法并不适用，例如：</p>
+<p>已知 $f(x-\frac{1}{x})=x^2+\frac{1}{x^2}$，求 $f(x)$。</p>
+<p>对于这道题，我们可以使用初中时学过的完全平方公式，发现 $x^2+\frac{1}{x^2}=(x-\frac1x)^2+2$，而 $f(x-\frac1x)=(x-\frac1x)^2+2$ 意味着 $f(x)=x^2+2$。</p>
+<p>对于这种情况，可以尝试推出函数参数与函数表达式之间的关系，具体情况具体分析。</p>
+<h3 id="4、仔细分析更复杂的函数"><a href="#4、仔细分析更复杂的函数" class="headerlink" title="4、仔细分析更复杂的函数"></a>4、仔细分析更复杂的函数</h3><p>设 $f(x)=\frac{1+x^2}{1-x^2}$，则下列结论正确的是？请注意本题多选。</p>
+<p>A. $f(-x)=-f(x)$</p>
+<p>B. $f(\frac{1}{x})=-f(x)$</p>
+<p>C. $f(-\frac{1}{x})=f(x)$</p>
+<p>D. $f(-x)=f(x)$</p>
+<p>我们可以发现，$x^2=(-x)^2$，$x$ 的正负性并不影响平方的结果。因此，$\frac{1+x^2}{1-x^2}=\frac{1+(-x)^2}{1-(-x)^2}$，由此可得 $f(-x)=f(x)$，A 选项错误，D 选项正确。</p>
+<p>顺便说一句，这样的函数叫做<strong>偶函数</strong>，函数关于 $y$ 轴<strong>对称</strong>，图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-02.PNG" alt=""></p>
+<p>同时，我们可以得到 $f(\frac{1}{x})=f(-\frac{1}{x})$，这一条待会有用。</p>
+<p>接下来，细心推出以下式子：</p>
+<p>$f(\frac{1}{x})\\=\frac{1+(\frac{1}{x})^2}{1-(\frac{1}{x})^2}\\=\frac{x^2+1}{x^2}\div\frac{x^2-1}{x^2}\\=\frac{1+x^2}{x^2-1}$</p>
+<p>至此，函数 $f(\frac{1}{x})$ 计算完毕。</p>
+<p>而函数 $f(x)=\frac{1+x^2}{1-x^2}$，可以很容易地发现 $f(\frac{1}{x})=-f(x)$，B 选项正确，C 选项错误。图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-03.PNG" alt=""></p>
+<p>可以恰好发现 $f(x)$ 与 $f(\frac{1}{x})$ 关于 $x$ 轴对称。</p>
+<p>对于此类问题，应细心审题，谨慎作答，答后验证。</p>
+<h3 id="5、分段函数之对齐分段"><a href="#5、分段函数之对齐分段" class="headerlink" title="5、分段函数之对齐分段"></a>5、分段函数之对齐分段</h3><p>试画出函数 $f(x)=x|x|$ 的大致图象。</p>
+<p>我们知道，绝对值本质上也是一个分段函数，可以表示为 $f(x)=\left\lbrace\begin{matrix}x,&amp;x\ge0,\\-x,&amp;x&lt;0,\end{matrix}\right.$。</p>
+<p>其实，任何一个函数，都一定可以转换成分段函数，分多少段、每一段的范围和解析式是什么，<del>随你喜欢</del>可以按照题目要求来。比如，$f(x)=x$ 也可表示为 $f(x)=\left\lbrace\begin{matrix}x,&amp;x\ge0,\\x,&amp;x&lt;0,\end{matrix}\right.$。</p>
+<p>这样，我们便可以列出下表：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$f(x)=x$</th>
+<th>$f(x)=\vert x\vert$</th>
+<th>$f(x)=x\vert x\vert$</th>
+<th>达成条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x$</td>
+<td>$x$</td>
+<td>$x^2$</td>
+<td>$x\ge0$</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>$-x$</td>
+<td>$-x^2$</td>
+<td>$x&lt;0$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可以发现，当 $x\ge0$ 时，函数为开口向上的对称轴为 $x=0$ 一元二次函数的一部分；当 $x&lt;0$ 时，函数为开口向下的对称轴为 $x=0$ 一元二次函数的一部分。图象为：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-04.PNG" alt=""></p>
+<p>对于这类题目，应将函数整个式子分离成多个分段函数（<strong>分离函数</strong>），对于每个分段函数，继续细分分段（即使这会导致有些分段解析式相同）（<strong>对齐分段</strong>），列出表格，再将多个函数通过一些运算符号拼在一起（<strong>合并函数</strong>），再根据分段条件和合并后的解析式特点画出函数图象。</p>
+<p>再看看更简单的。定义符号函数 $sgn\space x=\left\lbrace\begin{matrix}1,&amp;x&gt;0,\\0,&amp;x=0,\\-1,&amp;x&lt;0,\end{matrix}\right.$，试画出 $f(x)=|x|sgn\space x$ 的大致图像。</p>
+<p>老方法，分离函数，对齐分段，得出下表：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$f(x)=\vert x\vert$</th>
+<th>$f(x)=sgn\space x$</th>
+<th>$f(x)=\vert x\vert sgn\space x$</th>
+<th>达成条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x$</td>
+<td>$1$</td>
+<td>$x$</td>
+<td>$x&gt;0$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$x=0$</td>
+</tr>
+<tr>
+<td>$-x$</td>
+<td>$-1$</td>
+<td>$x$</td>
+<td>$x&lt;0$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>我们可以发现函数完完全全就是 $f(x)=x$ 诶。函数图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-05.PNG" alt=""></p>
+<p>上图中，红色线和绿色线是拆分后的函数，紫色线是合并后要求的函数。函数与颜色的对应关系在左边有写。</p>
+<h3 id="6、分段函数进阶"><a href="#6、分段函数进阶" class="headerlink" title="6、分段函数进阶"></a>6、分段函数进阶</h3><p>设 $f(x)=\left\lbrace\begin{matrix}(x+1)^2, &amp;x\le0, \\\frac{4}{x}, &amp;x&gt;0,\end{matrix}\right.$，则：</p>
+<ol>
+<li><p>$y=f(x)$ 与 $y=a$ 的图象有 $2$ 个交点，$a$ 的范围是？</p>
+<p>对于这一题，我们可以发现，$f(x)$ 函数的左边部分是对称轴为 $x=-1$ ，顶点为 $(-1,0)$ 的二次函数，右边部分是反比例函数。</p>
+<p>可以发现，当 $a&lt;0$ 时，没有交点；</p>
+<p>当 $a=0$ 时，只有一个交点，就是二次函数顶点 $(1,0)$。</p>
+<p>可以发现当 $x=0$ 时 $(x+1)^2=1$，而当 $x=0$ 时 $f(x)$ 执行的是左部分的二次函数，因此，可以想象得出，当 $0&lt;a\le1$ 时，$y=a$ 与 $f(x)$ 有 $3$ 个交点，其中二次函数部分有 $2$ 个（对称轴左边 $1$ 个，右边 $1$ 个），反比例函数部分有 $1$ 个。</p>
+<p>当 $a&gt;1$ 时，有 $2$ 个交点。其中二次函数部分有 $1$ 个（对称轴左边 $1$ 个，右边 $0$ 个），反比例函数部分有 $1$ 个。</p>
+<p>图象：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-12.PNG" alt=""></p>
+<p>对于此类问题，应画出大致图象，注意 $x$ 上的分段，并根据关键信息对 $y$ 进行分段。</p>
 </li>
-<li><p>配凑。将 $x+y$ 化成 $(x+2)+(y+2)-4$。需要注意，以上两个步骤<strong>有可能需要互换顺序</strong>，具体情况见下方。</p>
+<li><p>解不等式：$0\le f(x)\le1$。</p>
+<p>这相当于以下两个不等式的解集的<strong>并集</strong>：</p>
+<ol>
+<li><p>$x\le0$ 且 $0\le(x+1)^2\le1$，解得 $-2\le x\le0$；</p>
 </li>
-<li><p>两式相乘。也就是得到 $(x+2)+(y+2)-4=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$。</p>
-</li>
-<li><p>强行计算。</p>
-</li>
-<li><p>启用基本不等式。</p>
+<li><p>$x&gt;0$ 且 $0\le\frac{4}{x}\le1$，这也很容易地解得 $x\ge4$。</p>
 </li>
 </ol>
-<p>有的时候，条件式和原式的样式可能恰好反过来。来看看进阶版本：</p>
-<p>当 $x&gt;-3,y&gt;2,4x+y+4=6$ 时，求 $\frac{1}{x+3}+\frac{1}{4y-8}$ 的最小值。</p>
-<p>这道题细节很多，需要细心计算。</p>
-<p>可以发现，$4x+y+4=6$ 作为条件式，需要条件归一；作为整式（未知数不出现在分母上。相对地，$\frac{1}{x+3}+\frac{1}{4y-8}$ 是分式），又需要配凑。<strong>先配凑，再条件归一。</strong></p>
-<p>因此，可以配凑得出 $4x+12+y-2=6+12-6=12$。条件归一得出 $\frac{1}{12}[4(x+3)+\frac{1}{4}\times(4y-8)]=1$。</p>
-<p>接下来，设 $a=x+3&gt;0,b=4y-8&gt;0$。在遇到这种式子时，设 $a$ 和 $b$ 可以防止式子过长。这样，我们就要求 $\frac1a+\frac1b$ 的最小值。</p>
-<p>回到上面的式子，我们可以发现：</p>
-<p> $\frac1a+\frac1b\\=\frac{1}{12}\begin{bmatrix}4a+\frac{1}{4}b\end{bmatrix}(\frac1a+\frac1b)\\=\frac{1}{12}(4+\frac14+\frac{\frac14b}{a}+\frac{4a}{b})\\\ge\frac{1}{12}(\frac{17}{4}+2\sqrt{\frac{\frac14b}{a}\times\frac{4a}{b}})\\=\frac{1}{12}(\frac{17}{4}+2)=\frac{25}{48}$</p>
-<p>当且仅当 $\frac{\frac14b}{a}=\frac{4a}{b}$ 时，等号成立。</p>
-<p>接下来验算一下。</p>
-<p>$\because\frac{\frac14b}{a}=\frac{4a}{b}\\\therefore\frac{1}{4}b^2=4a^2\\b=4a\\4(x+3)=4y-8\\x+3=y-2\\x-y=-5$</p>
-<p>又因为 $4x+y+4=6$，解得 $x=-\frac35,y=\frac{22}{5}$。</p>
-<p>验算如图。</p>
-<p><img src="../post_image/CyrxNote-Math-001/CyrxNote-Math-001-01.PNG" alt=""></p>
-<p>这道题，出题人在做的时候，都差点做错。</p>
-<h3 id="4、使系数相等"><a href="#4、使系数相等" class="headerlink" title="4、使系数相等"></a>4、使系数相等</h3><p>再看看：当 $a&gt;0,b&gt;0,2a+3b=12$ 时，求 $\frac{1}{ab}$ 的最小值。</p>
-<p>显然，当 $ab$ 最大的时候，就是 $\frac{1}{ab}$ 最小的时候。</p>
-<p>但是，条件是 $2a+3b=12$,这意味着 $a+b$ 是会变的，不能直接使用基本不等式。</p>
-<p>那么，我们考虑改变一下 $ab$ 这边。给 $a$ 搞个系数 $2$，给 $b$ 搞个系数 $3$，最后统一 $\div6$，我们就有 $ab=(2a\cdot3b)\times\frac{1}{6}\le(\frac{2a+3b}{2})^2\times\frac{1}{6}=6$，那么 $\frac{1}{ab}$ 的最小值就是 $\frac{1}{6}$。</p>
-<h3 id="5、将分数中的分子用类似于带分数的思想提取出来"><a href="#5、将分数中的分子用类似于带分数的思想提取出来" class="headerlink" title="5、将分数中的分子用类似于带分数的思想提取出来"></a>5、将分数中的分子用类似于带分数的思想提取出来</h3><p>当 $x&gt;1$ 时，求 $\frac{x^2-x+1}{x-1}$ 的最小值。</p>
-<p>对于这道题，可以发现 $(x-1)x=x^2-x$，于是原式可以被化为 $\frac{x(x-1)+1}{x-1}=x+\frac{1}{x-1}$。接着再用配凑法，即可算出式子的最小值为 $3$。</p>
-<p>提取什么东西应该根据题目要求来。例如，同样是 $x&gt;1$ 时，求 $\frac{x^2-2x+5}{x-1}$ 的最小值。</p>
-<p>可以注意到，此时最好提取 $x-1$ 出来，得 $x-1+\frac{4}{x-1}$。可以很轻松地算出最小值为 $4$，当且仅当 $x-1=\frac{4}{x-1}$ 时，即 $x=3$ 时，等号成立。</p>
-<p>扩展一个知识：整式除法。</p>
-<p>例如，当 $x&gt;-2$，求 $\frac{2x^2+8x+20}{x+2}$。</p>
-<p>首先，当前被除数是 $2x^2+8x+20$，当前除数是 $x+2$。</p>
-<p>可以发现，当前被除数的最高次数项是 $2x^2$，系数是 $2$，次数是 $2$。而除数 $x+2$ 的最高次数项的系数是 $1$，次数是 $1$。</p>
-<p>因此可以发现，如果将 $x+2$ 乘上 $2x$ 可以得到 $2x^2+4x$。因此，$\frac{2x^2+8x+20}{x+2}=2x+\frac{(2x^2+8x+20)-(2x^2+4x)}{x+2}=2x+\frac{4x+20}{x+2}$。被除数中的 $2x^2$ 就被消去了，当前被除数就变成了 $4x+20$。</p>
-<p>接着，当前被除数的最高次数项是 $4x$，系数是 $4$，次数是 $1$。当前除数的最高次数项的系数和次数都没变，都还是 $1$。因此，$4(x+2)=4x+8$，$2x+\frac{4x+20}{x+2}=2x+4+\frac{(4x+20)-(4x+8)}{x+2}=2x+4+\frac{12}{x+2}$。化简成这样，再用基本不等式就不难了。</p>
-<h3 id="6、转化为一元二次不等式求解"><a href="#6、转化为一元二次不等式求解" class="headerlink" title="6、转化为一元二次不等式求解"></a>6、转化为一元二次不等式求解</h3><p><a href="/2023-10-04-CyrxNote-Math-003">一元二次不等式的解法在此。</a></p>
-<p>已知 $ab+a+b=8,a&gt;0,b&gt;0$，则：</p>
-<p>A. $ab$ 最大值为 $2$</p>
-<p>B. $a+b$ 最小值为 $4$</p>
-<p>C. $a+2b$ 最小值为 $6\sqrt2-3$</p>
-<p>D. $\frac{1}{a(b+1)}+\frac{1}{b}\ge\frac{1}{2}$</p>
-<p>请注意本题多选。</p>
-<p>可以由基本不等式发现，$a+b\ge2\sqrt{ab},ab\le(\frac{a+b}{2})^2$，也就是说：</p>
-<ol>
-<li><p>$8=ab+a+b\ge ab+2\sqrt{ab}$</p>
+<p>综上，不等式解集为 $[-2,0]\cup[4,+\infty)$。</p>
 </li>
-<li><p>$8=ab+a+b\le(\frac{a+b}{2})^2+(a+b)=\frac{1}{4}(a+b)^2+(a+b)$。</p>
+<li><p>解不等式：$0\le f(f(x))\le1$。</p>
+<p>嗯，函数嵌套了起来。</p>
+<p>我们注意到，无论何时，一定有 $f(x)\ge0$。并且当且仅当 $x=-1$ 时，$f(x)=0$。</p>
+<p>当 $x=-1$ 时，$f(f(x))=f(0)=1$，符合不等式。</p>
+<p>当 $x\neq-1$ 时，有 $f(x)&gt;0$，这意味着 $f(f(x))$ 一定是分段函数的右边的反比例函数部分。因此，根据 $0\le f(f(x))\le1$ 可以得到 $f(x)\ge4$。</p>
+<p>根据图象，我们可以发现，当 $x&lt;-1$ 时，当且仅当 $x\le-3$ 时 $f(x)\ge4$。当 $-1\le x\le0$ 时，二次函数对称轴右边的部分没有值大于 $4$ 的地方。当 $x&gt;0$ 时，当且仅当 $0&lt;x\le1$ 时 $f(x)\ge4$.</p>
+<p>综上，解得 $x\le-3$ 或 $x=-1$ 或 $0&lt; x\le1$。</p>
+<p>对于此类问题，应通过分类讨论的方式解决，注意分段函数的分段条件中的等于号。</p>
 </li>
 </ol>
-<p>经过一定的转化，我们就可以分别得到 2 个一元二次不等式：</p>
-<p>$(\sqrt{ab})^2+2\sqrt{ab}-8\le0$（将 $\sqrt{ab}$ 视为一个未知数整体）</p>
-<p>$(a+b)^2+4(a+b)-32\ge0$（将 $(a+b)$ 视为一个未知数整体）</p>
-<p>根据一元二次不等式的求解方法，第一条不等式可以得出 $-4\le\sqrt{ab}\le2$，第二条不等式可以得出 $a+b\le-8$ 或 $a+b\ge4$。</p>
-<p>别忘了 $a&gt;0,b&gt;0$。因此，$0 &lt; \sqrt{ab}\le2,a+b\ge4$。因此，A 选项错误，B 选项正确。</p>
-<p>C 选项的情况，将在下一节讲解。</p>
-<h3 id="7、消元：将一个数用另一个数表示出来"><a href="#7、消元：将一个数用另一个数表示出来" class="headerlink" title="7、消元：将一个数用另一个数表示出来"></a>7、消元：将一个数用另一个数表示出来</h3><p>回到前面的题目。</p>
-<p>可以发现，$ab+a+b=ab+b+a=(a+1)b+a$。</p>
-<p>所以，因为 $ab+a+b=8$，所以 $b=\frac{8-a}{a+1}$。</p>
-<p>因此 $a+2b\\=a+2\times\frac{8-a}{a+1}\\=a+\frac{16-2a}{a+1}\\=a-2+\frac{18}{a+1}\\=a+1+\frac{18}{a+1}-3\\\ge2\sqrt{ ( a+1 ) \times\frac{18}{a+1}}-3\\=6\sqrt{2}-3$。C 选项正确。</p>
-<p>D 选项的情况，将在下一节讲解。</p>
-<h3 id="8、1-的代换法（进阶版）"><a href="#8、1-的代换法（进阶版）" class="headerlink" title="8、1 的代换法（进阶版）"></a>8、1 的代换法（进阶版）</h3><p>可以发现，$a(b+1)+b=ab+a+b=8$。</p>
-<p>因此，$\frac{1}{a(b+1)}+\frac{1}{b}=\frac{1}{8}[a(b+1)+b][\frac{1}{a(b+1)}+\frac{1}{b}]=\frac{1}{8}[1+1+\frac{a(b+1)}{b}+\frac{b}{a(b+1)}]\ge\frac{1}{8}(2+2\sqrt{1})=\frac{1}{2}$。D 选项正确。</p>
-<p>其实也没进阶多少，只是关系隐藏起来了。</p>
-<h3 id="9、超级无敌分数嵌套"><a href="#9、超级无敌分数嵌套" class="headerlink" title="9、超级无敌分数嵌套"></a>9、超级无敌分数嵌套</h3><p>求 $\frac{x^2+3x+3}{2x^2+7x+7}(x&gt;-1)$ 的最小值。</p>
-<p>首先，$2x^2+7x+7=2(x^2+3x+3)+(x+1)$，因此 $\frac{x^2+3x+3}{2x^2+7x+7}=\frac{x^2+3x+3}{2(x^2+3x+3)+(x+1)}=\frac{1}{2+\frac{x+1}{x^2+3x+3}}$（分子分母同时除以 $x^2+3x+3$）。显然，当 $\frac{x+1}{x^2+3x+3}$ 最大时，分母 $2+\frac{x+1}{x^2+3x+3}$ 最大，分数整体最小。</p>
-<p>然后，$x^2+3x+3=(x+1)(x+1)+(x+1)+1$，因此 $\frac{x+1}{x^2+3x+3}=\frac{x+1}{ ( x+1 ) ( x+1 ) + ( x+1 )+1}=\frac{1}{x+1+1+\frac{1}{x+1}}$。可以发现，当 $x+1+1+\frac{1}{x+1}$ 最小时，$\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大。</p>
-<p>我们可以很容易地求出 $x+1+1+\frac{1}{x+1}$ 最小为 $3$，所以 $\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大为 $\frac{1}{3}$，进而求出原式最小值为 $\frac{1}{2+\frac{1}{3}}=\frac{3}{7}$。</p>
-<p>对于这种问题，我们可以不断地尝试将分子化为 $1$，然后，当 $a&gt;0,b&gt;0$ 时，$a$ 不变的情况下，$b$ 越大时 $\frac{a}{b}$ 越小。根据这个原理，可以反复求最大/最小值，最终解出题目。</p>
-<h3 id="10、将条件代入某个整数中，使分子和分母变得可以互相约分"><a href="#10、将条件代入某个整数中，使分子和分母变得可以互相约分" class="headerlink" title="10、将条件代入某个整数中，使分子和分母变得可以互相约分"></a>10、将条件代入某个整数中，使分子和分母变得可以互相约分</h3><p>已知 $x+y=1,y&gt;0,x&gt;0$，求 $\frac{1}{2x}+\frac{x}{y+1}$ 的最小值。</p>
-<p>可以发现，此时无法直接使用基本不等式，因为 $1$ 和 $y+1$ 不能互相约分掉。</p>
-<p>考虑 $x+y=1$ 这个条件，可以发现 $x+y+1=2$，那么原式就等于 $\frac{\frac{1}{2}(x+y+1)}{2x}+\frac{x}{y+1}=\frac{x+y+1}{4x}+\frac{x}{y+1}=\frac{1}{4}+\frac{y+1}{4x}+\frac{x}{y+1}\ge\frac{1}{4}+2\sqrt{\frac{y+1}{4x}\times\frac{x}{y+1}}=\frac{5}{4}$，当且仅当 $\frac{y+1}{4x}=\frac{x}{y+1}$ 时（即 $x=\frac{2}{3},y=\frac{1}{3}$ 时），可以取等号。</p>
-<p>已知 $a&gt;0,b&gt;0,a+b=2$，求 $\frac{b}{a}+\frac{4}{b}$ 的最小值。</p>
-<p>可以发现，$4=2a+2b$，所以 $\frac{b}{a}+\frac{4}{b}=\frac{b}{a}+\frac{2a+2b}{b}=\frac{b}{a}+\frac{2a}{b}+2\ge2\sqrt{\frac{b}{a}\times\frac{2a}{b}}+2=2\sqrt2+2$，当且仅当 $\frac{b}{a}=\frac{2a}{b}$ 时等号成立。</p>
-<h3 id="11、总结"><a href="#11、总结" class="headerlink" title="11、总结"></a>11、总结</h3><p>不等式问题没有固定解法，在高考中难度相当大。这种题目只能靠多刷题积累来的经验，因此应记住做过的题的解法，也要善于利用网络。</p>
-<h3 id="链接阅读"><a href="#链接阅读" class="headerlink" title="链接阅读"></a>链接阅读</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/185052402">基本不等式解题技巧（一）（知乎专栏）</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/205447579">基本不等式（二）——多元问题处理技巧（知乎专栏）</a>（友情提醒，这一篇文章贼tm难）</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/482152623">基本不等式求最值题型总结（知乎专栏）</a></p>
+<h3 id="7、找规律"><a href="#7、找规律" class="headerlink" title="7、找规律"></a>7、找规律</h3><p>已知分段函数 $f(x)=\left\lbrace\begin{matrix}x^2,  &amp;x&lt;1, \\f(x-1)-1,  &amp;x\ge1,\end{matrix}\right.$，求以下函数的值：</p>
+<ol>
+<li><p>$f(2)$</p>
+</li>
+<li><p>$f(2023)$</p>
+</li>
+<li><p>$f(2023.6)$</p>
+</li>
+<li><p>$f(-0.6)$</p>
+</li>
+</ol>
+<p>对于第 1 题，可以爆算，$f(2)=f(1)-1=f(0)-1-1=0^2-1-1=-2$。</p>
+<p>对于第 2 题，显然不能爆算了，但是我们可以根据上一题找到规律，可以发现 $f(2023)=f(2022)-1=f(2021)-1-1=\dots =f(0)-2023\times1=-2023$，每计算一层，$f$ 中的参数都会减 $1$，同时式子后面就会多个 $-1$。</p>
+<p>对于第 3 题，可以发现 $f(2023.6)=f(2022.6)-1=f(2021.6)-1-1=\dots =f(0.6)-2023\times1=0.6^2-2023=-2022.64$。有点难，但细心分析应该不会有太大问题。</p>
+<p>对于第 4 题，一上来就有 $x&lt;1$，所以 $f(-0.6)=(-0.6)^2=0.36$。</p>
+<p>经计算机验证，这是正确的：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-06.PNG" alt=""></p>
+<p>当然考试时没有计算机的。</p>
+<p>对于这类问题，可以稍微爆算几轮，发现规律，同时根据函数解析式验证规律。</p>
+<h3 id="8、将函数分成若干个部分，以分析图象"><a href="#8、将函数分成若干个部分，以分析图象" class="headerlink" title="8、将函数分成若干个部分，以分析图象"></a>8、将函数分成若干个部分，以分析图象</h3><p>例如，指出函数 $f(x)=\vert x+2\vert$ 和 $f(x)=\vert x^2-3x+2\vert$ 的单调区间。</p>
+<p>首先，我们先看看 $f_1(x)=x+2$ 的图象。很显然，这就是一个一次函数的图象。同时，我们可以发现 $f(x)=\vert f_1(x)\vert$（废话）。</p>
+<p>然后，我们发现，绝对值符号，就是将函数图象在 $x$ 轴以下的部分翻转过来。因此，$f(x)$ 的图象如图红色实线：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-07.PNG" alt=""></p>
+<p>因此，函数在 $(-\infty,-2)$ 单调递减，$[-2,+\infty)$ 单调递增。</p>
+<p>我们再看看 $f_2(x)=x^2-3x+2$，这是一个二次函数，对称轴为 $x=1.5$，当 $x=1$ 和 $x=2$ 时函数值为 $0$。而绝对值符号就是将图象在 $x$ 轴以下的部分翻转过来，因此函数图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-08.PNG" alt=""></p>
+<p>这个图象分析稍微复杂一点。</p>
+<ol>
+<li><p>对于 $(-\infty,1)$，一开始（代表 $f_2(x)$ 的蓝线，下同）就是单调递减，也没被翻转，因此现在还是单调递减；</p>
+</li>
+<li><p>对于 $[1,1.5]$，一开始是单调递减，但由于被翻转了，所以现在是单调递增；</p>
+</li>
+<li><p>对于 $(1.5,2)$，一开始是单调递增，但由于被翻转了，所以现在是单调递减；</p>
+</li>
+<li><p>对于 $[2,+\infty)$，一开始就是单调递增，也没被翻转，因此现在还是单调递增。</p>
+</li>
+</ol>
+<p>分析完毕。</p>
+<h3 id="9、分析二次函数的图象"><a href="#9、分析二次函数的图象" class="headerlink" title="9、分析二次函数的图象"></a>9、分析二次函数的图象</h3><p>初中时我们学过，二次函数的单调递增递减区间是这个关系：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>二次项系数（一般记为 $a$）与 $0$ 的关系</th>
+<th>对称轴左边区域</th>
+<th>对称轴右边区域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a&gt;0$</td>
+<td>单调递减</td>
+<td>单调递增</td>
+</tr>
+<tr>
+<td>$a&lt;0$</td>
+<td>单调递增</td>
+<td>单调递减</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>已知函数 $f(x)=\left\lbrace\begin{matrix}x^2+4x, &amp;x\ge0, \\4x-x^2, &amp;x<0,\end{matrix}\right.$，若 $f(4-a)>f(a)$，则实数 $a$ 的取值范围是？</p>
+<p>分析二次函数时，二次项系数和函数对称轴是很重要的参数。</p>
+<p>对于 $x^2+4x$，对称轴为 $x=-2$，因此当 $x\ge0$ 时函数递增。</p>
+<p>对于 $-x^2+4x$，对称轴为 $x=2$，因此当 $x&lt;0$ 时函数递增。</p>
+<p>当 $x=0$ 时，$x^2+4x=4x-x^2=0$，也就是说，$f(x)$ 整个函数都是递增的。</p>
+<p>而 $f(4-a)&gt;f(a)$，也就意味着 $4-a&gt;a$ 即可。实数 $a$ 的取值范围是 $(-\infty,2)$。</p>
+<p>若函数 $f(x)=ax^2+(a-3)x+1$ 在 $(-1,+\infty)$ 上单调递减，则 $a$ 的取值范围是？</p>
+<p>首先，由于函数在右侧部分单调递减，所以不可能出现 $a&gt;0$ 的情况。</p>
+<p>然后，考虑 $a=0$ 时，函数退化为一次函数，即 $f(x)=-3x+1$。此时整个函数都是单调递减的。</p>
+<p>最后，考虑 $a&lt;0$ 时，只要函数的对称轴在 $-1$ 的左边（$-1$ 上也可以）。换句话说，不等式组 $\left\lbrace\begin{matrix}a&lt;0\\-\frac{a-3}{2a}\le-1\end{matrix}\right.$ 成立。解得 $-3\le a&lt;0$。</p>
+<p>综上，可以发现 $a$ 的取值范围是 $[-3,0]$。</p>
+<h3 id="10、对勾函数"><a href="#10、对勾函数" class="headerlink" title="10、对勾函数"></a>10、对勾函数</h3><p>形如 $y=k(x+\frac{a}{x})$，其中 $a&gt;0,k\neq0$ 的函数，图象为对勾。</p>
+<p>对勾函数是奇函数，分为 $2$ 个部分。每个部分的形状与 $k$ 相关。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$k$ 与 $0$ 的大小关系</th>
+<th>左半部分情况</th>
+<th>右半部分情况</th>
+<th>例图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k&gt;0$</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&lt;0$ 时，左半部分取得最大值</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&gt;0$ 时，右半部分取得最小值</td>
+<td><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-09.PNG" alt=""></td>
+</tr>
+<tr>
+<td>$k&lt;0$</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&lt;0$ 时，左半部分取得最小值</td>
+<td>当 $x=\frac{a}{x}$ 且 $x&gt;0$ 时，右半部分取得最大值</td>
+<td><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-10.PNG" alt=""></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可以发现，对勾函数和<a href="/2023-09-22-CyrxNote-Math-001/">基本不等式</a>息息相关。</p>
+<h3 id="11、函数的平移与翻转"><a href="#11、函数的平移与翻转" class="headerlink" title="11、函数的平移与翻转"></a>11、函数的平移与翻转</h3><p>作出函数 $y=\frac{x-1}{x-2}$ 的图象，并写出函数的定义域、单调区间和值域。</p>
+<p>通过化简，我们得到 $y=\frac{x-1}{x-2}=\frac1{x-2}+1$。</p>
+<p>然后，我们尝试将这个函数从 $y=\frac1{x}$ 这个反比例函数平移出来。</p>
+<p>首先，我们先向右移动 $2$ 格。<strong>向右移动多少格，函数中的所有 $x$ 就会统一减去多少</strong>。注意，是<strong>所有</strong>的 $x$。这样，我们就得到了 $y=\frac{1}{x-2}$。</p>
+<p>然后，再向上移动 $1$ 格。<strong>向上移动多少格，函数末尾就会加上多少</strong>。这样，我们最终得到 $y=\frac{1}{x-2}+1$。</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-11.PNG" alt=""></p>
+<p>函数平移的同时，定义域、单调区间和值域当然也会随之平移。</p>
+<p>事实上，在初中时，我们学的二次函数顶点式，本质上就是平移的产物。</p>
+<p>以下所有变化后函数，均基于函数 $f(x)=2x+1$。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>函数的变化</th>
+<th>变化后函数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>向右平移 $a$ 格（等价于向左平移 $-a$ 格）</td>
+<td>所有 $x$ 统一减去 $a$</td>
+<td>$f(x)=2(x-a)+1=2x-2a+1$</td>
+</tr>
+<tr>
+<td>向上平移 $a$ 格（等价于向下平移 $-a$ 格）</td>
+<td>整个函数统一加上 $a$</td>
+<td>$f(x)=2x+1+a$</td>
+</tr>
+<tr>
+<td>左右翻转</td>
+<td>所有 $x$ 统一变为 $-x$</td>
+<td>$f(x)=2(-x)=1=-2x+1$</td>
+</tr>
+<tr>
+<td>上下翻转</td>
+<td>整个函数统一变为相反数</td>
+<td>$f(x)=-(2x+1)=-2x-1$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="12、将带根号的函数转换为二次函数"><a href="#12、将带根号的函数转换为二次函数" class="headerlink" title="12、将带根号的函数转换为二次函数"></a>12、将带根号的函数转换为二次函数</h3><p>有些时候函数是带根号的。我们都知道，$x\ge0$  时 $(\sqrt{x})^2=x$。有时我们可以利用这个特点。</p>
+<p>例如，求 $y=2x+\sqrt{1-x}$ 的值域。</p>
+<p>首先，我们可以发现 $x\le1$。否则函数将无意义。</p>
+<p>然后，我们尝试转换一下。</p>
+<p>$y=2x+\sqrt{1-x}\\=2x-2+\sqrt{1-x}+2\\-(2-2x)+\sqrt{1-x}+2$</p>
+<p>然后，设 $t=\sqrt{1-x}$。我们可以发现 $t\ge0$，以及：</p>
+<p>$y=-(2-2x)+\sqrt{1-x}+2=-2t^2+t+2$，我们要求的就是这个玩意的值域。</p>
+<p>$y=-2t^2+t+2$ 的对称轴为 $t=\frac14$，此时 $y$ 有最大值，稍微算算可以得出 $\frac{17}{8}$。由于函数的右边不受限制，所以 $y$ 可以取任意小。</p>
+<p>综上，函数的值域是 $(-\infty,\frac{17}{8}]$。</p>
+<p>图象为：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-13.PNG" alt=""></p>
+<h3 id="13、究极无敌分类讨论"><a href="#13、究极无敌分类讨论" class="headerlink" title="13、究极无敌分类讨论"></a>13、究极无敌分类讨论</h3><p>已知函数 $f(x)=2x^2+2ax+1$，函数 $g(x)=\frac{2-2x}{x}$，设函数 $h(x)=\min\lbrace f(x),g(x)\rbrace(x\neq0)$，分类讨论 $a$ 的值与 $h(x)$ 与直线 $y=0$ 的交点个数。</p>
+<p>可以在 desmos 上查看：<a target="_blank" rel="noopener" href="https://www.desmos.com/calculator/nrgjw5qxaz">点击这里</a>。</p>
+<p>首先，我们先化简 $g(x)=\frac{2-2x}{x}=\frac{2}{x}-2$，根据函数的平移的知识，可以发现这就是一个反比例函数向下平移 $2$ 格。</p>
+<p>显然，当 $x<0$ 时，$g(x)<0$。我们也可以很方便地计算出当 $x>1$ 时，$g(x)&lt;0$；当 $x=1$ 时，$g(x)=0$。图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-14.PNG" alt=""></p>
+<p>这个性质看似无用，其实大用。显然，由于 $h(x)$ 要求的是最<strong>小</strong>值，这意味着，在 $x<0$ 和 $x>1$ 这两个段，$h(x)$ 一定不会和 $y=0$ 有交点。因为这两个段 $g(x)$ 小于 $0$，就算 $f(x)=0$，也会因为太大而不计入 $h(x)$。</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-15.PNG" alt=""></p>
+<p>图中的紫色部分就是 $h(x)$。</p>
+<p>再看看这个 $f(x)$，可以发现，无论 $a$ 怎么变，$f(x)$ 始终经过一个定点：$(0,1)$。而这个定点在 $y=0$ 的上方。</p>
+<p>由此，我们可以分类讨论：</p>
+<ol>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 左边或 $x=0$ 上时，显然 $f(x)$ 在 $y$ 轴右边的部分都不会和 $y=0$ 有任何交点。此时答案的交点由 $g(x)$ 创造，只有一个。</p>
+<p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-15.PNG" alt=""></p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，但是与 $y=0$ 仍没有交点时。此时答案的交点还是由 $g(x)$ 创造，只有一个。</p>
+<p>一个小技巧：有些时候，可以试试利用 $\Delta$ 来解各种情况。</p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有恰好一个交点时。此时需要验证 $f(x)$ 与 $y=0$ 的交点是否确实在 $0&lt;x&lt;1$ 之间。此时 $h(x)$ 与 $y=0$ 有 $2$ 个交点。</p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有 $2$ 个交点，且最右边的交点在 $(1,0)$ 左边时。我们不用列那么长的式子去表示两个交点的坐标。我们其实只需要列 $\Delta&gt;0$ （保证有 $2$ 个交点）、$-\frac{1}{2}a&gt;0$ （保证对称轴在 $x=0$ 右边）和 $f(1)&gt;0$ 即可。</p>
+</li>
+<li><p>当 $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有 $2$ 个交点，且最右边的交点恰好在 $(1,0)$ 上时。可以发现，此时 $f(1)=0$，最左边的交点一定在 $x=0$ 和 $x=1$ 之间。此时 $h(x)$ 与 $y=0$ 有 $2$ 个交点。</p>
+</li>
+<li><p>当  $f(x)$ 的对称轴在 $x=0$ 右边，而且与 $y=0$ 有 $2$ 个交点，且最右边的交点在 $(1,0)$ 右边时。请读者自行思考 $h(x)$ 与 $y=0$ 有几个交点。</p>
+</li>
+</ol>
 
                 
             </div>
@@ -616,7 +855,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/">https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</a>
+                    <a href="https://blog.cyrxdzj.eu.org/posts_export/CyrxNote-Math-004.html">https://blog.cyrxdzj.eu.org/posts_export/CyrxNote-Math-004.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -695,58 +934,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023-09-23-CyrxNote-Math-002/">
+                <a href="/posts_export/CyrxNote-Math-004.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/002_029_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 数学002 集合与条件">
+                        <img src="/medias/feature_image_pjsk/001_010_card_normal.webp" class="responsive-img" alt="">
                         
-                        <span class="card-title">cyrxdzj的文化课学习笔记 数学002 集合与条件</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-23
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    cyrxdzj的文化课学习笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023-09-22-CyrxNoteIndex/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/feature_image_pjsk/002_014_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 目录">
-                        
-                        <span class="card-title">cyrxdzj的文化课学习笔记 目录</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -757,20 +956,55 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    cyrxdzj的文化课学习笔记
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            cyrxdzj
                             
                         </span>
                     </div>
                 </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/posts_export/CyrxNote-Math-004.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/feature_image_pjsk/001_010_card_normal.webp" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            cyrxdzj
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
@@ -935,15 +1169,6 @@
 
 </main>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script>
-    MathJax.Hub.Config({
-        loader: {load: ['[tex]/color']},
-        tex: {packages: {'[+]': ['color']}},
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
 

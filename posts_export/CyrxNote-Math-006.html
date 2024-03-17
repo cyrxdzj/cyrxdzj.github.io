@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="cyrxdzj的文化课学习笔记 数学001 基本不等式, cyrxdzj blog">
+    <meta name="keywords" content="cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>cyrxdzj的文化课学习笔记 数学001 基本不等式 | cyrxdzj blog</title>
+    <title>cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,7 +308,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">cyrxdzj的文化课学习笔记 数学001 基本不等式</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -429,15 +429,6 @@
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                cyrxdzj的文化课学习笔记
-                            </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
@@ -445,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-09-22
+                    2024-03-17
                 </div>
                 
 
@@ -454,7 +445,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.3k
+                    1.1k
                 </div>
                 
 
@@ -474,122 +465,138 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>$\require{color}$</p>
-<p>基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。</p>
-<h3 id="1、1-的代换法"><a href="#1、1-的代换法" class="headerlink" title="1、1 的代换法"></a>1、1 的代换法</h3><p>有 $2$ 个式子，$\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}}$ 和 $\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}}$，其中 $x&gt;0,y&gt;0$。若把这两个式子相乘会发生什么？</p>
-<p>可以发现，相同颜色的式子相乘，分子和分母可以互相抵消，得到常数。不同颜色的式子相乘，分子和分母不可以互相抵消，但是可以为接下来的基本不等式创造条件。</p>
-<p>因此，我们得到 $(\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}})(\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}})\\=\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}$。</p>
-<p>我们发现，标记为蓝色的结果，是相同颜色的式子相乘得到的常数。而标记为紫色的结果，是不同颜色的式子相乘得到的。可以发现，标记为紫色的结果，若相乘，是可以互相抵消的。</p>
-<p>由此，我们可以得到 $\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}\ge(2+\frac{1}{2})+2\sqrt{\frac{2x}{y}\times\frac{2y}{4x}}=\frac{9}{2}$。也就是说，$({x}+{\frac{y}{4}})({\frac{2}{x}}+{\frac{2}{y}})$ 的最小值为 $\frac{9}{2}$。</p>
-<p><strong>众所周知，任何数乘 $1$ 都等于原数。</strong></p>
-<p>例如，若 $x&gt;0,y&gt;0,\frac{1}{x}+\frac{9}{y}=1$，求 $x+y$ 的最小值。</p>
-<p>对于这道题，可以发现 $x+y=(x+y)(\frac{1}{x}+\frac{9}{y})=1+9+\frac{9x}{y}+\frac{y}{x}$（暴力死算出来），然后就可以将后面那一坨 $\frac{9x}{y}+\frac{y}{x}$ 用基本不等式求最值了。</p>
-<p>如果 $\frac{1}{x}+\frac{9}{y}=2\ne1$，那也好办，<strong>可以在整个算式前面乘上一个数使这个算式的值为 $1$。</strong> 对于上面的式子，$\frac{1}{2}\times（\frac{1}{x}+\frac{9}{y})=1$，那么 $x+y=(x+y)[\frac{1}{2}\times(\frac{1}{x}+\frac{9}{y})]=(x+y)(\frac{1}{x}+\frac{9}{y})\times\frac{1}{2}$，求出前面的 $(x+y)(\frac{1}{x}+\frac{9}{y})$ 的最值就搞定了。</p>
-<p>再看看这个。若 $x&gt;0,y&gt;0,x+8y=xy$，求 $x+2y$ 的最小值。</p>
-<p>可以发现，$(x+8y)\div(xy)=(xy)\div(xy)$，也就是说 $\frac{1}{y}+\frac{8}{x}=1$。又回来了。</p>
-<p>有些时候还需要一点转换。比如 $\frac{x+2y}{xy}=\frac{1}{y}+\frac{2}{x}$，这个应该不难理解，就是将分子拆开来分别除以分母即可。</p>
-<h3 id="2、配凑法"><a href="#2、配凑法" class="headerlink" title="2、配凑法"></a>2、配凑法</h3><p>当 $x&gt;\frac{1}{2}$ 时，求 $x+\frac{1}{2x-1}$ 的最小值。</p>
-<p>可以发现 $\frac{x}{2x-1}$ 不是定值，不能直接开基本不等式。</p>
-<p>那么，<strong>我们可以尝试将前面的 $x$ 转换成一个整式，使这个整式除以 $2x-1$ 可以得到一个实数</strong>（无论是不是整数都行，<strong>别带未知数就好</strong>）。分子分母互相抵消，才能使用基本不等式。</p>
-<p>于是，原式被转化为了 $(x-0.5)+\frac{1}{2x-1}+0.5$，先在前面加 $0.5$，再在后面减 $0.5$。</p>
-<p>这样就可以用基本不等式了：$(x-0.5)+\frac{1}{2x-1}+0.5\ge2\sqrt{\frac{x-0.5}{2x-1}}+0.5$。</p>
-<h3 id="3、结合-1-和-2-的知识解题"><a href="#3、结合-1-和-2-的知识解题" class="headerlink" title="3、结合 1 和 2 的知识解题"></a>3、结合 1 和 2 的知识解题</h3><p>当 $x&gt;-2,y&gt;-2,\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 时，求 $x+y$ 的最小值。</p>
-<p>首先，由方法 1 可知，$6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
-<p>但即便是这样，$x+y$ 也并不是很好处理。</p>
-<p>这个时候，我们可以借助方法 2，$x+y=(x+2)+(y+2)-4$。</p>
-<p>接下来，求出 $(x+2)+(y+2)$ 的最小值即可。</p>
-<p>$x+y=(x+2)+(y+2)-4$……使用配凑法</p>
-<p>$=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$……使用 1 的代换法</p>
-<p>$=6\times\begin{bmatrix}(x+2)+(y+2)\end{bmatrix}(\frac{1}{x+2}+\frac{1}{y+2})-4$……整理式子，将 $6$ 丢一边</p>
-<p>$=6\times(1+1+\frac{x+2}{y+2}+\frac{y+2}{x+2})-4$……强行计算括号中的内容</p>
-<p>$=6\times(\frac{x+2}{y+2}+\frac{y+2}{x+2})+12-4$……把无关的 $12$（即 $6\times(1+1)$）丢出去</p>
-<p>$\ge6\times2\sqrt{\frac{x+2}{y+2}\times\frac{y+2}{x+2}}+8$……启用基本不等式</p>
-<p>$=20$……计算得出结果</p>
-<p>搞定。</p>
-<p>这类基本不等式，分以下步骤解决：</p>
+                <h1 id="cyrxdzj的文化课学习笔记-数学006-函数之指数函数与对数函数"><a href="#cyrxdzj的文化课学习笔记-数学006-函数之指数函数与对数函数" class="headerlink" title="cyrxdzj的文化课学习笔记 数学006 函数之指数函数与对数函数"></a>cyrxdzj的文化课学习笔记 数学006 函数之指数函数与对数函数</h1><blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">创建</th>
+<th style="text-align:center">内容更新</th>
+<th style="text-align:center">导出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2023-11-22 17:12:52</td>
+<td style="text-align:center">2023-12-08 23:26:01</td>
+<td style="text-align:center">2024-03-17 11:43:52</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>原文链接：<a href="https://blog.cyrxdzj.eu.org/2023-11-22-CyrxNote-Math-006/">https://blog.cyrxdzj.eu.org/2023-11-22-CyrxNote-Math-006/</a></p>
+<p>作者：cyrxdzj</p>
+<p>本文件仅为静态文件。如有条件，建议访问原文链接。</p>
+</blockquote>
+<h3 id="1、前置知识：各种公式"><a href="#1、前置知识：各种公式" class="headerlink" title="1、前置知识：各种公式"></a>1、前置知识：各种公式</h3><p>这些公式能让你更容易地计算式子。</p>
+<p>以下所有公式，均有 $a&gt;0,a\neq1$。</p>
+<h4 id="1-1、指数篇"><a href="#1-1、指数篇" class="headerlink" title="1-1、指数篇"></a>1-1、指数篇</h4><p>$a^b\times a^c=a^{b+c}$</p>
+<p>$a^b\div a^c=a^{b-c}$</p>
+<p>$a^{b\times c}=(a^b)^c=(a^c)^b$</p>
+<p>$a^{log_ab}=b$，这个应该很好理解。</p>
+<h4 id="1-2、对数篇"><a href="#1-2、对数篇" class="headerlink" title="1-2、对数篇"></a>1-2、对数篇</h4><p><strong>对数函数的定义域是 $(0,+\infty)$。以下所有公式均默认符合此要求。</strong></p>
+<p>$log_a(x_1\times x_2)=log_ax_1+log_ax_2$</p>
+<p>$log_a(x_1\div x_2)=log_ax_1-log_ax_2$</p>
+<p>$log_ab=\frac{log_ca}{log_cb}$，其中 $c$ 可以任意选择。一般根据题目要求自行判断。</p>
+<p>$x=log_a(a^x)$，这个应该很好理解。<strong>多用于解不等式或方程。</strong></p>
+<h3 id="2、前置知识：给对数函数加上绝对值"><a href="#2、前置知识：给对数函数加上绝对值" class="headerlink" title="2、前置知识：给对数函数加上绝对值"></a>2、前置知识：给对数函数加上绝对值</h3><p>有对数函数 $f(x)=|log_ax|(a&gt;0,a\neq1)<br>$。图象如下：</p>
+<p><img src="../post_image/CyrxNote-Math-006/CyrxNote-Math-006-01.PNG" alt=""></p>
+<p><img src="../post_image/CyrxNote-Math-006/CyrxNote-Math-006-02.PNG" alt=""></p>
+<p>若 $f(x_1)=f(x_2),x_1\neq x_2$，则一定有 $x_1\times x_2=1$。</p>
+<p>证明：函数 $g(x)=log_ax$ 是单调递增的。若有 $f(x_1)=f(x_2),x_1\neq x_2$，则一定有 $g(x_1)=-g(x_2)$（因为 $f(x_1)$ 和 $f(x_2)$ 中恰好有一个是被绝对值符号翻转上来的）。</p>
+<p>然后，根据上面的公式，有 $g(x_1\times x_2)=g(x_1)+g(x_2)=-g(x_2)+g(x_2)=0$。我们知道，对数函数的参数为 $1$ 时值才是 $0$。所以，$x_1\times x_2=1$。</p>
+<h3 id="3、根据函数值的单调性推出参数的单调性"><a href="#3、根据函数值的单调性推出参数的单调性" class="headerlink" title="3、根据函数值的单调性推出参数的单调性"></a>3、根据函数值的单调性推出参数的单调性</h3><p>已知函数 $y=log_2(ax^2-x)$ 在区间 $(1,2)$ 上单调递增，则 $a$ 的取值范围是？</p>
+<p>首先，$log_2x$ 是增函数。也就是说，$ax^2-x$ 在区间 $(1,2)$ 上单调递增。</p>
+<p>这样，我们就可以分情况讨论。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$a$ 的情况</th>
+<th>列出的不等式</th>
+<th>不等式解析</th>
+<th>解得</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a=0$</td>
+<td>没有不等式</td>
+<td>此时 $ax^2-x=-x$，这明显是单调递减的</td>
+<td>无解</td>
+</tr>
+<tr>
+<td>$a&gt;0$</td>
+<td>$-\frac{-1}{2a}\le1$</td>
+<td>开口向上的二次函数，对称轴右边是单调递增的</td>
+<td>$a\ge\frac12$</td>
+</tr>
+<tr>
+<td>$a&lt;0$</td>
+<td>$-\frac{-1}{2a}\ge2$</td>
+<td>开口向下的二次函数，对称轴左边是单调递增的</td>
+<td>无解</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>但是我们别忘了，$ax^2-x&gt;0$ 一定要恒成立。当 $x=1$ 时，$ax^2-x$ 有区间内最小值（因为单调性）。所以，解 $a\times1^2-1&gt;0$，得 $a&gt;1$。</p>
+<p>综上，$a&gt;1$。</p>
+<h3 id="4、分段函数和对数函数结合，图象与横线的交点个数"><a href="#4、分段函数和对数函数结合，图象与横线的交点个数" class="headerlink" title="4、分段函数和对数函数结合，图象与横线的交点个数"></a>4、分段函数和对数函数结合，图象与横线的交点个数</h3><p>已知函数 $f(x)=\left\lbrace\begin{matrix}-x^2+2x,x\ge0,\\ln(-x)+\frac{1}{x},x&lt;0,\end{matrix}\right.$，则函数 $y=f[f(x)-1]$ 的零点个数？</p>
+<p>首先，我们先将内层的 $f(x)-1$ 设为 $t$，那么问题便转换为了，$f(t)=0$ 的解的个数，以及解的情况。</p>
+<p>分段函数分段看。我们先解 $-x^2+2x=0$，可以得 $x_1=0,x_2=2$。</p>
+<p>再看看 $ln(-x)+\frac1x=0$。我们注意到这个方程是“超越方程”，解不出来的。所幸，这个 $ln(-x)+\frac1x$ 是单调递减的。所以，当 $x=-1$ 时，$ln(-x)+\frac{1}{x}=-1$；而当 $x=-e$ 时，$ln(-x)+\frac{1}{x}&gt;0$。由于我们只用求个数，所以我们发现，$t$ 有三种可能，分别是 $0,2,-e&lt;t_3&lt;-1$。</p>
+<p>这样，我们就可以分别求出以下方程的解的数量，加起来就是答案：</p>
+<p>$f(x)-1=0,f(x)-1=2,f(x)-1=t_3$。</p>
+<p>也就是：</p>
+<p>$f(x)=1,f(x)=3,f(x)=t_3+1$，且 $-e+1&lt;t_3&lt;0$。</p>
+<p>我们发现，函数 $-x^2+2x$ 在 $x\ge0$ 时长这样：</p>
+<p><img src="../post_image/CyrxNote-Math-006/CyrxNote-Math-006-03.PNG" alt=""></p>
+<p>最大值为 $1$。</p>
+<p>我们画不出 $ln(-x)+\frac1x$ 的图象，但我们可以发现，它的值域为 $R$，且单调递减。这意味着这个式子的图象与任意一条平行于 $x$ 轴的横线都有且只有一个交点。</p>
+<p>即可列出表格：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>方程</th>
+<th>解的总个数</th>
+<th>在 $ln(-x)+\frac1x(x&lt;0)$ 部分的解的个数</th>
+<th>在 $-x^2+2x(x\ge0)$ 部分的解的个数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(x)=1$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$f(x)=3$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$f(x)=t_3$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>综上，答案为 $5$。</p>
+<p>本题的要点：</p>
 <ol>
-<li><p>条件归一。也就是把 $\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 化成 $6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
+<li><p>抽丝剥茧地处理函数嵌套；</p>
 </li>
-<li><p>配凑。将 $x+y$ 化成 $(x+2)+(y+2)-4$。需要注意，以上两个步骤<strong>有可能需要互换顺序</strong>，具体情况见下方。</p>
+<li><p>分段函数分段来看；</p>
 </li>
-<li><p>两式相乘。也就是得到 $(x+2)+(y+2)-4=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$。</p>
-</li>
-<li><p>强行计算。</p>
-</li>
-<li><p>启用基本不等式。</p>
+<li><p>善用函数的单调性、值域的特殊性质。</p>
 </li>
 </ol>
-<p>有的时候，条件式和原式的样式可能恰好反过来。来看看进阶版本：</p>
-<p>当 $x&gt;-3,y&gt;2,4x+y+4=6$ 时，求 $\frac{1}{x+3}+\frac{1}{4y-8}$ 的最小值。</p>
-<p>这道题细节很多，需要细心计算。</p>
-<p>可以发现，$4x+y+4=6$ 作为条件式，需要条件归一；作为整式（未知数不出现在分母上。相对地，$\frac{1}{x+3}+\frac{1}{4y-8}$ 是分式），又需要配凑。<strong>先配凑，再条件归一。</strong></p>
-<p>因此，可以配凑得出 $4x+12+y-2=6+12-6=12$。条件归一得出 $\frac{1}{12}[4(x+3)+\frac{1}{4}\times(4y-8)]=1$。</p>
-<p>接下来，设 $a=x+3&gt;0,b=4y-8&gt;0$。在遇到这种式子时，设 $a$ 和 $b$ 可以防止式子过长。这样，我们就要求 $\frac1a+\frac1b$ 的最小值。</p>
-<p>回到上面的式子，我们可以发现：</p>
-<p> $\frac1a+\frac1b\\=\frac{1}{12}\begin{bmatrix}4a+\frac{1}{4}b\end{bmatrix}(\frac1a+\frac1b)\\=\frac{1}{12}(4+\frac14+\frac{\frac14b}{a}+\frac{4a}{b})\\\ge\frac{1}{12}(\frac{17}{4}+2\sqrt{\frac{\frac14b}{a}\times\frac{4a}{b}})\\=\frac{1}{12}(\frac{17}{4}+2)=\frac{25}{48}$</p>
-<p>当且仅当 $\frac{\frac14b}{a}=\frac{4a}{b}$ 时，等号成立。</p>
-<p>接下来验算一下。</p>
-<p>$\because\frac{\frac14b}{a}=\frac{4a}{b}\\\therefore\frac{1}{4}b^2=4a^2\\b=4a\\4(x+3)=4y-8\\x+3=y-2\\x-y=-5$</p>
-<p>又因为 $4x+y+4=6$，解得 $x=-\frac35,y=\frac{22}{5}$。</p>
-<p>验算如图。</p>
-<p><img src="../post_image/CyrxNote-Math-001/CyrxNote-Math-001-01.PNG" alt=""></p>
-<p>这道题，出题人在做的时候，都差点做错。</p>
-<h3 id="4、使系数相等"><a href="#4、使系数相等" class="headerlink" title="4、使系数相等"></a>4、使系数相等</h3><p>再看看：当 $a&gt;0,b&gt;0,2a+3b=12$ 时，求 $\frac{1}{ab}$ 的最小值。</p>
-<p>显然，当 $ab$ 最大的时候，就是 $\frac{1}{ab}$ 最小的时候。</p>
-<p>但是，条件是 $2a+3b=12$,这意味着 $a+b$ 是会变的，不能直接使用基本不等式。</p>
-<p>那么，我们考虑改变一下 $ab$ 这边。给 $a$ 搞个系数 $2$，给 $b$ 搞个系数 $3$，最后统一 $\div6$，我们就有 $ab=(2a\cdot3b)\times\frac{1}{6}\le(\frac{2a+3b}{2})^2\times\frac{1}{6}=6$，那么 $\frac{1}{ab}$ 的最小值就是 $\frac{1}{6}$。</p>
-<h3 id="5、将分数中的分子用类似于带分数的思想提取出来"><a href="#5、将分数中的分子用类似于带分数的思想提取出来" class="headerlink" title="5、将分数中的分子用类似于带分数的思想提取出来"></a>5、将分数中的分子用类似于带分数的思想提取出来</h3><p>当 $x&gt;1$ 时，求 $\frac{x^2-x+1}{x-1}$ 的最小值。</p>
-<p>对于这道题，可以发现 $(x-1)x=x^2-x$，于是原式可以被化为 $\frac{x(x-1)+1}{x-1}=x+\frac{1}{x-1}$。接着再用配凑法，即可算出式子的最小值为 $3$。</p>
-<p>提取什么东西应该根据题目要求来。例如，同样是 $x&gt;1$ 时，求 $\frac{x^2-2x+5}{x-1}$ 的最小值。</p>
-<p>可以注意到，此时最好提取 $x-1$ 出来，得 $x-1+\frac{4}{x-1}$。可以很轻松地算出最小值为 $4$，当且仅当 $x-1=\frac{4}{x-1}$ 时，即 $x=3$ 时，等号成立。</p>
-<p>扩展一个知识：整式除法。</p>
-<p>例如，当 $x&gt;-2$，求 $\frac{2x^2+8x+20}{x+2}$。</p>
-<p>首先，当前被除数是 $2x^2+8x+20$，当前除数是 $x+2$。</p>
-<p>可以发现，当前被除数的最高次数项是 $2x^2$，系数是 $2$，次数是 $2$。而除数 $x+2$ 的最高次数项的系数是 $1$，次数是 $1$。</p>
-<p>因此可以发现，如果将 $x+2$ 乘上 $2x$ 可以得到 $2x^2+4x$。因此，$\frac{2x^2+8x+20}{x+2}=2x+\frac{(2x^2+8x+20)-(2x^2+4x)}{x+2}=2x+\frac{4x+20}{x+2}$。被除数中的 $2x^2$ 就被消去了，当前被除数就变成了 $4x+20$。</p>
-<p>接着，当前被除数的最高次数项是 $4x$，系数是 $4$，次数是 $1$。当前除数的最高次数项的系数和次数都没变，都还是 $1$。因此，$4(x+2)=4x+8$，$2x+\frac{4x+20}{x+2}=2x+4+\frac{(4x+20)-(4x+8)}{x+2}=2x+4+\frac{12}{x+2}$。化简成这样，再用基本不等式就不难了。</p>
-<h3 id="6、转化为一元二次不等式求解"><a href="#6、转化为一元二次不等式求解" class="headerlink" title="6、转化为一元二次不等式求解"></a>6、转化为一元二次不等式求解</h3><p><a href="/2023-10-04-CyrxNote-Math-003">一元二次不等式的解法在此。</a></p>
-<p>已知 $ab+a+b=8,a&gt;0,b&gt;0$，则：</p>
-<p>A. $ab$ 最大值为 $2$</p>
-<p>B. $a+b$ 最小值为 $4$</p>
-<p>C. $a+2b$ 最小值为 $6\sqrt2-3$</p>
-<p>D. $\frac{1}{a(b+1)}+\frac{1}{b}\ge\frac{1}{2}$</p>
-<p>请注意本题多选。</p>
-<p>可以由基本不等式发现，$a+b\ge2\sqrt{ab},ab\le(\frac{a+b}{2})^2$，也就是说：</p>
-<ol>
-<li><p>$8=ab+a+b\ge ab+2\sqrt{ab}$</p>
-</li>
-<li><p>$8=ab+a+b\le(\frac{a+b}{2})^2+(a+b)=\frac{1}{4}(a+b)^2+(a+b)$。</p>
-</li>
-</ol>
-<p>经过一定的转化，我们就可以分别得到 2 个一元二次不等式：</p>
-<p>$(\sqrt{ab})^2+2\sqrt{ab}-8\le0$（将 $\sqrt{ab}$ 视为一个未知数整体）</p>
-<p>$(a+b)^2+4(a+b)-32\ge0$（将 $(a+b)$ 视为一个未知数整体）</p>
-<p>根据一元二次不等式的求解方法，第一条不等式可以得出 $-4\le\sqrt{ab}\le2$，第二条不等式可以得出 $a+b\le-8$ 或 $a+b\ge4$。</p>
-<p>别忘了 $a&gt;0,b&gt;0$。因此，$0 &lt; \sqrt{ab}\le2,a+b\ge4$。因此，A 选项错误，B 选项正确。</p>
-<p>C 选项的情况，将在下一节讲解。</p>
-<h3 id="7、消元：将一个数用另一个数表示出来"><a href="#7、消元：将一个数用另一个数表示出来" class="headerlink" title="7、消元：将一个数用另一个数表示出来"></a>7、消元：将一个数用另一个数表示出来</h3><p>回到前面的题目。</p>
-<p>可以发现，$ab+a+b=ab+b+a=(a+1)b+a$。</p>
-<p>所以，因为 $ab+a+b=8$，所以 $b=\frac{8-a}{a+1}$。</p>
-<p>因此 $a+2b\\=a+2\times\frac{8-a}{a+1}\\=a+\frac{16-2a}{a+1}\\=a-2+\frac{18}{a+1}\\=a+1+\frac{18}{a+1}-3\\\ge2\sqrt{ ( a+1 ) \times\frac{18}{a+1}}-3\\=6\sqrt{2}-3$。C 选项正确。</p>
-<p>D 选项的情况，将在下一节讲解。</p>
-<h3 id="8、1-的代换法（进阶版）"><a href="#8、1-的代换法（进阶版）" class="headerlink" title="8、1 的代换法（进阶版）"></a>8、1 的代换法（进阶版）</h3><p>可以发现，$a(b+1)+b=ab+a+b=8$。</p>
-<p>因此，$\frac{1}{a(b+1)}+\frac{1}{b}=\frac{1}{8}[a(b+1)+b][\frac{1}{a(b+1)}+\frac{1}{b}]=\frac{1}{8}[1+1+\frac{a(b+1)}{b}+\frac{b}{a(b+1)}]\ge\frac{1}{8}(2+2\sqrt{1})=\frac{1}{2}$。D 选项正确。</p>
-<p>其实也没进阶多少，只是关系隐藏起来了。</p>
-<h3 id="9、超级无敌分数嵌套"><a href="#9、超级无敌分数嵌套" class="headerlink" title="9、超级无敌分数嵌套"></a>9、超级无敌分数嵌套</h3><p>求 $\frac{x^2+3x+3}{2x^2+7x+7}(x&gt;-1)$ 的最小值。</p>
-<p>首先，$2x^2+7x+7=2(x^2+3x+3)+(x+1)$，因此 $\frac{x^2+3x+3}{2x^2+7x+7}=\frac{x^2+3x+3}{2(x^2+3x+3)+(x+1)}=\frac{1}{2+\frac{x+1}{x^2+3x+3}}$（分子分母同时除以 $x^2+3x+3$）。显然，当 $\frac{x+1}{x^2+3x+3}$ 最大时，分母 $2+\frac{x+1}{x^2+3x+3}$ 最大，分数整体最小。</p>
-<p>然后，$x^2+3x+3=(x+1)(x+1)+(x+1)+1$，因此 $\frac{x+1}{x^2+3x+3}=\frac{x+1}{ ( x+1 ) ( x+1 ) + ( x+1 )+1}=\frac{1}{x+1+1+\frac{1}{x+1}}$。可以发现，当 $x+1+1+\frac{1}{x+1}$ 最小时，$\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大。</p>
-<p>我们可以很容易地求出 $x+1+1+\frac{1}{x+1}$ 最小为 $3$，所以 $\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大为 $\frac{1}{3}$，进而求出原式最小值为 $\frac{1}{2+\frac{1}{3}}=\frac{3}{7}$。</p>
-<p>对于这种问题，我们可以不断地尝试将分子化为 $1$，然后，当 $a&gt;0,b&gt;0$ 时，$a$ 不变的情况下，$b$ 越大时 $\frac{a}{b}$ 越小。根据这个原理，可以反复求最大/最小值，最终解出题目。</p>
-<h3 id="10、将条件代入某个整数中，使分子和分母变得可以互相约分"><a href="#10、将条件代入某个整数中，使分子和分母变得可以互相约分" class="headerlink" title="10、将条件代入某个整数中，使分子和分母变得可以互相约分"></a>10、将条件代入某个整数中，使分子和分母变得可以互相约分</h3><p>已知 $x+y=1,y&gt;0,x&gt;0$，求 $\frac{1}{2x}+\frac{x}{y+1}$ 的最小值。</p>
-<p>可以发现，此时无法直接使用基本不等式，因为 $1$ 和 $y+1$ 不能互相约分掉。</p>
-<p>考虑 $x+y=1$ 这个条件，可以发现 $x+y+1=2$，那么原式就等于 $\frac{\frac{1}{2}(x+y+1)}{2x}+\frac{x}{y+1}=\frac{x+y+1}{4x}+\frac{x}{y+1}=\frac{1}{4}+\frac{y+1}{4x}+\frac{x}{y+1}\ge\frac{1}{4}+2\sqrt{\frac{y+1}{4x}\times\frac{x}{y+1}}=\frac{5}{4}$，当且仅当 $\frac{y+1}{4x}=\frac{x}{y+1}$ 时（即 $x=\frac{2}{3},y=\frac{1}{3}$ 时），可以取等号。</p>
-<p>已知 $a&gt;0,b&gt;0,a+b=2$，求 $\frac{b}{a}+\frac{4}{b}$ 的最小值。</p>
-<p>可以发现，$4=2a+2b$，所以 $\frac{b}{a}+\frac{4}{b}=\frac{b}{a}+\frac{2a+2b}{b}=\frac{b}{a}+\frac{2a}{b}+2\ge2\sqrt{\frac{b}{a}\times\frac{2a}{b}}+2=2\sqrt2+2$，当且仅当 $\frac{b}{a}=\frac{2a}{b}$ 时等号成立。</p>
-<h3 id="11、总结"><a href="#11、总结" class="headerlink" title="11、总结"></a>11、总结</h3><p>不等式问题没有固定解法，在高考中难度相当大。这种题目只能靠多刷题积累来的经验，因此应记住做过的题的解法，也要善于利用网络。</p>
-<h3 id="链接阅读"><a href="#链接阅读" class="headerlink" title="链接阅读"></a>链接阅读</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/185052402">基本不等式解题技巧（一）（知乎专栏）</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/205447579">基本不等式（二）——多元问题处理技巧（知乎专栏）</a>（友情提醒，这一篇文章贼tm难）</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/482152623">基本不等式求最值题型总结（知乎专栏）</a></p>
 
                 
             </div>
@@ -616,7 +623,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/">https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</a>
+                    <a href="https://blog.cyrxdzj.eu.org/posts_export/CyrxNote-Math-006.html">https://blog.cyrxdzj.eu.org/posts_export/CyrxNote-Math-006.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -695,58 +702,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023-09-23-CyrxNote-Math-002/">
+                <a href="/posts_export/CyrxNote-Math-006.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/002_029_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 数学002 集合与条件">
+                        <img src="/medias/feature_image_pjsk/001_010_card_normal.webp" class="responsive-img" alt="">
                         
-                        <span class="card-title">cyrxdzj的文化课学习笔记 数学002 集合与条件</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-23
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    cyrxdzj的文化课学习笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023-09-22-CyrxNoteIndex/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/feature_image_pjsk/002_014_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 目录">
-                        
-                        <span class="card-title">cyrxdzj的文化课学习笔记 目录</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -757,20 +724,55 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    cyrxdzj的文化课学习笔记
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            cyrxdzj
                             
                         </span>
                     </div>
                 </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/posts_export/CyrxNote-Math-006.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/feature_image_pjsk/001_010_card_normal.webp" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            cyrxdzj
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
@@ -935,15 +937,6 @@
 
 </main>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script>
-    MathJax.Hub.Config({
-        loader: {load: ['[tex]/color']},
-        tex: {packages: {'[+]': ['color']}},
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
 

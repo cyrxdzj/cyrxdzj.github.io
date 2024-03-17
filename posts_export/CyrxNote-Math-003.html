@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="cyrxdzj的文化课学习笔记 数学001 基本不等式, cyrxdzj blog">
+    <meta name="keywords" content="cyrxdzj blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>cyrxdzj的文化课学习笔记 数学001 基本不等式 | cyrxdzj blog</title>
+    <title>cyrxdzj blog</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,7 +308,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">cyrxdzj的文化课学习笔记 数学001 基本不等式</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -429,15 +429,6 @@
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                cyrxdzj的文化课学习笔记
-                            </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
@@ -445,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-09-22
+                    2024-03-17
                 </div>
                 
 
@@ -454,7 +445,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.3k
+                    1.4k
                 </div>
                 
 
@@ -474,122 +465,228 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>$\require{color}$</p>
-<p>基本不等式是真 tm 难学，前一章节”集合“还那么简单，再一章难度就直接拉满。</p>
-<h3 id="1、1-的代换法"><a href="#1、1-的代换法" class="headerlink" title="1、1 的代换法"></a>1、1 的代换法</h3><p>有 $2$ 个式子，$\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}}$ 和 $\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}}$，其中 $x&gt;0,y&gt;0$。若把这两个式子相乘会发生什么？</p>
-<p>可以发现，相同颜色的式子相乘，分子和分母可以互相抵消，得到常数。不同颜色的式子相乘，分子和分母不可以互相抵消，但是可以为接下来的基本不等式创造条件。</p>
-<p>因此，我们得到 $(\textcolor{red}{x}+\textcolor{green}{\frac{y}{4}})(\textcolor{red}{\frac{2}{x}}+\textcolor{green}{\frac{2}{y}})\\=\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}$。</p>
-<p>我们发现，标记为蓝色的结果，是相同颜色的式子相乘得到的常数。而标记为紫色的结果，是不同颜色的式子相乘得到的。可以发现，标记为紫色的结果，若相乘，是可以互相抵消的。</p>
-<p>由此，我们可以得到 $\textcolor{blue}{2}+\textcolor{blue}{\frac{1}{2}}+\textcolor{purple}{\frac{2x}{y}}+\textcolor{purple}{\frac{2y}{4x}}\ge(2+\frac{1}{2})+2\sqrt{\frac{2x}{y}\times\frac{2y}{4x}}=\frac{9}{2}$。也就是说，$({x}+{\frac{y}{4}})({\frac{2}{x}}+{\frac{2}{y}})$ 的最小值为 $\frac{9}{2}$。</p>
-<p><strong>众所周知，任何数乘 $1$ 都等于原数。</strong></p>
-<p>例如，若 $x&gt;0,y&gt;0,\frac{1}{x}+\frac{9}{y}=1$，求 $x+y$ 的最小值。</p>
-<p>对于这道题，可以发现 $x+y=(x+y)(\frac{1}{x}+\frac{9}{y})=1+9+\frac{9x}{y}+\frac{y}{x}$（暴力死算出来），然后就可以将后面那一坨 $\frac{9x}{y}+\frac{y}{x}$ 用基本不等式求最值了。</p>
-<p>如果 $\frac{1}{x}+\frac{9}{y}=2\ne1$，那也好办，<strong>可以在整个算式前面乘上一个数使这个算式的值为 $1$。</strong> 对于上面的式子，$\frac{1}{2}\times（\frac{1}{x}+\frac{9}{y})=1$，那么 $x+y=(x+y)[\frac{1}{2}\times(\frac{1}{x}+\frac{9}{y})]=(x+y)(\frac{1}{x}+\frac{9}{y})\times\frac{1}{2}$，求出前面的 $(x+y)(\frac{1}{x}+\frac{9}{y})$ 的最值就搞定了。</p>
-<p>再看看这个。若 $x&gt;0,y&gt;0,x+8y=xy$，求 $x+2y$ 的最小值。</p>
-<p>可以发现，$(x+8y)\div(xy)=(xy)\div(xy)$，也就是说 $\frac{1}{y}+\frac{8}{x}=1$。又回来了。</p>
-<p>有些时候还需要一点转换。比如 $\frac{x+2y}{xy}=\frac{1}{y}+\frac{2}{x}$，这个应该不难理解，就是将分子拆开来分别除以分母即可。</p>
-<h3 id="2、配凑法"><a href="#2、配凑法" class="headerlink" title="2、配凑法"></a>2、配凑法</h3><p>当 $x&gt;\frac{1}{2}$ 时，求 $x+\frac{1}{2x-1}$ 的最小值。</p>
-<p>可以发现 $\frac{x}{2x-1}$ 不是定值，不能直接开基本不等式。</p>
-<p>那么，<strong>我们可以尝试将前面的 $x$ 转换成一个整式，使这个整式除以 $2x-1$ 可以得到一个实数</strong>（无论是不是整数都行，<strong>别带未知数就好</strong>）。分子分母互相抵消，才能使用基本不等式。</p>
-<p>于是，原式被转化为了 $(x-0.5)+\frac{1}{2x-1}+0.5$，先在前面加 $0.5$，再在后面减 $0.5$。</p>
-<p>这样就可以用基本不等式了：$(x-0.5)+\frac{1}{2x-1}+0.5\ge2\sqrt{\frac{x-0.5}{2x-1}}+0.5$。</p>
-<h3 id="3、结合-1-和-2-的知识解题"><a href="#3、结合-1-和-2-的知识解题" class="headerlink" title="3、结合 1 和 2 的知识解题"></a>3、结合 1 和 2 的知识解题</h3><p>当 $x&gt;-2,y&gt;-2,\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 时，求 $x+y$ 的最小值。</p>
-<p>首先，由方法 1 可知，$6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
-<p>但即便是这样，$x+y$ 也并不是很好处理。</p>
-<p>这个时候，我们可以借助方法 2，$x+y=(x+2)+(y+2)-4$。</p>
-<p>接下来，求出 $(x+2)+(y+2)$ 的最小值即可。</p>
-<p>$x+y=(x+2)+(y+2)-4$……使用配凑法</p>
-<p>$=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$……使用 1 的代换法</p>
-<p>$=6\times\begin{bmatrix}(x+2)+(y+2)\end{bmatrix}(\frac{1}{x+2}+\frac{1}{y+2})-4$……整理式子，将 $6$ 丢一边</p>
-<p>$=6\times(1+1+\frac{x+2}{y+2}+\frac{y+2}{x+2})-4$……强行计算括号中的内容</p>
-<p>$=6\times(\frac{x+2}{y+2}+\frac{y+2}{x+2})+12-4$……把无关的 $12$（即 $6\times(1+1)$）丢出去</p>
-<p>$\ge6\times2\sqrt{\frac{x+2}{y+2}\times\frac{y+2}{x+2}}+8$……启用基本不等式</p>
-<p>$=20$……计算得出结果</p>
-<p>搞定。</p>
-<p>这类基本不等式，分以下步骤解决：</p>
+                <h1 id="cyrxdzj的文化课学习笔记-数学003-一元二次不等式"><a href="#cyrxdzj的文化课学习笔记-数学003-一元二次不等式" class="headerlink" title="cyrxdzj的文化课学习笔记 数学003 一元二次不等式"></a>cyrxdzj的文化课学习笔记 数学003 一元二次不等式</h1><blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">创建</th>
+<th style="text-align:center">内容更新</th>
+<th style="text-align:center">导出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2023-10-04 20:57:51</td>
+<td style="text-align:center">2023-10-16 17:56:40</td>
+<td style="text-align:center">2024-03-17 11:43:52</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>原文链接：<a href="https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/">https://blog.cyrxdzj.eu.org/2023-10-04-CyrxNote-Math-003/</a></p>
+<p>作者：cyrxdzj</p>
+<p>本文件仅为静态文件。如有条件，建议访问原文链接。</p>
+</blockquote>
+<p>本文含有较多图片，单击可以放大。</p>
+<h3 id="1、基础：一元二次不等式的基本解法"><a href="#1、基础：一元二次不等式的基本解法" class="headerlink" title="1、基础：一元二次不等式的基本解法"></a>1、基础：一元二次不等式的基本解法</h3><p>一元二次不等式的左边是一个一元二次函数，中间是一个不等号，右边一般为 $0$。如果不是，则考虑移项。</p>
+<p>例题：$(x+5)(3-2x)\ge6$。</p>
+<p>首先，将左边去括号，得到 $-2x^2-7x+15$。</p>
+<p>然后，移项，得到 $-2x^2-7x+9\ge0$。</p>
+<p>然后，将不等式的左边部分进行因式分解，得到 $(-2x-9)(x-1)\ge0$。</p>
+<p>根据初中时期的知识，我们可以知道当 $x=-\frac{9}{2}$ 或 $x=1$ 时，式子等于 $0$。而 $(-2x-9)(x-1)$ 应该是开口向<strong>下</strong>的一元二次函数。因此，我们可以得到 $-\frac{9}{2}\le x\le1$。</p>
+<p>因此，我们可以得到如下的基本步骤：</p>
 <ol>
-<li><p>条件归一。也就是把 $\frac{1}{x+2}+\frac{1}{y+2}=\frac{1}{6}$ 化成 $6(\frac{1}{x+2}+\frac{1}{y+2})=1$。</p>
+<li>将整个不等式尝试化成左边一个一元二次函数、右边一个 $0$ 的形式，其中的一元二次函数应使用因式分解，化成 $(ax+b)(cx+d)$ 的形式。因式分解的难度随出题老师的变态程度的提升而提升。并且因式分解中还可能包含更多字母，这就需要经验了。</li>
+<li>计算当 $x=?$ 时，一元二次函数的值为 $0$。这个 $x$ 我们一般称之为<strong>零点</strong>。零点不是点，而是一个数，当自变量 $x$ 的值为这个数时，函数值为 $0$。</li>
+<li>判断函数的开口方向。当开口方向向上且不等号为小于（等于）时，或者开口方向向下且不等号为大于（等于）时，不等式的解集在两个零点之间（<strong>需要考虑能否取等号</strong>）。否则，不等式的解集在两个零点的两边。</li>
+</ol>
+<p>如下图：</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-02.PNG" alt=""></p>
+<p>被加粗的点即为函数取值为 $0$ 的点。</p>
+<h3 id="2、分类讨论"><a href="#2、分类讨论" class="headerlink" title="2、分类讨论"></a>2、分类讨论</h3><p>当 $a\in R$ 时，求 $x^2-(a+1)x+a&lt;0$ 的解集。</p>
+<p>首先，凭经验进行因式分解，我们可以发现 $x^2-(a+1)x+a=(x-a)(x-1)$。这样，我们就可以很容易地求出函数零点为 $a$ 和 $1$，不等式解集应该在零点之间，且不能取等号。</p>
+<p>那么，我们就可以根据 $a$ 和 $1$ 的大小关系分类讨论了。</p>
+<p>当 $a&lt;1$ 时，$a&lt;x&lt;1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-03.PNG" alt=""></p>
+<p>当 $a=1$ 时，可以发现原不等式无解。</p>
+<p>当 $a&gt;1$ 时，可以发现 $1&lt;x&lt;a$。</p>
+<p>有些时候，丧心病狂的出题人会搞点花活。比如说，把字母放在二次项前面。在做这类题目时，一定要注意一元二次不等式会不会退化成一元一次不等式，并分类讨论。</p>
+<p>比如，求 $mx^2-(m+2)x+2\le0$ 的解集。</p>
+<p>根据因式分解可以得到，原不等式等价于 $(mx-2)(x-1)\le0$。</p>
+<p>但是，我们可以发现，当 $m=0$ 时，原不等式会退化成一元一次不等式，得 $-2x+2\le0$。这个一元一次不等式倒也不难，可以解得 $x\ge1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-04.PNG" alt=""></p>
+<p>当 $m\neq0$ 时，可以发现函数的零点是 $1$ 和 $\frac{2}{m}$。</p>
+<p>但是，$m$ 的变化还会影响到函数的形状是开口向上还是向下。因此，需要更复杂的分类讨论。</p>
+<p>当 $m&lt;0$ 时，当然有 $\frac{2}{m}&lt;1$。此时函数开口向下，那么解集就是零点的两边，也就是 $x\le\frac{2}{m}$ 或 $x\ge1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-05.PNG" alt=""></p>
+<p>当 $0 &lt; m &lt; 2$ 时，还有 $\frac{2}{m}&gt;1$。此时函数开口向上，那么解集就是零点之间，也就是 $1\le x\le\frac{2}{m}$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-06.PNG" alt=""></p>
+<p>当 $m=2$ 时，$\frac{2}{m}=1$。由于原不等式允许取等号，所以 $x=1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-07.PNG" alt=""></p>
+<p>当 $m&gt;2$ 时，$\frac{2}{m}&lt;1$。此时解集为 $\frac{2}{m}\le x\le1$。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-08.PNG" alt=""></p>
+<p>可以发现，一般这种类型的一元二次不等式，会分这么几类讨论：</p>
+<ol>
+<li><p>当一元二次不等式的二次项系数为 $0$ 导致原式退化为一元一次不等式时。此时就需要用解一元一次不等式的方法处理。</p>
 </li>
-<li><p>配凑。将 $x+y$ 化成 $(x+2)+(y+2)-4$。需要注意，以上两个步骤<strong>有可能需要互换顺序</strong>，具体情况见下方。</p>
+<li><p>当一元二次不等式的零点只有一个时。此时就判断该不等式是否允许取等号。如允许，则解集为一个数（例如上面的 $x=1$）或解集为全集（不等式恒成立）；如不允许，则可能无解，或解集为除了这个数的所有数。</p>
 </li>
-<li><p>两式相乘。也就是得到 $(x+2)+(y+2)-4=[(x+2)+(y+2)]\times6(\frac{1}{x+2}+\frac{1}{y+2})-4$。</p>
-</li>
-<li><p>强行计算。</p>
-</li>
-<li><p>启用基本不等式。</p>
+<li><p>当一元二次不等式的零点有两个时。此时就要考虑图象的开口方向和零点的大小关系，根据具体情况写出解集。</p>
 </li>
 </ol>
-<p>有的时候，条件式和原式的样式可能恰好反过来。来看看进阶版本：</p>
-<p>当 $x&gt;-3,y&gt;2,4x+y+4=6$ 时，求 $\frac{1}{x+3}+\frac{1}{4y-8}$ 的最小值。</p>
-<p>这道题细节很多，需要细心计算。</p>
-<p>可以发现，$4x+y+4=6$ 作为条件式，需要条件归一；作为整式（未知数不出现在分母上。相对地，$\frac{1}{x+3}+\frac{1}{4y-8}$ 是分式），又需要配凑。<strong>先配凑，再条件归一。</strong></p>
-<p>因此，可以配凑得出 $4x+12+y-2=6+12-6=12$。条件归一得出 $\frac{1}{12}[4(x+3)+\frac{1}{4}\times(4y-8)]=1$。</p>
-<p>接下来，设 $a=x+3&gt;0,b=4y-8&gt;0$。在遇到这种式子时，设 $a$ 和 $b$ 可以防止式子过长。这样，我们就要求 $\frac1a+\frac1b$ 的最小值。</p>
-<p>回到上面的式子，我们可以发现：</p>
-<p> $\frac1a+\frac1b\\=\frac{1}{12}\begin{bmatrix}4a+\frac{1}{4}b\end{bmatrix}(\frac1a+\frac1b)\\=\frac{1}{12}(4+\frac14+\frac{\frac14b}{a}+\frac{4a}{b})\\\ge\frac{1}{12}(\frac{17}{4}+2\sqrt{\frac{\frac14b}{a}\times\frac{4a}{b}})\\=\frac{1}{12}(\frac{17}{4}+2)=\frac{25}{48}$</p>
-<p>当且仅当 $\frac{\frac14b}{a}=\frac{4a}{b}$ 时，等号成立。</p>
-<p>接下来验算一下。</p>
-<p>$\because\frac{\frac14b}{a}=\frac{4a}{b}\\\therefore\frac{1}{4}b^2=4a^2\\b=4a\\4(x+3)=4y-8\\x+3=y-2\\x-y=-5$</p>
-<p>又因为 $4x+y+4=6$，解得 $x=-\frac35,y=\frac{22}{5}$。</p>
-<p>验算如图。</p>
-<p><img src="../post_image/CyrxNote-Math-001/CyrxNote-Math-001-01.PNG" alt=""></p>
-<p>这道题，出题人在做的时候，都差点做错。</p>
-<h3 id="4、使系数相等"><a href="#4、使系数相等" class="headerlink" title="4、使系数相等"></a>4、使系数相等</h3><p>再看看：当 $a&gt;0,b&gt;0,2a+3b=12$ 时，求 $\frac{1}{ab}$ 的最小值。</p>
-<p>显然，当 $ab$ 最大的时候，就是 $\frac{1}{ab}$ 最小的时候。</p>
-<p>但是，条件是 $2a+3b=12$,这意味着 $a+b$ 是会变的，不能直接使用基本不等式。</p>
-<p>那么，我们考虑改变一下 $ab$ 这边。给 $a$ 搞个系数 $2$，给 $b$ 搞个系数 $3$，最后统一 $\div6$，我们就有 $ab=(2a\cdot3b)\times\frac{1}{6}\le(\frac{2a+3b}{2})^2\times\frac{1}{6}=6$，那么 $\frac{1}{ab}$ 的最小值就是 $\frac{1}{6}$。</p>
-<h3 id="5、将分数中的分子用类似于带分数的思想提取出来"><a href="#5、将分数中的分子用类似于带分数的思想提取出来" class="headerlink" title="5、将分数中的分子用类似于带分数的思想提取出来"></a>5、将分数中的分子用类似于带分数的思想提取出来</h3><p>当 $x&gt;1$ 时，求 $\frac{x^2-x+1}{x-1}$ 的最小值。</p>
-<p>对于这道题，可以发现 $(x-1)x=x^2-x$，于是原式可以被化为 $\frac{x(x-1)+1}{x-1}=x+\frac{1}{x-1}$。接着再用配凑法，即可算出式子的最小值为 $3$。</p>
-<p>提取什么东西应该根据题目要求来。例如，同样是 $x&gt;1$ 时，求 $\frac{x^2-2x+5}{x-1}$ 的最小值。</p>
-<p>可以注意到，此时最好提取 $x-1$ 出来，得 $x-1+\frac{4}{x-1}$。可以很轻松地算出最小值为 $4$，当且仅当 $x-1=\frac{4}{x-1}$ 时，即 $x=3$ 时，等号成立。</p>
-<p>扩展一个知识：整式除法。</p>
-<p>例如，当 $x&gt;-2$，求 $\frac{2x^2+8x+20}{x+2}$。</p>
-<p>首先，当前被除数是 $2x^2+8x+20$，当前除数是 $x+2$。</p>
-<p>可以发现，当前被除数的最高次数项是 $2x^2$，系数是 $2$，次数是 $2$。而除数 $x+2$ 的最高次数项的系数是 $1$，次数是 $1$。</p>
-<p>因此可以发现，如果将 $x+2$ 乘上 $2x$ 可以得到 $2x^2+4x$。因此，$\frac{2x^2+8x+20}{x+2}=2x+\frac{(2x^2+8x+20)-(2x^2+4x)}{x+2}=2x+\frac{4x+20}{x+2}$。被除数中的 $2x^2$ 就被消去了，当前被除数就变成了 $4x+20$。</p>
-<p>接着，当前被除数的最高次数项是 $4x$，系数是 $4$，次数是 $1$。当前除数的最高次数项的系数和次数都没变，都还是 $1$。因此，$4(x+2)=4x+8$，$2x+\frac{4x+20}{x+2}=2x+4+\frac{(4x+20)-(4x+8)}{x+2}=2x+4+\frac{12}{x+2}$。化简成这样，再用基本不等式就不难了。</p>
-<h3 id="6、转化为一元二次不等式求解"><a href="#6、转化为一元二次不等式求解" class="headerlink" title="6、转化为一元二次不等式求解"></a>6、转化为一元二次不等式求解</h3><p><a href="/2023-10-04-CyrxNote-Math-003">一元二次不等式的解法在此。</a></p>
-<p>已知 $ab+a+b=8,a&gt;0,b&gt;0$，则：</p>
-<p>A. $ab$ 最大值为 $2$</p>
-<p>B. $a+b$ 最小值为 $4$</p>
-<p>C. $a+2b$ 最小值为 $6\sqrt2-3$</p>
-<p>D. $\frac{1}{a(b+1)}+\frac{1}{b}\ge\frac{1}{2}$</p>
-<p>请注意本题多选。</p>
-<p>可以由基本不等式发现，$a+b\ge2\sqrt{ab},ab\le(\frac{a+b}{2})^2$，也就是说：</p>
-<ol>
-<li><p>$8=ab+a+b\ge ab+2\sqrt{ab}$</p>
-</li>
-<li><p>$8=ab+a+b\le(\frac{a+b}{2})^2+(a+b)=\frac{1}{4}(a+b)^2+(a+b)$。</p>
-</li>
-</ol>
-<p>经过一定的转化，我们就可以分别得到 2 个一元二次不等式：</p>
-<p>$(\sqrt{ab})^2+2\sqrt{ab}-8\le0$（将 $\sqrt{ab}$ 视为一个未知数整体）</p>
-<p>$(a+b)^2+4(a+b)-32\ge0$（将 $(a+b)$ 视为一个未知数整体）</p>
-<p>根据一元二次不等式的求解方法，第一条不等式可以得出 $-4\le\sqrt{ab}\le2$，第二条不等式可以得出 $a+b\le-8$ 或 $a+b\ge4$。</p>
-<p>别忘了 $a&gt;0,b&gt;0$。因此，$0 &lt; \sqrt{ab}\le2,a+b\ge4$。因此，A 选项错误，B 选项正确。</p>
-<p>C 选项的情况，将在下一节讲解。</p>
-<h3 id="7、消元：将一个数用另一个数表示出来"><a href="#7、消元：将一个数用另一个数表示出来" class="headerlink" title="7、消元：将一个数用另一个数表示出来"></a>7、消元：将一个数用另一个数表示出来</h3><p>回到前面的题目。</p>
-<p>可以发现，$ab+a+b=ab+b+a=(a+1)b+a$。</p>
-<p>所以，因为 $ab+a+b=8$，所以 $b=\frac{8-a}{a+1}$。</p>
-<p>因此 $a+2b\\=a+2\times\frac{8-a}{a+1}\\=a+\frac{16-2a}{a+1}\\=a-2+\frac{18}{a+1}\\=a+1+\frac{18}{a+1}-3\\\ge2\sqrt{ ( a+1 ) \times\frac{18}{a+1}}-3\\=6\sqrt{2}-3$。C 选项正确。</p>
-<p>D 选项的情况，将在下一节讲解。</p>
-<h3 id="8、1-的代换法（进阶版）"><a href="#8、1-的代换法（进阶版）" class="headerlink" title="8、1 的代换法（进阶版）"></a>8、1 的代换法（进阶版）</h3><p>可以发现，$a(b+1)+b=ab+a+b=8$。</p>
-<p>因此，$\frac{1}{a(b+1)}+\frac{1}{b}=\frac{1}{8}[a(b+1)+b][\frac{1}{a(b+1)}+\frac{1}{b}]=\frac{1}{8}[1+1+\frac{a(b+1)}{b}+\frac{b}{a(b+1)}]\ge\frac{1}{8}(2+2\sqrt{1})=\frac{1}{2}$。D 选项正确。</p>
-<p>其实也没进阶多少，只是关系隐藏起来了。</p>
-<h3 id="9、超级无敌分数嵌套"><a href="#9、超级无敌分数嵌套" class="headerlink" title="9、超级无敌分数嵌套"></a>9、超级无敌分数嵌套</h3><p>求 $\frac{x^2+3x+3}{2x^2+7x+7}(x&gt;-1)$ 的最小值。</p>
-<p>首先，$2x^2+7x+7=2(x^2+3x+3)+(x+1)$，因此 $\frac{x^2+3x+3}{2x^2+7x+7}=\frac{x^2+3x+3}{2(x^2+3x+3)+(x+1)}=\frac{1}{2+\frac{x+1}{x^2+3x+3}}$（分子分母同时除以 $x^2+3x+3$）。显然，当 $\frac{x+1}{x^2+3x+3}$ 最大时，分母 $2+\frac{x+1}{x^2+3x+3}$ 最大，分数整体最小。</p>
-<p>然后，$x^2+3x+3=(x+1)(x+1)+(x+1)+1$，因此 $\frac{x+1}{x^2+3x+3}=\frac{x+1}{ ( x+1 ) ( x+1 ) + ( x+1 )+1}=\frac{1}{x+1+1+\frac{1}{x+1}}$。可以发现，当 $x+1+1+\frac{1}{x+1}$ 最小时，$\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大。</p>
-<p>我们可以很容易地求出 $x+1+1+\frac{1}{x+1}$ 最小为 $3$，所以 $\frac{1}{x+1+1+\frac{1}{x+1}}$ 最大为 $\frac{1}{3}$，进而求出原式最小值为 $\frac{1}{2+\frac{1}{3}}=\frac{3}{7}$。</p>
-<p>对于这种问题，我们可以不断地尝试将分子化为 $1$，然后，当 $a&gt;0,b&gt;0$ 时，$a$ 不变的情况下，$b$ 越大时 $\frac{a}{b}$ 越小。根据这个原理，可以反复求最大/最小值，最终解出题目。</p>
-<h3 id="10、将条件代入某个整数中，使分子和分母变得可以互相约分"><a href="#10、将条件代入某个整数中，使分子和分母变得可以互相约分" class="headerlink" title="10、将条件代入某个整数中，使分子和分母变得可以互相约分"></a>10、将条件代入某个整数中，使分子和分母变得可以互相约分</h3><p>已知 $x+y=1,y&gt;0,x&gt;0$，求 $\frac{1}{2x}+\frac{x}{y+1}$ 的最小值。</p>
-<p>可以发现，此时无法直接使用基本不等式，因为 $1$ 和 $y+1$ 不能互相约分掉。</p>
-<p>考虑 $x+y=1$ 这个条件，可以发现 $x+y+1=2$，那么原式就等于 $\frac{\frac{1}{2}(x+y+1)}{2x}+\frac{x}{y+1}=\frac{x+y+1}{4x}+\frac{x}{y+1}=\frac{1}{4}+\frac{y+1}{4x}+\frac{x}{y+1}\ge\frac{1}{4}+2\sqrt{\frac{y+1}{4x}\times\frac{x}{y+1}}=\frac{5}{4}$，当且仅当 $\frac{y+1}{4x}=\frac{x}{y+1}$ 时（即 $x=\frac{2}{3},y=\frac{1}{3}$ 时），可以取等号。</p>
-<p>已知 $a&gt;0,b&gt;0,a+b=2$，求 $\frac{b}{a}+\frac{4}{b}$ 的最小值。</p>
-<p>可以发现，$4=2a+2b$，所以 $\frac{b}{a}+\frac{4}{b}=\frac{b}{a}+\frac{2a+2b}{b}=\frac{b}{a}+\frac{2a}{b}+2\ge2\sqrt{\frac{b}{a}\times\frac{2a}{b}}+2=2\sqrt2+2$，当且仅当 $\frac{b}{a}=\frac{2a}{b}$ 时等号成立。</p>
-<h3 id="11、总结"><a href="#11、总结" class="headerlink" title="11、总结"></a>11、总结</h3><p>不等式问题没有固定解法，在高考中难度相当大。这种题目只能靠多刷题积累来的经验，因此应记住做过的题的解法，也要善于利用网络。</p>
-<h3 id="链接阅读"><a href="#链接阅读" class="headerlink" title="链接阅读"></a>链接阅读</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/185052402">基本不等式解题技巧（一）（知乎专栏）</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/205447579">基本不等式（二）——多元问题处理技巧（知乎专栏）</a>（友情提醒，这一篇文章贼tm难）</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/482152623">基本不等式求最值题型总结（知乎专栏）</a></p>
+<p>一个看似简单的不等式，分了 5 类作答……在数学中养成细心审题、全面考虑的习惯还是很重要的。</p>
+<h3 id="3、一元一次不等式与一元二次不等式的分类讨论结合"><a href="#3、一元一次不等式与一元二次不等式的分类讨论结合" class="headerlink" title="3、一元一次不等式与一元二次不等式的分类讨论结合"></a>3、一元一次不等式与一元二次不等式的分类讨论结合</h3><p>若关于 $x$ 的不等式 $ax-b\le0$ 的解集为 {$x|x\ge2$}，则关于 $x$ 的不等式 $ax^2+(3a-b)x-3b&lt;0$ 的解集是？</p>
+<p>根据这个一元一次不等式的解集，我们可以发现，$ax-b$ 的值随 $x$ 的升高而<strong>降低</strong>。换句话说，$a&lt;0$。</p>
+<p>因此，可以解得 $x\ge\frac{b}{a}$。</p>
+<p>这样我们就可以发现 $\frac{b}{a}=2,a&lt;0,b&lt;0$。</p>
+<p>再看看这个一元二次不等式，可以发现 $ax^2+(3a-b)x-3b=(ax-b)(x+3)$，也就是函数的零点在 $-3$ 和 $\frac{b}{a}=2$ 上。</p>
+<p>因为 $a<0$，我们可以发现一元二次函数开口向下，最终解得 $x<-3$ 或 $x>2$。</p>
+<h3 id="4、分数与不等式，如何转化为一元二次不等式"><a href="#4、分数与不等式，如何转化为一元二次不等式" class="headerlink" title="4、分数与不等式，如何转化为一元二次不等式"></a>4、分数与不等式，如何转化为一元二次不等式</h3><p>一个要点：当 $a$ 和 $b$ 都为实数且 $b\neq0$ 时，$\frac{a}{b}&gt;0$ 等价于 $ab&gt;0$，将不等号换成大于、大于等于、小于、小于等于都成立。证明如下：</p>
+<p>我们都知道，一个实数的平方一定是一个非负数。而 $b\neq0$，这也意味着 $b^2&gt;0$。</p>
+<p>如果不等式左右两边同时乘 $b^2$，由于 $b^2&gt;0$，所以不等号无需改变。而 $0$ 乘任何数都得 $0$，原不等式就被化成了 $ab&gt;0$。证毕。</p>
+<h3 id="5、-Delta-的出场"><a href="#5、-Delta-的出场" class="headerlink" title="5、$\Delta$ 的出场"></a>5、$\Delta$ 的出场</h3><p>有些时候，一元二次不等式问题需要用到初中时学习到的“根的判别式 $\Delta$”。</p>
+<p>若 $-x^2+mx-1\ge0$ 有解，则实数 $m$ 的取值范围？</p>
+<p>首先，不等号左边的一元二次函数开口向下。</p>
+<p>然后，不等式要求函数存在 $x$ 轴的上方（或恰好在 $x$ 轴上）的部分。</p>
+<p>因此，可以得知 $-x^2+mx-1=0$ 应该有解，两个实数解可以相同。换言之，$\Delta=m^2-4\times(-1)\times(-1)\ge0$，再根据一元二次方程的解法解出来即可。</p>
+<p>再看看这个。若 $x^2+ax+4&lt;0$ 解集为空，则 $a$ 的取值范围？</p>
+<p>首先，不等号左边的一元二次函数，开口向上。</p>
+<p>然后，没有部分在 $x$ 轴的下方。换句话说，$x^2+ax+4\ge0$ 对所有实数 $x$ 成立。</p>
+<p>那么，一元二次方程 $x^2+ax+4=0$ 应该无实数解或两个实数解相同。即，$\Delta=a^2-4\times1\times4\le0$。再根据一元二次方程的解法解出来即可。</p>
+<h3 id="6、一元二次函数与它的最值"><a href="#6、一元二次函数与它的最值" class="headerlink" title="6、一元二次函数与它的最值"></a>6、一元二次函数与它的最值</h3><p><a id="ref-point-01" style="display:block;height:0px;"></a></p>
+<p>已知关于 $x$ 的不等式 $-x^2+4x\ge a^2-3a$ 在 $R$ 上有解，则 $a$ 的取值范围是？</p>
+<p>首先，可以发现 $-x^2+4x$ 的最大值为 $4$，这应该不难求出。</p>
+<p>若 $a&gt;b$ 恒成立，则 $a$ 的值必须大于 $b$ 可能达到的最大值。若 $a&lt;b$ 恒成立，则 $a$ 的值必须小于 $b$​ 可能达到的最小值。 </p>
+<p>若 $a\ge b$ 恒成立，则 $a$ 的值必须大于等于 $b$ 可能达到的最大值。若 $a\le b$ 恒成立，则 $a$ 的值必须小于等于 $b$ 可能达到的最小值。 </p>
+<p>然后，我们可以把 $a^2-3a$ 想象成一条横在图像上的横线 $y=a^2-3a$，需要注意这里 $y$ 不随 $x$ 的变化而变化（而是随 $a$ 的变化而变化），所以是横线。</p>
+<p><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-01.png" alt=""></p>
+<p>那么，当 $a^2-3a&gt;4$ 时，不等式左边 $-x^2+4x$ 的最大值都达不到这个线。而当 $a^2-3a\le4$ 时，$-x^2+4x$ 就能有解了。</p>
+<p>因此 $-1\le a\le4$。</p>
+<h3 id="7、一元二次不等式恒成立的问题"><a href="#7、一元二次不等式恒成立的问题" class="headerlink" title="7、一元二次不等式恒成立的问题"></a>7、一元二次不等式恒成立的问题</h3><p>有些时候，题目会要求无论 $x$ 取任意实数，不等式均成立，要求求出另一个未知的字母的取值范围。</p>
+<p>这种题目一般与 $\Delta$ 有所关联。</p>
+<p>这里列出个表格，表示各种情况下恒成立的要求。</p>
+<table>
+    <tr>
+        <th>函数开口方向</th>
+        <th>无论 $x$ 取何值，函数的值都要求</th>
+        <th>函数与 $x$ 轴的交点个数</th>
+        <th>$\Delta$ 的要求</th>
+    </tr>
+    <tr>
+        <td rowspan="4">向上</td>
+        <td>小于 $0$</td>
+        <td rowspan="2" colspan="2">不可能实现</td>
+    </tr>
+    <tr>
+        <td>小于等于 $0$</td>
+    </tr>
+    <tr>
+        <td>大于 $0$</td>
+        <td>$0$ 个</td>
+        <td>小于 $0$</td>
+    </tr>
+    <tr>
+        <td>大于等于 $0$</td>
+        <td>$0\sim1$ 个</td>
+        <td>小于等于 $0$</td>
+    </tr>
+    <tr>
+        <td rowspan="4">向下</td>
+        <td>小于 $0$</td>
+        <td>$0$ 个</td>
+        <td>小于 $0$</td>
+    </tr>
+    <tr>
+        <td>小于等于 $0$</td>
+        <td>$0\sim1$ 个</td>
+        <td>小于等于 $0$</td>
+    </tr>
+    <tr>
+        <td>大于 $0$</td>
+        <td rowspan="2" colspan="2">不可能实现</td>
+    </tr>
+    <tr>
+        <td>大于等于 $0$</td>
+    </tr>
+</table>
+
+<p>当然，上面要求的分类讨论，这里也不能少。</p>
+<p>若不等式 $(a-3)x^2+2(a-2)x-4&lt;0$ 对于一切 $x\in R$ 恒成立，则 $a$ 的取值范围？</p>
+<p>首先，先考虑当 $a-3=0$，一元二次函数退化成一元一次函数的情况。此时函数还是一元一次函数而不是连未知数 $x$ 都被消去的形式，而 $2x-4&lt;0$ 并不恒成立。</p>
+<p>当 $a-3&gt;0$ 时，由上表可以发现这是不可能实现恒成立的。</p>
+<p>当 $a-3&lt;0,a&lt;3$ 时，$\Delta&lt;0$，也就是说 $[2(a-2)]^2-4\times(a-3)\times(-4)&lt;0$，用一元二次不等式的解法可知 $-2\sqrt2&lt;a&lt;2\sqrt2$。</p>
+<p>综上，$-2\sqrt2&lt;a&lt;2\sqrt2$。</p>
+<p>再看看这个：$\frac{2x^2+2mx+m}{4x^2+6x+3}&lt;1$ 对所有实数 $x$ 恒成立，则实数 $m$ 的取值范围是？</p>
+<p>首先，因为 $6^2-4\times4\times3=-12&lt;0$，可以知道 $4x^2+6x+3$ 始终大于 $0$。因此，可以放心地将分母移项到右边，再稍微整理一下，得 $0&lt;2x^2+(6-2m)x+(3-m)$。</p>
+<p>结合上表，可知 $\Delta=(6-2m)^2-4\times2\times(3-m)\\=4m^2-24m+36-24+8m\\=4m^2-16m+12\\=4(m-1)(m-3)&lt;0$，解得 $1&lt;m&lt;3$。</p>
+<h3 id="8、在限定-x-的取值范围的前提下，一元二次函数的最值"><a href="#8、在限定-x-的取值范围的前提下，一元二次函数的最值" class="headerlink" title="8、在限定 $x$ 的取值范围的前提下，一元二次函数的最值"></a>8、在限定 $x$ 的取值范围的前提下，一元二次函数的最值</h3><p>我们都知道，当 $x$ 的取值范围不限定时，一元二次函数要么只有最大值，要么只有最小值。但是限定了 $x$ 的取值范围后，一元二次函数就有可能同时拥有最小值和最大值了。</p>
+<table>
+    <tr>
+        <th>函数开口方向</th>
+        <th>取值范围相对于对称轴</th>
+        <th>最大值位置</th>
+        <th>最小值位置</th>
+        <th>例图</th>
+    </tr>
+    <tr>
+        <td rowspan="3">向上</td>
+        <td>取值范围整体在对称轴左边</td>
+        <td>取值范围左端点</td>
+        <td>取值范围右端点</td>
+        <td rowspan="3"><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-09.PNG"></td>
+    </tr>
+    <tr>
+        <td>取值范围包含对称轴</td>
+        <td>离对称轴最远的地方</td>
+        <td>对称轴处</td>
+    </tr>
+    <tr>
+        <td>取值范围整体在对称轴右边</td>
+        <td>取值范围右端点</td>
+        <td>取值范围左端点</td>
+    </tr>
+    <tr>
+        <td rowspan="3">向下</td>
+        <td>取值范围整体在对称轴左边</td>
+        <td>取值范围右端点</td>
+        <td>取值范围左端点</td>
+        <td rowspan="3"><img src="../post_image/CyrxNote-Math-003/CyrxNote-Math-003-10.PNG"></td>
+    </tr>
+    <tr>
+        <td>取值范围包含对称轴</td>
+        <td>对称轴处</td>
+        <td>离对称轴最远的地方</td>
+    </tr>
+    <tr>
+        <td>取值范围整体在对称轴右边</td>
+        <td>取值范围左端点</td>
+        <td>取值范围右端点</td>
+    </tr>
+</table>
+
+<p>如果函数上某个点离最值点的水平距离（$|x_0-x_1|$）越大，那么垂直距离（$|y_0-y_1|$）也越大。</p>
+<p>例题：$-1\le x\le2$ 时，$x^2-2x+a&lt;0$ 恒成立的必要不充分条件是？</p>
+<p>A. $a&lt;-3$</p>
+<p>B. $a&lt;-4$</p>
+<p>C. $a&lt;0$</p>
+<p>D. $a&gt;0$</p>
+<p>首先，原不等式等价于 $x^2-2x&lt;-a$。</p>
+<p>$x^2-2x$ 的对称轴是 $x=1$，最小值是 $-1$，最大值是当 $x=-1$ 时的 $3$。</p>
+<blockquote>
+<p>若 $a&gt;b$ 恒成立，则 $a$ 的值必须大于 $b$ 可能达到的最大值。若 $a&lt;b$ 恒成立，则 $a$ 的值必须小于 $b$​ 可能达到的最小值。 </p>
+<p>若 $a\ge b$ 恒成立，则 $a$ 的值必须大于等于 $b$ 可能达到的最大值。若 $a\le b$ 恒成立，则 $a$ 的值必须小于等于 $b$ 可能达到的最小值。 </p>
+</blockquote>
+<p>因此，$-a&gt;3,a&lt;-3$。</p>
+<p>但题目中要求的是必要不充分条件。关于这个，可以参考<a href="/2023-09-23-CyrxNote-Math-002/#toc-heading-1">这里</a>。</p>
+<p>综上，此题选 $B$。</p>
+<h3 id="9、尝试将其它字母分离出来"><a href="#9、尝试将其它字母分离出来" class="headerlink" title="9、尝试将其它字母分离出来"></a>9、尝试将其它字母分离出来</h3><p>恰好做了道比较有趣的题，记录一下。</p>
+<p>若 $mx^2-mx-6+m&lt;0$ 在 $1\le m\le3$ 时均成立，则实数 $x$ 的取值范围？</p>
+<p>需要注意的是，这次是已知 $m$ 求 $x$ 的范围，而不是已知 $x$ 求 $m$ 的范围。</p>
+<p>首先，$mx^2-mx-6+m=m(x^2-x+1)-6$，原不等式等价于 $m(x^2-x+1)&lt;6$。</p>
+<p>然后，$1\le m$ 说明 $m$ 是正数，那我们就可以放心地将 $m$ 移到右边而不用变不等号，得 $x^2-x+1&lt;\frac{6}{m}$。</p>
+<p>可以发现，$\frac{6}{m}$ 应取最小值（<a onclick="javascript:window.location.href='#ref-point-01';">为什么？</a>），即 $m=3$ </p>
+<p>由此，我们就得到了 $x^2-x+1&lt;0$，花点时间解一下，得 $\frac{1-\sqrt{5}}{2}&lt;x&lt;\frac{1+\sqrt{5}}{2}$。</p>
 
                 
             </div>
@@ -616,7 +713,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/">https://blog.cyrxdzj.eu.org/2023-09-22-CyrxNote-Math-001/</a>
+                    <a href="https://blog.cyrxdzj.eu.org/posts_export/CyrxNote-Math-003.html">https://blog.cyrxdzj.eu.org/posts_export/CyrxNote-Math-003.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -695,58 +792,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023-09-23-CyrxNote-Math-002/">
+                <a href="/posts_export/CyrxNote-Math-003.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/feature_image_pjsk/002_029_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 数学002 集合与条件">
+                        <img src="/medias/feature_image_pjsk/001_010_card_normal.webp" class="responsive-img" alt="">
                         
-                        <span class="card-title">cyrxdzj的文化课学习笔记 数学002 集合与条件</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-23
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    cyrxdzj的文化课学习笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023-09-22-CyrxNoteIndex/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/feature_image_pjsk/002_014_card_normal.webp" class="responsive-img" alt="cyrxdzj的文化课学习笔记 目录">
-                        
-                        <span class="card-title">cyrxdzj的文化课学习笔记 目录</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -757,20 +814,55 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/cyrxdzj%E7%9A%84%E6%96%87%E5%8C%96%E8%AF%BE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    cyrxdzj的文化课学习笔记
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            cyrxdzj
                             
                         </span>
                     </div>
                 </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/posts_export/CyrxNote-Math-003.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/feature_image_pjsk/001_010_card_normal.webp" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            cyrxdzj
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
@@ -935,15 +1027,6 @@
 
 </main>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script>
-    MathJax.Hub.Config({
-        loader: {load: ['[tex]/color']},
-        tex: {packages: {'[+]': ['color']}},
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
 
