@@ -436,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-03-22
+                    2024-06-15
                 </div>
                 
 
@@ -445,7 +445,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.6k
+                    4.9k
                 </div>
                 
 
@@ -478,8 +478,8 @@
 <tbody>
 <tr>
 <td style="text-align:center">2023-10-09 07:01:12</td>
-<td style="text-align:center">2023-11-22 17:42:50</td>
-<td style="text-align:center">2024-03-22 20:33:14</td>
+<td style="text-align:center">2024-03-23 23:47:34</td>
+<td style="text-align:center">2024-06-15 23:33:54</td>
 </tr>
 </tbody>
 </table>
@@ -489,8 +489,9 @@
 <p>本文件仅为静态文件。如有条件，建议访问原文链接。</p>
 </blockquote>
 <p>本文含有较多图片，单击可以放大。</p>
-<h3 id="1、思维杂题"><a href="#1、思维杂题" class="headerlink" title="1、思维杂题"></a>1、思维杂题</h3><p>已知 $A=B=${$0,1,2,3$}，则 $f:A\rightarrow B$ 有多少种值域？</p>
-<p>可以发现，值域一定是集合 $B$ 的子集，同时值域不能为空集。而一个集合的非空子集的数量是 $2^n-1$ 个，所以值域有 $15$ 种。</p>
+<h3 id="1、思维杂题"><a href="#1、思维杂题" class="headerlink" title="1、思维杂题"></a>1、思维杂题</h3><p>这些思维杂题，用于更好地巩固函数的定义。</p>
+<p>已知 $A=B=${$0,1,2,3$}，则 $f:A\rightarrow B$ 有多少种值域？</p>
+<p>可以发现，值域一定是集合 $B$ 的子集（对是子集即可，不需要相等的），同时值域不能为空集。而一个集合的非空子集的数量是 $2^n-1$ 个，所以值域有 $15$ 种。</p>
 <p>若两个函数的对应关系相同，值域也相同，但定义域不同，则称这两个函数为“同族函数”。那么，函数 $y=x^2,x\in${$-1,0,1,2$}  有多少个同族函数？</p>
 <p>可以很容易地得到，该函数的值域为 {$0,1,4$}，由此可知定义域符合如下性质：</p>
 <ol>
@@ -640,6 +641,13 @@
 </li>
 <li><p>解不等式：$0\le f(f(x))\le1$。</p>
 <p>嗯，函数嵌套了起来。</p>
+<p>对于此类问题，我们先别管 $x$ 的范围，看看 $f(x)$ 的范围吧。由上题可知，$-2\le f(x)\le0$ 或 $f(x)\ge4$。</p>
+<p>接下来，我们先看看这两个不等式。</p>
+<p>首先是 $-2\le f(x)\le0$，显然 $x=-1$，看图就知道了。</p>
+<p>然后是 $f(x)\ge4$，这条不等式需要分成两半处理，由图也可以知道 $x\le-3$ 或 $0&lt;x\le1$（请务必注意不等号中有没有包含等号，“小于”和“小于等于”是两回事）。</p>
+<p>搞定。</p>
+<p>在做此类函数嵌套的题目时，像剥洋葱一样一层一层解开就好了。</p>
+<p>（以下内容较为古老，仅供参考）</p>
 <p>我们注意到，无论何时，一定有 $f(x)\ge0$。并且当且仅当 $x=-1$ 时，$f(x)=0$。</p>
 <p>当 $x=-1$ 时，$f(f(x))=f(0)=1$，符合不等式。</p>
 <p>当 $x\neq-1$ 时，有 $f(x)&gt;0$，这意味着 $f(f(x))$ 一定是分段函数的右边的反比例函数部分。因此，根据 $0\le f(f(x))\le1$ 可以得到 $f(x)\ge4$。</p>
@@ -715,7 +723,7 @@
 <p>对于 $x^2+4x$，对称轴为 $x=-2$，因此当 $x\ge0$ 时函数递增。</p>
 <p>对于 $-x^2+4x$，对称轴为 $x=2$，因此当 $x&lt;0$ 时函数递增。</p>
 <p>当 $x=0$ 时，$x^2+4x=4x-x^2=0$，也就是说，$f(x)$ 整个函数都是递增的。</p>
-<p>而 $f(4-a)&gt;f(a)$，也就意味着 $4-a&gt;a$ 即可。实数 $a$ 的取值范围是 $(-\infty,2)$。</p>
+<p>而 $f(4-a)&gt;f(a)$，也就意味着 $4-a&gt;a$ 即可（将函数值的大小比较通过单调递增或单调递减函数转化为函数参数的大小比较以大幅降低计算量，是一个很常用的套路）。实数 $a$ 的取值范围是 $(-\infty,2)$。搞定。</p>
 <p>若函数 $f(x)=ax^2+(a-3)x+1$ 在 $(-1,+\infty)$ 上单调递减，则 $a$ 的取值范围是？</p>
 <p>首先，由于函数在右侧部分单调递减，所以不可能出现 $a&gt;0$ 的情况。</p>
 <p>然后，考虑 $a=0$ 时，函数退化为一次函数，即 $f(x)=-3x+1$。此时整个函数都是单调递减的。</p>
@@ -771,22 +779,22 @@
 <tbody>
 <tr>
 <td>向右平移 $a$ 格（等价于向左平移 $-a$ 格）</td>
-<td>所有 $x$ 统一减去 $a$</td>
+<td><strong>所有</strong> $x$ 统一减去 $a$</td>
 <td>$f(x)=2(x-a)+1=2x-2a+1$</td>
 </tr>
 <tr>
 <td>向上平移 $a$ 格（等价于向下平移 $-a$ 格）</td>
-<td>整个函数统一加上 $a$</td>
+<td><strong>整个</strong>函数统一加上 $a$</td>
 <td>$f(x)=2x+1+a$</td>
 </tr>
 <tr>
 <td>左右翻转</td>
-<td>所有 $x$ 统一变为 $-x$</td>
+<td><strong>所有</strong> $x$ 统一变为 $-x$</td>
 <td>$f(x)=2(-x)=1=-2x+1$</td>
 </tr>
 <tr>
 <td>上下翻转</td>
-<td>整个函数统一变为相反数</td>
+<td><strong>整个</strong>函数统一变为相反数</td>
 <td>$f(x)=-(2x+1)=-2x-1$</td>
 </tr>
 </tbody>
@@ -803,6 +811,7 @@
 <p>综上，函数的值域是 $(-\infty,\frac{17}{8}]$。</p>
 <p>图象为：</p>
 <p><img src="../post_image/CyrxNote-Math-004/CyrxNote-Math-004-13.PNG" alt=""></p>
+<p>这个东西其实就是，换元。之后再写篇文章讲讲吧。</p>
 <h3 id="13、究极无敌分类讨论"><a href="#13、究极无敌分类讨论" class="headerlink" title="13、究极无敌分类讨论"></a>13、究极无敌分类讨论</h3><p>已知函数 $f(x)=2x^2+2ax+1$，函数 $g(x)=\frac{2-2x}{x}$，设函数 $h(x)=\min\lbrace f(x),g(x)\rbrace(x\neq0)$，分类讨论 $a$ 的值与 $h(x)$ 与直线 $y=0$ 的交点个数。</p>
 <p>可以在 desmos 上查看：<a target="_blank" rel="noopener" href="https://www.desmos.com/calculator/nrgjw5qxaz">点击这里</a>。</p>
 <p>首先，我们先化简 $g(x)=\frac{2-2x}{x}=\frac{2}{x}-2$，根据函数的平移的知识，可以发现这就是一个反比例函数向下平移 $2$ 格。</p>
@@ -956,7 +965,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-15
                             </span>
                         <span class="publish-author">
                             
@@ -994,7 +1003,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-03-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-15
                             </span>
                         <span class="publish-author">
                             
@@ -1187,7 +1196,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.5k</span>&nbsp;字
+                class="white-color">28.7k</span>&nbsp;字
             
             
             
